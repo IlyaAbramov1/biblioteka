@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
+const isGitHubPagesBuild = process.env.GITHUB_ACTIONS === "true";
 
 const nextConfig = {
     output: "export",
     images: { unoptimized: true },
-    basePath: isProd ? "/biblioteka" : "",
-    assetPrefix: isProd ? "/biblioteka/" : "",
+    basePath: isGitHubPagesBuild ? "/biblioteka" : "",
+    assetPrefix: isGitHubPagesBuild ? "/biblioteka/" : "",
     trailingSlash: true,
 };
 
