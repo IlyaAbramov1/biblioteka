@@ -1,66 +1,119 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import { useEffect, useMemo, useRef, useState } from "react";
+import sites from "@/data/sites.json";
+import SiteItem from "@/components/SiteItem/SiteItem";
+import SiteFilters from "@/components/SiteFilters/SiteFilters";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    const BATCH_SIZE = 20;
+    const containerRef = useRef(null);
+    const sentinelRef = useRef(null);
+    const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
+    const [selectedCategories, setSelectedCategories] = useState([]);
+    const [selectedSpecializations, setSelectedSpecializations] = useState([]);
+
+    const baseSites = useMemo(
+        () => sites.filter((site) => site.slug),
+        []
+    );
+
+    const categories = useMemo(
+        () => [...new Set(baseSites.map((site) => site.category).filter(Boolean))],
+        [baseSites]
+    );
+
+    const specializations = useMemo(() => {
+        const all = baseSites.flatMap((site) => {
+            const specs = Array.isArray(site.specialization)
+                ? site.specialization
+                : String(site.specialization || "").split(",");
+
+            return specs.map((spec) => String(spec).trim()).filter(Boolean);
+        });
+
+        return [...new Set(all)];
+    }, [baseSites]);
+
+    const filteredSites = useMemo(() => {
+        return baseSites.filter((site) => {
+            const byCategory =
+                selectedCategories.length === 0 || selectedCategories.includes(site.category);
+
+            const specs = Array.isArray(site.specialization)
+                ? site.specialization
+                : String(site.specialization || "").split(",").map((spec) => spec.trim());
+            const bySpecialization =
+                selectedSpecializations.length === 0 ||
+                selectedSpecializations.some((selected) => specs.includes(selected));
+
+            return byCategory && bySpecialization;
+        });
+    }, [baseSites, selectedCategories, selectedSpecializations]);
+
+    useEffect(() => {
+        setVisibleCount(Math.min(BATCH_SIZE, filteredSites.length));
+    }, [filteredSites.length]);
+
+    useEffect(() => {
+        const sentinel = sentinelRef.current;
+        const container = containerRef.current;
+        if (!sentinel) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (!entries[0]?.isIntersecting) return;
+                setVisibleCount((count) =>
+                    Math.min(count + BATCH_SIZE, filteredSites.length)
+                );
+            },
+            { root: container, rootMargin: "100px 0px" }
+        );
+
+        observer.observe(sentinel);
+
+        return () => observer.disconnect();
+    }, [filteredSites.length]);
+
+    const toggleCategory = (category) => {
+        setSelectedCategories((prev) =>
+            prev.includes(category)
+                ? prev.filter((item) => item !== category)
+                : [...prev, category]
+        );
+    };
+
+    const toggleSpecialization = (specialization) => {
+        setSelectedSpecializations((prev) =>
+            prev.includes(specialization)
+                ? prev.filter((item) => item !== specialization)
+                : [...prev, specialization]
+        );
+    };
+
+    const clearFilters = () => {
+        setSelectedCategories([]);
+        setSelectedSpecializations([]);
+    };
+
+    return (
+        <>
+            <SiteFilters
+                categories={categories}
+                specializations={specializations}
+                selectedCategories={selectedCategories}
+                selectedSpecializations={selectedSpecializations}
+                onToggleCategory={toggleCategory}
+                onToggleSpecialization={toggleSpecialization}
+                onClear={clearFilters}
             />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+
+            <section ref={containerRef} className="gridContainer">
+                {filteredSites.slice(0, visibleCount).map((site, index) => (
+                    <SiteItem key={`${site.slug}-${index}`} site={site} />
+                ))}
+                <div ref={sentinelRef} aria-hidden="true" style={{ height: 1 }} />
+            </section>
+        </>
+    );
 }
