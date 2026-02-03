@@ -72,7 +72,6 @@
 
 .siteContainer:hover {
     background-color: var(--secondary-bg);
-    color: var(--accent-color);
 }
 
 .siteContainer:hover .siteCover {
@@ -80,7 +79,6 @@
 }
 
 .siteContainer:hover .secondaryButton {
-    padding: 4px 6px;
     background-color: var(--accent-secondary-bg);
     color: var(--accent-color);
 }

@@ -1,0 +1,21 @@
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="6" y="12" width="2" height="2" transform="rotate(-90 6 12)" fill="#009E89"/>
+<rect x="10" y="14" width="2" height="2" fill="#009E89"/>
+<rect x="6" y="16" width="2" height="2" transform="rotate(-90 6 16)" fill="#009E89"/>
+<rect x="6" y="10" width="2" height="2" transform="rotate(-90 6 10)" fill="#009E89"/>
+<rect x="12" y="14" width="2" height="2" fill="#009E89"/>
+<rect x="6" y="8" width="2" height="2" transform="rotate(-90 6 8)" fill="#009E89"/>
+<rect x="14" y="14" width="2" height="2" fill="#009E89"/>
+<rect x="6" y="6" width="2" height="2" transform="rotate(-90 6 6)" fill="#009E89"/>
+<rect x="16" y="14" width="2" height="2" fill="#009E89"/>
+<rect x="6" y="4" width="2" height="2" transform="rotate(-90 6 4)" fill="#009E89"/>
+<rect x="18" y="14" width="2" height="2" fill="#009E89"/>
+<rect x="4" y="6" width="2" height="2" transform="rotate(-90 4 6)" fill="#009E89"/>
+<rect x="16" y="12" width="2" height="2" fill="#009E89"/>
+<rect width="2" height="2" transform="matrix(2.3597e-08 1 1 -2.3597e-08 10 6)" fill="#009E89"/>
+<rect width="2" height="2" transform="matrix(-1 -2.01144e-08 -2.01144e-08 1 16 18)" fill="#009E89"/>
+<rect x="2" y="8" width="2" height="2" transform="rotate(-90 2 8)" fill="#009E89"/>
+<rect x="14" y="10" width="2" height="2" fill="#009E89"/>
+<rect width="2" height="2" transform="matrix(2.3597e-08 1 1 -2.3597e-08 8 4)" fill="#009E89"/>
+<rect width="2" height="2" transform="matrix(-1 -2.01144e-08 -2.01144e-08 1 18 16)" fill="#009E89"/>
+</svg>

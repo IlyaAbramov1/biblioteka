@@ -1,27 +1,23 @@
 .tagList {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 12px;
 }
 
 .tag {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 4px 8px;
-    border-radius: 999px;
-    font-size: var(--little-text-size);
-    line-height: var(--little-text-line-height);
-    background-color: var(--secondary-bg);
+    gap: 4px;
+    font-size: var(--main-text-size);
+    line-height: 100%;
     color: var(--text);
+
+    text-transform: uppercase;
 }
 
-.icon {
-    width: 14px;
-    height: 14px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.tag img {
+    width: 16px;
+    height: 16px;
 }
 
 .icon svg {
@@ -37,68 +33,41 @@
 }
 
 .tagTone_fullstack {
-    background-color: var(--accent-bg);
-    color: var(--accent-color);
+    color: hsl(270, 100%, 50%);
 }
 
-.tagTone_communication {
-    background-color: hsl(var(--h), 80%, 92%);
-    color: hsl(var(--h), 80%, 40%);
+.tagTone_web {
+    color: hsl(210, 100%, 50%);
+}
+
+.tagTone_branding {
+    color: hsl(330, 100%, 50%);
 }
 
 .tagTone_product {
-    background-color: hsl(120, 40%, 90%);
-    color: hsl(120, 50%, 30%);
+    color: hsla(200, 100%, 31%, 1);
 }
 
 .tagTone_engineering {
-    background-color: hsl(var(--h), 35%, 90%);
-    color: hsl(var(--h), 35%, 35%);
+    color: hsla(171, 100%, 39%, 1);
 }
 
 .tagTone_motion {
-    background-color: hsl(16, 85%, 92%);
-    color: hsl(16, 70%, 38%);
+    color: hsl(30, 100%, 50%);
 }
 
 .tagTone_illustration {
-    background-color: hsl(290, 35%, 91%);
-    color: hsl(290, 35%, 35%);
+    color: hsla(303, 100%, 50%, 1);
 }
 
 .tagTone_threeD {
-    background-color: hsl(188, 55%, 89%);
-    color: hsl(188, 60%, 30%);
+    color: hsla(172, 100%, 31%, 1);
 }
 
 .tagTone_art {
-    background-color: hsl(332, 45%, 90%);
-    color: hsl(332, 45%, 35%);
-}
-
-.tagTone_gaming {
-    background-color: hsl(258, 50%, 90%);
-    color: hsl(258, 45%, 35%);
-}
-
-.tagTone_fonts {
-    background-color: hsl(44, 70%, 90%);
-    color: hsl(44, 58%, 32%);
+    color: hsl(0, 100%, 50%);
 }
 
 .tagTone_default {
-    background-color: var(--secondary-bg);
     color: var(--secondary-text);
-}
-
-body.dark-theme .tagTone_motion,
-body.dark-theme .tagTone_illustration,
-body.dark-theme .tagTone_threeD,
-body.dark-theme .tagTone_art,
-body.dark-theme .tagTone_gaming,
-body.dark-theme .tagTone_fonts,
-body.dark-theme .tagTone_engineering,
-body.dark-theme .tagTone_communication,
-body.dark-theme .tagTone_product {
-    filter: brightness(1.1) saturate(0.9);
 }

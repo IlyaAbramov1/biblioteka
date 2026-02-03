@@ -14,7 +14,7 @@ export default function Home() {
     const [selectedSpecializations, setSelectedSpecializations] = useState([]);
 
     const baseSites = useMemo(
-        () => sites.filter((site) => site.slug),
+        () => sites.filter((site) => site.slug && site.enabled !== false),
         []
     );
 

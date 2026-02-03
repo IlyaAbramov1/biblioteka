@@ -6,56 +6,60 @@
         "category": "Designer",
         "specialization": [
             "Fullstack Design",
-            "Jopa"
+            "Design Engineer"
         ],
         "link": "https://ryo.lu/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "screens/ryo-lu/ryo-full.mp4",
         "previewScreen": "screens/ryo-lu/ryo-preview.webp",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": true
     },
     {
         "slug": "locomotive",
         "title": "Locomotive",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://locomotive.ca/en",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "screens/locomotive/locomotive-full.mp4",
         "previewScreen": "screens/locomotive/locomotive-preview.webp",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": true
     },
     {
         "slug": "study-hall",
         "title": "STUDY HALL",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://studyhall.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "screens/study-hall/study-hall-full.mp4",
         "previewScreen": "screens/study-hall/study-hall-preview.webp",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": true
     },
     {
         "slug": "dbco",
         "title": "DBCO",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://dbco.online/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "screens/dbco/dbco-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/dbco/dbco-preview.webp"
+        "previewScreen": "screens/dbco/dbco-preview.webp",
+        "enabled": true
     },
     {
         "slug": "area-17",
@@ -69,21 +73,23 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/area-17/area-17-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/area-17/area-17-preview.webp"
+        "previewScreen": "screens/area-17/area-17-preview.webp",
+        "enabled": true
     },
     {
         "slug": "ashfall-studio",
         "title": "Ashfall Studio",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ashfall.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "screens/ashfall-studio/ashfall-studio-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/ashfall-studio/ashfall-studio-preview.webp"
+        "previewScreen": "screens/ashfall-studio/ashfall-studio-preview.webp",
+        "enabled": true
     },
     {
         "slug": "studio-dumbar",
@@ -91,56 +97,60 @@
         "category": "Design Studio",
         "specialization": [
             "Motion Design",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://studiodumbar.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "screens/studio-dumbar/studio-dumbar-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/studio-dumbar/studio-dumbar-preview.webp"
+        "previewScreen": "screens/studio-dumbar/studio-dumbar-preview.webp",
+        "enabled": true
     },
     {
         "slug": "porto-rocha",
         "title": "Porto Rocha",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://portorocha.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "screens/porto-rocha/porto-rocha-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/porto-rocha/porto-rocha-preview.webp"
+        "previewScreen": "screens/porto-rocha/porto-rocha-preview.webp",
+        "enabled": true
     },
     {
         "slug": "hoodzpah",
         "title": "Hoodzpah",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://hoodzpahdesign.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "screens/hoodzpah/hoodzpah-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/hoodzpah/hoodzpah-preview.webp"
+        "previewScreen": "screens/hoodzpah/hoodzpah-preview.webp",
+        "enabled": true
     },
     {
         "slug": "further",
         "title": "Further",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.further.group/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "screens/further/further-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/further/further-preview.webp"
+        "previewScreen": "screens/further/further-preview.webp",
+        "enabled": true
     },
     {
         "slug": "humble-team",
@@ -154,14 +164,15 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/humble-team/humble-team-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/humble-team/humble-team-preview.webp"
+        "previewScreen": "screens/humble-team/humble-team-preview.webp",
+        "enabled": true
     },
     {
         "slug": "koto",
         "title": "KOTO",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://koto.studio/",
         "description": "",
@@ -171,14 +182,15 @@
             "screens/koto/koto-1.webp",
             "screens/koto/koto-2.webp"
         ],
-        "previewScreen": "screens/koto/koto-preview.webp"
+        "previewScreen": "screens/koto/koto-preview.webp",
+        "enabled": true
     },
     {
         "slug": "collins",
         "title": "COLLINS",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.wearecollins.com/",
         "description": "",
@@ -188,7 +200,8 @@
             "screens/collins/collins-1.webp",
             "screens/collins/collins-2.webp"
         ],
-        "previewScreen": "screens/collins/collins-preview.webp"
+        "previewScreen": "screens/collins/collins-preview.webp",
+        "enabled": true
     },
     {
         "slug": "todd-hamilton",
@@ -202,7 +215,8 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/todd-hamilton/todd-hamilton-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/todd-hamilton/todd-hamilton-preview.webp"
+        "previewScreen": "screens/todd-hamilton/todd-hamilton-preview.webp",
+        "enabled": true
     },
     {
         "slug": "chan-karunamuni",
@@ -219,7 +233,8 @@
             "screens/chan-karunamuni/chan-karunamuni-1.webp",
             "screens/chan-karunamuni/chan-karunamuni-2.webp"
         ],
-        "previewScreen": "screens/chan-karunamuni/chan-karunamuni-preview.webp"
+        "previewScreen": "screens/chan-karunamuni/chan-karunamuni-preview.webp",
+        "enabled": true
     },
     {
         "slug": "haptic",
@@ -236,24 +251,23 @@
             "screens/haptic/haptic-1.webp",
             "screens/haptic/haptic-2.webp"
         ],
-        "previewScreen": "screens/haptic/haptic-preview.webp"
+        "previewScreen": "screens/haptic/haptic-preview.webp",
+        "enabled": true
     },
     {
         "slug": "naranjo",
         "title": "Naranjo",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://naranjoetxeberria.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": [
-            "screens/naranjo/naranjo-1.webp",
-            "screens/naranjo/naranjo-2.webp"
-        ],
-        "previewScreen": "screens/naranjo/naranjo-preview.webp"
+        "siteScreens": [],
+        "previewScreen": "screens/naranjo/naranjo-preview.webp",
+        "enabled": true
     },
     {
         "slug": "baked-design",
@@ -270,7 +284,8 @@
             "screens/baked-design/baked-design-1.webp",
             "screens/baked-design/baked-design-2.webp"
         ],
-        "previewScreen": "screens/baked-design/baked-design-preview.webp"
+        "previewScreen": "screens/baked-design/baked-design-preview.webp",
+        "enabled": true
     },
     {
         "slug": "jakub-zen",
@@ -287,14 +302,15 @@
             "screens/jakub-zen/jakub-zen-1.webp",
             "screens/jakub-zen/jakub-zen-2.webp"
         ],
-        "previewScreen": "screens/jakub-zen/jakub-zen-preview.webp"
+        "previewScreen": "screens/jakub-zen/jakub-zen-preview.webp",
+        "enabled": true
     },
     {
         "slug": "bureau-borsche",
         "title": "BUREAU BORSCHE",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://bureauborsche.com/",
         "description": "",
@@ -304,33 +320,36 @@
             "screens/bureau-borsche/bureau-borsche-1.webp",
             "screens/bureau-borsche/bureau-borsche-2.webp"
         ],
-        "previewScreen": "screens/bureau-borsche/bureau-borsche-preview.webp"
+        "previewScreen": "screens/bureau-borsche/bureau-borsche-preview.webp",
+        "enabled": true
     },
     {
         "slug": "kurppa-hosk",
         "title": "Kurppa Hosk",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.kurppahosk.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": true
     },
     {
         "slug": "motto",
         "title": "Motto",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://wearemotto.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "abra",
@@ -343,7 +362,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "3d-funny-works",
@@ -351,13 +371,14 @@
         "category": "Design Studio",
         "specialization": [
             "3D in Web",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://stubborn-room.funnyworks.co.kr/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "funny-works",
@@ -365,13 +386,14 @@
         "category": "Design Studio",
         "specialization": [
             "3D in Web",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.funnyworks.co.kr/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "twomuch-studio",
@@ -379,13 +401,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://twomuch.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "oyedrops",
@@ -398,7 +421,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "skala",
@@ -406,74 +430,79 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://skaladesign.ch/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "indego-design",
         "title": "INDEGO DESIGN",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://indegodesign.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
         "title": "Интуиция",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://intuition.team/ru/i",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "order",
         "title": "order",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Motion Design"
         ],
         "link": "https://order.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "playlist-studio",
         "title": "Playlist Studio",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://playlist.studio/about",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "chrlx",
         "title": "CHRLX",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Illustration",
             "Motion Design"
         ],
@@ -481,20 +510,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "make-me-pulse",
         "title": "Make Me Pulse",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.makemepulse.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "merci-michel",
@@ -507,7 +538,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "petrick",
@@ -521,14 +553,15 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ivo-studio",
         "title": "Ivo Studio",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Illustration",
             "Motion Design"
         ],
@@ -536,35 +569,38 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "universal-favourite",
         "title": "Universal Favourite",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Illustration"
         ],
         "link": "https://universalfavourite.com.au/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "verve-agency",
         "title": "Verve Agency",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Motion Design"
         ],
         "link": "https://verveagency.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "mouthwash-studio",
@@ -572,13 +608,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://mouthwash.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "palam-cgi",
@@ -591,33 +628,36 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "e-i-b",
         "title": "E-I-B",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://e-i-b.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "dia",
         "title": "DIA",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://dia.tv/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "perron-roettinger",
@@ -630,20 +670,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "base-design",
         "title": "Base Design",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.basedesign.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "studio-size",
@@ -656,14 +698,15 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "hornet",
         "title": "Hornet",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Illustration",
             "Motion Design"
         ],
@@ -671,7 +714,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "metalab",
@@ -684,7 +728,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
@@ -697,7 +742,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "max",
@@ -710,7 +756,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "37signals",
@@ -723,7 +770,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "piqo-studio",
@@ -738,20 +786,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "accuraten",
         "title": "Accuraten",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://accuraten.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "m18",
@@ -764,20 +814,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "symbol-studio",
         "title": "Symbol Studio",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.symbolstudio.pl/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
@@ -790,21 +842,23 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "guglieri",
         "title": "Guglieri",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://guglieri.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "crauch",
@@ -817,7 +871,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "reboot",
@@ -830,7 +885,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "aic",
@@ -843,7 +899,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "chips",
@@ -857,7 +914,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "creative-people",
@@ -870,33 +928,36 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "maryco",
         "title": "Maryco",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://maryco.ru/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "depot",
         "title": "Depot",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.depotwpf.ru/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "pragmatica",
@@ -909,20 +970,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "paul-jun-collins",
         "title": "Paul Jun (Collins)",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://pauljun.me/project/collins-ideas",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "night-kingdom",
@@ -935,7 +998,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "samokat-tech",
@@ -948,7 +1012,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "commence",
@@ -961,7 +1026,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "idc",
@@ -974,7 +1040,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "redis-agency",
@@ -987,7 +1054,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
@@ -1000,20 +1068,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "vissotto-studio",
         "title": "VISSOTTO STUDIO",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.vissottostudio.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "matthew-strom",
@@ -1026,7 +1096,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "griflan",
@@ -1039,7 +1110,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "kargul-studio",
@@ -1052,7 +1124,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "adria-studio",
@@ -1065,20 +1138,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "holystick",
         "title": "Holystick",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://holystick.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "endless",
@@ -1091,7 +1166,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "after",
@@ -1104,7 +1180,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "startup-visuals",
@@ -1117,7 +1194,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "designme",
@@ -1130,7 +1208,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "bricx",
@@ -1143,7 +1222,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "abhijit-rout",
@@ -1156,33 +1236,36 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "primary",
         "title": "Primary",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.primary.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "studio-freight",
         "title": "STUDIO FREIGHT",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://studiofreight.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "moonsight",
@@ -1195,59 +1278,64 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "cassandra-tang",
         "title": "Cassandra Tang",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.cassandratang.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "innocean-berlin",
         "title": "Innocean Berlin",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://innoceanberlin.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "codeau-studio",
         "title": "codeau studio",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://codeastudio.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "mullen-lowe-design-studio",
         "title": "Mullen Lowe Design Studio",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://mullenlowedesign.co/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "oddworks",
@@ -1255,26 +1343,28 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://oddworks.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "deux-huit-huit",
         "title": "DEUX HUIT HUIT",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://deuxhuithuit.com/en",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "estudio-republica",
@@ -1282,52 +1372,56 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://republica.work/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "strange-family",
         "title": "Strange Family",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://strangefamily.co/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "wille-larsson",
         "title": "Wille Larsson",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://willelarsson.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "vagabond",
         "title": "Vagabond",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.vagabondagency.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "daniel-eden",
@@ -1340,33 +1434,36 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "studio-ouam",
         "title": "studio ouam",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://studioouam.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "endless-work",
         "title": "Endless Work",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://endlesswork.io/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "fons-mans",
@@ -1379,7 +1476,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "rocketpand",
@@ -1392,7 +1490,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "oh-my",
@@ -1405,7 +1504,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "designme-agency",
@@ -1418,7 +1518,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "rxk",
@@ -1431,7 +1532,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "william-le-apple",
@@ -1444,7 +1546,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "opening-hours",
@@ -1452,13 +1555,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://openinghours.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "giga-design-studio",
@@ -1466,13 +1570,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://gigadesignstudio.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "dverso-studio",
@@ -1480,13 +1585,14 @@
         "category": "Design Studio",
         "specialization": [
             "3D in Web",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://dversostudio.io/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "precious-m",
@@ -1499,7 +1605,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "jungle",
@@ -1512,7 +1619,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "right-studio",
@@ -1525,33 +1633,36 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "kory-jordan-apple",
         "title": "Kory Jordan (Apple)",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://koryjordan.com/play",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "brain-cho-apple",
         "title": "Brain Cho (Apple)",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://bcho.info/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "june-lee-apple",
@@ -1564,7 +1675,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "dominik-hofacker-apple",
@@ -1577,7 +1689,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "jonathan-ravasz-apple",
@@ -1590,47 +1703,51 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "kasper-nyman",
         "title": "Kasper Nyman",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Motion Design"
         ],
         "link": "https://www.kaspernyman.dk/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "span-studio",
         "title": "SPAN STUDIO",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://span.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "rejouice",
         "title": "REJOUICE",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://rejouice.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "dalee",
@@ -1643,20 +1760,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "studio-sara-cristina-moser",
         "title": "Studio Sara Cristina Moser",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://saracristinamoser.de/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "banktm",
@@ -1664,39 +1783,42 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://banktm.de/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "outcrowd",
         "title": "Outcrowd",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.outcrowd.io/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "a-black-cover-design",
         "title": "A Black Cover Design",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ablackcover.com/index",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "red-antler",
@@ -1709,7 +1831,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "orange-studio",
@@ -1722,7 +1845,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ranlus",
@@ -1735,20 +1859,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "esh-gruppa",
         "title": "ESH Gruppa",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://eshgruppa.com",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "salt-pepper",
@@ -1757,13 +1883,14 @@
         "specialization": [
             "3D in Web",
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://snp.agency/ru/cases",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "webisoft",
@@ -1777,33 +1904,36 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "we-go-again",
         "title": "WE GO AGAIN",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://we-go-again.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "est-6",
         "title": "EST +6",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://estplus6.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "unveil",
@@ -1811,40 +1941,43 @@
         "category": "Design Studio",
         "specialization": [
             "3D",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://unveil.fr/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "watson",
         "title": "WATSON",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Illustration"
         ],
         "link": "https://watson.la/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "alex-hunting-studio",
         "title": "Alex Hunting Studio",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://alexhunting.co.uk/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "hold-on-please",
@@ -1852,13 +1985,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://holdonplease.fr/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "triangle-studio",
@@ -1866,13 +2000,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "http://www.triangle-studio.co.kr/?ckattempt=1",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "little-troop",
@@ -1880,52 +2015,56 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://littletroop.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "kashiwa-sato",
         "title": "Kashiwa Sato",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://kashiwasato.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "lineto",
         "title": "Lineto",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://lineto.com/#geigy",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "studio-feixen",
         "title": "Studio Feixen",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.studiofeixen.ch/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "monogrid",
@@ -1934,27 +2073,29 @@
         "specialization": [
             "3D in Web",
             "Art",
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://monogrid.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "mvsm",
         "title": "MVSM",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://mvsm.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "koshta",
@@ -1962,13 +2103,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://koshtacollective.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "space10",
@@ -1976,13 +2118,14 @@
         "category": "Creative Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://space10.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "bono-digital",
@@ -1995,46 +2138,50 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "mire",
         "title": "Mire",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://mire.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "numinous",
         "title": "Numinous",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://numinousco.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "rawart-studio",
         "title": "Rawart Studio",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.rawart.site/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ben-jo",
@@ -2042,13 +2189,14 @@
         "category": "Creative Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ben-jo.fr/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "nightjar",
@@ -2061,7 +2209,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "overthought-studio",
@@ -2074,7 +2223,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "panorama-space",
@@ -2087,7 +2237,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "lemma",
@@ -2095,91 +2246,98 @@
         "category": "Design Studio",
         "specialization": [
             "3D in Web",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://lemma.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "lumious-group",
         "title": "Lumious Group",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.luminous.gr/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "studio-paquette",
         "title": "Studio Paquette",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://studiopaquette.com/about/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "gretel",
         "title": "Gretel",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://gretelny.com/company",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "estudio-altillo",
         "title": "Estudio Altillo",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://estudioaltillo.com/estudio",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "studio-blackburn",
         "title": "Studio Blackburn",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://studioblackburn.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "bunsen",
         "title": "Bunsen",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.bunsenstudio.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "offmenu",
@@ -2192,20 +2350,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "zeal-studio",
         "title": "Zeal Studio",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.zealstudio.me/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "theroyalstudio",
@@ -2213,13 +2373,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://theroyalstudio.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
@@ -2227,13 +2388,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://alkali.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "dada-projects",
@@ -2241,39 +2403,42 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.dada-projects.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "weiss",
         "title": "WEISS",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://weisswater.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "brand-hub",
         "title": "Brand Hub",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://brand-hub.ru/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "electric-red",
@@ -2281,13 +2446,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://electricred.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "danil-krivoruchko",
@@ -2300,7 +2466,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "adrian-apple",
@@ -2313,7 +2480,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
@@ -2326,20 +2494,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "tric",
         "title": "TRIC",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://tric.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "utopia",
@@ -2350,20 +2520,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "no-plan",
         "title": "NO PLAN",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://noplan.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "lowercase",
@@ -2376,7 +2548,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "skinn",
@@ -2387,33 +2560,36 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "somestr",
         "title": "Somestr",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://somestrstudio.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "dseya",
         "title": "Dseya",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://dzeya.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
@@ -2426,33 +2602,36 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "reesaw",
         "title": "Reesaw",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "http://www.reesaw.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ihunk",
         "title": "IHUNK",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "http://www.ihunk.cn/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "mateca",
@@ -2465,46 +2644,50 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ochen-digital",
         "title": "Ochen Digital",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ochen.digital/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "hellorobo",
         "title": "HelloRobo",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.hellorobo.co/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "bold",
         "title": "Bold",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://boldscandinavia.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "charmer",
@@ -2515,33 +2698,36 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "works-studio",
         "title": "WORKS STUDIO",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://works.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "studiopaack",
         "title": "StudioPaack",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://studiopaack.fr/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "sergey-kudikov",
@@ -2554,7 +2740,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "anton",
@@ -2562,26 +2749,28 @@
         "category": "Designer",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://halfof8.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "smith-dictions",
         "title": "Smith & Diction’s",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://smith-diction.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ayond",
@@ -2589,13 +2778,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ayond.jp",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "made-by-mad",
@@ -2608,72 +2798,78 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "tigers-magic",
         "title": "Tigers Magic",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://tigersmagic.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "rogue",
         "title": "Rogue",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://rogue.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "dotorg",
         "title": "Dotorg",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.dotorg.ru/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "simon",
         "title": "Simon",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://símon.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "kuya",
         "title": "KUYA",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.hellokuya.co/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "struggle",
@@ -2686,86 +2882,93 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ilar",
         "title": "ILAR",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ilartech.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ermolaev-beraeu",
         "title": "Ermolaev Beraeu",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Fonts"
         ],
         "link": "https://ermolaevbureau.com/projects/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
         "title": "Владимир Ваюев",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://vayuev.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
         "title": "Два слова",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://dvaslova.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
         "title": "ТОЛК",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://tolkbrand.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "hallobasis",
         "title": "HalloBasis",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://hallobasis.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "gw-studio",
@@ -2778,20 +2981,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "silencio",
         "title": "SILENCIO",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://silencio.es/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "antro",
@@ -2804,59 +3009,64 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "funky-agency-ru",
         "title": "Funky Agency RU",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://funky.agency/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "deux-huit-huit",
         "title": "Deux Huit Huit",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://beta.deuxhuithuit.com/en",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "saint-urbain",
         "title": "SAINT URBAIN",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.sainturbain.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ava-digital",
         "title": "AVA-digital",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ava-digital.site/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "non-objective",
@@ -2864,13 +3074,14 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://non-objective.works/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ilovecreatives",
@@ -2878,52 +3089,56 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.ilovecreatives.studio/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ilovecreatives",
         "title": "ILOVECREATIVES",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ilovecreatives.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "nathan-smith",
         "title": "Nathan Smith",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.nathansmith.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "tux",
         "title": "TUX",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://tux.co/en/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "dmytro",
@@ -2936,7 +3151,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "charmin",
@@ -2949,7 +3165,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "wojtek-witkowski",
@@ -2962,34 +3179,37 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "alana-goyal",
         "title": "Alana Goyal",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.alanagoyal.com/notes/about-me",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "boris-verks",
         "title": "Boris Verks",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://www.borisverks.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "yevhen-yurchuk",
@@ -3002,7 +3222,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "jakub-krehel",
@@ -3015,7 +3236,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "meschrac-irung",
@@ -3028,7 +3250,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "alis-zu",
@@ -3042,20 +3265,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "makeover",
         "title": "makeover",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://breezy-channel-045311.framer.app/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "vaun-blu",
@@ -3068,7 +3293,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "slava-barinov",
@@ -3081,7 +3307,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ji-park",
@@ -3089,13 +3316,14 @@
         "category": "Designer",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.jipark.org/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "roman",
@@ -3108,7 +3336,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "benjamin-akar",
@@ -3122,34 +3351,37 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "andrey-kuzmin",
         "title": "Andrey Kuzmin",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ko0oz.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "studio-evra",
         "title": "STUDIO EVRA",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://evra.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "beno",
@@ -3162,47 +3394,51 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "andreion-de-castro",
         "title": "Andreion de Castro",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "IT"
         ],
         "link": "https://andreion.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "wildy-riftian",
         "title": "Wildy Riftian",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.wildyriftian.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "egor-fadeev",
         "title": "Egor Fadeev",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://fadeev-archive.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "marco-cornacchia",
@@ -3215,14 +3451,15 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "lea-naisberg",
         "title": "Lea Naisberg",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Design Engineer",
             "IT"
         ],
@@ -3230,7 +3467,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "yan-zareckii",
@@ -3243,20 +3481,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "rene-charles",
         "title": "Rene Charles",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://r-c.work/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "michael-garcia",
@@ -3270,7 +3510,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "yann-edern-gillet",
@@ -3283,7 +3524,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "michael-ustinov",
@@ -3296,7 +3538,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "mattew-prebeg",
@@ -3304,27 +3547,29 @@
         "category": "Designer",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://matt-prebeg.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "jace",
         "title": "Jace",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://ja.mt/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "rob-bohnke",
@@ -3337,7 +3582,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "mason-watson",
@@ -3350,7 +3596,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ganesh-kamur",
@@ -3363,7 +3610,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "mau-hany",
@@ -3376,7 +3624,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "neil-jackson",
@@ -3384,13 +3633,14 @@
         "category": "Designer",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://neil.graphics/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "emuni",
@@ -3398,27 +3648,29 @@
         "category": "Design Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://emuni.co.jp/works/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "spencer-gabor",
         "title": "Spencer Gabor",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Illustration"
         ],
         "link": "https://spencergabor.work/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "jake-down-smith",
@@ -3431,7 +3683,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "andrew-trousdale",
@@ -3444,20 +3697,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "joost-grootens-studio",
         "title": "Joost Grootens Studio",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.joostgrootens.nl/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "eva-sanchez",
@@ -3470,7 +3725,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "rauno-freiberg",
@@ -3483,7 +3739,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "valentin-galmand",
@@ -3497,7 +3754,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "schwaibold-vos",
@@ -3510,7 +3768,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "konstantin-filatov",
@@ -3523,7 +3782,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "benji-taylor",
@@ -3536,20 +3796,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "martin-pohmall",
         "title": "Martin Pohmall",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://pohlmann.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "adam-arutyunov",
@@ -3562,7 +3824,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "vlad-kalashnikov",
@@ -3575,20 +3838,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "jesse-nyberg",
         "title": "Jesse Nyberg",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://jessenyberg.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ainsley-romero",
@@ -3596,40 +3861,43 @@
         "category": "Designer",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ainsleyromero.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "micah-carrol",
         "title": "Micah Carrol",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://micahcarroll.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "kenny-brandenberger",
         "title": "Kenny Brandenberger",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://kennybrandenberger.ch/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "jiacheng-yang",
@@ -3642,20 +3910,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "erik-jonsson",
         "title": "Erik Jonsson",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://erikjonsson.se/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "naau",
@@ -3669,7 +3939,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
@@ -3677,33 +3948,35 @@
         "category": "Creative Studio",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://myra.ru/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "ceren-burcu-turkan",
         "title": "Ceren Burcu Turkan",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://cerenburcuturkan.com/works",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "sarah-oh",
         "title": "Sarah Oh",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Illustration",
             "Motion Design"
         ],
@@ -3711,14 +3984,15 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "",
         "title": "Саша Барабонова",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Design Engineer",
             "Product Design"
         ],
@@ -3726,7 +4000,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "wonderpeek",
@@ -3739,7 +4014,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "yehwan-song-yen-song",
@@ -3752,33 +4028,36 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "angello-torres",
         "title": "Angello Torres",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://angellotorres.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "kudcev",
         "title": "KUDCEV",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://kudcev.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "artem-matyushkin",
@@ -3786,13 +4065,14 @@
         "category": "Designer",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://a-r-t-e-m.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "kate-sosedova",
@@ -3805,7 +4085,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "jury-alyavdin",
@@ -3818,48 +4099,52 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "artem-militonian",
         "title": "Artem  Militonian",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://artmilitonian.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "gleb-zhigulin",
         "title": "Gleb Zhigulin",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://zhigulingo.zgo.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "stop-design",
         "title": "stop-design",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://stop-design.ru/?rb_clickid=161357572-1716788976-1574712433-0-0215818f7c8aded2e18c61f0ace9545e66541ef0ce9f6b73c4e07ae450fc3fdaae47149baa52e917&utm_campaign=95554006&utm_content=161357572&utm_medium=cpc&utm_source=vk_ads",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "geo-chen",
@@ -3872,7 +4157,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "alex-melnikov",
@@ -3885,20 +4171,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "local-studio",
         "title": "LOCAL Studio",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://localstudio.fr/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "florian-kiem",
@@ -3911,34 +4199,37 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "natali-almosa",
         "title": "Natali Almosa",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://www.nataliealmosa.ca/#",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "mitul-shah",
         "title": "Mitul Shah",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://mitul.ca/?ref=deadsimplesites",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "adam",
@@ -3951,7 +4242,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "finetune",
@@ -3964,34 +4256,37 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "thomas-provost",
         "title": "Thomas Provost",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Motion Design"
         ],
         "link": "https://www.thomasprovost.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "nowave",
         "title": "Nowave",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.nowave.cn/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "anthony-lam",
@@ -3999,26 +4294,28 @@
         "category": "Designer",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://atelieravocado.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "team-gadziy",
         "title": "Team Gadziy",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://teamgandziy.ru/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "nahuel-gerth",
@@ -4031,7 +4328,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "anthony-hodbay",
@@ -4044,20 +4342,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "nikolai-golovin",
         "title": "Nikolai Golovin",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://ngolowin.ru/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "vlad-duhnov",
@@ -4068,20 +4368,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "vova",
         "title": "Vova",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://readymag.website/u2562620590/4351383/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "robert-borghesi",
@@ -4095,7 +4397,8 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "reboot-studio",
@@ -4108,20 +4411,22 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "daniel-sun",
         "title": "Daniel Sun",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://danielsun.space/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "dmitry-santalov",
@@ -4134,99 +4439,107 @@
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "together-with-you",
         "title": "together with you",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://togetherwithyou.co/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "artem-tarasov",
         "title": "Artem Tarasov",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://taragraphy.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "sharon-lee",
         "title": "Sharon Lee",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://sharonlee.design/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "mr-anatolie",
         "title": "Mr. Anatolie",
         "category": "Designer",
         "specialization": [
-            "Communication Design",
+            "Branding",
             "Product Design"
         ],
         "link": "https://amicaliuc.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "dekart-group",
         "title": "Dekart group",
         "category": "Design Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://dkrt.group/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "tom-yorky",
         "title": "Tom Yorky",
         "category": "Creative Studio",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://tomyorky.ru/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "funny-daniele-buffa",
         "title": "Funny | Daniele Buffa",
         "category": "Designer",
         "specialization": [
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://www.designisfunny.co/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "nikira-vasilevskyi",
@@ -4234,13 +4547,14 @@
         "category": "Designer",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://nikitavasilevskiy.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "braulo-amado",
@@ -4248,13 +4562,14 @@
         "category": "Designer",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://badbadbadbad.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     },
     {
         "slug": "nikita-koshcyi",
@@ -4262,12 +4577,13 @@
         "category": "Designer",
         "specialization": [
             "Art",
-            "Communication Design"
+            "Branding"
         ],
         "link": "https://nikitakoshi.com/",
         "description": "",
         "previewVideoKey": "",
         "fullVideoKey": "",
-        "siteScreens": []
+        "siteScreens": [],
+        "enabled": false
     }
 ]

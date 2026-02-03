@@ -28,7 +28,7 @@ export default function SiteItem({ site }) {
                         </div>
                         <TagList specialization={site.specialization} className={styles.siteTags} />
                     </div>
-                    <p className={styles.secondaryButton}>Подробнее ↗</p>
+                    {/* <p className={styles.secondaryButton}>Подробнее ↗</p> */}
                 </div>
             </div>
         </Link>
