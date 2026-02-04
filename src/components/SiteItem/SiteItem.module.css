@@ -103,4 +103,14 @@
         margin-bottom: 0;
         margin-right: 0;
     }
+
+
+.siteContainer:hover {
+    background-color: none;
+}
+
+.siteContainer:hover .siteCover {
+    opacity: 1;
+}
+
 }
