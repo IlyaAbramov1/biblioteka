@@ -28,7 +28,7 @@
 }
 
 .siteSubtitle {
-    color: var(--fourthly-text);
+    color: var(--thirdly-text);
 }
 
 .siteTags {
@@ -41,6 +41,8 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+
+    height: fit-content;
 }
 
 .siteTagName {
@@ -49,6 +51,9 @@
 
 .siteTagValue {
     margin-top: 4px;
+
+    font-size: var(--little-text-size);
+    line-height: 120%;
 }
 
 .siteTagsAndButton {
@@ -93,7 +98,21 @@
 }
 
 @media (max-width: 600px) {
+    .siteInfo {
+        gap: 24px;
+    }
+
     .siteInfoAndVideo {
         padding: 24px;
+    }
+
+    .siteTagsAndButton {
+        flex-direction: column;
+        align-items: start;
+        gap: 32px;
+    }
+
+    .siteTagValue {
+        margin-top: 6px;
     }
 }

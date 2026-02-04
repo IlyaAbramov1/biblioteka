@@ -1,4 +1,5 @@
 .siteContainer {
+    height: fit-content;
     padding: 40px;
 
     border-right: 1px solid var(--stroke);
@@ -10,8 +11,8 @@
     flex-direction: column;
     gap: 8px;
     
-    margin-bottom: 12px;
-    margin-right: 12px;
+    margin-bottom: 16px;
+    margin-right: 16px;
 }
 
 .siteCover {
@@ -83,4 +84,23 @@
 .siteContainer:hover .secondaryButton {
     background-color: var(--accent-secondary-bg);
     color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+    .siteContainer {
+        height: fit-content;
+        padding: 28px;
+
+        border-right: none;
+        border-bottom: 1px solid var(--stroke);
+
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        
+        margin-bottom: 0;
+        margin-right: 0;
+    }
 }

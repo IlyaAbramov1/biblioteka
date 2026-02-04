@@ -24,6 +24,12 @@
     gap: 20px;
 }
 
+.headerLogoAndTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .headerTitle {
     font-size: 24px !important;
     text-transform: uppercase;
@@ -45,23 +51,26 @@
     color: var(--accent-color);
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.footerDesc {
-    color: var(--fourthly-text)
-}
-
 @media (max-width: 600px) {
     .navPanel {
         position: relative;
+
+        border-right: none;
+        border-bottom: 1px solid var(--stroke);
+    }
+
+    .headerLogoAndTitle {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .headerTitle {
+        margin-bottom: 0;
     }
 
     .headerLogo {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
+
 }

@@ -20,7 +20,7 @@
 
     --title-text-size: 28px;
     --title-text-line-height: 110%;
-    --main-text-size: 13px;
+    --main-text-size: 14px;
     --main-text-line-height: 172%;
     --main-text-letter-spacing: -0.04em;
     --little-text-size: 12px;
@@ -97,6 +97,8 @@ body {
     display: flex;
     flex-direction: row;
     gap: 0;
+
+    text-wrap: pretty;
 }
 
 a {
@@ -143,6 +145,7 @@ a {
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
 
     height: 100vh;
     overflow-y: auto;
@@ -161,6 +164,16 @@ a {
 }
 
 @media (max-width: 600px) {
+    :root {
+        --title-text-size: 28px;
+        --title-text-line-height: 110%;
+        --main-text-size: 16px;
+        --main-text-line-height: 172%;
+        --main-text-letter-spacing: -0.04em;
+        --little-text-size: 14px;
+        --little-text-line-height: 150%;
+    }
+
     .mainContainer {
         display: flex;
         flex-direction: column;
@@ -174,5 +187,10 @@ a {
     .gridContainer {
         height: auto;
         overflow-y: visible;
+    }
+
+
+    .mainButton {
+        padding: 8px 12px 6px 12px;
     }
 }

@@ -2,7 +2,7 @@ export const TAG_BANK = {
     "fullstack design": { tone: "fullstack", icon: "fullstack" },
     "design engineer": { tone: "engineering", icon: "engineering" },
     "branding": { tone: "branding", icon: "branding" },
-    "web design": { tone: "web", icon: "web" },
+    "web": { tone: "web", icon: "web" },
     motion: { tone: "motion", icon: "motion" },
     "motion design": { tone: "motion", icon: "motion" },
     "illustration": { tone: "illustration", icon: "illustration" },
