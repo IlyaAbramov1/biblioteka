@@ -1,5 +1,5 @@
 .siteContainer {
-    padding: 32px;
+    padding: 40px;
 
     border-right: 1px solid var(--stroke);
     border-bottom: 1px solid var(--stroke);
@@ -9,6 +9,9 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    
+    margin-bottom: 12px;
+    margin-right: 12px;
 }
 
 .siteCover {
@@ -17,7 +20,6 @@
     pointer-events: none;
 
     border: 1px solid var(--stroke);
-    border-radius: 4px;
 
     margin-bottom: 8px;
 }

@@ -24,7 +24,7 @@
     --main-text-line-height: 172%;
     --main-text-letter-spacing: -0.04em;
     --little-text-size: 12px;
-    --little-text-line-height: 140%;
+    --little-text-line-height: 150%;
 
     --font-family-mono: 'JetBrains Mono', monospace;
     --font-family-title-regular: 'EBGaramond-Regular', serif;
@@ -130,7 +130,7 @@ a {
 .mainContainer {
     display: grid;
 
-    grid-template-columns: 1.5fr 8.5fr;
+    grid-template-columns: 1.7fr 8.3fr;
     gap: 0px;
 
     height: 100vh;

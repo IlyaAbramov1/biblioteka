@@ -5,7 +5,7 @@ import styles from "./NavPanel.module.css"
 import sites from "@/data/sites.json";
 
 export default function NavPanel() {
-    const siteCounter = sites.length;
+    const siteCounter = sites.filter((site) => site.enabled).length;
 
     return (
         <div className={styles.navPanel}>
@@ -22,8 +22,9 @@ export default function NavPanel() {
                         />
                     </Link>
                     <p className={styles.headerTitle}>Библиотека</p>
-                    <p>Каталог дизайнеров и студий. Нажмите на карточку, чтобы открыть кейс.</p>
+                    <p>Курируемая коллекция сайтов дизайнеров и студий. Ведь самое красивое, что делает дизайнер, он делает для себя.</p>
                     <p>Количество сайтов: <span className={styles.siteCounter}>{siteCounter}</span></p>
+                    <p>В Библиотеке вы можете разместить свой сайт. Просто <a href="http://t.me/abramovdesiqn" target="_blank" className="link">напишите мне ↗</a>.</p>
                 </div>
             </header>
             <footer className={styles.footer}>

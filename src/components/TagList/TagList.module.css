@@ -7,8 +7,8 @@
 .tag {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    font-size: var(--main-text-size);
+    gap: 2px;
+    font-size: 12px;
     line-height: 100%;
     color: var(--text);
 
@@ -16,8 +16,8 @@
 }
 
 .tag img {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
 }
 
 .icon svg {
