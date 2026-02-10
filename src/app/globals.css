@@ -1,6 +1,6 @@
 :root {
     --h: 220;
-    --s: 10%;
+    --s: 20%;
     --button-text-color: hsl(var(--h), var(--s), 97%);
     --accent-color: hsl(var(--h), 100%, 50%);
     --secondary-accent-color: hsl(var(--h), 100%, 60%);
@@ -30,7 +30,7 @@
     --font-family-title-regular: 'EBGaramond-Regular', serif;
     --font-family-quote: 'EBGaramond-Regular', serif;
 }
-
+/* 
 body.dark-theme {
     --h: 230;
     --s: 8%;
@@ -47,6 +47,7 @@ body.dark-theme {
     --deep-bg-color: hsl(var(--h) var(--s) 8%);
     --green-fill: hsl(120, 100%, 40%);
 }
+*/
 
 @font-face {
     font-family: 'JetBrains Mono';
@@ -151,7 +152,7 @@ a {
     overflow-y: auto;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 100px) {
     .gridContainer {
         grid-template-columns: repeat(2, 1fr);
     }

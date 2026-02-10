@@ -1,6 +1,6 @@
 .siteContainer {
     height: fit-content;
-    padding: 40px;
+    padding: 32px;
 
     border-right: 1px solid var(--stroke);
     border-bottom: 1px solid var(--stroke);

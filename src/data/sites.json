@@ -2,7 +2,7 @@
   {
     "slug": "ryo-lu",
     "title": "Ryo Lu",
-    "subtitle": "Ryo Lu — Head of Design в Cursor; ранее занимался продуктовым дизайном в Notion, Stripe и Asana. Его сайт устроен как двухслойная система: поверх — минималистичная «визитка» с фактами, ниже — ryOS, веб-desktop с оконным менеджером и темами под классические macOS/Windows. Внутри ryOS приложения не имитируются, а функционируют: файловый менеджер, редактор, графический редактор, терминал с AI-интеграцией, а также браузер, через который можно зайти на любой сайт.",
+    "subtitle": "Ryo Lu — Head of Design в Cursor; ранее занимался продуктовым дизайном в Notion, Stripe и Asana. Его сайт устроен как двухслойная система: поверх — минималистичная визитка с фактами, ниже — ryOS, desktop с оконным менеджером и темами под классические macOS/Windows. Внутри ryOS приложения не имитируются, а функционируют: файловый менеджер, редактор, графический редактор, терминал с AI-интеграцией, а также браузер, через который можно зайти на любой сайт.",
     "category": "Designer",
     "specialization": [
       "Fullstack Design",
@@ -18,7 +18,7 @@
   {
     "slug": "locomotive",
     "title": "Locomotive",
-    "subtitle": "Locomotive — независимая digital-first студия из Монреаля: делают бренд-системы и сайты, где дизайн и разработка идут одной связкой. На своём сайте они это показывают без объяснений: плотный smooth-scroll, скрольная режиссура, чистые CSS/JS-анимации и местами 3D-акценты.",
+    "subtitle": "Locomotive — digital-студия из Монреаля: делают сайты с большой погруженностью в детали. На своём сайте они это показывают без объяснений: плотный smooth-scroll, скрольная режиссура, чистые CSS/JS-анимации. Особенно стоит подметить акцентные 3D-элементы на сайте.",
     "category": "Design Studio",
     "specialization": [
       "Web"
@@ -33,7 +33,7 @@
   {
     "slug": "study-hall",
     "title": "STUDY HALL",
-    "subtitle": "Study Hall — небольшая in-house студия, которая собирает под задачу гибкие команды из своей сети специалистов: без лишнего, только нужные люди и конкретная работа. На сайте много аккуратной флетовой анимации с мягкими изингами: движение чистое, точное, без суеты.",
+    "subtitle": "Study Hall — фулл-стэк студия из Оклэнда. На сайте много аккуратной флетовой анимации с мягкими изингами.",
     "category": "Design Studio",
     "specialization": [
       "Fullstack Design"
@@ -48,7 +48,7 @@
   {
     "slug": "dbco",
     "title": "DBCO",
-    "subtitle": "DBCO (Design Business Company) — креативная студия, которая делает бренды и всё, что нужно бренду, чтобы чётко объяснять свою ценность: стратегия, айдентика, дизайн-системы, контент. Всё подано предельно минималистично: крупные блоки, «слайдовое» листание примеров клиентов и мягкая типографика без лишних деталей. Отдельный штрих — заявленная философия “taste > tech” и открытый стек сайта: Nuxt/Vue 3 + Sanity, плюс open-source фронтенд-код.",
+    "subtitle": "DBCO (Design Business Company) — креативная студия. Всё подано предельно минималистично: крупные блоки, «слайдовое» листание примеров клиентов и мягкая типографика без лишних деталей. Отдельно хочется отметить страницу About — с четкой композицией и без лишних декораций, с безумно приятной версткой и акцентами.",
     "category": "Design Studio",
     "specialization": [
       "Branding"
@@ -63,7 +63,7 @@
   {
     "slug": "area-17",
     "title": "AREA 17",
-    "subtitle": "AREA 17 — консалтинговая и продакшн-команда, которая объединяет бренд, digital-опыт и технологию в единую систему работы с клиентом (“consultants and craftspeople”). Cреди клиентов фигурируют, например, Saint Laurent, Fondation Cartier и ElevenLabs. Визуально сайт собран минималистично и дисциплинированно: много воздуха, крупные акценты, мягкая скролльная анимация, которая держит темп и не ломает чтение.",
+    "subtitle": "AREA 17 — гигант в сфере брендинга. Cреди клиентов фигурируют, например, Saint Laurent, Fondation Cartier и ElevenLabs. Визуально сайт собран минималистично и дисциплинированно: много воздуха, крупные акценты, мягкая скролльная анимация, которая держит темп и не ломает чтение.",
     "category": "Design Studio",
     "specialization": [
       "Branding"
@@ -78,7 +78,7 @@
   {
     "slug": "ashfall-studio",
     "title": "Ashfall Studio",
-    "subtitle": "Ashfall — стратегический партнёр по дизайну и технологиям: помогают запускать и развивать бренды, превращая сложные идеи в понятные результаты. Визуально сайт собран феерично: очень детальные анимации, мягкий скролл, переходы между страницами и 3D-сцены там, где это усиливает подачу.",
+    "subtitle": "Сайт Ashfall Studio собран феерично: очень детальные анимации, мягкий скролл, переходы между страницами и 3D-сцены там, где это усиливает подачу.",
     "category": "Design Studio",
     "specialization": [
       "Branding"
@@ -93,7 +93,7 @@
   {
     "slug": "studio-dumbar",
     "title": "STUDIO DUMBAR",
-    "subtitle": "Studio Dumbar — студия, которая целенаправленно работает на стыке моушна, креативного кода, звука и AI, параллельно собирая собственные технологические инструменты. На их About это сформулировано предельно прямо: нет «типичного клиента», зато есть международное признание и позиция одного из самых награждаемых студий. Сам сайт держится на минимализме и шоуриле: брутальный акцент на работе без лишних объяснений — и ровно этим он попадает.",
+    "subtitle": "Studio Dumbar — мастадонт в сфере моушна. Среди клиентов OpenAI, Nike, NHL. Сайт держится на минимализме: брутальный акцент на работе без лишних объяснений — ровно этим он и цепляет.",
     "category": "Design Studio",
     "specialization": [
       "Motion Design",
@@ -109,7 +109,7 @@
   {
     "slug": "porto-rocha",
     "title": "Porto Rocha",
-    "subtitle": "PORTO ROCHA — нью-йоркская студия, которая соединяет стратегию и дизайн и делает брендинговые системы, продукты и digital-опыт; работают и с большими аудиториями, и с социально/культурно мотивированными инициативами. На сайте — минималистичная, но нестандартная модульная верстка: аккуратные детали, выверенная палитра и ощущение, что каждый блок поставлен намеренно, без лишнего шума.",
+    "subtitle": "PORTO ROCHA — нью-йоркская студия полного цикла. На сайте — минималистичная, но нестандартная модульная верстка в две доминантные колонки: аккуратные детали, выверенная палитра и ощущение, что каждый блок поставлен до пикселя верно.",
     "category": "Design Studio",
     "specialization": [
       "Branding"
@@ -154,7 +154,7 @@
   {
     "slug": "humble-team",
     "title": "Humble Team",
-    "subtitle": "Humbleteam — продуктовая дизайн-студия: делают UX/UI и цифровые бренды для стартапов и крупных компаний, с акцентом на метрики и «performance by design». Их сайт собран мягко и предельно чётко: аккуратная типографика, чистая сетка и живые кейсы, где детали и результат вынесены на первый план.",
+    "subtitle": "Humbleteam — продуктовая дизайн-студия для стартапов. Их сайт собран мягко и предельно чётко: аккуратная типографика, чистая сетка и живые кейсы, где детали и результат вынесены на первый план.",
     "category": "Design Studio",
     "specialization": [
       "Web",
@@ -170,18 +170,15 @@
   {
     "slug": "koto",
     "title": "KOTO",
-    "subtitle": "Koto — глобальная брендинговая студия, которая работает на стыке brand и digital: пять студий на трёх континентах, с прямой установкой «make the best work humanly possible». Сайт звучит так же: мощный, чёткий, с брутальным упором на кейсы и аккуратными креативными деталями в тексте и подаче, которые сразу фиксируют масштаб игрока. ([Koto][2])",
+    "subtitle": "Koto — глобальная брендинговая студия: пять студий на трёх континентах, с прямой установкой «make the best work humanly possible». Сайт звучит так же: мощный, чёткий, с брутальным упором на кейсы и аккуратными креативными деталями в тексте и подаче, которые сразу фиксируют масштаб игрока.",
     "category": "Design Studio",
     "specialization": [
       "Branding"
     ],
     "link": "https://koto.studio/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
-    "siteScreens": [
-      "screens/koto/koto-1.webp",
-      "screens/koto/koto-2.webp"
-    ],
+    "fullVideoKey": "screens/koto/koto-full.mp4",
+    "siteScreens": [],
     "previewScreen": "screens/koto/koto-preview.webp",
     "enabled": true
   },
@@ -195,18 +192,15 @@
     ],
     "link": "https://www.wearecollins.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
-    "siteScreens": [
-      "screens/collins/collins-1.webp",
-      "screens/collins/collins-2.webp"
-    ],
+    "fullVideoKey": "screens/collins/collins-full.mp4",
+    "siteScreens": [],
     "previewScreen": "screens/collins/collins-preview.webp",
     "enabled": true
   },
   {
     "slug": "todd-hamilton",
     "title": "Todd Hamilton",
-    "subtitle": "Todd Hamilton — продуктовый дизайнер и разработчик с 20+ годами опыта: делал продукты для миллиардов пользователей в Facebook и сейчас строит AIProxy. Его сайт — минималистичный 3D-портфолио: центральная сцена собрана как «телевизор», в который ты буквально проваливаешься, а дальше тебя ведут статьи и кейсы — всё на эффектных переходах и внятном ритме.",
+    "subtitle": "Todd Hamilton — продуктовый дизайнер и разработчик с 20+ годами опыта: долгое время делал продукты в Facebook, а сейчас строит AIProxy. Его сайт довольно уникален: центральная сцена собрана в виде монитора, в который ты буквально проваливаешься, и погружаешься в выбранный материал.",
     "category": "Designer",
     "specialization": [
       "Product Design",
@@ -222,7 +216,7 @@
   {
     "slug": "chan-karunamuni",
     "title": "Chan Karunamuni",
-    "subtitle": "Chan Karunamuni — Human Interface дизайнер в Apple; в портфолио у него проекты уровня Liquid Glass Dynamics, Dynamic Island, iPhone X Gestural UI и другие ключевые интерфейсные штуки. Его сайт устроен предельно прямолинейно: без биографии «на полстраницы» и без украшательств — просто список работ и материалов, который сразу описывает масштаб и роль специалиста.",
+    "subtitle": "Chan Karunamuni — Human Interface дизайнер в Apple. Его сайт устроен предельно прямолинейно: в центре страницы список его работ, которые знают все.",
     "category": "Designer",
     "specialization": [
       "Product Design"
@@ -239,25 +233,22 @@
   {
     "slug": "haptic",
     "title": "HAPTIC",
-    "subtitle": "Haptic — яркая, современная продуктовая студия: делают брендинг, product design, сайты, дизайн-системы, моушн и разработку. Сайт такой же по характеру: чистая, собранная верстка, динамичные акценты и живые кейсы без воды — видно, что люди привыкли отвечать за детали и результат.",
+    "subtitle": "Haptic — яркая, современная продуктовая студия. Сайт такой же по характеру: чистая, но яркая верстка, динамичные акценты и живые кейсы.",
     "category": "Design Studio",
     "specialization": [
       "Fullstack Design"
     ],
     "link": "https://haptic.studio/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
-    "siteScreens": [
-      "screens/haptic/haptic-1.webp",
-      "screens/haptic/haptic-2.webp"
-    ],
+    "fullVideoKey": "screens/haptic/haptic-full.mp4",
+    "siteScreens": [],
     "previewScreen": "screens/haptic/haptic-preview.webp",
     "enabled": true
   },
   {
     "slug": "naranjo",
     "title": "Naranjo",
-    "subtitle": "Naranjo-Etxeberria (N-E) — мадридская команда, которая формулирует себя как «проект в постоянном изменении»: графдизайн у них — ядро, а вокруг него вырастает собственный язык и работа с современной визуальной культурой. Основаны в 2014 году и собирают гибкую команду из специалистов «по эмпатии и взаимному уважению», под задачу и контекст. Сайт это поддерживает: тихая, почти музейная подача — без маркетингового шума, с ощущением, что дизайн здесь ближе к искусству и концепту, чем к «услуге».",
+    "subtitle": "Naranjo-Etxeberria (N-E) — мадридская команда. На сайте тихая, почти музейная подача — с ощущением, что дизайн здесь ближе к искусству и концепту, чем к «услуге».",
     "category": "Design Studio",
     "specialization": [
       "Branding",
@@ -265,7 +256,7 @@
     ],
     "link": "https://naranjoetxeberria.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/naranjo/naranjo-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/naranjo/naranjo-preview.webp",
     "enabled": true
@@ -273,36 +264,32 @@
   {
     "slug": "baked-design",
     "title": "Baked Design",
-    "subtitle": "Baked — продуктовая дизайн-студия для фаундеров: помогают быстро собирать 0→1 продукты (в том числе AI), маркетинговые сайты и интерфейсы, работая в формате подписки без созвонов. У них на сайте всё про свежесть и темп: минималистичная сетка, тёплая палитра и аккуратные детали, а дальше — плотная лента кейсов и отзывов, которая держит ритм и не распадается.",
+    "subtitle": "Baked — продуктовая дизайн-студия для фаундеров: помогают быстро собирать продукты, маркетинговые сайты и интерфейсы, работая в формате подписки без созвонов. Их сайт про свежесть и темп: минималистичная двухколончатая сетка, монохромная палитра и аккуратные детали.",
     "category": "Design Studio",
     "specialization": [
-      "Product Design"
+      "Product Design",
+      "Web"
     ],
     "link": "https://www.baked.design/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
-    "siteScreens": [
-      "screens/baked-design/baked-design-1.webp",
-      "screens/baked-design/baked-design-2.webp"
-    ],
+    "fullVideoKey": "screens/baked-design/baked-design-full.mp4",
+    "siteScreens": [],
     "previewScreen": "screens/baked-design/baked-design-preview.webp",
     "enabled": true
   },
   {
     "slug": "jakub-zen",
     "title": "Jakub Zen",
-    "subtitle": "Корпоративный product-дизайнер из Лос-Анджелеса, работающий с интерактивной визуальностью на стыке 3D, motion, прототипирования и UX; в резюме — крупные компании вроде Apple и Meta. Сайт предельно стерилен по подаче и собран вокруг кейсов: без лишних объяснений — только последовательный перечень проектов, который фиксирует масштаб и узнаваемость выполненной работы.",
+    "subtitle": "Продуктовый дизайнер из Лос-Анджелеса. В резюме — крупные компании, такие как Apple и Meta. Сайт предельно стерилен по подаче и собран вокруг кейсов: без лишних объяснений — только последовательный перечень проектов, который фиксирует масштаб и узнаваемость выполненной работы.",
     "category": "Designer",
     "specialization": [
-      "Product Design"
+      "Product Design",
+      "Web"
     ],
     "link": "https://www.zegzulka.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
-    "siteScreens": [
-      "screens/jakub-zen/jakub-zen-1.webp",
-      "screens/jakub-zen/jakub-zen-2.webp"
-    ],
+    "fullVideoKey": "screens/jakub-zen/jakub-zen-full.mp4",
+    "siteScreens": [],
     "previewScreen": "screens/jakub-zen/jakub-zen-preview.webp",
     "enabled": true
   },
@@ -316,60 +303,60 @@
     ],
     "link": "https://bureauborsche.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
-    "siteScreens": [
-      "screens/bureau-borsche/bureau-borsche-1.webp",
-      "screens/bureau-borsche/bureau-borsche-2.webp"
-    ],
+    "fullVideoKey": "screens/bureau-borsche/bureau-borsche-full.mp4",
+    "siteScreens": [],
     "previewScreen": "screens/bureau-borsche/bureau-borsche-preview.webp",
     "enabled": true
   },
   {
     "slug": "kurppa-hosk",
     "title": "Kurppa Hosk",
-    "subtitle": "",
+    "subtitle": "Дизайн-студия, специализирующаяся на брендинге. На сайте крупная, брутальная верстка с необычной подачей кейсов в виде бегущей строки.",
     "category": "Design Studio",
     "specialization": [
       "Branding"
     ],
     "link": "https://www.kurppahosk.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/kurppa-hosk/kurppa-hosk-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/kurppa-hosk/kurppa-hosk-preview.webp"
   },
   {
     "slug": "motto",
     "title": "Motto",
-    "subtitle": "",
+    "subtitle": "Motto — глобальная брендинг-студия с 3 офисами по миру. Сайт основывается на мягкой верстке с акцентными мелкими объектами. Smoth-scroll, мягкая анимация по скроллу и другие детальные анимации в достатке. Отдельная благодарность за анимированный логотип в хедере.",
     "category": "Design Studio",
     "specialization": [
       "Branding"
     ],
     "link": "https://wearemotto.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/motto/motto-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/motto/motto-preview.webp"
   },
   {
     "slug": "abra",
     "title": "ABRA",
-    "subtitle": "",
+    "subtitle": "Крупная motion+sgi студия из Варшавы.",
     "category": "Design Studio",
     "specialization": [
       "Motion Design"
     ],
     "link": "https://abra.network/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/abra/abra-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/abra/abra-preview.webp"
   },
   {
     "slug": "3d-funny-works",
     "title": "3d Funny Works",
-    "subtitle": "",
+    "subtitle": "Креативная студия, умеющая в 3D-веб. Один из немногих сайтов, написанных в 3D. Основная локация — кабинет с интерактивным компьюетром.",
     "category": "Design Studio",
     "specialization": [
       "3D in Web",
@@ -377,29 +364,15 @@
     ],
     "link": "https://stubborn-room.funnyworks.co.kr/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/3d-funny-works/3d-funny-works-full.mp4",
     "siteScreens": [],
-    "enabled": true
-  },
-  {
-    "slug": "funny-works",
-    "title": "Funny Works",
-    "subtitle": "",
-    "category": "Design Studio",
-    "specialization": [
-      "3D in Web",
-      "Branding"
-    ],
-    "link": "https://www.funnyworks.co.kr/",
-    "previewVideoKey": "",
-    "fullVideoKey": "",
-    "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/3d-funny-works/3d-funny-works-preview.webp"
   },
   {
     "slug": "twomuch-studio",
     "title": "Twomuch.Studio",
-    "subtitle": "",
+    "subtitle": "Студия, ставяющая во главу угла эксперимент, «focused on playing with all things digital». Яркая, экстравагантная верстка в виде раскрывающегося модального окна, на фоне которого бушуют 3D-элементы.",
     "category": "Design Studio",
     "specialization": [
       "Art",
@@ -407,57 +380,46 @@
     ],
     "link": "https://twomuch.studio/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/twomuch-studio/twomuch-studio-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/twomuch-studio/twomuch-studio-preview.webp"
   },
   {
     "slug": "oyedrops",
     "title": "oyedrops",
-    "subtitle": "",
+    "subtitle": "Минималистичная модульная верстка, акцентирующая внимание на моушн-кейсах.",
     "category": "Design Studio",
     "specialization": [
       "Motion Design"
     ],
     "link": "https://www.oyedrops.studio/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/oyedrops/oyedrops-full.mp4",
     "siteScreens": [],
-    "enabled": true
-  },
-  {
-    "slug": "skala",
-    "title": "Skala",
-    "subtitle": "",
-    "category": "Design Studio",
-    "specialization": [
-      "Art",
-      "Branding"
-    ],
-    "link": "https://skaladesign.ch/",
-    "previewVideoKey": "",
-    "fullVideoKey": "",
-    "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/oyedrops/oyedrops-preview.webp"
   },
   {
     "slug": "indego-design",
     "title": "INDEGO DESIGN",
-    "subtitle": "",
+    "subtitle": "Студия, работающая на стыке коммерческого дизайна и искусства. Сайт со строгим упором на проекты, с верной, иногда акцентной, типографической системой.",
     "category": "Design Studio",
     "specialization": [
-      "Branding"
+      "Branding",
+      "Art"
     ],
     "link": "https://indegodesign.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/indego-design/indego-design-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/indego-design/indego-design-preview.webp"
   },
   {
-    "slug": "",
+    "slug": "intuition",
     "title": "Интуиция",
-    "subtitle": "",
+    "subtitle": "Великое дизайн-бюро из России. Сделали многое для визуальной культуры Додо, задизайнили сайт для Петрик, а также поддерживают активности Евгения Арутюнова(главного в студии). Это минимум из того, что можно перечислить. Сайт отличается своим уникальным визуальным языком, который сразу нам говорит, что это сделала Интуиция.",
     "category": "Design Studio",
     "specialization": [
       "Branding"
@@ -465,28 +427,31 @@
     "link": "https://intuition.team/ru/i",
     "previewVideoKey": "",
     "fullVideoKey": "",
-    "siteScreens": [],
-    "enabled": true
+    "siteScreens": [
+        "screens/intuition/intuition-1.webp"
+    ],
+    "enabled": true,
+    "previewScreen": "screens/intuition/intuition-preview.webp"
   },
   {
     "slug": "order",
     "title": "order",
-    "subtitle": "",
+    "subtitle": "Строгий сайт графической дизайн-студии с акцентным пиксельным шрифтом кеглем в 8px.",
     "category": "Design Studio",
     "specialization": [
-      "Branding",
-      "Motion Design"
+      "Fullstack Design"
     ],
     "link": "https://order.design/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/order/order-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/order/order-preview.webp"
   },
   {
     "slug": "playlist-studio",
     "title": "Playlist Studio",
-    "subtitle": "",
+    "subtitle": "Бруклинская дизайн-студия. Сайт выделяется модульной симметричной версткой.",
     "category": "Design Studio",
     "specialization": [
       "Branding",
@@ -494,73 +459,62 @@
     ],
     "link": "https://playlist.studio/about",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/playlist-studio/playlist-studio-full.mp4",
     "siteScreens": [],
-    "enabled": true
-  },
-  {
-    "slug": "chrlx",
-    "title": "CHRLX",
-    "subtitle": "",
-    "category": "Creative Studio",
-    "specialization": [
-      "Branding",
-      "Illustration",
-      "Motion Design"
-    ],
-    "link": "https://www.chrlx.com/",
-    "previewVideoKey": "",
-    "fullVideoKey": "",
-    "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/playlist-studio/playlist-studio-preview.webp"
   },
   {
     "slug": "make-me-pulse",
     "title": "Make Me Pulse",
-    "subtitle": "",
+    "subtitle": "Небольшая европейская дизайн-студия.",
     "category": "Creative Studio",
     "specialization": [
       "Branding"
     ],
     "link": "https://www.makemepulse.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/make-me-pulse/make-me-pulse-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/make-me-pulse/make-me-pulse-preview.webp"
   },
   {
     "slug": "merci-michel",
     "title": "Merci Michel",
-    "subtitle": "",
+    "subtitle": "Топ-1 студия в сфере интерактивного 3D/2D-веба.",
     "category": "Creative Studio",
     "specialization": [
       "3D in Web"
     ],
     "link": "https://www.merci-michel.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/merci-michel/merci-michel-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/merci-michel/merci-michel-preview.webp"
   },
   {
     "slug": "petrick",
     "title": "Petrick",
-    "subtitle": "",
+    "subtitle": "Одна из лучших дизайн-студий России, специализирующихся на иллюстрациях, стори-теллинге и моушне. Сайт сделан студией Интуиция.",
     "category": "Creative Studio",
     "specialization": [
       "Illustration",
-      "Motion Design"
+      "Motion Design",
+      "Art"
     ],
     "link": "https://petrick.co/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/petrick/petrick-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/petrick/petrick-preview.webp"
   },
   {
     "slug": "ivo-studio",
     "title": "Ivo Studio",
-    "subtitle": "",
+    "subtitle": "Приятный, выделяющийся своей типографикой палитрой сайт студии Ivo. Красочные, яркие кейсы по графике и моушну. Самое главное — ребята сумели добавить анимации, чтобы это не пеерегружало композицию, а лишь подчеркивало ее красочность.",
     "category": "Design Studio",
     "specialization": [
       "Branding",
@@ -569,14 +523,15 @@
     ],
     "link": "https://illo.tv/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/ivo-studio/ivo-studio-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/ivo-studio/ivo-studio-preview.webp"
   },
   {
     "slug": "universal-favourite",
     "title": "Universal Favourite",
-    "subtitle": "",
+    "subtitle": "Сайт, выделяющийся брутальной версткой и акцидентным шрифтом. Модульная сетка, яркие проекты и красивый 3д-элемент на главной, которая изменяется при каждом рефреше страницы.",
     "category": "Design Studio",
     "specialization": [
       "Branding",
@@ -584,14 +539,15 @@
     ],
     "link": "https://universalfavourite.com.au/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/universal-favourite/universal-favourite-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/universal-favourite/universal-favourite-preview.webp"
   },
   {
     "slug": "verve-agency",
     "title": "Verve Agency",
-    "subtitle": "",
+    "subtitle": "Брутальный сайт с монохромной палитрой. Отдельно отмечу красвый хедер, который выделяется своим небольшым размером на фоне основных масштабных деталей. Другая приятная деталь — иллюстрации на главной, которые по времени заменяются на красочные анимированные фреймы.",
     "category": "Design Studio",
     "specialization": [
       "Branding",
@@ -599,14 +555,15 @@
     ],
     "link": "https://verveagency.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/verve-agency/verve-agency-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/verve-agency/verve-agency-preview.webp"
   },
   {
     "slug": "mouthwash-studio",
     "title": "Mouthwash.Studio",
-    "subtitle": "",
+    "subtitle": "Сайт с выверенной монохромной палитрой, мягкими деталями и колончатой сеткой.",
     "category": "Design Studio",
     "specialization": [
       "Art",
@@ -614,98 +571,93 @@
     ],
     "link": "https://mouthwash.studio/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/mouthwash-studio/mouthwash-studio-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/mouthwash-studio/mouthwash-studio-preview.webp"
   },
   {
     "slug": "palam-cgi",
-    "title": "PALAM CGI",
-    "subtitle": "",
+    "title": "PALAM",
+    "subtitle": "Сайт CGI/3D студии.",
     "category": "Design Studio",
     "specialization": [
       "3D"
     ],
     "link": "https://palam.digital/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/palam-cgi/palam-cgi-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/palam-cgi/palam-cgi-preview.webp"
   },
   {
     "slug": "e-i-b",
-    "title": "E-I-B",
-    "subtitle": "",
+    "title": "EVERYTHING IN BETWEEN",
+    "subtitle": "Моноширинный сайт с Большими проектами и Маленькими навигационными деталями.",
     "category": "Design Studio",
     "specialization": [
       "Branding"
     ],
     "link": "https://e-i-b.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/e-i-b/e-i-b-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/e-i-b/e-i-b-preview.webp"
   },
   {
     "slug": "dia",
     "title": "DIA",
-    "subtitle": "",
+    "subtitle": "Европейская студия дизайна со сложным, но ярким сайтом, подчеркивающий их близость к художественности и искусству в работе.",
     "category": "Design Studio",
     "specialization": [
-      "Branding"
+        "Art",
+        "Branding"
     ],
     "link": "https://dia.tv/",
     "previewVideoKey": "",
     "fullVideoKey": "",
-    "siteScreens": [],
-    "enabled": true
-  },
-  {
-    "slug": "perron-roettinger",
-    "title": "Perron-Roettinger",
-    "subtitle": "",
-    "category": "Design Studio",
-    "specialization": [
-      "Art"
+    "siteScreens": [
+        "screens/dia/dia-1.webp"
     ],
-    "link": "https://p-r.studio/",
-    "previewVideoKey": "",
-    "fullVideoKey": "",
-    "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/dia/dia-preview.webp"
   },
   {
     "slug": "base-design",
     "title": "Base Design",
-    "subtitle": "",
+    "subtitle": "Сайт — один из примеров того, как классно сделать анимацию по скроллу.",
     "category": "Design Studio",
     "specialization": [
       "Branding"
     ],
     "link": "https://www.basedesign.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/base-design/base-design-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/base-design/base-design-preview.webp"
   },
   {
     "slug": "studio-size",
     "title": "Studio Size",
-    "subtitle": "",
+    "subtitle": "Красивые и яркие типографические анимации по скроллу. Брутальная типографика и масштабные элементы.",
     "category": "Design Studio",
     "specialization": [
       "Fullstack Design"
     ],
     "link": "https://studio-size.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/studio-size/studio-size-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/studio-size/studio-size-preview.webp"
   },
   {
     "slug": "hornet",
     "title": "Hornet",
-    "subtitle": "",
+    "subtitle": "Сайт большой студии, специализирующейся на моушне.",
     "category": "Design Studio",
     "specialization": [
       "Branding",
@@ -714,23 +666,25 @@
     ],
     "link": "https://www.hellohornet.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/hornet/hornet-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/hornet/hornet-preview.webp"
   },
   {
     "slug": "metalab",
     "title": "Metalab",
-    "subtitle": "",
+    "subtitle": "Глобальная продуктовая студия, добавляющие в свои работы глубокую и яркую графику. Сайт базируется на простой разводящей с основными Большими кейсами. Отдельно нужно отметить ease-анимации с переходами между страницами.",
     "category": "Design Studio",
     "specialization": [
       "Product Design"
     ],
     "link": "https://www.metalab.com/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/metalab/metalab-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/metalab/metalab-preview.webp"
   },
   {
     "slug": "",
@@ -744,12 +698,13 @@
     "previewVideoKey": "",
     "fullVideoKey": "",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": ""
   },
   {
     "slug": "max",
     "title": "Студия MAX",
-    "subtitle": "",
+    "subtitle": "Основной сайт в разработке, но заглушка уже говорит нам, что ребята — одни из лучших в своем деле.",
     "category": "Design Studio",
     "specialization": [
       "Product Design"
@@ -757,13 +712,16 @@
     "link": "https://m-a-x.online/",
     "previewVideoKey": "",
     "fullVideoKey": "",
-    "siteScreens": [],
-    "enabled": true
+    "siteScreens": [
+        "screens/max/max-1.webp"
+    ],
+    "enabled": true,
+    "previewScreen": "screens/max/max-preview.webp"
   },
   {
     "slug": "37signals",
     "title": "37signals",
-    "subtitle": "",
+    "subtitle": "Сайт студии 37signals, где основной контент — их манифест работы.",
     "category": "Design Studio",
     "specialization": [
       "Fullstack Design"
@@ -771,13 +729,16 @@
     "link": "https://37signals.com/",
     "previewVideoKey": "",
     "fullVideoKey": "",
-    "siteScreens": [],
-    "enabled": true
+    "siteScreens": [
+        "screens/37signals/37signals-1.webp"
+    ],
+    "enabled": true,
+    "previewScreen": "screens/37signals/37signals-preview.webp"
   },
   {
     "slug": "piqo-studio",
     "title": "Piqo Studio",
-    "subtitle": "",
+    "subtitle": "Современная дизайн-студия с красивыми монохромными блоками.",
     "category": "Design Studio",
     "specialization": [
       "3D",
@@ -786,9 +747,10 @@
     ],
     "link": "https://piqo.studio/",
     "previewVideoKey": "",
-    "fullVideoKey": "",
+    "fullVideoKey": "screens/piqo-studio/piqo-studio-full.mp4",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "previewScreen": "screens/piqo-studio/piqo-studio-preview.webp"
   },
   {
     "slug": "accuraten",

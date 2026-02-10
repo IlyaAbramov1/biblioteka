@@ -17,7 +17,7 @@ export default function SiteItem({ site }) {
     );
 
     return (
-        <Link href={`/site/${site.slug}`} className={styles.siteContainer}>
+        <Link href={`/site/${site.slug}`} className={styles.siteContainer} target="_blank">
             <div className={styles.siteCoverAndInfo}>
                 {siteImageCover}
                 <div className={styles.siteInfoAndButton}>

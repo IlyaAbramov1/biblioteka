@@ -34,7 +34,7 @@ export default function NavPanel() {
                         <>
                             <p>Курируемая коллекция сайтов дизайнеров и студий. Ведь самое красивое, что делает дизайнер, он делает для себя.</p>
                             <p>Количество сайтов: <span className={styles.siteCounter}>{siteCounter}</span></p>
-                            <p>В Библиотеке вы можете разместить свой сайт. Просто <a href="http://t.me/abramovdesiqn" target="_blank" className="link">напишите мне ↗</a>.</p>
+                            <p>В Библиотеке вы можете разместить свой сайт. Просто <a href="http://t.me/abramovdesiqn" target="_blank" className="link">напишите библиотекарю ↗</a>.</p>
                         </>
                     ) : null}
                 </div>
