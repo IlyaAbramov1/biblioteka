@@ -13,9 +13,9 @@
     --stroke: hsl(var(--h) var(--s) 80%);
     --grid-size: 24px;
     --grid-line: hsl(var(--h) var(--s) 92%);
-    --bg-color: hsl(var(--h) var(--s) 98%);
-    --secondary-bg: hsl(var(--h) var(--s) 94%);
-    --deep-bg: hsl(var(--h) var(--s) 98%);
+    --bg-color: hsl(var(--h) var(--s) 99%);
+    --secondary-bg: hsl(var(--h) var(--s) 98%);
+    --deep-bg: hsl(var(--h) var(--s) 97%);
     --green-fill: hsl(120, 100%, 40%);
 
     --title-text-size: 28px;
@@ -73,6 +73,11 @@ body.dark-theme {
     font-display: swap;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -80,7 +85,7 @@ body.dark-theme {
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+    text-rendering: auto;
 }
 
 body {
@@ -92,8 +97,8 @@ body {
     background-color: var(--bg-color);
 
     max-width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
 
     display: flex;
     flex-direction: row;
@@ -136,7 +141,7 @@ a {
     grid-template-columns: 1.7fr 8.3fr;
     gap: 0px;
 
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .mainPageContainer {
@@ -147,9 +152,6 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
-
-    height: 100vh;
-    overflow-y: auto;
 }
 
 @media (max-width: 100px) {
@@ -168,7 +170,7 @@ a {
     :root {
         --title-text-size: 28px;
         --title-text-line-height: 110%;
-        --main-text-size: 16px;
+        --main-text-size: 14px;
         --main-text-line-height: 172%;
         --main-text-letter-spacing: -0.04em;
         --little-text-size: 14px;
@@ -193,5 +195,13 @@ a {
 
     .mainButton {
         padding: 8px 12px 6px 12px;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 600px) {
+        :root {
+            --main-text-letter-spacing: 0em;
+        }
     }
 }

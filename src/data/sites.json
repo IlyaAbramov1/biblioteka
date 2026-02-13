@@ -13,7 +13,8 @@
     "fullVideoKey": "screens/ryo-lu/ryo-full.mp4",
     "previewScreen": "screens/ryo-lu/ryo-preview.webp",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "customStyle": "ryoContainer"
   },
   {
     "slug": "locomotive",

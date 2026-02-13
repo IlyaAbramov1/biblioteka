@@ -8,11 +8,13 @@
     padding: 24px !important;
     justify-content: space-between;
     position: sticky;
+    top: 0;
+    align-self: start;
 
     border-right: 1px solid var(--stroke);
 
     color: var(--thirdly-text);
-    background-color: var(--deep-bg);
+
 
     font-size: var(--little-text-size);
     line-height: var(--little-text-line-height);

@@ -6,6 +6,13 @@ import styles from "./SiteItem.module.css";
 
 export default function SiteItem({ site }) {
     const previewSrc = site.previewScreen ? mediaUrl(site.previewScreen) : null;
+    const customStyleClass = site.customStyle
+        ? (styles[site.customStyle] || site.customStyle)
+        : "";
+    const containerClassName = [styles.siteContainer, customStyleClass]
+        .filter(Boolean)
+        .join(" ");
+
     const siteImageCover = previewSrc ? (
         <img
             src={previewSrc}
@@ -17,7 +24,7 @@ export default function SiteItem({ site }) {
     );
 
     return (
-        <Link href={`/site/${site.slug}`} className={styles.siteContainer} target="_blank">
+        <Link href={`/site/${site.slug}`} className={containerClassName}>
             <div className={styles.siteCoverAndInfo}>
                 {siteImageCover}
                 <div className={styles.siteInfoAndButton}>

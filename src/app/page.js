@@ -7,7 +7,6 @@ import SiteFilters from "@/components/SiteFilters/SiteFilters";
 
 export default function Home() {
     const BATCH_SIZE = 20;
-    const containerRef = useRef(null);
     const sentinelRef = useRef(null);
     const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
     const [selectedCategories, setSelectedCategories] = useState([]);
@@ -57,7 +56,6 @@ export default function Home() {
 
     useEffect(() => {
         const sentinel = sentinelRef.current;
-        const container = containerRef.current;
         if (!sentinel) return;
 
         const observer = new IntersectionObserver(
@@ -67,7 +65,7 @@ export default function Home() {
                     Math.min(count + BATCH_SIZE, filteredSites.length)
                 );
             },
-            { root: container, rootMargin: "100px 0px" }
+            { root: null, rootMargin: "100px 0px" }
         );
 
         observer.observe(sentinel);
@@ -108,7 +106,7 @@ export default function Home() {
                 onClear={clearFilters}
             />
 
-            <section ref={containerRef} className="gridContainer">
+            <section className="gridContainer">
                 {filteredSites.slice(0, visibleCount).map((site, index) => (
                     <SiteItem key={`${site.slug}-${index}`} site={site} />
                 ))}
