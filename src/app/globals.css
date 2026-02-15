@@ -14,8 +14,8 @@
     --grid-size: 24px;
     --grid-line: hsl(var(--h) var(--s) 92%);
     --bg-color: hsl(var(--h) var(--s) 99%);
-    --secondary-bg: hsl(var(--h) var(--s) 98%);
-    --deep-bg: hsl(var(--h) var(--s) 97%);
+    --secondary-bg: hsl(var(--h) var(--s) 94%);
+    --deep-bg: hsl(var(--h) var(--s) 96%);
     --green-fill: hsl(120, 100%, 40%);
 
     --title-text-size: 28px;
@@ -26,7 +26,7 @@
     --little-text-size: 12px;
     --little-text-line-height: 150%;
 
-    --font-family-mono: 'JetBrains Mono', monospace;
+    --font-family-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-family-title-regular: 'EBGaramond-Regular', serif;
     --font-family-quote: 'EBGaramond-Regular', serif;
 }
@@ -48,14 +48,6 @@ body.dark-theme {
     --green-fill: hsl(120, 100%, 40%);
 }
 */
-
-@font-face {
-    font-family: 'JetBrains Mono';
-    src: url(/fonts/JetBrainsMono-Regular.woff2) format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'EBGaramond-Regular';
@@ -83,9 +75,15 @@ html {
     padding: 0;
     margin: 0;
 
+    /* Настройки рендеринга шрифта */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: auto;
+    text-rendering: optimizeLegibility;
+    
+    /* Дополнительные настройки для четкости */
+    font-synthesis: none;
+    font-variant-numeric: normal;
+    font-kerning: auto;
 }
 
 body {

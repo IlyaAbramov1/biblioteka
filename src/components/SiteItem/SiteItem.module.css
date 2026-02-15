@@ -74,7 +74,7 @@
 /* Hovers */
 
 .siteContainer:hover {
-    background-color: var(--secondary-bg);
+    background-color: var(--deep-bg);
 }
 
 .siteContainer:hover .siteCover {
@@ -86,7 +86,9 @@
     color: var(--accent-color);
 }
 
-
+.abramovStyle {
+    background: linear-gradient(to bottom right, var(--bg-color), var(--bg-color), var(--accent-secondary-bg));
+}
 
 
 @media (max-width: 600px) {

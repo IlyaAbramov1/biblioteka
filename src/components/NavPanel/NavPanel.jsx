@@ -32,7 +32,7 @@ export default function NavPanel() {
                     </div>
                     {isHomePage ? (
                         <>
-                            <p>Курируемая коллекция сайтов дизайнеров и студий.</p>
+                            <p>Курируемая коллекция сайтов дизайнеров и дизайн-студий.</p>
                             <p>Количество сайтов: <span className={styles.siteCounter}>{siteCounter}</span></p>
                             <p>В Библиотеке вы можете разместить свой сайт. Просто <a href="http://t.me/abramovdesiqn" target="_blank" className="link">напишите библиотекарю ↗</a>.</p>
                         </>

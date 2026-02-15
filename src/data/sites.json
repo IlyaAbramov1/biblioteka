@@ -14,7 +14,7 @@
     "previewScreen": "screens/ryo-lu/ryo-preview.webp",
     "siteScreens": [],
     "enabled": true,
-    "customStyle": "ryoContainer"
+    "customStyle": ""
   },
   {
     "slug": "locomotive",
@@ -29,7 +29,8 @@
     "fullVideoKey": "screens/locomotive/locomotive-full.mp4",
     "previewScreen": "screens/locomotive/locomotive-preview.webp",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "study-hall",
@@ -44,7 +45,8 @@
     "fullVideoKey": "screens/study-hall/study-hall-full.mp4",
     "previewScreen": "screens/study-hall/study-hall-preview.webp",
     "siteScreens": [],
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "dbco",
@@ -59,7 +61,8 @@
     "fullVideoKey": "screens/dbco/dbco-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/dbco/dbco-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "area-17",
@@ -74,7 +77,8 @@
     "fullVideoKey": "screens/area-17/area-17-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/area-17/area-17-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "ashfall-studio",
@@ -89,7 +93,8 @@
     "fullVideoKey": "screens/ashfall-studio/ashfall-studio-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/ashfall-studio/ashfall-studio-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "studio-dumbar",
@@ -105,7 +110,8 @@
     "fullVideoKey": "screens/studio-dumbar/studio-dumbar-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/studio-dumbar/studio-dumbar-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "porto-rocha",
@@ -120,7 +126,8 @@
     "fullVideoKey": "screens/porto-rocha/porto-rocha-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/porto-rocha/porto-rocha-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "hoodzpah",
@@ -135,7 +142,8 @@
     "fullVideoKey": "screens/hoodzpah/hoodzpah-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/hoodzpah/hoodzpah-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "further",
@@ -150,7 +158,25 @@
     "fullVideoKey": "screens/further/further-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/further/further-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
+  },
+  {
+    "slug": "sirena",
+    "title": "Сирена",
+    "subtitle": "Креативная студия диджитал-спецпроектов, геймификации, спорта. Инхаус-студия Спортса",
+    "category": "Design Studio",
+    "specialization": [
+      "3D in Web",
+      "Web"
+    ],
+    "link": "https://sirena.team/",
+    "previewVideoKey": "",
+    "fullVideoKey": "screens/sirena/sirena-full.mp4",
+    "previewScreen": "screens/sirena/sirena-preview.webp",
+    "siteScreens": [],
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "humble-team",
@@ -166,7 +192,8 @@
     "fullVideoKey": "screens/humble-team/humble-team-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/humble-team/humble-team-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "koto",
@@ -181,7 +208,8 @@
     "fullVideoKey": "screens/koto/koto-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/koto/koto-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "collins",
@@ -196,7 +224,8 @@
     "fullVideoKey": "screens/collins/collins-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/collins/collins-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "todd-hamilton",
@@ -212,7 +241,8 @@
     "fullVideoKey": "screens/todd-hamilton/todd-hamilton-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/todd-hamilton/todd-hamilton-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "chan-karunamuni",
@@ -229,7 +259,8 @@
       "screens/chan-karunamuni/chan-karunamuni-1.webp"
     ],
     "previewScreen": "screens/chan-karunamuni/chan-karunamuni-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "haptic",
@@ -244,7 +275,8 @@
     "fullVideoKey": "screens/haptic/haptic-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/haptic/haptic-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "naranjo",
@@ -260,7 +292,8 @@
     "fullVideoKey": "screens/naranjo/naranjo-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/naranjo/naranjo-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "baked-design",
@@ -276,7 +309,8 @@
     "fullVideoKey": "screens/baked-design/baked-design-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/baked-design/baked-design-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "jakub-zen",
@@ -292,7 +326,8 @@
     "fullVideoKey": "screens/jakub-zen/jakub-zen-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/jakub-zen/jakub-zen-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "bureau-borsche",
@@ -307,7 +342,8 @@
     "fullVideoKey": "screens/bureau-borsche/bureau-borsche-full.mp4",
     "siteScreens": [],
     "previewScreen": "screens/bureau-borsche/bureau-borsche-preview.webp",
-    "enabled": true
+    "enabled": true,
+    "customStyle": ""
   },
   {
     "slug": "kurppa-hosk",
@@ -322,7 +358,8 @@
     "fullVideoKey": "screens/kurppa-hosk/kurppa-hosk-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/kurppa-hosk/kurppa-hosk-preview.webp"
+    "previewScreen": "screens/kurppa-hosk/kurppa-hosk-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "motto",
@@ -337,7 +374,8 @@
     "fullVideoKey": "screens/motto/motto-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/motto/motto-preview.webp"
+    "previewScreen": "screens/motto/motto-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "abra",
@@ -352,7 +390,25 @@
     "fullVideoKey": "screens/abra/abra-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/abra/abra-preview.webp"
+    "previewScreen": "screens/abra/abra-preview.webp",
+    "customStyle": ""
+  },
+  {
+    "slug": "abramov-ilya",
+    "title": "Abramov Ilya",
+    "subtitle": "Мультидисциплинарный дизайнер из Самары. Работает в Сирена/Спортс",
+    "category": "Designer",
+    "specialization": [
+      "Fullstack Design",
+      "Design Engineer"
+    ],
+    "link": "https://abramovdesign.com/",
+    "previewVideoKey": "",
+    "fullVideoKey": "screens/abramov-ilya/abramov-ilya-full.mp4",
+    "previewScreen": "screens/abramov-ilya/abramov-ilya-preview.webp",
+    "siteScreens": [],
+    "enabled": true,
+    "customStyle": "abramovStyle"
   },
   {
     "slug": "3d-funny-works",
@@ -368,7 +424,8 @@
     "fullVideoKey": "screens/3d-funny-works/3d-funny-works-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/3d-funny-works/3d-funny-works-preview.webp"
+    "previewScreen": "screens/3d-funny-works/3d-funny-works-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "twomuch-studio",
@@ -384,7 +441,8 @@
     "fullVideoKey": "screens/twomuch-studio/twomuch-studio-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/twomuch-studio/twomuch-studio-preview.webp"
+    "previewScreen": "screens/twomuch-studio/twomuch-studio-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "oyedrops",
@@ -399,7 +457,8 @@
     "fullVideoKey": "screens/oyedrops/oyedrops-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/oyedrops/oyedrops-preview.webp"
+    "previewScreen": "screens/oyedrops/oyedrops-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "indego-design",
@@ -415,7 +474,8 @@
     "fullVideoKey": "screens/indego-design/indego-design-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/indego-design/indego-design-preview.webp"
+    "previewScreen": "screens/indego-design/indego-design-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "intuition",
@@ -429,10 +489,11 @@
     "previewVideoKey": "",
     "fullVideoKey": "",
     "siteScreens": [
-        "screens/intuition/intuition-1.webp"
+      "screens/intuition/intuition-1.webp"
     ],
     "enabled": true,
-    "previewScreen": "screens/intuition/intuition-preview.webp"
+    "previewScreen": "screens/intuition/intuition-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "order",
@@ -447,7 +508,8 @@
     "fullVideoKey": "screens/order/order-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/order/order-preview.webp"
+    "previewScreen": "screens/order/order-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "playlist-studio",
@@ -463,7 +525,8 @@
     "fullVideoKey": "screens/playlist-studio/playlist-studio-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/playlist-studio/playlist-studio-preview.webp"
+    "previewScreen": "screens/playlist-studio/playlist-studio-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "make-me-pulse",
@@ -478,7 +541,8 @@
     "fullVideoKey": "screens/make-me-pulse/make-me-pulse-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/make-me-pulse/make-me-pulse-preview.webp"
+    "previewScreen": "screens/make-me-pulse/make-me-pulse-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "merci-michel",
@@ -493,7 +557,8 @@
     "fullVideoKey": "screens/merci-michel/merci-michel-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/merci-michel/merci-michel-preview.webp"
+    "previewScreen": "screens/merci-michel/merci-michel-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "petrick",
@@ -510,7 +575,8 @@
     "fullVideoKey": "screens/petrick/petrick-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/petrick/petrick-preview.webp"
+    "previewScreen": "screens/petrick/petrick-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "ivo-studio",
@@ -527,7 +593,8 @@
     "fullVideoKey": "screens/ivo-studio/ivo-studio-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/ivo-studio/ivo-studio-preview.webp"
+    "previewScreen": "screens/ivo-studio/ivo-studio-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "universal-favourite",
@@ -543,7 +610,8 @@
     "fullVideoKey": "screens/universal-favourite/universal-favourite-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/universal-favourite/universal-favourite-preview.webp"
+    "previewScreen": "screens/universal-favourite/universal-favourite-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "verve-agency",
@@ -559,7 +627,8 @@
     "fullVideoKey": "screens/verve-agency/verve-agency-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/verve-agency/verve-agency-preview.webp"
+    "previewScreen": "screens/verve-agency/verve-agency-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "mouthwash-studio",
@@ -575,7 +644,8 @@
     "fullVideoKey": "screens/mouthwash-studio/mouthwash-studio-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/mouthwash-studio/mouthwash-studio-preview.webp"
+    "previewScreen": "screens/mouthwash-studio/mouthwash-studio-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "palam-cgi",
@@ -590,7 +660,8 @@
     "fullVideoKey": "screens/palam-cgi/palam-cgi-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/palam-cgi/palam-cgi-preview.webp"
+    "previewScreen": "screens/palam-cgi/palam-cgi-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "e-i-b",
@@ -605,7 +676,8 @@
     "fullVideoKey": "screens/e-i-b/e-i-b-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/e-i-b/e-i-b-preview.webp"
+    "previewScreen": "screens/e-i-b/e-i-b-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "dia",
@@ -613,17 +685,18 @@
     "subtitle": "Европейская студия дизайна со сложным, но ярким сайтом, подчеркивающий их близость к художественности и искусству в работе.",
     "category": "Design Studio",
     "specialization": [
-        "Art",
-        "Branding"
+      "Art",
+      "Branding"
     ],
     "link": "https://dia.tv/",
     "previewVideoKey": "",
     "fullVideoKey": "",
     "siteScreens": [
-        "screens/dia/dia-1.webp"
+      "screens/dia/dia-1.webp"
     ],
     "enabled": true,
-    "previewScreen": "screens/dia/dia-preview.webp"
+    "previewScreen": "screens/dia/dia-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "base-design",
@@ -638,7 +711,8 @@
     "fullVideoKey": "screens/base-design/base-design-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/base-design/base-design-preview.webp"
+    "previewScreen": "screens/base-design/base-design-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "studio-size",
@@ -653,7 +727,8 @@
     "fullVideoKey": "screens/studio-size/studio-size-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/studio-size/studio-size-preview.webp"
+    "previewScreen": "screens/studio-size/studio-size-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "hornet",
@@ -670,7 +745,8 @@
     "fullVideoKey": "screens/hornet/hornet-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/hornet/hornet-preview.webp"
+    "previewScreen": "screens/hornet/hornet-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "metalab",
@@ -685,7 +761,8 @@
     "fullVideoKey": "screens/metalab/metalab-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/metalab/metalab-preview.webp"
+    "previewScreen": "screens/metalab/metalab-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "",
@@ -700,7 +777,8 @@
     "fullVideoKey": "",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": ""
+    "previewScreen": "",
+    "customStyle": ""
   },
   {
     "slug": "max",
@@ -714,10 +792,11 @@
     "previewVideoKey": "",
     "fullVideoKey": "",
     "siteScreens": [
-        "screens/max/max-1.webp"
+      "screens/max/max-1.webp"
     ],
     "enabled": true,
-    "previewScreen": "screens/max/max-preview.webp"
+    "previewScreen": "screens/max/max-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "37signals",
@@ -731,10 +810,11 @@
     "previewVideoKey": "",
     "fullVideoKey": "",
     "siteScreens": [
-        "screens/37signals/37signals-1.webp"
+      "screens/37signals/37signals-1.webp"
     ],
     "enabled": true,
-    "previewScreen": "screens/37signals/37signals-preview.webp"
+    "previewScreen": "screens/37signals/37signals-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "piqo-studio",
@@ -751,7 +831,8 @@
     "fullVideoKey": "screens/piqo-studio/piqo-studio-full.mp4",
     "siteScreens": [],
     "enabled": true,
-    "previewScreen": "screens/piqo-studio/piqo-studio-preview.webp"
+    "previewScreen": "screens/piqo-studio/piqo-studio-preview.webp",
+    "customStyle": ""
   },
   {
     "slug": "accuraten",
