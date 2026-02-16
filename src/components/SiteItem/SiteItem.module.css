@@ -1,18 +1,12 @@
 .siteContainer {
     height: fit-content;
-    padding: 32px;
-
-    border-right: 1px solid var(--stroke);
-    border-bottom: 1px solid var(--stroke);
+    padding: 24px 32px;
 
     cursor: pointer;
 
     display: flex;
     flex-direction: column;
     gap: 8px;
-    
-    margin-bottom: 16px;
-    margin-right: 16px;
 }
 
 .siteCover {
@@ -94,10 +88,9 @@
 @media (max-width: 600px) {
     .siteContainer {
         height: fit-content;
-        padding: 28px;
+        padding: 28px 28px 12px 28px;
 
         border-right: none;
-        border-bottom: 1px solid var(--stroke);
 
         cursor: pointer;
 

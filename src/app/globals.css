@@ -30,24 +30,6 @@
     --font-family-title-regular: 'EBGaramond-Regular', serif;
     --font-family-quote: 'EBGaramond-Regular', serif;
 }
-/* 
-body.dark-theme {
-    --h: 230;
-    --s: 8%;
-    --accent-color: hsl(var(--h), 100%, 60%);
-    --button-text-color: hsl(var(--h), var(--s), 90%);
-    --text-color: hsl(var(--h), var(--s), 90%);
-    --secondary-text-color: hsl(var(--h), var(--s), 80%);
-    --thirdly-text-color: hsl(var(--h), var(--s), 40%);
-    --fourthly-text-color: hsl(var(--h) var(--s) 30%);
-    --stroke: hsl(var(--h) var(--s) 20%);
-    --grid-line: hsl(var(--h) var(--s) 10%);
-    --bg-color: hsl(var(--h) var(--s) 6%);
-    --secondary-bg-color: hsl(var(--h) var(--s) 12%);
-    --deep-bg-color: hsl(var(--h) var(--s) 8%);
-    --green-fill: hsl(120, 100%, 40%);
-}
-*/
 
 @font-face {
     font-family: 'EBGaramond-Regular';
@@ -171,7 +153,7 @@ a {
         --main-text-size: 14px;
         --main-text-line-height: 172%;
         --main-text-letter-spacing: -0.04em;
-        --little-text-size: 14px;
+        --little-text-size: 12px;
         --little-text-line-height: 150%;
     }
 
