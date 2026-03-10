@@ -1,14 +1,11 @@
 .footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 240px;
-
     display: flex;
     flex-direction: column;
     gap: 12px;
 
-    padding: 24px;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 12px;
 }
 
 .footerDesc {
@@ -17,27 +14,16 @@
 
 @media (max-width: 1100px) {
     .footer {
-        width: 180px;
+        width: 100%;
     }
 }
 
 @media (max-width: 600px) {
     .footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-
         align-items: center;
         text-align: center;
 
-        padding: 6px 12px;
-        background-color: var(--bg-color);
-        opacity: 60%;
-        border-top: 1px solid var(--stroke);
+        padding-top: 0;
         font-size: 12px;
-        z-index: 20;
     }
-
-    
 }

@@ -1,30 +1,34 @@
 :root {
-    --h: 220;
-    --s: 20%;
+    /* Color */
+        --h: 0;
+        --s: 0%;
     --button-text-color: hsl(var(--h), var(--s), 97%);
-    --accent-color: hsl(var(--h), 100%, 50%);
+    --accent-color: hsl(0, 0%, 0%);
     --secondary-accent-color: hsl(var(--h), 100%, 60%);
-    --accent-bg: hsl(var(--h), 100%, 95%);
     --accent-secondary-bg: hsl(var(--h), 100%, 90%);
     --text: hsl(var(--h), var(--s), 4%);
-    --secondary-text: hsl(var(--h), var(--s), 20%);
+    --secondary-text: hsl(var(--h), var(--s), 60%);
     --thirdly-text: hsl(var(--h), var(--s), 40%);
-    --fourthly-text: hsl(var(--h) var(--s) 70%);
+    --fourthly-text: hsl(var(--h), var(--s), 70%);
     --stroke: hsl(var(--h) var(--s) 80%);
+    --secondary-stroke: hsl(var(--h) var(--s) 90%);
     --grid-size: 24px;
     --grid-line: hsl(var(--h) var(--s) 92%);
-    --bg-color: hsl(var(--h) var(--s) 99%);
-    --secondary-bg: hsl(var(--h) var(--s) 94%);
-    --deep-bg: hsl(var(--h) var(--s) 96%);
+    --bg: hsl(var(--h) var(--s) 100%);
+    --secondary-bg: hsl(var(--h) var(--s) 97%);
+    --hover-bg: hsl(var(--h) var(--s) 98%);
+
     --green-fill: hsl(120, 100%, 40%);
 
+    /* Typography */
     --title-text-size: 28px;
     --title-text-line-height: 110%;
     --main-text-size: 14px;
-    --main-text-line-height: 172%;
-    --main-text-letter-spacing: -0.04em;
-    --little-text-size: 12px;
-    --little-text-line-height: 150%;
+    --main-text-line-height: 120%;
+    --main-text-letter-spacing: -0.02em;
+    --little-text: 12px;
+    --little-text-size: var(--little-text);
+    --little-text-line-height: 140%;
 
     --font-family-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-family-title-regular: 'EBGaramond-Regular', serif;
@@ -69,12 +73,13 @@ html {
 }
 
 body {
-    font-family: var(--font-family-mono);
+    font-family: var(--font-roboto), serif;
+    font-weight: 450;
     font-size: var(--main-text-size);
     letter-spacing: var(--main-text-letter-spacing);
     line-height: var(--main-text-line-height);
 
-    background-color: var(--bg-color);
+    background-color: var(--bg);
 
     max-width: 100vw;
     min-height: 100vh;
@@ -106,7 +111,7 @@ a {
 
 .mainButton {
     background-color: var(--accent-color);
-    color: var(--bg-color);
+    color: var(--bg);
     padding: 6px 10px 4px 10px;
 }
 
@@ -117,11 +122,9 @@ a {
 
 .mainContainer {
     display: grid;
-
-    grid-template-columns: 1.7fr 8.3fr;
-    gap: 0px;
-
-    min-height: 100vh;
+    grid-template-columns: 1.8fr 8.2fr;
+    gap: 0;
+    min-height: calc(100vh - 48px);
 }
 
 .mainPageContainer {
@@ -134,7 +137,7 @@ a {
     align-items: start;
 }
 
-@media (max-width: 100px) {
+@media (max-width: 1600px) {
     .gridContainer {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -153,13 +156,20 @@ a {
         --main-text-size: 14px;
         --main-text-line-height: 172%;
         --main-text-letter-spacing: -0.04em;
-        --little-text-size: 12px;
+        --little-text: 12px;
+        --little-text-size: var(--little-text);
         --little-text-line-height: 150%;
+    }
+
+    .strokeContainer {
+        width: 100%;
+        margin: 0;
     }
 
     .mainContainer {
         display: flex;
         flex-direction: column;
+        min-height: auto;
     }
 
     body {

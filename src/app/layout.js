@@ -1,6 +1,18 @@
 import "./globals.css";
-import NavPanel from "@/components/NavPanel/NavPanel";
 import Script from "next/script";
+import { Roboto, JetBrains_Mono } from "next/font/google";
+
+const roboto = Roboto({
+    subsets: ['latin', 'cyrillic'],
+    display: 'swap',
+    variable: '--font-roboto',
+})
+
+const jetbrains = JetBrains_Mono({
+    subsets: ['latin', 'cyrillic'],
+    display: 'swap',
+    variable: '--font-jetbrains',
+})
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://design-biblioteka.ru/";
 const DEFAULT_TITLE = "Библиотека";
@@ -51,29 +63,27 @@ export const metadata = {
     },
 };
 
-
-
 export default function RootLayout({ children }) {
     return (
-        <html lang="ru">
+        <html lang="ru" className={`${roboto.variable} ${jetbrains.variable}`}>
             <body>
                 <Script id="yandex-metrika" strategy="afterInteractive">
                     {`(function(m,e,t,r,i,k,a){
-    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106825853', 'ym');
+                        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                        m[i].l=1*new Date();
+                        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+                        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+                    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106825853', 'ym');
 
-ym(106825853, 'init', {
-    ssr: true,
-    clickmap: true,
-    ecommerce: "dataLayer",
-    referrer: document.referrer,
-    url: location.href,
-    accurateTrackBounce: true,
-    trackLinks: true
-});`}
+                    ym(106825853, 'init', {
+                        ssr: true,
+                        clickmap: true,
+                        ecommerce: "dataLayer",
+                        referrer: document.referrer,
+                        url: location.href,
+                        accurateTrackBounce: true,
+                        trackLinks: true
+                    });`}
                 </Script>
                 <noscript>
                     <div>
@@ -85,10 +95,7 @@ ym(106825853, 'init', {
                         />
                     </div>
                 </noscript>
-                <div className="mainContainer">
-                    <NavPanel />
-                    {children}
-                </div>
+                <div className="strokeContainer">{children}</div>
             </body>
         </html>
     );

@@ -1,5 +1,6 @@
 import sites from "@/data/sites.json";
 import FullSiteItem from "@/components/FullSiteItem/FullSiteItem";
+import NavPanel from "@/components/NavPanel/NavPanel";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
@@ -30,8 +31,11 @@ export default async function SitePage({ params }) {
     if (!site) return notFound();
 
     return (
-        <main>
-            <FullSiteItem site={site} />
-        </main>
+        <div className="mainContainer">
+            <NavPanel />
+            <main>
+                <FullSiteItem site={site} />
+            </main>
+        </div>
     );
 }

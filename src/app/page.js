@@ -2,14 +2,16 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import sites from "@/data/sites.json";
+import NavPanel from "@/components/NavPanel/NavPanel";
 import SiteItem from "@/components/SiteItem/SiteItem";
-import SiteFilters from "@/components/SiteFilters/SiteFilters";
+
+const CATEGORY_ORDER = ["Designer", "Design Studio", "Creative Studio"];
 
 export default function Home() {
     const BATCH_SIZE = 20;
     const sentinelRef = useRef(null);
     const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
-    const [selectedCategories, setSelectedCategories] = useState([]);
+    const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedSpecializations, setSelectedSpecializations] = useState([]);
 
     const baseSites = useMemo(
@@ -18,7 +20,20 @@ export default function Home() {
     );
 
     const categories = useMemo(
-        () => [...new Set(baseSites.map((site) => site.category).filter(Boolean))],
+        () => {
+            const uniqueCategories = [...new Set(baseSites.map((site) => site.category).filter(Boolean))];
+
+            return uniqueCategories.sort((left, right) => {
+                const leftIndex = CATEGORY_ORDER.indexOf(left);
+                const rightIndex = CATEGORY_ORDER.indexOf(right);
+
+                if (leftIndex === -1 && rightIndex === -1) return left.localeCompare(right);
+                if (leftIndex === -1) return 1;
+                if (rightIndex === -1) return -1;
+
+                return leftIndex - rightIndex;
+            });
+        },
         [baseSites]
     );
 
@@ -37,7 +52,7 @@ export default function Home() {
     const filteredSites = useMemo(() => {
         return baseSites.filter((site) => {
             const byCategory =
-                selectedCategories.length === 0 || selectedCategories.includes(site.category);
+                selectedCategory === null || site.category === selectedCategory;
 
             const specs = Array.isArray(site.specialization)
                 ? site.specialization
@@ -48,11 +63,7 @@ export default function Home() {
 
             return byCategory && bySpecialization;
         });
-    }, [baseSites, selectedCategories, selectedSpecializations]);
-
-    useEffect(() => {
-        setVisibleCount(Math.min(BATCH_SIZE, filteredSites.length));
-    }, [filteredSites.length]);
+    }, [baseSites, selectedCategory, selectedSpecializations]);
 
     useEffect(() => {
         const sentinel = sentinelRef.current;
@@ -73,15 +84,13 @@ export default function Home() {
         return () => observer.disconnect();
     }, [filteredSites.length]);
 
-    const toggleCategory = (category) => {
-        setSelectedCategories((prev) =>
-            prev.includes(category)
-                ? prev.filter((item) => item !== category)
-                : [...prev, category]
-        );
+    const selectCategory = (category) => {
+        setVisibleCount(BATCH_SIZE);
+        setSelectedCategory((prev) => (prev === category ? null : category));
     };
 
     const toggleSpecialization = (specialization) => {
+        setVisibleCount(BATCH_SIZE);
         setSelectedSpecializations((prev) =>
             prev.includes(specialization)
                 ? prev.filter((item) => item !== specialization)
@@ -90,28 +99,29 @@ export default function Home() {
     };
 
     const clearFilters = () => {
-        setSelectedCategories([]);
+        setVisibleCount(BATCH_SIZE);
+        setSelectedCategory(null);
         setSelectedSpecializations([]);
     };
 
     return (
-        <>
-            <SiteFilters
+        <div className="mainContainer">
+            <NavPanel
                 categories={categories}
                 specializations={specializations}
-                selectedCategories={selectedCategories}
+                selectedCategory={selectedCategory}
                 selectedSpecializations={selectedSpecializations}
-                onToggleCategory={toggleCategory}
+                onSelectCategory={selectCategory}
                 onToggleSpecialization={toggleSpecialization}
                 onClear={clearFilters}
+                showInfo
             />
-
             <section className="gridContainer">
                 {filteredSites.slice(0, visibleCount).map((site, index) => (
                     <SiteItem key={`${site.slug}-${index}`} site={site} />
                 ))}
                 <div ref={sentinelRef} aria-hidden="true" style={{ height: 1 }} />
             </section>
-        </>
+        </div>
     );
 }

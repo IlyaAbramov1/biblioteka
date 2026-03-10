@@ -7,6 +7,10 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    border-radius: 12px;
+
+    transition: 0.2s background ease-out;
 }
 
 .siteCover {
@@ -68,11 +72,7 @@
 /* Hovers */
 
 .siteContainer:hover {
-    background-color: var(--deep-bg);
-}
-
-.siteContainer:hover .siteCover {
-    opacity: 0.8;
+    background-color: var(--hover-bg);
 }
 
 .siteContainer:hover .secondaryButton {
@@ -102,13 +102,11 @@
         margin-right: 0;
     }
 
+    .siteContainer:hover {
+        background-color: none;
+    }
 
-.siteContainer:hover {
-    background-color: none;
-}
-
-.siteContainer:hover .siteCover {
-    opacity: 1;
-}
-
+    .siteContainer:hover .siteCover {
+        opacity: 1;
+    }
 }

@@ -10,6 +10,7 @@ export default function Footer() {
                 </a>
                 . February 2026
             </p>
+            <p>В Библиотеке вы можете разместить свой сайт. Для этого <a href="http://t.me/abramovdesiqn" target="_blank" className="link">напишите библиотекарю ↗</a>.</p>
         </footer>
     );
 }
