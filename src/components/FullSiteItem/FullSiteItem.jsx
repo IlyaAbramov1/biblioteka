@@ -1,8 +1,8 @@
 import styles from "./FullSiteItem.module.css";
 
 import { mediaUrl } from "@/lib/media";
-import Link from "next/link";
 import TagList from "@/components/TagList/TagList";
+import TransitionLink from "@/components/RouteTransition/TransitionLink";
 
 export default function FullSiteItem({ site }) {
     const fullVideoSrc = site.fullVideoKey ? mediaUrl(site.fullVideoKey) : null;
@@ -12,7 +12,7 @@ export default function FullSiteItem({ site }) {
 
     return (
         <div className={styles.siteInfoAndVideo}>
-            <Link href="/" className={styles.backLink}>← На главную</Link>
+            <TransitionLink href="/" className={styles.backLink}>← На главную</TransitionLink>
 
             <div className={styles.siteInfo}>
                 

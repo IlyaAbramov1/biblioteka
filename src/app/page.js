@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import sites from "@/data/sites.json";
 import NavPanel from "@/components/NavPanel/NavPanel";
+import PageTransitionSurface from "@/components/RouteTransition/PageTransitionSurface";
 import SiteItem from "@/components/SiteItem/SiteItem";
 
 const CATEGORY_ORDER = ["Дизайнер", "Дизайн-студия", "Креативная студия"];
@@ -116,12 +117,12 @@ export default function Home() {
                 onClear={clearFilters}
                 showInfo
             />
-            <section className="gridContainer">
+            <PageTransitionSurface as="section" className="gridContainer">
                 {filteredSites.slice(0, visibleCount).map((site, index) => (
                     <SiteItem key={`${site.slug}-${index}`} site={site} />
                 ))}
                 <div ref={sentinelRef} aria-hidden="true" style={{ height: 1 }} />
-            </section>
+            </PageTransitionSurface>
         </div>
     );
 }

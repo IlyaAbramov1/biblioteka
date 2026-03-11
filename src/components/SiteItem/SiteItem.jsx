@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { mediaUrl } from "@/lib/media";
 import TagList from "@/components/TagList/TagList";
+import TransitionLink from "@/components/RouteTransition/TransitionLink";
 
 import styles from "./SiteItem.module.css";
 
@@ -24,7 +24,7 @@ export default function SiteItem({ site }) {
     );
 
     return (
-        <Link href={`/site/${site.slug}`} className={containerClassName}>
+        <TransitionLink href={`/site/${site.slug}`} className={containerClassName}>
             <div className={styles.siteCoverAndInfo}>
                 {siteImageCover}
                 <div className={styles.siteInfoAndButton}>
@@ -38,6 +38,6 @@ export default function SiteItem({ site }) {
                     {/* <p className={styles.secondaryButton}>Подробнее ↗</p> */}
                 </div>
             </div>
-        </Link>
+        </TransitionLink>
     );
 }

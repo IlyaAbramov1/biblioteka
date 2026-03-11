@@ -1,6 +1,7 @@
 import sites from "@/data/sites.json";
 import FullSiteItem from "@/components/FullSiteItem/FullSiteItem";
 import NavPanel from "@/components/NavPanel/NavPanel";
+import PageTransitionSurface from "@/components/RouteTransition/PageTransitionSurface";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
@@ -33,9 +34,9 @@ export default async function SitePage({ params }) {
     return (
         <div className="mainContainer">
             <NavPanel />
-            <main>
+            <PageTransitionSurface as="main">
                 <FullSiteItem site={site} />
-            </main>
+            </PageTransitionSurface>
         </div>
     );
 }

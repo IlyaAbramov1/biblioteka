@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import sites from "@/data/sites.json";
+import { useRouteTransition } from "@/components/RouteTransition/RouteTransitionProvider";
 import { getTagMeta } from "@/lib/siteTags";
 
 import styles from "./NavPanel.module.css";
@@ -98,7 +99,7 @@ function TagVisual({ icon }) {
     }
 }
 
-function CategoryOption({ category, isSelected, onSelect }) {
+function CategoryOption({ category, isSelected, onSelect, index }) {
     const meta = CATEGORY_META[category] || {
         label: category,
         icon: CategoryStudioIcon,
@@ -112,6 +113,7 @@ function CategoryOption({ category, isSelected, onSelect }) {
             onClick={() => onSelect(category)}
             role="radio"
             aria-checked={isSelected}
+            style={{ "--filter-index": index }}
         >
             <span className={styles.optionIcon}>
                 <Icon />
@@ -121,7 +123,7 @@ function CategoryOption({ category, isSelected, onSelect }) {
     );
 }
 
-function TagOption({ tag, isSelected, onToggle }) {
+function TagOption({ tag, isSelected, onToggle, index }) {
     const meta = getTagMeta(tag);
     const stateIconSrc = isSelected ? "/checkmark.svg" : "/plus.svg";
     const stateIconAlt = isSelected ? "Выбран" : "Добавить";
@@ -132,6 +134,7 @@ function TagOption({ tag, isSelected, onToggle }) {
             className={`${styles.filterOption} ${styles.tagOption} ${styles[`tagTone_${meta.tone}`] || styles.tagTone_default} ${isSelected ? styles.filterOptionSelected : ""} ${isSelected ? styles.tagOptionSelected : ""}`}
             onClick={() => onToggle(tag)}
             aria-pressed={isSelected}
+            style={{ "--filter-index": index }}
         >
             <span className={styles.tagStateIcon}>
                 <Image src={stateIconSrc} alt={stateIconAlt} width={24} height={24}/>
@@ -157,9 +160,10 @@ export default function NavPanel({
     const siteCounter = sites.filter((site) => site.enabled).length;
     const selectedCount = (selectedCategory ? 1 : 0) + selectedSpecializations.length;
     const showFilters = categories.length > 0 || specializations.length > 0;
+    const { stage } = useRouteTransition();
 
     return (
-        <aside className={styles.navPanel}>
+        <aside className={styles.navPanel} data-transition-stage={stage}>
             <div className={styles.navPanelBody}>
                 <header className={styles.header}>
                     <div className={styles.headerInfo}>
@@ -184,11 +188,12 @@ export default function NavPanel({
                             <div className={styles.filterSection}>
                                 <div className={styles.filtersTitle}>Кто?</div>
                                 <div className={styles.optionGroup} role="radiogroup" aria-label="Тип сайта">
-                                    {categories.map((category) => (
+                                    {categories.map((category, index) => (
                                         <CategoryOption
                                             key={category}
                                             category={category}
                                             isSelected={selectedCategory === category}
+                                            index={index}
                                             onSelect={onSelectCategory}
                                         />
                                     ))}
@@ -200,11 +205,12 @@ export default function NavPanel({
                             <div className={styles.filterSection}>
                                 <div className={styles.filtersTitle}>Специализация?</div>
                                 <div className={styles.optionGroup}>
-                                    {specializations.map((tag) => (
+                                    {specializations.map((tag, index) => (
                                         <TagOption
                                             key={tag}
                                             tag={tag}
                                             isSelected={selectedSpecializations.includes(tag)}
+                                            index={index}
                                             onToggle={onToggleSpecialization}
                                         />
                                     ))}

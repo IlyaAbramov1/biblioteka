@@ -32,6 +32,12 @@
     --tag-tone-art: hsl(0, 100%, 50%);
     --tag-tone-default: var(--secondary-text);
 
+    /* Page transition */
+    --page-transition-duration: 240ms;
+    --page-transition-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --page-transition-blur: 8px;
+    --page-transition-scale: 0.995;
+
     /* Typography */
     --title-text-size: 28px;
     --title-text-line-height: 110%;
@@ -141,6 +147,29 @@ a {
     grid-template-columns: 2fr 8fr;
     gap: 0;
     min-height: calc(100vh - 48px);
+}
+
+.pageTransitionSurface {
+    min-width: 0;
+    will-change: opacity, filter, transform;
+    transition:
+        opacity var(--page-transition-duration) var(--page-transition-ease),
+        filter var(--page-transition-duration) var(--page-transition-ease),
+        transform var(--page-transition-duration) var(--page-transition-ease);
+}
+
+.pageTransitionSurface[data-transition-stage="idle"] {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+}
+
+.pageTransitionSurface[data-transition-stage="exiting"],
+.pageTransitionSurface[data-transition-stage="entering"] {
+    opacity: 0;
+    filter: blur(var(--page-transition-blur));
+    transform: scale(var(--page-transition-scale));
+    pointer-events: none;
 }
 
 .mainPageContainer {

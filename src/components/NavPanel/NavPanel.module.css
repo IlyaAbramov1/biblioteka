@@ -81,6 +81,11 @@
     display: flex;
     flex-direction: column;
     gap: 22px;
+
+    transition:
+        opacity var(--page-transition-duration) var(--page-transition-ease),
+        filter var(--page-transition-duration) var(--page-transition-ease),
+        transform var(--page-transition-duration) var(--page-transition-ease);
 }
 
 .filtersHeader {
@@ -113,6 +118,8 @@
 }
 
 .filterOption {
+    --filter-index: 0;
+
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -126,12 +133,35 @@
     color: var(--secondary-text);
     font: inherit;
     cursor: pointer;
-    transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease, transform 150ms ease;
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+        background-color 150ms ease,
+        border-color 150ms ease,
+        color 150ms ease,
+        transform 150ms ease,
+        opacity var(--page-transition-duration) var(--page-transition-ease),
+        filter var(--page-transition-duration) var(--page-transition-ease);
+    transition-delay: calc(var(--filter-index) * 18ms);
 }
 
 .filterOption:hover {
     border-color: var(--thirdly-text);
     transform: translateY(-1px);
+}
+
+.navPanel[data-transition-stage="exiting"] .filtersPanel,
+.navPanel[data-transition-stage="entering"] .filtersPanel {
+    opacity: 0;
+    filter: blur(var(--page-transition-blur));
+    transform: translateY(8px);
+}
+
+.navPanel[data-transition-stage="exiting"] .filterOption,
+.navPanel[data-transition-stage="entering"] .filterOption {
+    opacity: 0;
+    filter: blur(var(--page-transition-blur));
+    transform: translateY(10px);
 }
 
 .filterOptionSelected {
