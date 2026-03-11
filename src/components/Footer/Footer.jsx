@@ -1,16 +1,20 @@
 import styles from "./Footer.module.css";
 
+import sites from "@/data/sites.json";
+
 export default function Footer() {
+    const siteCounter = sites.filter((site) => site.enabled).length;
+
     return (
         <footer className={styles.footer}>
+            <p>Количество сайтов: <span className={styles.siteCounter}>{siteCounter}</span></p>
             <p className={styles.footerDesc}>
                 Designed and developed by{" "}
-                <a href="https://abramovdesign.com/" target="_blank" className="link">
+                <a href="https://abramovdesign.com/" target="_blank" className={styles.footerLink}>
                     Ilya Abramov
                 </a>
-                . February 2026
+                . March 2026
             </p>
-            <p>В Библиотеке вы можете разместить свой сайт. Для этого <a href="http://t.me/abramovdesiqn" target="_blank" className="link">напишите библиотекарю ↗</a>.</p>
         </footer>
     );
 }

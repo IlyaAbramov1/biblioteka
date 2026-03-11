@@ -5,7 +5,7 @@ import sites from "@/data/sites.json";
 import NavPanel from "@/components/NavPanel/NavPanel";
 import SiteItem from "@/components/SiteItem/SiteItem";
 
-const CATEGORY_ORDER = ["Designer", "Design Studio", "Creative Studio"];
+const CATEGORY_ORDER = ["Дизайнер", "Дизайн-студия", "Креативная студия"];
 
 export default function Home() {
     const BATCH_SIZE = 20;
@@ -59,7 +59,7 @@ export default function Home() {
                 : String(site.specialization || "").split(",").map((spec) => spec.trim());
             const bySpecialization =
                 selectedSpecializations.length === 0 ||
-                selectedSpecializations.some((selected) => specs.includes(selected));
+                selectedSpecializations.every((selected) => specs.includes(selected));
 
             return byCategory && bySpecialization;
         });

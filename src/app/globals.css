@@ -16,9 +16,21 @@
     --grid-line: hsl(var(--h) var(--s) 92%);
     --bg: hsl(var(--h) var(--s) 100%);
     --secondary-bg: hsl(var(--h) var(--s) 97%);
-    --hover-bg: hsl(var(--h) var(--s) 98%);
+    --hover-bg: hsl(var(--h) var(--s) 97%);
 
     --green-fill: hsl(120, 100%, 40%);
+
+    /* Tag tones */
+    --tag-tone-web: hsl(210, 100%, 50%);
+    --tag-tone-branding: hsl(330, 100%, 50%);
+    --tag-tone-product: hsl(200, 100%, 31%);
+    --tag-tone-engineering: hsl(171, 100%, 39%);
+    --tag-tone-motion: hsl(30, 100%, 50%);
+    --tag-tone-illustration: hsl(303, 100%, 50%);
+    --tag-tone-three-d: hsl(172, 100%, 31%);
+    --tag-tone-cgi: hsl(250, 100%, 40%);
+    --tag-tone-art: hsl(0, 100%, 50%);
+    --tag-tone-default: var(--secondary-text);
 
     /* Typography */
     --title-text-size: 28px;
@@ -27,7 +39,6 @@
     --main-text-line-height: 120%;
     --main-text-letter-spacing: -0.02em;
     --little-text: 12px;
-    --little-text-size: var(--little-text);
     --little-text-line-height: 140%;
 
     --font-family-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -97,6 +108,11 @@ a {
     text-decoration: none;
 }
 
+.strokeContainer {
+    position: relative;
+    min-height: 100vh;
+}
+
 .link {
     text-decoration: underline;
     color: var(--accent-color);
@@ -122,7 +138,7 @@ a {
 
 .mainContainer {
     display: grid;
-    grid-template-columns: 1.8fr 8.2fr;
+    grid-template-columns: 2fr 8fr;
     gap: 0;
     min-height: calc(100vh - 48px);
 }
@@ -133,14 +149,8 @@ a {
 
 .gridContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: start;
-}
-
-@media (max-width: 1600px) {
-    .gridContainer {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media (max-width: 1100px) {
@@ -149,7 +159,7 @@ a {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     :root {
         --title-text-size: 28px;
         --title-text-line-height: 110%;
@@ -164,6 +174,7 @@ a {
     .strokeContainer {
         width: 100%;
         margin: 0;
+        min-height: auto;
     }
 
     .mainContainer {
@@ -181,7 +192,6 @@ a {
         height: auto;
         overflow-y: visible;
     }
-
 
     .mainButton {
         padding: 8px 12px 6px 12px;

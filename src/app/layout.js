@@ -2,6 +2,8 @@ import "./globals.css";
 import Script from "next/script";
 import { Roboto, JetBrains_Mono } from "next/font/google";
 
+import Footer from "@/components/Footer/Footer";
+
 const roboto = Roboto({
     subsets: ['latin', 'cyrillic'],
     display: 'swap',
@@ -95,7 +97,10 @@ export default function RootLayout({ children }) {
                         />
                     </div>
                 </noscript>
-                <div className="strokeContainer">{children}</div>
+                <div className="strokeContainer">
+                    {children}
+                    <Footer />
+                </div>
             </body>
         </html>
     );

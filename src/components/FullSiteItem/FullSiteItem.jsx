@@ -12,7 +12,7 @@ export default function FullSiteItem({ site }) {
 
     return (
         <div className={styles.siteInfoAndVideo}>
-            <Link href="/" className="link">← На главную</Link>
+            <Link href="/" className={styles.backLink}>← На главную</Link>
 
             <div className={styles.siteInfo}>
                 
@@ -24,15 +24,15 @@ export default function FullSiteItem({ site }) {
                 <div className={styles.siteTagsAndButton}>
                     <div className={styles.siteTags}>
                         <div className={styles.siteTag}>
-                            <div className={styles.siteTagName}>Категория</div>
+                            <div className={styles.siteTagName}>Кто?</div>
                             <div className={styles.siteTagValue}>{site.category}</div>
                         </div>
                         <div className={styles.siteTag}>
-                            <div className={styles.siteTagName}>Специализация</div>
+                            <div className={styles.siteTagName}>Специализация?</div>
                             <TagList specialization={site.specialization} className={styles.siteTagValue} />
                         </div>
                     </div>
-                    <a href={site.link} target="_blank" className="mainButton">Перейти к сайту ↗</a>
+                    <a href={site.link} target="_blank" className={styles.mainButton}>Перейти к сайту</a>
                 </div>
 
             </div>

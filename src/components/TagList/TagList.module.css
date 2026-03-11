@@ -34,43 +34,42 @@
     white-space: nowrap;
 }
 
-.tagTone_fullstack {
-    color: hsl(270, 100%, 50%);
-}
-
 .tagTone_web {
-    color: hsl(210, 100%, 50%);
+    color: var(--tag-tone-web);
 }
 
 .tagTone_branding {
-    color: hsl(330, 100%, 50%);
+    color: var(--tag-tone-branding);
 }
 
 .tagTone_product {
-    color: hsla(200, 100%, 31%, 1);
+    color: var(--tag-tone-product);
 }
 
 .tagTone_engineering {
-    color: hsla(171, 100%, 39%, 1);
+    color: var(--tag-tone-engineering);
 }
 
 .tagTone_motion {
-    color: hsl(30, 100%, 50%);
+    color: var(--tag-tone-motion);
 }
 
 .tagTone_illustration {
-    color: hsla(303, 100%, 50%, 1);
+    color: var(--tag-tone-illustration);
 }
 
 .tagTone_threeD {
-    color: hsla(172, 100%, 31%, 1);
+    color: var(--tag-tone-three-d);
+}
+
+.tagTone_cgi {
+    color: var(--tag-tone-cgi);
 }
 
 .tagTone_art {
-    color: hsl(0, 100%, 50%);
+    color: var(--tag-tone-art);
 }
 
 .tagTone_default {
-    color: var(--secondary-text);
+    color: var(--tag-tone-default);
 }
-

@@ -3,7 +3,7 @@
         "slug": "studio-dumbar",
         "title": "STUDIO DUMBAR",
         "subtitle": "Studio Dumbar — мастодонт в сфере моушна. Среди клиентов OpenAI, Nike, NHL. Сайт держится на минимализме: брутальный акцент на работе без лишних объяснений — ровно этим он и цепляет.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Motion Design",
             "Branding"
@@ -20,7 +20,7 @@
         "slug": "collins",
         "title": "COLLINS",
         "subtitle": "COLLINS — крупная брендинговая студия. Сайт — мягкий и минималистичный, с аккуратной анимацией и чистой типографикой: всё читается легко, а кейсы и программы стоят в фокусе без лишнего шума.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -36,7 +36,7 @@
         "slug": "odotoo",
         "title": "O.OO",
         "subtitle": "Студия из Тайваня, балансирующая на стыке дизайна и искусства. Работают с графикой и печатными материалами. На сайте брутальный стиль со смелыми типографическими решениями, сложенными в две основные колонки.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Art"
@@ -53,7 +53,7 @@
         "slug": "jakub-zen",
         "title": "Jakub Zen",
         "subtitle": "Продуктовый дизайнер из Лос-Анджелеса. В резюме — крупные компании, такие как Apple и Meta. Сайт предельно стерилен по подаче и собран вокруг кейсов: без лишних объяснений — только последовательный перечень проектов, который фиксирует масштаб и узнаваемость выполненной работы.",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design",
             "Web"
@@ -70,7 +70,7 @@
         "slug": "baked-design",
         "title": "Baked Design",
         "subtitle": "Baked — продуктовая дизайн-студия для фаундеров: помогают быстро собирать продукты, маркетинговые сайты и интерфейсы, работая в формате подписки без созвонов. Их сайт про свежесть и темп: минималистичная двухколончатая сетка, монохромная палитра и аккуратные детали.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design",
             "Web"
@@ -87,10 +87,11 @@
         "slug": "abramov-ilya",
         "title": "Abramov Ilya",
         "subtitle": "Мультидисциплинарный дизайнер из Самары. Работает в «Сирене»/Спортсе.",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
-            "Fullstack Design",
-            "Design Engineer"
+            "Design Engineer",
+            "Branding",
+            "Web"
         ],
         "link": "https://abramovdesign.com/",
         "previewVideoKey": "",
@@ -104,7 +105,7 @@
         "slug": "hoodzpah",
         "title": "Hoodzpah",
         "subtitle": "Hoodzpah — студия бренд-айдентики и шрифтового дизайна из Южной Калифорнии; в их практике регулярно всплывает custom type, а параллельно они развивают собственную литейку Hood Fonts. Сайт чуть гранжевый по тону и очень живой по подаче.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -120,7 +121,7 @@
         "slug": "naranjo",
         "title": "Naranjo",
         "subtitle": "Naranjo-Etxeberria (N-E) — мадридская команда. На сайте тихая, почти музейная подача — с ощущением, что дизайн здесь ближе к искусству и концепту, чем к «услуге».",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Art"
@@ -137,7 +138,7 @@
         "slug": "indego-design",
         "title": "INDEGO DESIGN",
         "subtitle": "Студия, работающая на стыке коммерческого дизайна и искусства. Сайт со строгим упором на проекты, с верной, иногда акцентной, типографической системой.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Art"
@@ -154,7 +155,7 @@
         "slug": "merci-michel",
         "title": "Merci Michel",
         "subtitle": "Топ-1 студия в сфере интерактивного 3D/2D-веба.",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "3D in Web"
         ],
@@ -170,7 +171,7 @@
         "slug": "ivo-studio",
         "title": "Ivo Studio",
         "subtitle": "Приятный, выделяющийся типографикой и палитрой сайт студии Ivo. Красочные, яркие кейсы по графике и моушну. Самое главное — ребята сумели добавить анимации так, чтобы это не перегружало композицию, а лишь подчеркивало её красочность.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Illustration",
@@ -188,9 +189,10 @@
         "slug": "study-hall",
         "title": "STUDY HALL",
         "subtitle": "Study Hall — фулл-стэк студия из Оклэнда. На сайте много аккуратной флетовой анимации с мягкими изингами.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://studyhall.design/",
         "previewVideoKey": "",
@@ -204,7 +206,7 @@
         "slug": "motto",
         "title": "Motto",
         "subtitle": "Motto — глобальная брендинговая студия с 3 офисами по миру. Сайт основывается на мягкой верстке с акцентными мелкими объектами. Smooth-scroll, мягкая анимация по скроллу и другие детальные анимации в достатке. Отдельная благодарность за анимированный логотип в хедере.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -220,7 +222,7 @@
         "slug": "playlist-studio",
         "title": "Playlist Studio",
         "subtitle": "Бруклинская дизайн-студия. Сайт выделяется модульной симметричной версткой.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Product Design"
@@ -237,7 +239,7 @@
         "slug": "make-me-pulse",
         "title": "Make Me Pulse",
         "subtitle": "Небольшая европейская дизайн-студия.",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -253,7 +255,7 @@
         "slug": "dbco",
         "title": "DBCO",
         "subtitle": "DBCO (Design Business Company) — креативная студия. Всё подано предельно минималистично: крупные блоки, «слайдовое» листание примеров клиентов и мягкая типографика без лишних деталей. Отдельно хочется отметить страницу About — с четкой композицией и без лишних декораций, с безумно приятной версткой и акцентами.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -269,7 +271,7 @@
         "slug": "locomotive",
         "title": "Locomotive",
         "subtitle": "Locomotive — digital-студия из Монреаля: делают сайты с большой погруженностью в детали. На своём сайте они это показывают без объяснений: плотный smooth-scroll, скрольная режиссура, чистые CSS/JS-анимации. Особенно стоит подметить акцентные 3D-элементы на сайте.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Web"
         ],
@@ -285,9 +287,10 @@
         "slug": "37signals",
         "title": "37signals",
         "subtitle": "Сайт студии 37signals, где основной контент — их манифест работы.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://37signals.com/",
         "previewVideoKey": "",
@@ -303,7 +306,7 @@
         "slug": "verve-agency",
         "title": "Verve Agency",
         "subtitle": "Брутальный сайт с монохромной палитрой. Отдельно отмечу красивый хедер, который выделяется своим небольшим размером на фоне основных масштабных деталей. Другая приятная деталь — иллюстрации на главной, которые по времени заменяются на красочные анимированные фреймы.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Motion Design"
@@ -320,7 +323,7 @@
         "slug": "hornet",
         "title": "Hornet",
         "subtitle": "Сайт большой студии, специализирующейся на моушне.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Illustration",
@@ -338,7 +341,7 @@
         "slug": "e-i-b",
         "title": "EVERYTHING IN BETWEEN",
         "subtitle": "Моноширинный сайт с Большими проектами и Маленькими навигационными деталями.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -354,7 +357,7 @@
         "slug": "area-17",
         "title": "AREA 17",
         "subtitle": "AREA 17 — гигант в сфере брендинга. Среди клиентов фигурируют, например, Saint Laurent, Fondation Cartier и ElevenLabs. Визуально сайт собран минималистично и дисциплинированно: много воздуха, крупные акценты, мягкая скролльная анимация, которая держит темп и не ломает чтение.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -370,7 +373,7 @@
         "slug": "sirena",
         "title": "Сирена",
         "subtitle": "Креативная студия диджитал-спецпроектов, геймификации, спорта. Инхаус-студия Спортса.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "3D in Web",
             "Web"
@@ -387,9 +390,9 @@
         "slug": "piqo-studio",
         "title": "Piqo Studio",
         "subtitle": "Современная дизайн-студия с красивыми монохромными блоками.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "3D",
+            "3D in Web",
             "Illustration",
             "Motion Design"
         ],
@@ -405,9 +408,10 @@
         "slug": "therawmaterials",
         "title": "The Raw Materials",
         "subtitle": "Дизайн-студия, позиционирующая себя как «An Unusual Design Company» («Необычная дизайн-компания»). На их сайте есть, чему удивиться — двухколоночная верстка с яркими акцентами, доминантной типографикой и необычными CSS-анимациями.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.therawmaterials.com/",
         "previewVideoKey": "",
@@ -421,7 +425,7 @@
         "slug": "mouthwash-studio",
         "title": "Mouthwash.Studio",
         "subtitle": "Сайт с выверенной монохромной палитрой, мягкими деталями и колончатой сеткой.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -438,7 +442,7 @@
         "slug": "intuition",
         "title": "Интуиция",
         "subtitle": "Великое дизайн-бюро из России. Сделали многое для визуальной культуры Додо, задизайнили сайт для Петрик, а также поддерживают активности Евгения Арутюнова (главного в студии). Это минимум из того, что можно перечислить. Сайт отличается своим уникальным визуальным языком, который сразу нам говорит, что это сделала Интуиция.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -456,7 +460,7 @@
         "slug": "universal-favourite",
         "title": "Universal Favourite",
         "subtitle": "Сайт, выделяющийся брутальной версткой и акцидентным шрифтом. Модульная сетка, яркие проекты и красивый 3д-элемент на главной, которая изменяется при каждом рефреше страницы.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Illustration"
@@ -473,7 +477,7 @@
         "slug": "dia",
         "title": "DIA",
         "subtitle": "Европейская студия дизайна со сложным, но ярким сайтом, подчеркивающим их близость к художественности и искусству в работе.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -492,7 +496,7 @@
         "slug": "porto-rocha",
         "title": "Porto Rocha",
         "subtitle": "PORTO ROCHA — нью-йоркская студия полного цикла. На сайте — минималистичная, но нестандартная модульная верстка в две доминантные колонки: аккуратные детали, выверенная палитра и ощущение, что каждый блок поставлен до пикселя верно.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -508,9 +512,9 @@
         "slug": "palam-cgi",
         "title": "PALAM",
         "subtitle": "Сайт CGI/3D студии.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "3D"
+            "CGI"
         ],
         "link": "https://palam.digital/",
         "previewVideoKey": "",
@@ -524,7 +528,7 @@
         "slug": "humble-team",
         "title": "Humble Team",
         "subtitle": "Humble Team — продуктовая дизайн-студия для стартапов. Их сайт собран мягко и предельно чётко: аккуратная типографика, чистая сетка и живые кейсы, где детали и результат вынесены на первый план.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Web",
             "Product Design"
@@ -541,7 +545,7 @@
         "slug": "max",
         "title": "Студия MAX",
         "subtitle": "Основной сайт в разработке, но заглушка уже говорит нам, что ребята — одни из лучших в своем деле.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -559,7 +563,7 @@
         "slug": "jack-theobald",
         "title": "Jack Theobald",
         "subtitle": "Дизайнер с 10-летним опытом работы внутри продуктов. На сайте мягкая и аккуратная верстка по одной колонке, четкой иерархией серого цвета и лапидарной презентацией работ.",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design",
             "Web",
@@ -577,7 +581,7 @@
         "slug": "ashfall-studio",
         "title": "Ashfall Studio",
         "subtitle": "Сайт Ashfall Studio собран феерично: очень детальные анимации, мягкий скролл, переходы между страницами и 3D-сцены там, где это усиливает подачу.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -593,7 +597,7 @@
         "slug": "chan-karunamuni",
         "title": "Chan Karunamuni",
         "subtitle": "Chan Karunamuni — Human Interface дизайнер в Apple. Его сайт устроен предельно прямолинейно: в центре страницы список его работ, которые знают все.",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -611,7 +615,7 @@
         "slug": "3d-funny-works",
         "title": "3d Funny Works",
         "subtitle": "Креативная студия, умеющая в 3D-веб. Один из немногих сайтов, написанных в 3D. Основная локация — кабинет с интерактивным компьютером.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "3D in Web",
             "Branding"
@@ -628,7 +632,7 @@
         "slug": "further",
         "title": "Further",
         "subtitle": "На сайте — брутальная, уверенная верстка с мягкой скролльной анимацией и жёстким акцентом на кейсах: большие блоки, факты, метрики, цитаты — и всё сразу в работу.",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -644,7 +648,7 @@
         "slug": "koto",
         "title": "KOTO",
         "subtitle": "Koto — глобальная брендинговая студия: пять студий на трёх континентах, с прямой установкой «make the best work humanly possible». Сайт звучит так же: мощный, чёткий, с брутальным упором на кейсы и аккуратными креативными деталями в тексте и подаче, которые сразу фиксируют масштаб игрока.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -660,9 +664,10 @@
         "slug": "order",
         "title": "order",
         "subtitle": "Строгий сайт графической дизайн-студии с акцентным пиксельным шрифтом кеглем в 8px.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://order.design/",
         "previewVideoKey": "",
@@ -676,10 +681,11 @@
         "slug": "ryo-lu",
         "title": "Ryo Lu",
         "subtitle": "Ryo Lu — Head of Design в Cursor; ранее занимался продуктовым дизайном в Notion, Stripe и Asana. Его сайт устроен как двухслойная система: поверх — минималистичная визитка с фактами, ниже — ryOS, desktop с оконным менеджером и темами под классические macOS/Windows. Внутри ryOS приложения не имитируются, а функционируют: файловый менеджер, редактор, графический редактор, терминал с AI-интеграцией, а также браузер, через который можно зайти на любой сайт.",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
-            "Fullstack Design",
-            "Design Engineer"
+            "Design Engineer",
+            "Branding",
+            "Web"
         ],
         "link": "https://ryo.lu/",
         "previewVideoKey": "",
@@ -693,7 +699,7 @@
         "slug": "abra",
         "title": "ABRA",
         "subtitle": "Крупная motion+CGI студия из Варшавы.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Motion Design"
         ],
@@ -709,7 +715,7 @@
         "slug": "petrick",
         "title": "Petrick",
         "subtitle": "Одна из лучших дизайн-студий России, специализирующихся на иллюстрациях, стори-теллинге и моушне. Сайт сделан студией Интуиция.",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Illustration",
             "Motion Design",
@@ -727,7 +733,7 @@
         "slug": "todd-hamilton",
         "title": "Todd Hamilton",
         "subtitle": "Todd Hamilton — продуктовый дизайнер и разработчик с 20+ годами опыта: долгое время делал продукты в Facebook, а сейчас строит AIProxy. Его сайт довольно уникален: центральная сцена собрана в виде монитора, в который ты буквально проваливаешься, и погружаешься в выбранный материал.",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design",
             "Design Engineer"
@@ -744,7 +750,7 @@
         "slug": "metalab",
         "title": "Metalab",
         "subtitle": "Глобальная продуктовая студия, добавляющая в свои работы глубокую и яркую графику. Сайт базируется на простой разводящей с основными большими кейсами. Отдельно нужно отметить ease-анимации с переходами между страницами.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -760,9 +766,10 @@
         "slug": "haptic",
         "title": "HAPTIC",
         "subtitle": "Haptic — яркая, современная продуктовая студия. Сайт такой же по характеру: чистая, но яркая верстка, динамичные акценты и живые кейсы.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://haptic.studio/",
         "previewVideoKey": "",
@@ -776,7 +783,7 @@
         "slug": "",
         "title": "Студия Чулакова",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -792,7 +799,7 @@
         "slug": "oyedrops",
         "title": "oyedrops",
         "subtitle": "Минималистичная модульная верстка, акцентирующая внимание на моушн-кейсах.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Motion Design"
         ],
@@ -808,7 +815,7 @@
         "slug": "bureau-borsche",
         "title": "BUREAU BORSCHE",
         "subtitle": "Bureau Borsche — мюнхенская студия, работающая на стыке современной культуры, искусства и коммерческой графики: айдентика, арт-дирекшн, диджитал, издательские проекты. Сайт устроен как сухой каталог работ — длинный список проектов без «продажных» объяснений; за счёт этого особенно хорошо читается их художественная амбиция в брендинге и вкус к культурным контекстам.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -824,11 +831,11 @@
         "slug": "guglieri",
         "title": "Claudio Guglieri",
         "subtitle": "Большой продуктовый дизайнер из Сан-Франциско. Сайт Клаудио отличается прекрасными мягкими переходами между страницами, удобной и легкой навигацией и отличной работой с акцентами.",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design",
             "Web",
-            "Fullstack Design"
+            "Branding"
         ],
         "link": "https://guglieri.com/",
         "previewVideoKey": "",
@@ -842,7 +849,7 @@
         "slug": "twomuch-studio",
         "title": "Twomuch.Studio",
         "subtitle": "Студия, ставящая во главу угла эксперимент, «focused on playing with all things digital». Яркая, экстравагантная верстка в виде раскрывающегося модального окна, на фоне которого бушуют 3D-элементы.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -859,7 +866,7 @@
         "slug": "kurppa-hosk",
         "title": "Kurppa Hosk",
         "subtitle": "Дизайн-студия, специализирующаяся на брендинге. На сайте крупная, брутальная верстка с необычной подачей кейсов в виде бегущей строки.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -875,7 +882,7 @@
         "slug": "base-design",
         "title": "Base Design",
         "subtitle": "Сайт — один из примеров того, как классно сделать анимацию по скроллу.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -891,9 +898,10 @@
         "slug": "studio-size",
         "title": "Studio Size",
         "subtitle": "Красивые и яркие типографические анимации по скроллу. Брутальная типографика и масштабные элементы.",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://studio-size.com/",
         "previewVideoKey": "",
@@ -903,20 +911,11 @@
         "previewScreen": "screens/studio-size/studio-size-preview.webp",
         "customStyle": ""
     },
-    
-    
-    
-    
-    
-    
-    
-    
-    
     {
         "slug": "accuraten",
         "title": "Accuraten",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -930,7 +929,7 @@
         "slug": "m18",
         "title": "M18",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -944,7 +943,7 @@
         "slug": "symbol-studio",
         "title": "Symbol Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -958,9 +957,10 @@
         "slug": "",
         "title": "ЦЕХ",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.tsekh.design/",
         "previewVideoKey": "",
@@ -972,7 +972,7 @@
         "slug": "guglieri",
         "title": "Guglieri",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Product Design"
@@ -987,7 +987,7 @@
         "slug": "crauch",
         "title": "Crauch",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -1001,7 +1001,7 @@
         "slug": "reboot",
         "title": "REBOOT",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -1015,7 +1015,7 @@
         "slug": "aic",
         "title": "AIC",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -1029,10 +1029,11 @@
         "slug": "chips",
         "title": "Chips",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "3D in Web",
-            "Fullstack Design"
+            "CGI",
+            "Branding",
+            "Web"
         ],
         "link": "https://chipsa.ru/",
         "previewVideoKey": "",
@@ -1044,9 +1045,10 @@
         "slug": "creative-people",
         "title": "Creative People",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://cpeople.ru/",
         "previewVideoKey": "",
@@ -1058,7 +1060,7 @@
         "slug": "maryco",
         "title": "Maryco",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1072,7 +1074,7 @@
         "slug": "depot",
         "title": "Depot",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1086,7 +1088,7 @@
         "slug": "pragmatica",
         "title": "Pragmatica",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -1100,7 +1102,7 @@
         "slug": "paul-jun-collins",
         "title": "Paul Jun (Collins)",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -1114,7 +1116,7 @@
         "slug": "night-kingdom",
         "title": "Night Kingdom",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Gaming"
         ],
@@ -1128,7 +1130,7 @@
         "slug": "samokat-tech",
         "title": "SAMOKAT TECH",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Product Design"
         ],
@@ -1142,9 +1144,10 @@
         "slug": "commence",
         "title": "Commence",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://comence.ru/",
         "previewVideoKey": "",
@@ -1156,9 +1159,10 @@
         "slug": "idc",
         "title": "ID–C",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://id-c.se/",
         "previewVideoKey": "",
@@ -1170,9 +1174,10 @@
         "slug": "redis-agency",
         "title": "Redis Agency",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.redis.agency/",
         "previewVideoKey": "",
@@ -1184,7 +1189,7 @@
         "slug": "",
         "title": "ЛУЧ",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -1198,7 +1203,7 @@
         "slug": "vissotto-studio",
         "title": "VISSOTTO STUDIO",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1212,7 +1217,7 @@
         "slug": "matthew-strom",
         "title": "Matthew Ström",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -1226,9 +1231,10 @@
         "slug": "griflan",
         "title": "Griflan",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://griflan.com/",
         "previewVideoKey": "",
@@ -1240,9 +1246,10 @@
         "slug": "kargul-studio",
         "title": "Kargul Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://kargul.studio/",
         "previewVideoKey": "",
@@ -1254,9 +1261,10 @@
         "slug": "adria-studio",
         "title": "Adria Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.adria.studio/",
         "previewVideoKey": "",
@@ -1268,7 +1276,7 @@
         "slug": "holystick",
         "title": "Holystick",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1282,7 +1290,7 @@
         "slug": "endless",
         "title": "Endless",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -1296,7 +1304,7 @@
         "slug": "after",
         "title": "After",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -1310,7 +1318,7 @@
         "slug": "startup-visuals",
         "title": "Startup Visuals",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -1324,9 +1332,10 @@
         "slug": "designme",
         "title": "Designme",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.designme.agency/",
         "previewVideoKey": "",
@@ -1338,7 +1347,7 @@
         "slug": "bricx",
         "title": "BRICX",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -1352,9 +1361,10 @@
         "slug": "abhijit-rout",
         "title": "Abhijit Rout",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.abhijitrout.in/",
         "previewVideoKey": "",
@@ -1366,7 +1376,7 @@
         "slug": "primary",
         "title": "Primary",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1380,7 +1390,7 @@
         "slug": "studio-freight",
         "title": "STUDIO FREIGHT",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1394,9 +1404,10 @@
         "slug": "moonsight",
         "title": "MoonSight",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.moonsight.agency/",
         "previewVideoKey": "",
@@ -1408,7 +1419,7 @@
         "slug": "cassandra-tang",
         "title": "Cassandra Tang",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -1422,7 +1433,7 @@
         "slug": "innocean-berlin",
         "title": "Innocean Berlin",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1436,7 +1447,7 @@
         "slug": "codeau-studio",
         "title": "codeau studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1450,7 +1461,7 @@
         "slug": "mullen-lowe-design-studio",
         "title": "Mullen Lowe Design Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1464,7 +1475,7 @@
         "slug": "oddworks",
         "title": "OddWorks",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -1479,7 +1490,7 @@
         "slug": "deux-huit-huit",
         "title": "DEUX HUIT HUIT",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1493,7 +1504,7 @@
         "slug": "estudio-republica",
         "title": "Estudio Republica",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -1508,7 +1519,7 @@
         "slug": "strange-family",
         "title": "Strange Family",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1522,7 +1533,7 @@
         "slug": "wille-larsson",
         "title": "Wille Larsson",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -1536,7 +1547,7 @@
         "slug": "vagabond",
         "title": "Vagabond",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1550,7 +1561,7 @@
         "slug": "daniel-eden",
         "title": "Daniel Eden",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -1564,7 +1575,7 @@
         "slug": "studio-ouam",
         "title": "studio ouam",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1578,7 +1589,7 @@
         "slug": "endless-work",
         "title": "Endless Work",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1592,7 +1603,7 @@
         "slug": "fons-mans",
         "title": "Fons Mans",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -1606,7 +1617,7 @@
         "slug": "rocketpand",
         "title": "ROCKETPAND",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Motion Design"
         ],
@@ -1620,9 +1631,10 @@
         "slug": "oh-my",
         "title": "OH MY",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.ohmy.studio/",
         "previewVideoKey": "",
@@ -1634,9 +1646,10 @@
         "slug": "designme-agency",
         "title": "designme agency",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://daneden.me/",
         "previewVideoKey": "",
@@ -1648,9 +1661,10 @@
         "slug": "rxk",
         "title": "RXK",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://r-c.work/",
         "previewVideoKey": "",
@@ -1662,7 +1676,7 @@
         "slug": "william-le-apple",
         "title": "William Le (Apple)",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -1676,7 +1690,7 @@
         "slug": "opening-hours",
         "title": "opening hours",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -1691,7 +1705,7 @@
         "slug": "giga-design-studio",
         "title": "GIGA DESIGN STUDIO",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -1706,9 +1720,9 @@
         "slug": "dverso-studio",
         "title": "DVERSO STUDIO",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "3D in Web",
+            "CGI",
             "Branding"
         ],
         "link": "https://dversostudio.io/",
@@ -1721,7 +1735,7 @@
         "slug": "precious-m",
         "title": "Precious M.",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -1735,7 +1749,7 @@
         "slug": "jungle",
         "title": "Jungle",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Gaming"
         ],
@@ -1749,9 +1763,10 @@
         "slug": "right-studio",
         "title": "Right Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://right.studio/",
         "previewVideoKey": "",
@@ -1763,7 +1778,7 @@
         "slug": "kory-jordan-apple",
         "title": "Kory Jordan (Apple)",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -1777,7 +1792,7 @@
         "slug": "brain-cho-apple",
         "title": "Brain Cho (Apple)",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -1791,7 +1806,7 @@
         "slug": "june-lee-apple",
         "title": "June Lee (Apple)",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Illustration"
         ],
@@ -1805,7 +1820,7 @@
         "slug": "dominik-hofacker-apple",
         "title": "Dominik Hofacker (Apple)",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -1819,7 +1834,7 @@
         "slug": "jonathan-ravasz-apple",
         "title": "Jonathan Ravasz (Apple)",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -1833,7 +1848,7 @@
         "slug": "kasper-nyman",
         "title": "Kasper Nyman",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Motion Design"
@@ -1848,7 +1863,7 @@
         "slug": "span-studio",
         "title": "SPAN STUDIO",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1862,7 +1877,7 @@
         "slug": "rejouice",
         "title": "REJOUICE",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1876,7 +1891,7 @@
         "slug": "dalee",
         "title": "Dalee",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -1890,7 +1905,7 @@
         "slug": "studio-sara-cristina-moser",
         "title": "Studio Sara Cristina Moser",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1904,7 +1919,7 @@
         "slug": "banktm",
         "title": "BANKTM",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -1919,7 +1934,7 @@
         "slug": "outcrowd",
         "title": "Outcrowd",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1933,7 +1948,7 @@
         "slug": "a-black-cover-design",
         "title": "A Black Cover Design",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1947,9 +1962,10 @@
         "slug": "red-antler",
         "title": "Red Antler",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.redantler.com/",
         "previewVideoKey": "",
@@ -1961,9 +1977,10 @@
         "slug": "orange-studio",
         "title": "Orange Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.orangestudio.co",
         "previewVideoKey": "",
@@ -1975,7 +1992,7 @@
         "slug": "ranlus",
         "title": "Ranlus",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Motion Design"
         ],
@@ -1989,7 +2006,7 @@
         "slug": "esh-gruppa",
         "title": "ESH Gruppa",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2003,9 +2020,9 @@
         "slug": "salt-pepper",
         "title": "Salt & Pepper",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
-            "3D in Web",
+            "CGI",
             "Art",
             "Branding"
         ],
@@ -2019,9 +2036,9 @@
         "slug": "webisoft",
         "title": "WEBISOFT",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
-            "3D in Web",
+            "CGI",
             "Product Design"
         ],
         "link": "https://webisoft.com/",
@@ -2034,7 +2051,7 @@
         "slug": "we-go-again",
         "title": "WE GO AGAIN",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -2048,7 +2065,7 @@
         "slug": "est-6",
         "title": "EST +6",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2062,9 +2079,9 @@
         "slug": "unveil",
         "title": "UNVEIL",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "3D",
+            "CGI",
             "Branding"
         ],
         "link": "https://unveil.fr/",
@@ -2077,7 +2094,7 @@
         "slug": "watson",
         "title": "WATSON",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding",
             "Illustration"
@@ -2092,7 +2109,7 @@
         "slug": "alex-hunting-studio",
         "title": "Alex Hunting Studio",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -2106,7 +2123,7 @@
         "slug": "hold-on-please",
         "title": "Hold On Please",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2121,7 +2138,7 @@
         "slug": "triangle-studio",
         "title": "Triangle-Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2136,7 +2153,7 @@
         "slug": "little-troop",
         "title": "Little Troop",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2151,7 +2168,7 @@
         "slug": "kashiwa-sato",
         "title": "Kashiwa Sato",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -2165,7 +2182,7 @@
         "slug": "lineto",
         "title": "Lineto",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2179,7 +2196,7 @@
         "slug": "studio-feixen",
         "title": "Studio Feixen",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2193,9 +2210,9 @@
         "slug": "monogrid",
         "title": "MONOGRID",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
-            "3D in Web",
+            "CGI",
             "Art",
             "Branding",
             "Product Design"
@@ -2210,7 +2227,7 @@
         "slug": "mvsm",
         "title": "MVSM",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -2224,7 +2241,7 @@
         "slug": "koshta",
         "title": "Koshta",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2239,7 +2256,7 @@
         "slug": "space10",
         "title": "SPACE10",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2254,9 +2271,10 @@
         "slug": "bono-digital",
         "title": "Bono Digital",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.bono.digital/",
         "previewVideoKey": "",
@@ -2268,7 +2286,7 @@
         "slug": "mire",
         "title": "Mire",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2282,7 +2300,7 @@
         "slug": "numinous",
         "title": "Numinous",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2296,7 +2314,7 @@
         "slug": "rawart-studio",
         "title": "Rawart Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2310,7 +2328,7 @@
         "slug": "ben-jo",
         "title": "Ben&Jo",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2325,9 +2343,10 @@
         "slug": "nightjar",
         "title": "NIGHTJAR",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://nightjar.co/",
         "previewVideoKey": "",
@@ -2339,9 +2358,10 @@
         "slug": "overthought-studio",
         "title": "Overthought Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.overthought.ch/",
         "previewVideoKey": "",
@@ -2353,7 +2373,7 @@
         "slug": "panorama-space",
         "title": "Panorama Space",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Art"
         ],
@@ -2367,9 +2387,9 @@
         "slug": "lemma",
         "title": "Lemma",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "3D in Web",
+            "CGI",
             "Branding"
         ],
         "link": "https://lemma.studio/",
@@ -2382,7 +2402,7 @@
         "slug": "lumious-group",
         "title": "Lumious Group",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2396,7 +2416,7 @@
         "slug": "studio-paquette",
         "title": "Studio Paquette",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2410,7 +2430,7 @@
         "slug": "gretel",
         "title": "Gretel",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2424,7 +2444,7 @@
         "slug": "estudio-altillo",
         "title": "Estudio Altillo",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2438,7 +2458,7 @@
         "slug": "studio-blackburn",
         "title": "Studio Blackburn",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2452,7 +2472,7 @@
         "slug": "bunsen",
         "title": "Bunsen",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2466,9 +2486,10 @@
         "slug": "offmenu",
         "title": "Offmenu",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://offmenu.design/",
         "previewVideoKey": "",
@@ -2480,7 +2501,7 @@
         "slug": "zeal-studio",
         "title": "Zeal Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2494,7 +2515,7 @@
         "slug": "theroyalstudio",
         "title": "TheRoyalStudio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2509,7 +2530,7 @@
         "slug": "",
         "title": "Щёлочь",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2524,7 +2545,7 @@
         "slug": "dada-projects",
         "title": "DADA Projects",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2539,7 +2560,7 @@
         "slug": "weiss",
         "title": "WEISS",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2553,7 +2574,7 @@
         "slug": "brand-hub",
         "title": "Brand Hub",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2567,7 +2588,7 @@
         "slug": "electric-red",
         "title": "Electric Red",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2582,9 +2603,9 @@
         "slug": "danil-krivoruchko",
         "title": "Danil Krivoruchko",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
-            "3D"
+            "CGI"
         ],
         "link": "https://myshli.com/",
         "previewVideoKey": "",
@@ -2596,7 +2617,7 @@
         "slug": "adrian-apple",
         "title": "Adrian (Apple)",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -2610,7 +2631,7 @@
         "slug": "",
         "title": "Женя Власов",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -2624,7 +2645,7 @@
         "slug": "tric",
         "title": "TRIC",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -2638,7 +2659,7 @@
         "slug": "utopia",
         "title": "UTOPIA",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [],
         "link": "https://utopiait.ru/",
         "previewVideoKey": "",
@@ -2650,7 +2671,7 @@
         "slug": "no-plan",
         "title": "NO PLAN",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2664,9 +2685,10 @@
         "slug": "lowercase",
         "title": "Lowercase",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.lowercase.club/",
         "previewVideoKey": "",
@@ -2678,7 +2700,7 @@
         "slug": "skinn",
         "title": "SKINN",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [],
         "link": "https://www.skinn.be/en",
         "previewVideoKey": "",
@@ -2690,7 +2712,7 @@
         "slug": "somestr",
         "title": "Somestr",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2704,7 +2726,7 @@
         "slug": "dseya",
         "title": "Dseya",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -2718,7 +2740,7 @@
         "slug": "",
         "title": "Бюробукв",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Fonts"
         ],
@@ -2732,7 +2754,7 @@
         "slug": "reesaw",
         "title": "Reesaw",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2746,7 +2768,7 @@
         "slug": "ihunk",
         "title": "IHUNK",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2760,7 +2782,7 @@
         "slug": "mateca",
         "title": "MateCa",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -2774,7 +2796,7 @@
         "slug": "ochen-digital",
         "title": "Ochen Digital",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2788,7 +2810,7 @@
         "slug": "hellorobo",
         "title": "HelloRobo",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2802,7 +2824,7 @@
         "slug": "bold",
         "title": "Bold",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2816,7 +2838,7 @@
         "slug": "charmer",
         "title": "Charmer",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [],
         "link": "https://www.charmerstudio.com/ru",
         "previewVideoKey": "",
@@ -2828,7 +2850,7 @@
         "slug": "works-studio",
         "title": "WORKS STUDIO",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2842,7 +2864,7 @@
         "slug": "studiopaack",
         "title": "StudioPaack",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2856,7 +2878,7 @@
         "slug": "sergey-kudikov",
         "title": "Sergey Kudikov",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -2870,7 +2892,7 @@
         "slug": "anton",
         "title": "Anton です",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Art",
             "Branding"
@@ -2885,7 +2907,7 @@
         "slug": "smith-dictions",
         "title": "Smith & Diction’s",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2899,7 +2921,7 @@
         "slug": "ayond",
         "title": "AYOND",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -2914,7 +2936,7 @@
         "slug": "made-by-mad",
         "title": "Made by Mad",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -2928,7 +2950,7 @@
         "slug": "tigers-magic",
         "title": "Tigers Magic",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2942,7 +2964,7 @@
         "slug": "rogue",
         "title": "Rogue",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -2956,7 +2978,7 @@
         "slug": "dotorg",
         "title": "Dotorg",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2970,7 +2992,7 @@
         "slug": "simon",
         "title": "Simon",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2984,7 +3006,7 @@
         "slug": "kuya",
         "title": "KUYA",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -2998,7 +3020,7 @@
         "slug": "struggle",
         "title": "STRUGGLE",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -3012,7 +3034,7 @@
         "slug": "ilar",
         "title": "ILAR",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3026,7 +3048,7 @@
         "slug": "ermolaev-beraeu",
         "title": "Ermolaev Beraeu",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Fonts"
@@ -3041,7 +3063,7 @@
         "slug": "",
         "title": "Владимир Ваюев",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -3055,7 +3077,7 @@
         "slug": "",
         "title": "Два слова",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3069,7 +3091,7 @@
         "slug": "",
         "title": "ТОЛК",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3083,7 +3105,7 @@
         "slug": "hallobasis",
         "title": "HalloBasis",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3097,9 +3119,10 @@
         "slug": "gw-studio",
         "title": "G–W Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://g-w.studio/",
         "previewVideoKey": "",
@@ -3111,7 +3134,7 @@
         "slug": "silencio",
         "title": "SILENCIO",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3125,7 +3148,7 @@
         "slug": "antro",
         "title": "Antro",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -3139,7 +3162,7 @@
         "slug": "funky-agency-ru",
         "title": "Funky Agency RU",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3153,7 +3176,7 @@
         "slug": "deux-huit-huit",
         "title": "Deux Huit Huit",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3167,7 +3190,7 @@
         "slug": "saint-urbain",
         "title": "SAINT URBAIN",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3181,7 +3204,7 @@
         "slug": "ava-digital",
         "title": "AVA-digital",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3195,7 +3218,7 @@
         "slug": "non-objective",
         "title": "NON-OBJECTIVE",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -3210,7 +3233,7 @@
         "slug": "ilovecreatives",
         "title": "ILOVECREATIVES",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -3225,7 +3248,7 @@
         "slug": "ilovecreatives",
         "title": "ILOVECREATIVES",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -3239,7 +3262,7 @@
         "slug": "nathan-smith",
         "title": "Nathan Smith",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -3253,7 +3276,7 @@
         "slug": "tux",
         "title": "TUX",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -3267,7 +3290,7 @@
         "slug": "dmytro",
         "title": "Dmytro",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3281,7 +3304,7 @@
         "slug": "charmin",
         "title": "Charmin",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3295,7 +3318,7 @@
         "slug": "wojtek-witkowski",
         "title": "Wojtek Witkowski",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3309,7 +3332,7 @@
         "slug": "alana-goyal",
         "title": "Alana Goyal",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -3323,7 +3346,7 @@
         "slug": "boris-verks",
         "title": "Boris Verks",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Product Design"
@@ -3338,7 +3361,7 @@
         "slug": "yevhen-yurchuk",
         "title": "Yevhen Yurchuk",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3352,7 +3375,7 @@
         "slug": "jakub-krehel",
         "title": "Jakub Krehel",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3366,7 +3389,7 @@
         "slug": "meschrac-irung",
         "title": "Meschrac Irung",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3380,10 +3403,11 @@
         "slug": "alis-zu",
         "title": "Alis Zu",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.aliszu.co/",
         "previewVideoKey": "",
@@ -3395,7 +3419,7 @@
         "slug": "makeover",
         "title": "makeover",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3409,7 +3433,7 @@
         "slug": "vaun-blu",
         "title": "Vaun Blu",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3423,7 +3447,7 @@
         "slug": "slava-barinov",
         "title": "Slava Barinov",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3437,7 +3461,7 @@
         "slug": "ji-park",
         "title": "Ji Park",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Art",
             "Branding"
@@ -3452,7 +3476,7 @@
         "slug": "roman",
         "title": "Roman",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3466,7 +3490,7 @@
         "slug": "benjamin-akar",
         "title": "Benjamin Akar",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
             "IT"
@@ -3481,7 +3505,7 @@
         "slug": "andrey-kuzmin",
         "title": "Andrey Kuzmin",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -3495,7 +3519,7 @@
         "slug": "studio-evra",
         "title": "STUDIO EVRA",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Product Design"
@@ -3510,7 +3534,7 @@
         "slug": "beno",
         "title": "Beno",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3524,7 +3548,7 @@
         "slug": "andreion-de-castro",
         "title": "Andreion de Castro",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "IT"
@@ -3539,7 +3563,7 @@
         "slug": "wildy-riftian",
         "title": "Wildy Riftian",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -3553,7 +3577,7 @@
         "slug": "egor-fadeev",
         "title": "Egor Fadeev",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -3567,9 +3591,10 @@
         "slug": "marco-cornacchia",
         "title": "Marco Cornacchia",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://www.marco.fyi/",
         "previewVideoKey": "",
@@ -3581,7 +3606,7 @@
         "slug": "lea-naisberg",
         "title": "Lea Naisberg",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Design Engineer",
@@ -3597,7 +3622,7 @@
         "slug": "yan-zareckii",
         "title": "Yan Zareckii",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3611,7 +3636,7 @@
         "slug": "rene-charles",
         "title": "Rene Charles",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -3625,7 +3650,7 @@
         "slug": "michael-garcia",
         "title": "Michael Garcia",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
             "IT"
@@ -3640,7 +3665,7 @@
         "slug": "yann-edern-gillet",
         "title": "Yann-Edern Gillet",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3654,7 +3679,7 @@
         "slug": "michael-ustinov",
         "title": "Michael Ustinov",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3668,7 +3693,7 @@
         "slug": "mattew-prebeg",
         "title": "Mattew Prebeg",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Art",
             "Branding"
@@ -3683,7 +3708,7 @@
         "slug": "jace",
         "title": "Jace",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Product Design"
@@ -3698,7 +3723,7 @@
         "slug": "rob-bohnke",
         "title": "Rob Bohnke",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3712,7 +3737,7 @@
         "slug": "mason-watson",
         "title": "Mason Watson",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3726,7 +3751,7 @@
         "slug": "ganesh-kamur",
         "title": "Ganesh Kamur",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3740,7 +3765,7 @@
         "slug": "mau-hany",
         "title": "Mau Hany",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3754,7 +3779,7 @@
         "slug": "neil-jackson",
         "title": "Neil Jackson",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Art",
             "Branding"
@@ -3769,7 +3794,7 @@
         "slug": "emuni",
         "title": "Emuni",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -3784,7 +3809,7 @@
         "slug": "spencer-gabor",
         "title": "Spencer Gabor",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Illustration"
@@ -3799,7 +3824,7 @@
         "slug": "jake-down-smith",
         "title": "Jake Down-Smith",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3813,7 +3838,7 @@
         "slug": "andrew-trousdale",
         "title": "Andrew Trousdale",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3827,7 +3852,7 @@
         "slug": "joost-grootens-studio",
         "title": "Joost Grootens Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3841,7 +3866,7 @@
         "slug": "eva-sanchez",
         "title": "Eva Sanchez",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3855,7 +3880,7 @@
         "slug": "rauno-freiberg",
         "title": "Rauno Freiberg",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3869,7 +3894,7 @@
         "slug": "valentin-galmand",
         "title": "Valentin Galmand",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Illustration",
             "Product Design"
@@ -3884,7 +3909,7 @@
         "slug": "schwaibold-vos",
         "title": "Schwaibold & Vos",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3898,7 +3923,7 @@
         "slug": "konstantin-filatov",
         "title": "Konstantin Filatov",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3912,7 +3937,7 @@
         "slug": "benji-taylor",
         "title": "Benji Taylor",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -3926,7 +3951,7 @@
         "slug": "martin-pohmall",
         "title": "Martin Pohmall",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -3940,7 +3965,7 @@
         "slug": "adam-arutyunov",
         "title": "Adam Arutyunov",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "IT"
         ],
@@ -3954,7 +3979,7 @@
         "slug": "vlad-kalashnikov",
         "title": "Vlad Kalashnikov",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -3968,7 +3993,7 @@
         "slug": "jesse-nyberg",
         "title": "Jesse Nyberg",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -3982,7 +4007,7 @@
         "slug": "ainsley-romero",
         "title": "Ainsley Romero",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Art",
             "Branding"
@@ -3997,7 +4022,7 @@
         "slug": "micah-carrol",
         "title": "Micah Carrol",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Product Design"
@@ -4012,7 +4037,7 @@
         "slug": "kenny-brandenberger",
         "title": "Kenny Brandenberger",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4026,7 +4051,7 @@
         "slug": "jiacheng-yang",
         "title": "Jiacheng Yang",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -4040,7 +4065,7 @@
         "slug": "erik-jonsson",
         "title": "Erik Jonsson",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4054,10 +4079,11 @@
         "slug": "naau",
         "title": "NAAU",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://naau.studio/",
         "previewVideoKey": "",
@@ -4069,7 +4095,7 @@
         "slug": "",
         "title": "Студия Мира",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Art",
             "Branding"
@@ -4084,7 +4110,7 @@
         "slug": "ceren-burcu-turkan",
         "title": "Ceren Burcu Turkan",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4098,7 +4124,7 @@
         "slug": "sarah-oh",
         "title": "Sarah Oh",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Illustration",
@@ -4114,7 +4140,7 @@
         "slug": "",
         "title": "Саша Барабонова",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Design Engineer",
@@ -4130,9 +4156,9 @@
         "slug": "wonderpeek",
         "title": "wonderpeek",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "3D"
+            "CGI"
         ],
         "link": "https://www.wonderpeek.com/",
         "previewVideoKey": "",
@@ -4144,7 +4170,7 @@
         "slug": "yehwan-song-yen-song",
         "title": "Yehwan Song (Yen song)",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -4158,7 +4184,7 @@
         "slug": "angello-torres",
         "title": "Angello Torres",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4172,7 +4198,7 @@
         "slug": "kudcev",
         "title": "KUDCEV",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4186,7 +4212,7 @@
         "slug": "artem-matyushkin",
         "title": "Artem Matyushkin",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Art",
             "Branding"
@@ -4201,7 +4227,7 @@
         "slug": "kate-sosedova",
         "title": "Kate Sosedova",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -4215,7 +4241,7 @@
         "slug": "jury-alyavdin",
         "title": "Jury Alyavdin",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -4229,7 +4255,7 @@
         "slug": "artem-militonian",
         "title": "Artem  Militonian",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Product Design"
@@ -4244,7 +4270,7 @@
         "slug": "gleb-zhigulin",
         "title": "Gleb Zhigulin",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Product Design"
@@ -4259,7 +4285,7 @@
         "slug": "stop-design",
         "title": "stop-design",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4273,7 +4299,7 @@
         "slug": "geo-chen",
         "title": "Geo Chen",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -4287,7 +4313,7 @@
         "slug": "alex-melnikov",
         "title": "Alex Melnikov",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Motion Design"
         ],
@@ -4301,7 +4327,7 @@
         "slug": "local-studio",
         "title": "LOCAL Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4315,7 +4341,7 @@
         "slug": "florian-kiem",
         "title": "Florian Kiem",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Design Engineer"
         ],
@@ -4329,7 +4355,7 @@
         "slug": "natali-almosa",
         "title": "Natali Almosa",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Product Design"
@@ -4344,7 +4370,7 @@
         "slug": "mitul-shah",
         "title": "Mitul Shah",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4358,7 +4384,7 @@
         "slug": "adam",
         "title": "Adam",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -4372,7 +4398,7 @@
         "slug": "finetune",
         "title": "Finetune",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Product Design"
         ],
@@ -4386,7 +4412,7 @@
         "slug": "thomas-provost",
         "title": "Thomas Provost",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Motion Design"
@@ -4401,7 +4427,7 @@
         "slug": "nowave",
         "title": "Nowave",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4415,7 +4441,7 @@
         "slug": "anthony-lam",
         "title": "Anthony Lam",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Art",
             "Branding"
@@ -4430,7 +4456,7 @@
         "slug": "team-gadziy",
         "title": "Team Gadziy",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4444,7 +4470,7 @@
         "slug": "nahuel-gerth",
         "title": "Nahuel Gerth",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Design Engineer"
         ],
@@ -4458,7 +4484,7 @@
         "slug": "anthony-hodbay",
         "title": "Anthony Hodbay",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -4472,7 +4498,7 @@
         "slug": "nikolai-golovin",
         "title": "Nikolai Golovin",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4486,7 +4512,7 @@
         "slug": "vlad-duhnov",
         "title": "Vlad Duhnov",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [],
         "link": "https://vladduhnov.framer.website/",
         "previewVideoKey": "",
@@ -4498,7 +4524,7 @@
         "slug": "vova",
         "title": "Vova",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4512,7 +4538,7 @@
         "slug": "robert-borghesi",
         "title": "Robert Borghesi",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Design Engineer",
             "IT"
@@ -4527,9 +4553,10 @@
         "slug": "reboot-studio",
         "title": "Reboot Studio",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Fullstack Design"
+            "Branding",
+            "Web"
         ],
         "link": "https://reboot.studio/",
         "previewVideoKey": "",
@@ -4541,7 +4568,7 @@
         "slug": "daniel-sun",
         "title": "Daniel Sun",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4555,7 +4582,7 @@
         "slug": "dmitry-santalov",
         "title": "Dmitry Santalov",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Product Design"
         ],
@@ -4569,7 +4596,7 @@
         "slug": "together-with-you",
         "title": "together with you",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4583,7 +4610,7 @@
         "slug": "artem-tarasov",
         "title": "Artem Tarasov",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4597,7 +4624,7 @@
         "slug": "sharon-lee",
         "title": "Sharon Lee",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4611,7 +4638,7 @@
         "slug": "mr-anatolie",
         "title": "Mr. Anatolie",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding",
             "Product Design"
@@ -4626,7 +4653,7 @@
         "slug": "dekart-group",
         "title": "Dekart group",
         "subtitle": "",
-        "category": "Design Studio",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4640,7 +4667,7 @@
         "slug": "tom-yorky",
         "title": "Tom Yorky",
         "subtitle": "",
-        "category": "Creative Studio",
+        "category": "Креативная студия",
         "specialization": [
             "Branding"
         ],
@@ -4654,7 +4681,7 @@
         "slug": "funny-daniele-buffa",
         "title": "Funny | Daniele Buffa",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Branding"
         ],
@@ -4668,7 +4695,7 @@
         "slug": "nikira-vasilevskyi",
         "title": "Nikira Vasilevskyi",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Art",
             "Branding"
@@ -4683,7 +4710,7 @@
         "slug": "braulo-amado",
         "title": "Braulo Amado",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Art",
             "Branding"
@@ -4698,7 +4725,7 @@
         "slug": "nikita-koshcyi",
         "title": "Nikita Koshchyi",
         "subtitle": "",
-        "category": "Designer",
+        "category": "Дизайнер",
         "specialization": [
             "Art",
             "Branding"

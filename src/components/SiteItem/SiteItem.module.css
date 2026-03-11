@@ -1,6 +1,6 @@
 .siteContainer {
     height: fit-content;
-    padding: 24px 32px;
+    padding: 24px 24px;
 
     cursor: pointer;
 
@@ -19,12 +19,9 @@
     pointer-events: none;
 
     border: 1px solid var(--stroke);
+    border-radius: 8px;
 
     margin-bottom: 8px;
-}
-
-.siteInfo {
-    display: flex;
 }
 
 .siteInfoAndButton {
@@ -39,7 +36,7 @@
 .siteInfo {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 2px;
 }
 
 .siteTextInfo {
@@ -49,6 +46,8 @@
 
 .siteTags {
     margin-top: 6px;
+    font-weight: 600;
+    font-size: var(--little-text);
 }
 
 .siteTitle {
@@ -85,10 +84,10 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     .siteContainer {
         height: fit-content;
-        padding: 28px 28px 12px 28px;
+        padding: 16px;
 
         border-right: none;
 
@@ -100,6 +99,14 @@
         
         margin-bottom: 0;
         margin-right: 0;
+    }
+
+    .siteCover {
+        margin-bottom: 2px;
+    }
+
+    .siteTags {
+        margin-top: 0;
     }
 
     .siteContainer:hover {

@@ -3,22 +3,21 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Footer from "@/components/Footer/Footer";
 import sites from "@/data/sites.json";
 import { getTagMeta } from "@/lib/siteTags";
 
 import styles from "./NavPanel.module.css";
 
 const CATEGORY_META = {
-    Designer: {
+    "Дизайнер": {
         label: "Дизайнер",
         icon: CategoryDesignerIcon,
     },
-    "Design Studio": {
+    "Дизайн-студия": {
         label: "Дизайн-студия",
         icon: CategoryStudioIcon,
     },
-    "Creative Studio": {
+    "Креативная студия": {
         label: "Креативная студия",
         icon: CategoryCreativeIcon,
     },
@@ -76,8 +75,6 @@ function DefaultTagIcon() {
 
 function TagVisual({ icon }) {
     switch (icon) {
-    case "fullstack":
-        return <Image src="/tag-icons/fullstack-design.svg" alt="" width={18} height={18} />;
     case "engineering":
         return <Image src="/tag-icons/design-engineer.svg" alt="" width={18} height={18} />;
     case "branding":
@@ -92,6 +89,8 @@ function TagVisual({ icon }) {
         return <Image src="/tag-icons/product.svg" alt="" width={18} height={18} />;
     case "threeD":
         return <Image src="/tag-icons/3d.svg" alt="" width={18} height={18} />;
+    case "cgi":
+        return <Image src="/tag-icons/cgi.svg" alt="" width={18} height={18} />;
     case "illustration":
         return <Image src="/tag-icons/illustration.svg" alt="" width={18} height={18} />;
     default:
@@ -109,7 +108,7 @@ function CategoryOption({ category, isSelected, onSelect }) {
     return (
         <button
             type="button"
-            className={`${styles.filterOption} ${styles.categoryOption} ${isSelected ? styles.filterOptionSelected : ""}`}
+            className={`${styles.filterOption} ${styles.typeOption} ${isSelected ? styles.filterOptionSelected : ""}`}
             onClick={() => onSelect(category)}
             role="radio"
             aria-checked={isSelected}
@@ -124,6 +123,8 @@ function CategoryOption({ category, isSelected, onSelect }) {
 
 function TagOption({ tag, isSelected, onToggle }) {
     const meta = getTagMeta(tag);
+    const stateIconSrc = isSelected ? "/checkmark.svg" : "/plus.svg";
+    const stateIconAlt = isSelected ? "Выбран" : "Добавить";
 
     return (
         <button
@@ -132,13 +133,13 @@ function TagOption({ tag, isSelected, onToggle }) {
             onClick={() => onToggle(tag)}
             aria-pressed={isSelected}
         >
-            <span className={styles.optionLeading}>
-                <span>{meta.label}</span>
-                <span className={styles.optionIcon}>
-                    <TagVisual icon={meta.icon} />
-                </span>
+            <span className={styles.tagStateIcon}>
+                <Image src={stateIconSrc} alt={stateIconAlt} width={24} height={24}/>
             </span>
-
+            <span>{meta.label}</span>
+            <span className={styles.optionIcon}>
+                <TagVisual icon={meta.icon} />
+            </span>
         </button>
     );
 }
@@ -162,7 +163,7 @@ export default function NavPanel({
             <div className={styles.navPanelBody}>
                 <header className={styles.header}>
                     <div className={styles.headerInfo}>
-                        {/* <Link href="/" className={styles.headerLogo}>
+                        <Link href="/" className={styles.headerLogo}>
                             <Image
                                 src="/main-logo.svg"
                                 alt="Библиотека"
@@ -171,10 +172,9 @@ export default function NavPanel({
                                 className={styles.headerLogoImage}
                                 priority
                             />
-                        </Link> */}
+                        </Link>
                         <p className={styles.headerTitle}>Дизайн-библиотека</p>
-                        <p className={styles.headerSubtitle}>Курируемая коллекция сайтов дизайнер и студий. Автор — <a href="">Илья Абрамов</a></p>
-                        <p>Количество сайтов: <span className={styles.siteCounter}>{siteCounter}</span></p>
+                        <p className={styles.headerSubtitle}>Курируемая коллекция сайтов дизайнер и студий. Библиотекарь — <a href="https://t.me/abramovdesiqn" className={styles.authorLink} target="_blank">Илья Абрамов</a>. Пишите мне, чтобы добавить свой сайт.</p>
                     </div>
                 </header>
 
@@ -182,7 +182,7 @@ export default function NavPanel({
                     <section className={styles.filtersPanel}>
                         {categories.length ? (
                             <div className={styles.filterSection}>
-                                <div className={styles.filtersTitle}>Тип сайта</div>
+                                <div className={styles.filtersTitle}>Кто?</div>
                                 <div className={styles.optionGroup} role="radiogroup" aria-label="Тип сайта">
                                     {categories.map((category) => (
                                         <CategoryOption
@@ -198,7 +198,7 @@ export default function NavPanel({
 
                         {specializations.length ? (
                             <div className={styles.filterSection}>
-                                <div className={styles.filtersTitle}>Тег</div>
+                                <div className={styles.filtersTitle}>Специализация?</div>
                                 <div className={styles.optionGroup}>
                                     {specializations.map((tag) => (
                                         <TagOption
@@ -214,7 +214,6 @@ export default function NavPanel({
                     </section>
                 ) : null}
             </div>
-            <Footer />
         </aside>
     );
 }

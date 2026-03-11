@@ -4,10 +4,6 @@ import styles from "./TagList.module.css";
 
 function TagIcon({ name }) {
     switch (name) {
-    case "fullstack":
-        return (
-            <img src="/tag-icons/fullstack-design.svg" alt="" />
-        );
     case "engineering":
         return (
             <img src="/tag-icons/design-engineer.svg" alt="" />
@@ -35,6 +31,10 @@ function TagIcon({ name }) {
     case "threeD":
         return (
             <img src="/tag-icons/3d.svg" alt="" />
+        );
+    case "cgi":
+        return (
+            <img src="/tag-icons/cgi.svg" alt="" />
         );
     case "illustration":
         return (

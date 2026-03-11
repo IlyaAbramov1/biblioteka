@@ -1,5 +1,4 @@
 export const TAG_BANK = {
-    "fullstack design": { tone: "fullstack", icon: "fullstack" },
     "design engineer": { tone: "engineering", icon: "engineering" },
     "branding": { tone: "branding", icon: "branding" },
     "web": { tone: "web", icon: "web" },
@@ -9,8 +8,9 @@ export const TAG_BANK = {
     "art": { tone: "art", icon: "art" },
     product: { tone: "product", icon: "product" },
     "product design": { tone: "product", icon: "product" },
+    cgi: { tone: "cgi", icon: "cgi" },
     "3d in web": { tone: "threeD", icon: "threeD" },
-    "3d": { tone: "threeD", icon: "threeD" },
+    "3d": { tone: "cgi", icon: "cgi" },
     "gaming": { tone: "gaming", icon: "gamepad" },
     "fonts": { tone: "fonts", icon: "type" },
     "it": { tone: "engineering", icon: "chip" },
