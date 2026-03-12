@@ -33,7 +33,9 @@ export default async function SitePage({ params }) {
 
     return (
         <div className="mainContainer">
-            <NavPanel />
+            <div className="sidebarColumn">
+                <NavPanel />
+            </div>
             <PageTransitionSurface as="main">
                 <FullSiteItem site={site} />
             </PageTransitionSurface>

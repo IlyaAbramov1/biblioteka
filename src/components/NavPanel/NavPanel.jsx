@@ -178,7 +178,7 @@ export default function NavPanel({
                             />
                         </Link>
                         <p className={styles.headerTitle}>Дизайн-библиотека</p>
-                        <p className={styles.headerSubtitle}>Курируемая коллекция сайтов дизайнер и студий. Библиотекарь — <a href="https://t.me/abramovdesiqn" className={styles.authorLink} target="_blank">Илья Абрамов</a>. Пишите мне, чтобы добавить свой сайт.</p>
+                        <p className={styles.headerSubtitle}>Курируемая коллекция сайтов дизайнер и студий. Библиотекарь — <a href="https://t.me/abramovdesiqn" className={styles.authorLink} target="_blank">Илья Абрамов</a>. Ваш сайт тоже может стать частью библиотеки. Просто напишите мне :)</p>
                     </div>
                 </header>
 

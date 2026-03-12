@@ -23,6 +23,9 @@ const DEFAULT_DESCRIPTION = "Курируемая коллекция сайто�
 
 export const metadata = {
     metadataBase: new URL(SITE_URL),
+    icons: {
+        icon: "/favicon.png",
+    },
     title: {
         default: DEFAULT_TITLE,
         template: "%s | Библиотека",

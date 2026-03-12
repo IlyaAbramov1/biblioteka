@@ -149,6 +149,19 @@ a {
     min-height: calc(100vh - 48px);
 }
 
+.sidebarColumn {
+    position: sticky;
+    top: 0;
+    align-self: start;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100dvh;
+    min-height: 100vh;
+}
+
 .pageTransitionSurface {
     min-width: 0;
     will-change: opacity, filter, transform;
@@ -209,6 +222,12 @@ a {
     .mainContainer {
         display: flex;
         flex-direction: column;
+        min-height: auto;
+    }
+
+    .sidebarColumn {
+        position: static;
+        height: auto;
         min-height: auto;
     }
 

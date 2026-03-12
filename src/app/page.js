@@ -107,16 +107,18 @@ export default function Home() {
 
     return (
         <div className="mainContainer">
-            <NavPanel
-                categories={categories}
-                specializations={specializations}
-                selectedCategory={selectedCategory}
-                selectedSpecializations={selectedSpecializations}
-                onSelectCategory={selectCategory}
-                onToggleSpecialization={toggleSpecialization}
-                onClear={clearFilters}
-                showInfo
-            />
+            <div className="sidebarColumn">
+                <NavPanel
+                    categories={categories}
+                    specializations={specializations}
+                    selectedCategory={selectedCategory}
+                    selectedSpecializations={selectedSpecializations}
+                    onSelectCategory={selectCategory}
+                    onToggleSpecialization={toggleSpecialization}
+                    onClear={clearFilters}
+                    showInfo
+                />
+            </div>
             <PageTransitionSurface as="section" className="gridContainer">
                 {filteredSites.slice(0, visibleCount).map((site, index) => (
                     <SiteItem key={`${site.slug}-${index}`} site={site} />

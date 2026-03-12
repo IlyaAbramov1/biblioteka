@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 24px;
     overflow-y: auto;
 
     padding: 32px 120px;
@@ -53,6 +53,7 @@
 
 .siteSubtitle {
     color: var(--thirdly-text);
+    line-height: 1.6;
 }
 
 .siteTags {
@@ -94,13 +95,14 @@
     display: block;
     border: 1px solid var(--stroke);
     border-radius: 8px;
-    margin-top: 24px;
 }
 
 .siteImages {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    pointer-events: none;
 }
 
 .siteImage {
@@ -108,6 +110,7 @@
     height: auto;
     display: block;
     border: 1px solid var(--stroke);
+    border-radius: 8px;
 }
 
 .mainButton {
