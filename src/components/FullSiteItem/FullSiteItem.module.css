@@ -52,7 +52,7 @@
 }
 
 .siteSubtitle {
-    color: var(--thirdly-text);
+    color: var(--secondary-text);
     line-height: 1.6;
 }
 

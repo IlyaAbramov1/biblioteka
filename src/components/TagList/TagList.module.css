@@ -11,6 +11,8 @@
     align-items: center;
     gap: 2px;
     font-size: var(--little-text-size);
+    font-weight: 600;
+    letter-spacing: -0.6;
     line-height: 100%;
     color: var(--text);
 

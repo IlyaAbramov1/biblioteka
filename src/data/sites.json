@@ -1,5 +1,275 @@
 [
     {
+        "slug": "vissotto-studio",
+        "title": "VISSOTTO STUDIO",
+        "subtitle": "Бразильская студия дизайна, отличающаяся своим безумно красивым и выдержанном стилем в дизайне. Их сайт довольно скромен в вёрстке, но это и является его главным оружием и даёт акцент на кейсы.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding"
+        ],
+        "link": "https://www.vissottostudio.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/vissotto-studio/vissotto-studio-1.webp",
+            "screens/vissotto-studio/vissotto-studio-2.webp",
+            "screens/vissotto-studio/vissotto-studio-3.webp",
+            "screens/vissotto-studio/vissotto-studio-4.webp"
+        ],
+        "previewScreen": "screens/vissotto-studio/vissotto-studio-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "luch",
+        "title": "ЛУЧ",
+        "subtitle": "Российская продуктовая дизайн-студия. На сайте представлена мягкая и аккуратная вёрстка с красивой пастельной палитрой.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Product Design"
+        ],
+        "link": "https://www.loo.ch/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/luch/luch-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/luch/luch-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "redis-agency",
+        "title": "Redis Agency",
+        "subtitle": "Redis — топовая коммуникационная студия. Известна своим некоммерческим проектам в лице Музея Сахарова, а также множеством прекрасных коммерческих проектов. Сайт сделан в уникальной стилистике endless-scroll с красивыми вкраплениями 3D-элементов.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Product Design",
+            "Web"
+        ],
+        "link": "https://www.redis.agency/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/redis-agency/redis-agency-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/redis-agency/redis-agency-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "symbol-studio",
+        "title": "Symbol Studio",
+        "subtitle": "Брендинг-студия, базирующаяся в Польше. На сайте множество красивых микро и макроанимаций-переходов между страницами и педантичной вёрстки",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding"
+        ],
+        "link": "https://www.symbolstudio.pl/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/symbol-studio/symbol-studio-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/symbol-studio/symbol-studio-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "creative-people",
+        "title": "Creative People",
+        "subtitle": "Топовая российская коммерческая студия. На сайте мягкая минималистичная вёрстка, базирующаяся на гротескной типографике.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Product Design",
+            "Branding",
+            "Web"
+        ],
+        "link": "https://cpeople.ru/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/creative-people/creative-people-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/creative-people/creative-people-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "robert-borghesi",
+        "title": "Robert Borghesi",
+        "subtitle": "Роберт — в прошлом экономист, а ныне дизайн-инженер, специализируйющийся на WebGl-анимации. На его странице в стиле типографического брутализма описаны его работы и информация о нём, но также есть и вкрапления красивой WebGl-анимаций.",
+        "category": "Креативная студия",
+        "specialization": [
+            "Design Engineer"
+        ],
+        "link": "https://robertborghesi.is/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/robert-borghesi/robert-borghesi-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/robert-borghesi/robert-borghesi-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "nahuel-gerth",
+        "title": "Nahuel Gerth",
+        "subtitle": "Nahuel – дизайн-инженер с уклоном в научные и исследовательские проекты. Сайт тому подтверждение — множество микро-деталей, красивый и живой копирайт, а также множество удивительных проектов на стыке творчества и технологий.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer"
+        ],
+        "link": "https://nahuelgerth.de/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/nahuel-gerth/nahuel-gerth-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/nahuel-gerth/nahuel-gerth-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "sasha-barabonova",
+        "title": "Саша Барабонова",
+        "subtitle": "Саша — senior-дизайнер с опытом работы в T-Bank, VK и Yandex. Её сайт уникален по своей мягкой, но брутальной стилистике и забавным анимациям кейсов.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Branding",
+            "Design Engineer",
+            "Product Design"
+        ],
+        "link": "https://abarabonova.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/sasha-barabonova/sasha-barabonova-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/sasha-barabonova/sasha-barabonova-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "michael-garcia",
+        "title": "Michael Garcia",
+        "subtitle": "Майкл — креативный веб-разработчик, дизайн-инженер, создатель библиотеки анимаций Made With Gsap. Его сайт — визитка-одностраничник с основной информацией и проектами.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer"
+        ],
+        "link": "https://michaelg.fr/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/michael-garcia/michael-garcia-1.webp"
+        ],
+        "previewScreen": "screens/michael-garcia/michael-garcia-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "eva-sanchez",
+        "title": "Eva Sanchez",
+        "subtitle": "Ева — дизайн-инженер из Испании. В её портфолио кейсы как с большими клиентами типа Microsoft Gemini, так и со средним бизнесом. Её сайт — кладесь микро и макро-анимаций, включая переходы между страницами. Сайт был признан AWWWARDS и morrre.dsgn.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer",
+            "Product Design",
+            "Web"
+        ],
+        "link": "https://evasanchez.info/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/eva-sanchez/eva-sanchez-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/eva-sanchez/eva-sanchez-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "jake-down-smith",
+        "title": "Jake Down-Smith",
+        "subtitle": "Джейк — один из мастеров креативной разработки. Создавал сайты для Andrew Trousdale и Benji Taylor. На его сайте в одной колонке описываются все его выдающиеся кейсы.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer"
+        ],
+        "link": "https://jakedowsmith.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/jake-down-smith/jake-down-smith-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/jake-down-smith/jake-down-smith-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "andrew-trousdale",
+        "title": "Andrew Trousdale",
+        "subtitle": "Эндрю — исследователь и дизайнер. Сайт выполнено в уникальном стиле графов, обрамляемый натуральными анимациями и красочными переходами между страницами. Один из лучших сайтов интернета.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer"
+        ],
+        "link": "https://andrewtrousdale.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/andrew-trousdale/andrew-trousdale-full.mp4",
+        "siteScreens": [
+            
+        ],
+        "previewScreen": "screens/andrew-trousdale/andrew-trousdale-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "after",
+        "title": "After",
+        "subtitle": "Дизайн-студия, ориентированная на SAAS и AI-стартапы. На сайте модульная вёрстка, схожая со студией based design — справа кейсы, слева основная информация. Отдельно хочется подметить небольшой саунд-дизайн для кнопок.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Product Design",
+            "Web",
+            "Branding"
+        ],
+        "link": "https://www.after.design/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/after/after-1.webp",
+            "screens/after/after-2.webp",
+            "screens/after/after-3.webp",
+            "screens/after/after-4.webp"
+        ],
+        "previewScreen": "screens/after/after-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "wojtek-witkowski",
+        "title": "Wojtek Witkowski",
+        "subtitle": "Дизайн-инженер, сотрудник Coinbase и коллега Benji Taylor. Сайт прекрасно показывает его специализацию - наполненность деталями, стилизацией и стейтов каждого из компонентов. Отдельно хочется отметить выверенность изингов, которая даёт ощущение быстрой технологичности, как и вся стилистика сайта. Wojtek один из немногих, кто пришел к дизайн-инженерии из фронтенд-разработки, а не из дизайна.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer"
+        ],
+        "link": "https://wojtek.im/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/wojtek-witkowski/wojtek-witkowski-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/wojtek-witkowski/wojtek-witkowski-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "raphael-salaja",
+        "title": "Raphael Salaja",
+        "subtitle": "Рафаэль — один из тех, кто стоит в авангарде дизайн-инженерии. Работал в связке с Benji Tailor в студии Avara, основал и ныне пишет руководство userinterface.wiki. Сайт Рафаэля, как у многих коллег-инженеров, минималистичен, но наполнен красивыми микро-анимациями и большим количеством работ и компонентов.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer",
+            "Product Design"
+        ],
+        "link": "https://www.raphaelsalaja.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/raphael-salaja/raphael-salaja-1.webp"
+        ],
+        "previewScreen": "screens/raphael-salaja/raphael-salaja-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "benji-taylor",
+        "title": "Benji Taylor",
+        "subtitle": "Benji – один из ведущих дизайн-инженеров и фаундеров Америки. Основал несколько engineering-студий — Los Feliz Engineering и Dipm, запустил крипто-приложение с лучшими интерфейсными анимациями Family. Ныне развивает крипто-компанию Base. На его сайте утилитарно описывается его огромный опыт, красочно обрамляемый микроанимациями. Также стоит подметить его статьи с большим багажом знаний и такими же прекрасными анимациями и вёрсткой.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer",
+            "Product Design"
+        ],
+        "link": "https://benji.org/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/benji-taylor/benji-taylor-1.webp"
+        ],
+        "previewScreen": "screens/benji-taylor/benji-taylor-preview.webp",
+        "enabled": true
+    },
+    {
         "slug": "aliszu",
         "title": "Alex Iszu",
         "subtitle": "Фаундер студии after, в прошлом ко-фаундер студии baked design. У Алекса уникальный сайт, полностью завязанный на истории его становления, как специалиста. Сильный копирайт, мягкая и приятная верстка.",
@@ -1300,21 +1570,6 @@
         "enabled": false
     },
     {
-        "slug": "creative-people",
-        "title": "Creative People",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Branding",
-            "Web"
-        ],
-        "link": "https://cpeople.ru/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "maryco",
         "title": "Maryco",
         "subtitle": "",
@@ -1429,49 +1684,6 @@
         "enabled": false
     },
     {
-        "slug": "redis-agency",
-        "title": "Redis Agency",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Branding",
-            "Web"
-        ],
-        "link": "https://www.redis.agency/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "",
-        "title": "ЛУЧ",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Product Design"
-        ],
-        "link": "https://www.loo.ch/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "vissotto-studio",
-        "title": "VISSOTTO STUDIO",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Branding"
-        ],
-        "link": "https://www.vissottostudio.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "griflan",
         "title": "Griflan",
         "subtitle": "",
@@ -1539,20 +1751,6 @@
             "Product Design"
         ],
         "link": "https://endless.design/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "after",
-        "title": "After",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Product Design"
-        ],
-        "link": "https://www.after.design/",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],
@@ -3545,20 +3743,6 @@
         "enabled": false
     },
     {
-        "slug": "wojtek-witkowski",
-        "title": "Wojtek Witkowski",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Design Engineer"
-        ],
-        "link": "https://wojtek.im/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "alana-goyal",
         "title": "Alana Goyal",
         "subtitle": "",
@@ -3848,21 +4032,6 @@
         "enabled": false
     },
     {
-        "slug": "michael-garcia",
-        "title": "Michael Garcia",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Design Engineer",
-            "IT"
-        ],
-        "link": "https://michaelg.fr/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "yann-edern-gillet",
         "title": "Yann-Edern Gillet",
         "subtitle": "",
@@ -4022,34 +4191,6 @@
         "enabled": false
     },
     {
-        "slug": "jake-down-smith",
-        "title": "Jake Down-Smith",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Design Engineer"
-        ],
-        "link": "https://jakedowsmith.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "andrew-trousdale",
-        "title": "Andrew Trousdale",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Design Engineer"
-        ],
-        "link": "https://andrewtrousdale.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "joost-grootens-studio",
         "title": "Joost Grootens Studio",
         "subtitle": "",
@@ -4058,20 +4199,6 @@
             "Branding"
         ],
         "link": "https://www.joostgrootens.nl/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "eva-sanchez",
-        "title": "Eva Sanchez",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Design Engineer"
-        ],
-        "link": "https://evasanchez.info/",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],
@@ -4129,20 +4256,6 @@
             "Product Design"
         ],
         "link": "https://kons.fyi/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "benji-taylor",
-        "title": "Benji Taylor",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Design Engineer"
-        ],
-        "link": "https://benji.org/",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],
@@ -4332,22 +4445,6 @@
             "Motion Design"
         ],
         "link": "https://sarahoh.info/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "",
-        "title": "Саша Барабонова",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Branding",
-            "Design Engineer",
-            "Product Design"
-        ],
-        "link": "https://abarabonova.com/",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],
@@ -4668,20 +4765,6 @@
         "enabled": false
     },
     {
-        "slug": "nahuel-gerth",
-        "title": "Nahuel Gerth",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Design Engineer"
-        ],
-        "link": "https://nahuelgerth.de/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "anthony-hodbay",
         "title": "Anthony Hodbay",
         "subtitle": "",
@@ -4730,21 +4813,6 @@
             "Branding"
         ],
         "link": "https://readymag.website/u2562620590/4351383/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "robert-borghesi",
-        "title": "Robert Borghesi",
-        "subtitle": "",
-        "category": "Креативная студия",
-        "specialization": [
-            "Design Engineer",
-            "IT"
-        ],
-        "link": "https://robertborghesi.is/",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],
