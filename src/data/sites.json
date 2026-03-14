@@ -1,5 +1,314 @@
 [
     {
+        "slug": "june-lee",
+        "title": "June Lee",
+        "subtitle": "Джун — дизайнер и иллюстратор в Apple. На сайте утилитарно представлены иллюстрации невообразимой красоты. Комментарии излишни — иллюстратор и дизайнер мирового уровня",
+        "category": "Дизайнер",
+        "specialization": [
+            "Illustration"
+        ],
+        "link": "https://workive.co/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/june-lee/june-lee-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/june-lee/june-lee-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "jonathan-ravasz",
+        "title": "Jonathan Ravasz",
+        "subtitle": "Дизайнер в Apple, специализирующийся на прототипировании пользовательского пути в VR/AR-пространстве. Из последних его работ смело можно выделить Apple Vision Pro и visionOS. Стоит отметить довольно сильный ход: Джонатан в футере добавил все свои зарегистрированные патенты.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product Design"
+        ],
+        "link": "https://jonathanravasz.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/jonathan-ravasz/jonathan-ravasz-1.webp",
+            "screens/jonathan-ravasz/jonathan-ravasz-2.webp",
+            "screens/jonathan-ravasz/jonathan-ravasz-3.webp"
+        ],
+        "previewScreen": "screens/jonathan-ravasz/jonathan-ravasz-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "brain-cho",
+        "title": "Brain Cho",
+        "subtitle": "Дизайнер из Goole, ex-сотрудник Apple. Работает над дизайн-системой Youtube. Прошлые его кейсы — работы над IPhone 16, iOS16, MacBook Pro etc. Сайт сделан в двухколончатой сетке, где слева расположилась основная информация красивым серым списком; а справа — его работы, представленные в GIF и статичном вариантах.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Branding",
+            "Product Design"
+        ],
+        "link": "https://bcho.info/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/brain-cho/brain-cho-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/brain-cho/brain-cho-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "kory-jordan",
+        "title": "Kory Jordan",
+        "subtitle": "Kory — арт-директор и дизайнер из Apple. На сайте лапидарно представлена основная его информация, последная работа на весь экран. Есть и иной раздел, Play, где Kory показывает свои некоммерческие работы.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Branding"
+        ],
+        "link": "https://koryjordan.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/kory-jordan/kory-jordan-1.webp",
+            "screens/kory-jordan/kory-jordan-2.webp",
+            "screens/kory-jordan/kory-jordan-3.webp"
+        ],
+        "previewScreen": "screens/kory-jordan/kory-jordan-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "rene",
+        "title": "Rene Charlez",
+        "subtitle": "Креативный директор из Монреаля. Сайт основывается на 3D-объекте в виде Рене, сидящего за своим столом, микротипографикой.",
+        "category": "Дизайн",
+        "specialization": [
+            "Branding",
+            "Web"
+        ],
+        "link": "https://r-c.work/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/rene/rene-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/rene/rene-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "william-le",
+        "title": "William Le",
+        "subtitle": "Вильям — дизайнер из Google, разработывающий Material Design System. Ранее работал в Apple на позиции Human Interface Designer. На сайте в необычном контексте 3D-иллюстрации Вильям рассказывает нам о себе и своих проектах. Отдельно хочется отметить небольшие анимации сайта.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product Design"
+        ],
+        "link": "https://williamle.design/?ref=3dwebsites.design",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/william-le/william-le-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/william-le/william-le-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "opening-hours",
+        "title": "opening hours",
+        "subtitle": "Экпрериментальная студия, создающая проекты на стыке науки, искусства и технологий. Стиль сразу раскрывает суть компании — необычные переходы, ASCII-эффекты, минималистичная вёрстка с доминантной типографикой. Отдельно стоит подсветить проекты, на которые точно стоит потратить своё время.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Art",
+            "Branding"
+        ],
+        "link": "https://openinghours.studio/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/opening-hours/opening-hours-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/opening-hours/opening-hours-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "giga-design-studio",
+        "title": "GIGA DESIGN STUDIO",
+        "subtitle": "Студия дизайна, проекты которых балансируют между вызывающим искусством и модой. На сайте экспрессивная вёрстка,брутальные объекты и акцентная микро-типографика.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Art",
+            "Branding"
+        ],
+        "link": "https://gigadesignstudio.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/giga-design-studio/giga-design-studio-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/giga-design-studio/giga-design-studio-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "dverso-studio",
+        "title": "DVERSO STUDIO",
+        "subtitle": "Итальянская студия дизайна, специлизирующаяся на 3D-вебе. Сайт уникален по своему повествованию и переходу между 3D-сценами в вебе с хорошей оптимизацией.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "3D in Web",
+            "Branding"
+        ],
+        "link": "https://dversostudio.io/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/dverso-studio/dverso-studio-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/dverso-studio/dverso-studio-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "fons-mans",
+        "title": "Fons Mans",
+        "subtitle": "Графический дизайнер из Нидерландов, работавший с The New York Times, Figma, The Wall Street Journal. Сайт — минималистичная визитка с доминантной фотографией дизайнера и перечислением его социальных сетей.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Branding"
+        ],
+        "link": "https://fonsmans.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/fons-mans/fons-mans-1.webp"
+        ],
+        "previewScreen": "screens/fons-mans/fons-mans-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "phantom",
+        "title": "Phantom Studio",
+        "subtitle": "Европейская креативная студия, работающая с Google и другими большими брендами. Сайт в уникальном формате 2D-endless матрице презентует проекты студий. Отдельно стоит отметить огромное количество микродеталей на сайте, а также высокую оптимизацию кода сайта.",
+        "category": "Креативная студия",
+        "specialization": [
+            "Motion Design"
+        ],
+        "link": "https://www.phantom.land/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/phantom/phantom-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/phantom/phantom-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "rocketpand",
+        "title": "ROCKETPAND",
+        "subtitle": "Анимационная студия из Италии. На сайте в двухколончатой сетке представлены работы студии с Discord, McDonalds etc. Прекрасные анимации, продуманные изинги в переходах и детализация — достоверная демонстрация мастерства анимации ребят из ROCKETPANDA на своем сайте.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Motion Design",
+            "Illustration",
+            "Art"
+        ],
+        "link": "https://www.therocketpanda.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/rocketpand/rocketpand-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/rocketpand/rocketpand-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "oh-my",
+        "title": "OH MY",
+        "subtitle": "Студия, специализирующаяся на digital-проектах. На сайте технологично минималистичная вёрстка, сочетающая в себе гротеск и антикву.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Web"
+        ],
+        "link": "https://www.ohmy.studio/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/oh-my/oh-my-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/oh-my/oh-my-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "daniel-eden",
+        "title": "Daniel Eden",
+        "subtitle": "Даниэль — дизайнер из FAANG+. На сайте типографически доминантно представлен рассказ о себе. С другой стороны — мягко и нежно сверстаны статьи с работами Daniel-а.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product Design"
+        ],
+        "link": "https://daneden.me/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/daniel-eden/daniel-eden-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/daniel-eden/daniel-eden-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "vagabond",
+        "title": "Vagabond",
+        "subtitle": "Студия коммуникационного дизайна, основанная выходцами из Додо. На сайте минималистично представлены их безумно красивые работы.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Web",
+            "Motion Design"
+        ],
+        "link": "https://www.vagabondagency.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/vagabond/vagabond-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/vagabond/vagabond-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "strange-family",
+        "title": "Strange Family",
+        "subtitle": "Студия, балансирующая между дизайном и искусством. Сайт прекрасно свёрстан, основываясь на брутальных 3D-элементах и микротипографике.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Art"
+        ],
+        "link": "https://strangefamily.co/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/strange-family/strange-family-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/strange-family/strange-family-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "kian-bazarjani",
+        "title": "Kian Bazarjani",
+        "subtitle": "Kian – дизайн-инженер из Navattic. Один из немногих, кто пришёл в эту специальность из направления Software Development. Сайт прекрасен своими акцентами, иконками и микроанимациями.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer"
+        ],
+        "link": "https://bazza.dev/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/kian-bazarjani/kian-bazarjani-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/kian-bazarjani/kian-bazarjani-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "rndr",
+        "title": "rndr",
+        "subtitle": "Креативная дизайн-студия, реализующая проекты для стартапов. На сайте в серой палитре минималистично представлены основные кейсы студии, прекрасно обрамляемые типографической вёрсткой.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Web",
+            "Branding",
+            "Product Design"
+        ],
+        "link": "https://www.rndrealm.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/rndr/rndr-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/rndr/rndr-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "fantik",
+        "title": "Fantik Studio",
+        "subtitle": "Студия с уклоном в глубокую проработку web-проектов. Сайт уникально свёрстан в космическом 3D-пространстве, создавая при этом эффект сторителлинга.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Web",
+            "3D in Web"
+        ],
+        "link": "https://www.rndrealm.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/fantik/fantik-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/fantik/fantik-preview.webp",
+        "enabled": true
+    },
+    {
         "slug": "vissotto-studio",
         "title": "VISSOTTO STUDIO",
         "subtitle": "Бразильская студия дизайна, отличающаяся своим безумно красивым и выдержанном стилем в дизайне. Их сайт довольно скромен в вёрстке, но это и является его главным оружием и даёт акцент на кейсы.",
@@ -120,7 +429,6 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Design Engineer",
             "Product Design"
         ],
         "link": "https://abarabonova.com/",
@@ -190,9 +498,7 @@
         "link": "https://andrewtrousdale.com/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/andrew-trousdale/andrew-trousdale-full.mp4",
-        "siteScreens": [
-            
-        ],
+        "siteScreens": [],
         "previewScreen": "screens/andrew-trousdale/andrew-trousdale-preview.webp",
         "enabled": true
     },
@@ -393,10 +699,6 @@
         "previewScreen": "screens/studio-size/studio-size-preview.webp",
         "customStyle": ""
     },
-    
-
-
-    
     {
         "slug": "3d-funny-works",
         "title": "3d Funny Works",
@@ -561,9 +863,7 @@
         "link": "https://danielsun.space/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/daniel-sun/daniel-sun-full.mp4",
-        "siteScreens": [
-
-        ],
+        "siteScreens": [],
         "enabled": true,
         "previewScreen": "screens/daniel-sun/daniel-sun-preview.webp",
         "customStyle": ""
@@ -747,9 +1047,7 @@
         "link": "https://www.tommy-s.co.uk/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/tommy-smith/tommy-smith-full.mp4",
-        "siteScreens": [
-
-        ],
+        "siteScreens": [],
         "enabled": true,
         "previewScreen": "screens/tommy-smith/tommy-smith-preview.webp",
         "customStyle": ""
@@ -1027,9 +1325,7 @@
         "link": "https://nataliealmosa.ca/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/natalie-almosa/natalie-almosa-full.mp4",
-        "siteScreens": [
-
-        ],
+        "siteScreens": [],
         "enabled": true,
         "previewScreen": "screens/natalie-almosa/natalie-almosa-preview.webp",
         "customStyle": ""
@@ -1078,9 +1374,7 @@
         "link": "https://bruno-simon.com/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/bruno-simon/bruno-simon-full.mp4",
-        "siteScreens": [
-
-        ],
+        "siteScreens": [],
         "enabled": true,
         "previewScreen": "screens/bruno-simon/bruno-simon-preview.webp",
         "customStyle": ""
@@ -1204,9 +1498,7 @@
         "link": "https://www.mahlke.design/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/aaron-mahlke/aaron-mahlke-full.mp4",
-        "siteScreens": [
-
-        ],
+        "siteScreens": [],
         "enabled": true,
         "previewScreen": "screens/aaron-mahlke/aaron-mahlke-preview.webp",
         "customStyle": ""
@@ -1256,9 +1548,7 @@
         "link": "https://rauno.me//",
         "previewVideoKey": "",
         "fullVideoKey": "screens/rauno/rauno-full.mp4",
-        "siteScreens": [
-
-        ],
+        "siteScreens": [],
         "enabled": true,
         "previewScreen": "screens/rauno/rauno-preview.webp",
         "customStyle": ""
@@ -1413,16 +1703,6 @@
         "enabled": true,
         "customStyle": ""
     },
-
-
-
-
-
-
-
-
-
-
     {
         "slug": "",
         "title": "Студия Чулакова",
@@ -1958,20 +2238,6 @@
         "enabled": false
     },
     {
-        "slug": "strange-family",
-        "title": "Strange Family",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Branding"
-        ],
-        "link": "https://strangefamily.co/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "wille-larsson",
         "title": "Wille Larsson",
         "subtitle": "",
@@ -1980,48 +2246,6 @@
             "Branding"
         ],
         "link": "https://willelarsson.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "vagabond",
-        "title": "Vagabond",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Branding"
-        ],
-        "link": "https://www.vagabondagency.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "daniel-eden",
-        "title": "Daniel Eden",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Product Design"
-        ],
-        "link": "https://daneden.me/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "studio-ouam",
-        "title": "studio ouam",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Branding"
-        ],
-        "link": "https://studioouam.com/",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],
@@ -2042,49 +2266,6 @@
         "enabled": false
     },
     {
-        "slug": "fons-mans",
-        "title": "Fons Mans",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Product Design"
-        ],
-        "link": "https://fonsmans.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "rocketpand",
-        "title": "ROCKETPAND",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Motion Design"
-        ],
-        "link": "https://www.therocketpanda.com/?fbclid=PAZXh0bgNhZW0CMTEAAaaFH70dZUwI7xRFyrS9AXqvXQixOwEsj6czeNr4fRcnxoLPyM411YOxpxY_aem_EiRllT1s0gdmj549SjcXYQ",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "oh-my",
-        "title": "OH MY",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Branding",
-            "Web"
-        ],
-        "link": "https://www.ohmy.studio/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "designme-agency",
         "title": "designme agency",
         "subtitle": "",
@@ -2094,80 +2275,6 @@
             "Web"
         ],
         "link": "https://daneden.me/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "rxk",
-        "title": "RXK",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Branding",
-            "Web"
-        ],
-        "link": "https://r-c.work/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "william-le-apple",
-        "title": "William Le (Apple)",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Product Design"
-        ],
-        "link": "https://williamle.design/?ref=3dwebsites.design",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "opening-hours",
-        "title": "opening hours",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Art",
-            "Branding"
-        ],
-        "link": "https://openinghours.studio/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "giga-design-studio",
-        "title": "GIGA DESIGN STUDIO",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Art",
-            "Branding"
-        ],
-        "link": "https://gigadesignstudio.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "dverso-studio",
-        "title": "DVERSO STUDIO",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "CGI",
-            "Branding"
-        ],
-        "link": "https://dversostudio.io/",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],
@@ -2217,48 +2324,6 @@
         "enabled": false
     },
     {
-        "slug": "kory-jordan-apple",
-        "title": "Kory Jordan (Apple)",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Branding"
-        ],
-        "link": "https://koryjordan.com/play",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "brain-cho-apple",
-        "title": "Brain Cho (Apple)",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Branding"
-        ],
-        "link": "https://bcho.info/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "june-lee-apple",
-        "title": "June Lee (Apple)",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Illustration"
-        ],
-        "link": "https://workive.co/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "dominik-hofacker-apple",
         "title": "Dominik Hofacker (Apple)",
         "subtitle": "",
@@ -2267,20 +2332,6 @@
             "Product Design"
         ],
         "link": "https://www.doho.io/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "jonathan-ravasz-apple",
-        "title": "Jonathan Ravasz (Apple)",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Product Design"
-        ],
-        "link": "https://jonathanravasz.com/#about",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],
@@ -4012,20 +4063,6 @@
             "Product Design"
         ],
         "link": "https://munk.design/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "rene-charles",
-        "title": "Rene Charles",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Branding"
-        ],
-        "link": "https://r-c.work/",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],
