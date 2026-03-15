@@ -169,7 +169,7 @@ export default function NavPanel({
                     <div className={styles.headerInfo}>
                         <Link href="/" className={styles.headerLogo}>
                             <Image
-                                src="/main-logo.svg"
+                                src="/main-logo-v2.svg"
                                 alt="Библиотека"
                                 width={120}
                                 height={120}

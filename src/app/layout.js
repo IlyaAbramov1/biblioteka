@@ -24,7 +24,7 @@ const DEFAULT_DESCRIPTION = "Курируемая коллекция сайто�
 export const metadata = {
     metadataBase: new URL(SITE_URL),
     icons: {
-        icon: "/favicon.png",
+        icon: "/favicon-v2.png",
     },
     title: {
         default: DEFAULT_TITLE,
@@ -43,7 +43,7 @@ export const metadata = {
         description: DEFAULT_DESCRIPTION,
         images: [
             {
-                url: "/og.webp",
+                url: "/og-v2.webp",
                 width: 1200,
                 height: 630,
                 alt: "Библиотека - каталог сайтов дизайнеров и студий",
@@ -54,7 +54,7 @@ export const metadata = {
         card: "summary_large_image",
         title: DEFAULT_TITLE,
         description: DEFAULT_DESCRIPTION,
-        images: ["/og.webp"],
+        images: ["/og-v2.webp"],
     },
     robots: {
         index: true,
