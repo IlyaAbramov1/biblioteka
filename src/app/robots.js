@@ -1,4 +1,4 @@
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ilyaabramov1.github.io/biblioteka";
+import { SITE_URL } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
@@ -10,6 +10,7 @@ export default function robots() {
                 allow: "/",
             },
         ],
+        host: SITE_URL,
         sitemap: `${SITE_URL}/sitemap.xml`,
     };
 }

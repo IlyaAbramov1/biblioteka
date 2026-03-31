@@ -18,6 +18,7 @@ export default function TransitionLink({
     href,
     onClick,
     replace = false,
+    scroll,
     target,
     children,
     ...props
@@ -36,11 +37,11 @@ export default function TransitionLink({
         }
 
         event.preventDefault();
-        navigate(href, { replace });
+        navigate(href, { replace, scroll });
     };
 
     return (
-        <Link href={href} onClick={handleClick} replace={replace} target={target} {...props}>
+        <Link href={href} onClick={handleClick} replace={replace} scroll={scroll} target={target} {...props}>
             {children}
         </Link>
     );

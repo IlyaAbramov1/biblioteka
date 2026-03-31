@@ -1,5 +1,88 @@
 [
     {
+        "slug": "koji",
+        "title": "KOJI",
+        "subtitle": "Студия, основанная ex-CEO Redis Пашей Дергачевым. Одноколончатая вёрстка, брутальные объекты чётко доносят мысли о вызовах, которые хочет брать новая глобальная студия.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Web"
+        ],
+        "link": "https://www.koji.global/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/koji/koji-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/koji/koji-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "choice",
+        "title": "Choice",
+        "subtitle": "Российская студия бренд-дизайна. Многие встречались с их проектами: брендинг Pims, коллаборация Сбера и Aded. Сайт основан на стерильной коммерческой вёрстке, ясно доносящей основные ценности и цели студии.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding"
+        ],
+        "link": "https://choice.studio/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/choice/choice-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/choice/choice-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "offthewall",
+        "title": "Off the Wall",
+        "subtitle": "Студия веб- и бренд-дизайна, базирующаяся в Нью-Дели. Сайт великолепно свёрстан в современном стиле, используя прекрасную типографику из трёх разных начертаний и мягкие акценты. На главной расположена основная информация и кейсы, которые можно перемещать через Drag-and-Drop.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Web",
+            "Branding"
+        ],
+        "link": "https://offthewall.studio/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/offthewall/offthewall-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/offthewall/offthewall-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "feelfactory",
+        "title": "Feel Factory",
+        "subtitle": "Большая мультидисциплинарная студия из России. В их проектах как большие коллаборации с Яндексом, Иви и Авито, так и подготовка визуалов к фильмам «Майор Гром», «Король и Шут» и другим проектам. Сайт полностью строится на структуре, акцентирующей внимание на их завораживающих и больших кейсах.",
+        "category": "Креативная студия",
+        "specialization": [
+            "Motion Design",
+            "Branding",
+            "Art"
+        ],
+        "link": "https://www.feelfactory.pro/ru",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/feelfactory/feelfactory-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/feelfactory/feelfactory-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "preet",
+        "title": "Preet Suthar",
+        "subtitle": "Дизайн-инженер с минималистичным сайтом, показывающим основной коммерческий опыт и пет-проекты. На сайте также представлено большое количество полезных статей.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer",
+            "Web"
+        ],
+        "link": "https://preetsuthar.me/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/preet/preet-1.webp",
+            "screens/preet/preet-2.webp"
+        ],
+        "previewScreen": "screens/preet/preet-preview.webp",
+        "enabled": true
+    },
+    {
         "slug": "rocketpand",
         "title": "ROCKETPAND",
         "subtitle": "Анимационная студия из Италии. На сайте в двухколончатой сетке представлены работы студии с Discord, McDonalds etc. Прекрасные анимации, продуманные изинги в переходах и детализация — достоверная демонстрация мастерства анимации ребят из ROCKETPANDA на своем сайте.",

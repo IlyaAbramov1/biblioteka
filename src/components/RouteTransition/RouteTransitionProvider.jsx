@@ -76,11 +76,11 @@ export function RouteTransitionProvider({ children }) {
             window.clearTimeout(navigationTimer.current);
             navigationTimer.current = window.setTimeout(() => {
                 if (options.replace) {
-                    router.replace(href);
+                    router.replace(href, { scroll: options.scroll });
                     return;
                 }
 
-                router.push(href);
+                router.push(href, { scroll: options.scroll });
             }, readTransitionDuration());
         },
     }), [pathname, router, stage]);

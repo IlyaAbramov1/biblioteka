@@ -32,7 +32,9 @@
     text-decoration: underline;
 }
 
-@media (max-width: 1024px) {
+
+
+@media (max-width: 1340px) {
     .footer {
         position: static;
         gap: 6px;

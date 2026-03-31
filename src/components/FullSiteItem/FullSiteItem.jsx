@@ -1,18 +1,17 @@
 import styles from "./FullSiteItem.module.css";
 
 import { mediaUrl } from "@/lib/media";
+import { getSiteScreens, getSiteVideoUrl } from "@/lib/siteData";
 import TagList from "@/components/TagList/TagList";
 import TransitionLink from "@/components/RouteTransition/TransitionLink";
 
-export default function FullSiteItem({ site }) {
-    const fullVideoSrc = site.fullVideoKey ? mediaUrl(site.fullVideoKey) : null;
-    const siteScreens = Array.isArray(site.siteScreens)
-        ? site.siteScreens
-        : [];
+export default function FullSiteItem({ site, backHref = "/" }) {
+    const fullVideoSrc = getSiteVideoUrl(site);
+    const siteScreens = getSiteScreens(site);
 
     return (
         <div className={styles.siteInfoAndVideo}>
-            <TransitionLink href="/" className={styles.backLink}>← На главную</TransitionLink>
+            <TransitionLink href={backHref} scroll={false} className={styles.backLink}>← На главную</TransitionLink>
 
             <div className={styles.siteInfo}>
                 

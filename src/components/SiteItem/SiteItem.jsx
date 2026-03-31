@@ -1,17 +1,25 @@
-import { mediaUrl } from "@/lib/media";
+import { getHomeStateKey, persistHomeState } from "@/lib/homeState";
+import { buildSiteDetailHref } from "@/lib/navigation";
+import { getSitePreviewImage } from "@/lib/siteData";
 import TagList from "@/components/TagList/TagList";
 import TransitionLink from "@/components/RouteTransition/TransitionLink";
 
 import styles from "./SiteItem.module.css";
 
-export default function SiteItem({ site }) {
-    const previewSrc = site.previewScreen ? mediaUrl(site.previewScreen) : null;
+export default function SiteItem({ site, homeHref = "/", visibleCount = 20 }) {
+    const previewSrc = site.previewScreen ? getSitePreviewImage(site) : null;
     const customStyleClass = site.customStyle
         ? (styles[site.customStyle] || site.customStyle)
         : "";
     const containerClassName = [styles.siteContainer, customStyleClass]
         .filter(Boolean)
         .join(" ");
+    const siteHref = buildSiteDetailHref(site.slug, homeHref);
+    const homeStateKey = getHomeStateKey(homeHref);
+
+    const persistHomeContext = () => {
+        persistHomeState(homeStateKey, visibleCount);
+    };
 
     const siteImageCover = previewSrc ? (
         <img
@@ -24,7 +32,7 @@ export default function SiteItem({ site }) {
     );
 
     return (
-        <TransitionLink href={`/site/${site.slug}`} className={containerClassName}>
+        <TransitionLink href={siteHref} onClick={persistHomeContext} className={containerClassName}>
             <div className={styles.siteCoverAndInfo}>
                 {siteImageCover}
                 <div className={styles.siteInfoAndButton}>

@@ -4,6 +4,18 @@ import { Roboto, JetBrains_Mono } from "next/font/google";
 
 import Footer from "@/components/Footer/Footer";
 import { RouteTransitionProvider } from "@/components/RouteTransition/RouteTransitionProvider";
+import {
+    DEFAULT_DESCRIPTION,
+    DEFAULT_KEYWORDS,
+    DEFAULT_SOCIAL_IMAGE,
+    DEFAULT_SOCIAL_IMAGE_ALT,
+    DEFAULT_TITLE,
+    SITE_CLASSIFICATION,
+    SITE_NAME,
+    SITE_STRUCTURED_DATA,
+    SITE_TITLE_TEMPLATE,
+    SITE_URL,
+} from "@/lib/seo";
 
 const roboto = Roboto({
     subsets: ['latin', 'cyrillic'],
@@ -17,36 +29,50 @@ const jetbrains = JetBrains_Mono({
     variable: '--font-jetbrains',
 })
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://design-biblioteka.ru/";
-const DEFAULT_TITLE = "Библиотека";
-const DEFAULT_DESCRIPTION = "Курируемая коллекция сайтов дизайнеров и дизайн-студий.";
-
 export const metadata = {
-    metadataBase: new URL(SITE_URL),
+    metadataBase: new URL(`${SITE_URL}/`),
+    applicationName: SITE_NAME,
     icons: {
-        icon: "/favicon-v2.png",
+        icon: "/favicon-v3.png",
     },
     title: {
         default: DEFAULT_TITLE,
-        template: "%s | Библиотека",
+        template: SITE_TITLE_TEMPLATE,
     },
     description: DEFAULT_DESCRIPTION,
+    keywords: DEFAULT_KEYWORDS,
+    category: "design",
+    classification: SITE_CLASSIFICATION,
+    authors: [
+        {
+            name: "Ilya Abramov",
+            url: `${SITE_URL}/`,
+        },
+    ],
+    creator: "Ilya Abramov",
+    publisher: SITE_NAME,
+    formatDetection: {
+        telephone: false,
+        address: false,
+        email: false,
+    },
+    referrer: "origin-when-cross-origin",
     alternates: {
         canonical: "/",
     },
     openGraph: {
         type: "website",
         locale: "ru_RU",
-        url: "/",
-        siteName: "Библиотека",
+        url: `${SITE_URL}/`,
+        siteName: SITE_NAME,
         title: DEFAULT_TITLE,
         description: DEFAULT_DESCRIPTION,
         images: [
             {
-                url: "/og-v2.webp",
+                url: DEFAULT_SOCIAL_IMAGE,
                 width: 1200,
                 height: 630,
-                alt: "Библиотека - каталог сайтов дизайнеров и студий",
+                alt: DEFAULT_SOCIAL_IMAGE_ALT,
             },
         ],
     },
@@ -54,7 +80,7 @@ export const metadata = {
         card: "summary_large_image",
         title: DEFAULT_TITLE,
         description: DEFAULT_DESCRIPTION,
-        images: ["/og-v2.webp"],
+        images: [DEFAULT_SOCIAL_IMAGE],
     },
     robots: {
         index: true,
@@ -101,6 +127,10 @@ export default function RootLayout({ children }) {
                         />
                     </div>
                 </noscript>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_STRUCTURED_DATA) }}
+                />
                 <RouteTransitionProvider>
                     <div className="strokeContainer">
                         {children}

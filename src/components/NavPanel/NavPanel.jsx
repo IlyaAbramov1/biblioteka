@@ -3,9 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import sites from "@/data/sites.json";
 import { useRouteTransition } from "@/components/RouteTransition/RouteTransitionProvider";
-import { getTagMeta } from "@/lib/siteTags";
+import { getTagIconPath, getTagMeta } from "@/lib/siteTags";
 
 import styles from "./NavPanel.module.css";
 
@@ -57,14 +56,6 @@ function CategoryCreativeIcon() {
     );
 }
 
-function CheckIcon() {
-    return (
-        <svg viewBox="0 0 16 16" aria-hidden="true">
-            <path d="M3.5 8.5 6.5 11.5 12.5 5.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-    );
-}
-
 function DefaultTagIcon() {
     return (
         <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -75,28 +66,11 @@ function DefaultTagIcon() {
 }
 
 function TagVisual({ icon }) {
-    switch (icon) {
-    case "engineering":
-        return <Image src="/tag-icons/design-engineer.svg" alt="" width={18} height={18} />;
-    case "branding":
-        return <Image src="/tag-icons/branding.svg" alt="" width={18} height={18} />;
-    case "web":
-        return <Image src="/tag-icons/web.svg" alt="" width={18} height={18} />;
-    case "motion":
-        return <Image src="/tag-icons/motion.svg" alt="" width={18} height={18} />;
-    case "art":
-        return <Image src="/tag-icons/art.svg" alt="" width={18} height={18} />;
-    case "product":
-        return <Image src="/tag-icons/product.svg" alt="" width={18} height={18} />;
-    case "threeD":
-        return <Image src="/tag-icons/3d.svg" alt="" width={18} height={18} />;
-    case "cgi":
-        return <Image src="/tag-icons/cgi.svg" alt="" width={18} height={18} />;
-    case "illustration":
-        return <Image src="/tag-icons/illustration.svg" alt="" width={18} height={18} />;
-    default:
-        return <DefaultTagIcon />;
-    }
+    const iconPath = getTagIconPath(icon);
+
+    return iconPath
+        ? <Image src={iconPath} alt="" width={18} height={18} />
+        : <DefaultTagIcon />;
 }
 
 function CategoryOption({ category, isSelected, onSelect, index }) {
@@ -154,11 +128,8 @@ export default function NavPanel({
     selectedSpecializations = [],
     onSelectCategory = () => {},
     onToggleSpecialization = () => {},
-    onClear = () => {},
-    showInfo = false,
+    homeHref = "/",
 }) {
-    const siteCounter = sites.filter((site) => site.enabled).length;
-    const selectedCount = (selectedCategory ? 1 : 0) + selectedSpecializations.length;
     const showFilters = categories.length > 0 || specializations.length > 0;
     const { stage } = useRouteTransition();
 
@@ -167,7 +138,7 @@ export default function NavPanel({
             <div className={styles.navPanelBody}>
                 <header className={styles.header}>
                     <div className={styles.headerInfo}>
-                        <Link href="/" className={styles.headerLogo}>
+                        <Link href={homeHref} className={styles.headerLogo}>
                             <Image
                                 src="/main-logo-v2.svg"
                                 alt="Библиотека"

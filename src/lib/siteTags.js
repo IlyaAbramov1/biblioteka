@@ -16,17 +16,36 @@ export const TAG_BANK = {
     "it": { tone: "engineering", icon: "chip" },
 };
 
+export const TAG_ICON_PATHS = {
+    engineering: "/tag-icons/design-engineer.svg",
+    branding: "/tag-icons/branding.svg",
+    web: "/tag-icons/web.svg",
+    motion: "/tag-icons/motion.svg",
+    art: "/tag-icons/art.svg",
+    product: "/tag-icons/product.svg",
+    threeD: "/tag-icons/3d.svg",
+    cgi: "/tag-icons/cgi.svg",
+    illustration: "/tag-icons/illustration.svg",
+};
+
 export const normalizeTag = (tag) => String(tag || "").trim().toLowerCase();
 
-export const getSiteTags = (specialization, limit = 3) => {
+export const splitSiteSpecializations = (specialization) => {
     const rawTags = Array.isArray(specialization)
         ? specialization
         : String(specialization || "").split(",");
 
     return rawTags
         .map((tag) => String(tag).trim())
-        .filter(Boolean)
-        .slice(0, limit);
+        .filter(Boolean);
+};
+
+export const getSiteTags = (specialization, limit = 3) => {
+    const tags = splitSiteSpecializations(specialization);
+
+    return Number.isFinite(limit)
+        ? tags.slice(0, limit)
+        : tags;
 };
 
 export const getTagMeta = (tag) => {
@@ -39,3 +58,5 @@ export const getTagMeta = (tag) => {
         icon: fromBank.icon || "default",
     };
 };
+
+export const getTagIconPath = (icon) => TAG_ICON_PATHS[icon] || null;
