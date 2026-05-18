@@ -26,6 +26,9 @@ export const TAG_ICON_PATHS = {
     threeD: "/tag-icons/3d.svg",
     cgi: "/tag-icons/cgi.svg",
     illustration: "/tag-icons/illustration.svg",
+    gamepad: "/tag-icons/gaming.svg",
+    type: "/tag-icons/fonts.svg",
+    chip: "/tag-icons/it.svg",
 };
 
 export const normalizeTag = (tag) => String(tag || "").trim().toLowerCase();

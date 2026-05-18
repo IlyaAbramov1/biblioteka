@@ -1,0 +1,65 @@
+.linkContainer {
+    width: auto;
+    min-width: 180px;
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-bg-color);
+    color: var(--button-text-color);
+    border-radius: 120px;
+    border: 1px solid color-mix(in srgb, var(--accent-color) 88%, white 12%);
+    line-height: 1;
+    box-shadow: 0 12px 24px color-mix(in srgb, var(--accent-color) 24%, transparent);
+    transition:
+        background-color 100ms ease-out,
+        border-color 100ms ease-out,
+        box-shadow 100ms ease-out;
+}
+
+.withIcon {
+    gap: 8px;
+    padding: 16px 28px 16px 20px;
+}
+
+.withoutIcon {
+    padding: 16px 28px;
+}
+
+.iconContainer {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 30px;
+}
+
+.iconContainer svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.linkContainer:hover {
+    border-color: hsl(218, 100%, 86%);
+    background-color: var(--accent-hover-bg-color);
+    box-shadow: 0 16px 28px color-mix(in srgb, var(--accent-color) 28%, transparent);
+}
+
+@media (max-width: 720px) {
+    .linkContainer {
+        padding: 26px 24px;
+        width: 100%;
+        min-height: 0;
+    }
+
+    .withIcon {
+        gap: 8px;
+        padding: 16px 28px 16px 20px;
+    }
+
+    .withoutIcon {
+        padding: 16px 28px;
+    }
+}

@@ -1,71 +1,99 @@
 :root {
-    /* Color */
-        --h: 0;
-        --s: 0%;
-    --button-text-color: hsl(var(--h), var(--s), 97%);
-    --accent-color: hsl(0, 0%, 0%);
-    --secondary-accent-color: hsl(var(--h), 100%, 60%);
-    --accent-secondary-bg: hsl(var(--h), 100%, 90%);
-    --text: hsl(var(--h), var(--s), 4%);
-    --secondary-text: hsl(var(--h), var(--s), 60%);
-    --thirdly-text: hsl(var(--h), var(--s), 40%);
-    --fourthly-text: hsl(var(--h), var(--s), 70%);
-    --stroke: hsl(var(--h) var(--s) 80%);
-    --secondary-stroke: hsl(var(--h) var(--s) 90%);
-    --grid-size: 24px;
-    --grid-line: hsl(var(--h) var(--s) 92%);
-    --bg: hsl(var(--h) var(--s) 100%);
-    --secondary-bg: hsl(var(--h) var(--s) 97%);
-    --hover-bg: hsl(var(--h) var(--s) 97%);
+    --accent-color: hsl(218 100% 56%);
+    --button-text-color: hsl(0 0% 100%);
+    --text: hsl(0 0% 18%);
+    --secondary-text: hsl(0 0% 27%);
+    --muted-text: hsl(0 0% 76%);
+    --thirdly-text: hsl(0 0% 79%);
+    --fourthly-text: hsl(0 0% 80%);
+    --stroke: hsl(0 0% 72%);
+    --paper-dot: hsl(36 18% 88%);
 
-    --green-fill: hsl(120, 100%, 40%);
+    --accent-bg-color: var(--accent-color);
+    --accent-hover-bg-color: hsl(218 100% 62%);
+    --accent-secondary-bg: hsl(218 100% 96%);
+    --bg: hsl(42 22% 98%);
+    --secondary-bg: hsl(38 16% 96%);
 
-    /* Tag tones */
-    --tag-tone-web: hsl(210, 100%, 50%);
-    --tag-tone-branding: hsl(330, 100%, 50%);
-    --tag-tone-product: hsl(200, 100%, 31%);
-    --tag-tone-engineering: hsl(171, 100%, 39%);
-    --tag-tone-motion: hsl(30, 100%, 50%);
-    --tag-tone-illustration: hsl(303, 100%, 50%);
-    --tag-tone-three-d: hsl(172, 100%, 31%);
-    --tag-tone-cgi: hsl(250, 100%, 40%);
-    --tag-tone-art: hsl(0, 100%, 50%);
+    --tag-tone-web: hsl(218 100% 68%);
+    --tag-tone-branding: hsl(329 100% 70%);
+    --tag-tone-product: hsl(199 78% 36%);
+    --tag-tone-engineering: hsl(173 58% 57%);
+    --tag-tone-motion: hsl(23 100% 72%);
+    --tag-tone-illustration: hsl(303 100% 66%);
+    --tag-tone-three-d: hsl(252 92% 48%);
+    --tag-tone-cgi: hsl(250 82% 48%);
+    --tag-tone-art: hsl(0 100% 58%);
+    --tag-tone-gaming: hsl(144 70% 40%);
+    --tag-tone-fonts: hsl(276 100% 66%);
     --tag-tone-default: var(--secondary-text);
 
-    /* Page transition */
-    --page-transition-duration: 240ms;
-    --page-transition-ease: cubic-bezier(0.22, 1, 0.36, 1);
-    --page-transition-blur: 8px;
-    --page-transition-scale: 0.995;
-
-    /* Typography */
-    --title-text-size: 28px;
-    --title-text-line-height: 110%;
-    --main-text-size: 14px;
+    --title-text-size: 68px;
+    --title-text-line-height: 92%;
+    --main-text-size: 20px;
     --main-text-line-height: 120%;
-    --main-text-letter-spacing: -0.02em;
-    --little-text: 12px;
-    --little-text-line-height: 140%;
-
-    --font-family-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-family-title-regular: 'EBGaramond-Regular', serif;
-    --font-family-quote: 'EBGaramond-Regular', serif;
+    --little-text-size: 18px;
+    --hover-bounce-ease: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-@font-face {
-    font-family: 'EBGaramond-Regular';
-    src: url(/fonts/EBGaramond-Regular.woff2) format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+[data-tag-tone="web"] {
+    --tag-tone-bg: hsl(221 100% 97%);
+    --tag-tone-color: var(--tag-tone-web);
 }
 
-@font-face {
-    font-family: 'EBGaramond-Italic';
-    src: url(/fonts/EBGaramond-Italic.woff2) format('woff2');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
+[data-tag-tone="branding"] {
+    --tag-tone-bg: hsl(325 100% 97%);
+    --tag-tone-color: var(--tag-tone-branding);
+}
+
+[data-tag-tone="product"] {
+    --tag-tone-bg: hsl(198 100% 97%);
+    --tag-tone-color: var(--tag-tone-product);
+}
+
+[data-tag-tone="engineering"] {
+    --tag-tone-bg: hsl(171 83% 97%);
+    --tag-tone-color: var(--tag-tone-engineering);
+}
+
+[data-tag-tone="motion"] {
+    --tag-tone-bg: hsl(22 100% 97%);
+    --tag-tone-color: var(--tag-tone-motion);
+}
+
+[data-tag-tone="illustration"] {
+    --tag-tone-bg: hsl(304 100% 97%);
+    --tag-tone-color: var(--tag-tone-illustration);
+}
+
+[data-tag-tone="threeD"] {
+    --tag-tone-bg: hsl(253 100% 97%);
+    --tag-tone-color: var(--tag-tone-three-d);
+}
+
+[data-tag-tone="cgi"] {
+    --tag-tone-bg: hsl(253 100% 97%);
+    --tag-tone-color: var(--tag-tone-cgi);
+}
+
+[data-tag-tone="art"] {
+    --tag-tone-bg: hsl(0 100% 97%);
+    --tag-tone-color: var(--tag-tone-art);
+}
+
+[data-tag-tone="gaming"] {
+    --tag-tone-bg: hsl(144 82% 97%);
+    --tag-tone-color: var(--tag-tone-gaming);
+}
+
+[data-tag-tone="fonts"] {
+    --tag-tone-bg: hsl(275 100% 97%);
+    --tag-tone-color: var(--tag-tone-fonts);
+}
+
+[data-tag-tone="default"] {
+    --tag-tone-bg: var(--surface-muted);
+    --tag-tone-color: var(--tag-tone-default);
 }
 
 html {
@@ -77,35 +105,27 @@ html {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
-    /* Настройки рендеринга шрифта */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    
-    /* Дополнительные настройки для четкости */
     font-synthesis: none;
     font-variant-numeric: normal;
     font-kerning: auto;
 }
 
 body {
-    font-family: var(--font-roboto), serif;
-    font-weight: 450;
-    font-size: var(--main-text-size);
-    letter-spacing: var(--main-text-letter-spacing);
-    line-height: var(--main-text-line-height);
-
-    background-color: var(--bg);
-
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-
+    background:
+        radial-gradient(circle at 1px 1px, var(--paper-dot) 1.1px, transparent 1.2px) 0 0 / 24px 24px,
+        var(--bg);
+    color: var(--text);
+    font-family: var(--font-roboto), sans-serif;
+    font-weight: 450;
+    font-size: var(--main-text-size);
+    letter-spacing: 0;
+    line-height: var(--main-text-line-height);
     text-wrap: pretty;
 }
 
@@ -114,142 +134,46 @@ a {
     text-decoration: none;
 }
 
+button {
+    font: inherit;
+}
+
 .strokeContainer {
     position: relative;
+    width: 100%;
     min-height: 100vh;
-}
-
-.link {
-    text-decoration: underline;
-    color: var(--accent-color);
-
-    cursor: pointer;
-}
-
-.link:hover {
-    text-transform: uppercase;
-
-}
-
-.mainButton {
-    background-color: var(--accent-color);
-    color: var(--bg);
-    padding: 6px 10px 4px 10px;
-}
-
-.mainButton:hover {
-    background-color: var(--secondary-accent-color);
-    text-transform: uppercase;
-}
-
-.mainContainer {
-    display: grid;
-    grid-template-columns: 2fr 8fr;
-    gap: 0;
-    min-height: calc(100vh - 48px);
-}
-
-.sidebarColumn {
-    position: sticky;
-    top: 0;
-    align-self: start;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    height: 100dvh;
-    min-height: 100vh;
+    margin: 0 auto;
 }
 
-.pageTransitionSurface {
-    min-width: 0;
-    will-change: opacity, filter, transform;
-    transition:
-        opacity var(--page-transition-duration) var(--page-transition-ease),
-        filter var(--page-transition-duration) var(--page-transition-ease),
-        transform var(--page-transition-duration) var(--page-transition-ease);
-}
 
-.pageTransitionSurface[data-transition-stage="idle"] {
-    opacity: 1;
-    filter: blur(0);
-    transform: scale(1);
-}
-
-.pageTransitionSurface[data-transition-stage="exiting"],
-.pageTransitionSurface[data-transition-stage="entering"] {
-    opacity: 0;
-    filter: blur(var(--page-transition-blur));
-    transform: scale(var(--page-transition-scale));
-    pointer-events: none;
-}
-
-.mainPageContainer {
-    height: 100vh;
-}
-
-.gridContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start;
-}
-
-@media (max-width: 1100px) {
-    .gridContainer {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     :root {
-        --title-text-size: 28px;
-        --title-text-line-height: 110%;
-        --main-text-size: 14px;
+        --title-text-size: 44px;
+        --title-text-line-height: 92%;
+        --main-text-size: 18px;
         --main-text-line-height: 172%;
-        --main-text-letter-spacing: -0.04em;
-        --little-text: 12px;
-        --little-text-size: var(--little-text);
-        --little-text-line-height: 150%;
-    }
-
-    .strokeContainer {
-        width: 100%;
-        margin: 0;
-        min-height: auto;
-    }
-
-    .mainContainer {
-        display: flex;
-        flex-direction: column;
-        min-height: auto;
-    }
-
-    .sidebarColumn {
-        position: static;
-        height: auto;
-        min-height: auto;
+        --little-text-size: 16px;
     }
 
     body {
         height: auto;
         overflow-y: auto;
     }
-
-    .gridContainer {
-        height: auto;
-        overflow-y: visible;
-    }
-
-    .mainButton {
-        padding: 8px 12px 6px 12px;
-    }
 }
 
-@supports (-webkit-touch-callout: none) {
-    @media (max-width: 600px) {
-        :root {
-            --main-text-letter-spacing: 0em;
-        }
+@media (max-width: 720px) {
+    :root {
+        --title-text-size: 36px;
+        --title-text-line-height: 104%;
+        --main-text-size: 18px;
+        --main-text-line-height: 172%;
+        --little-text-size: 16px;
+    }
+
+    body {
+        height: auto;
+        overflow-y: auto;
     }
 }

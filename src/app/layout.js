@@ -1,9 +1,8 @@
 import "./globals.css";
 import Script from "next/script";
-import { Roboto, JetBrains_Mono } from "next/font/google";
+import { Roboto, EB_Garamond } from "next/font/google";
 
 import Footer from "@/components/Footer/Footer";
-import { RouteTransitionProvider } from "@/components/RouteTransition/RouteTransitionProvider";
 import {
     DEFAULT_DESCRIPTION,
     DEFAULT_KEYWORDS,
@@ -21,19 +20,32 @@ const roboto = Roboto({
     subsets: ['latin', 'cyrillic'],
     display: 'swap',
     variable: '--font-roboto',
-})
+});
 
-const jetbrains = JetBrains_Mono({
+const garamond = EB_Garamond({
     subsets: ['latin', 'cyrillic'],
     display: 'swap',
-    variable: '--font-jetbrains',
-})
+    variable: '--font-garamond',
+});
 
 export const metadata = {
     metadataBase: new URL(`${SITE_URL}/`),
     applicationName: SITE_NAME,
     icons: {
-        icon: "/favicon-v3.png",
+        icon: [
+            {
+                url: "/favicon.png?v=4",
+                type: "image/png",
+                sizes: "32x32",
+            },
+        ],
+        shortcut: [
+            {
+                url: "/favicon.png?v=4",
+                type: "image/png",
+                sizes: "32x32",
+            },
+        ],
     },
     title: {
         default: DEFAULT_TITLE,
@@ -97,7 +109,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="ru" className={`${roboto.variable} ${jetbrains.variable}`}>
+        <html lang="ru" className={`${roboto.variable} ${garamond.variable}`}>
             <body>
                 <Script id="yandex-metrika" strategy="afterInteractive">
                     {`(function(m,e,t,r,i,k,a){
@@ -131,12 +143,10 @@ export default function RootLayout({ children }) {
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_STRUCTURED_DATA) }}
                 />
-                <RouteTransitionProvider>
-                    <div className="strokeContainer">
-                        {children}
-                        <Footer />
-                    </div>
-                </RouteTransitionProvider>
+                <div className="strokeContainer">
+                    {children}
+                    <Footer />
+                </div>
             </body>
         </html>
     );

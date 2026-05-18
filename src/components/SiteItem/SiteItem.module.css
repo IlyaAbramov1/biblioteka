@@ -1,119 +1,160 @@
+.siteReveal {
+    width: 100%;
+    min-width: 0;
+}
+
 .siteContainer {
-    height: fit-content;
-    padding: 20px;
-
+    width: 100%;
+    min-width: 0;
+    display: block;
+    color: inherit;
     cursor: pointer;
+}
 
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.siteCoverAndInfo {
+    --site-card-aspect-ratio: 302 / 219;
+    --site-card-height: 320px;
+    --site-preview-top: 8%;
+    --site-preview-left: 5%;
+    --site-preview-width: 90%;
+    --site-card-fill: var(--secondary-bg);
+    --site-card-border: var(--stroke);
 
-    border-radius: 12px;
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: var(--site-card-height);
+    aspect-ratio: var(--site-card-aspect-ratio);
+    overflow: visible;
+}
 
-    transition: 0.2s background ease-out;
+.siteBackplate {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.sitePreviewStage {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 24px;
+    pointer-events: none;
+}
+
+.siteCoverFrame {
+    position: absolute;
+    top: var(--site-preview-top);
+    left: var(--site-preview-left);
+    width: var(--site-preview-width);
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 1px solid var(--stroke);
+    border-radius: 16px 16px 0 0;
+    transform-origin: center;
+    background: var(--secondary-bg);
 }
 
 .siteCover {
-    width: 100%;
-
+    object-fit: cover;
     pointer-events: none;
-
-    border: 1px solid var(--stroke);
-    border-radius: 8px;
-
-    margin-bottom: 8px;
 }
 
-.siteInfoAndButton {
-    width: 100%;
-
+.siteCoverPlaceholder {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    color: var(--fourthly-text);
 }
 
 .siteInfo {
+    background: var(--secondary-bg);
+    border: 1px solid var(--stroke);
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 28px 32px;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    justify-content: center;
+    gap: 18px;
+    border-radius: 0 0 32px 32px;
 }
 
 .siteTextInfo {
     display: flex;
-    flex-direction: row;
-}
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
 
-.siteTags {
-    margin-top: 6px;
-    font-weight: 600;
-    font-size: var(--little-text);
+    font-weight: 400;
 }
 
 .siteTitle {
-    width: fit-content;
-    margin-right: 12px;
+    min-width: 0;
+    color: var(--text);
+    line-height: 0.92;
+    letter-spacing: 0;
 }
 
 .siteCategory {
+    min-width: 0;
     color: var(--fourthly-text);
+    line-height: 1;
+    letter-spacing: 0;
 }
 
-.secondaryButton {
-    padding: 6px 10px 4px 10px;
-    background-color: var(--secondary-bg);
-    color: var(--fourthly-text);
-
-    white-space: nowrap;
+.siteTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: var(--little-text-size);
+    line-height: 1;
 }
 
-
-/* Hovers */
-
-.siteContainer:hover {
-    background-color: var(--hover-bg);
+.siteTag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--tag-tone-color, var(--secondary-text));
+    min-width: 0;
 }
 
-.siteContainer:hover .secondaryButton {
-    background-color: var(--accent-secondary-bg);
-    color: var(--accent-color);
+.siteTagIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
 }
 
-.abramovStyle {
-    background: linear-gradient(to bottom right, var(--bg-color), var(--bg-color), var(--accent-secondary-bg));
+.siteTagIcon img {
+    width: 18px;
+    height: 18px;
 }
 
+.defaultTagIcon {
+    width: 12px;
+    height: 12px;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+}
 
-@media (max-width: 1024px) {
-    .siteContainer {
-        height: fit-content;
-        padding: 16px;
+.abramovStyle .siteInfo {
+    background: var(--bg);
+}
 
-        border-right: none;
-
-        cursor: pointer;
-
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        
-        margin-bottom: 0;
-        margin-right: 0;
-    }
-
-    .siteCover {
-        margin-bottom: 2px;
-    }
-
-    .siteTags {
-        margin-top: 0;
-    }
-
-    .siteContainer:hover {
-        background-color: none;
-    }
-
-    .siteContainer:hover .siteCover {
-        opacity: 1;
+@media (max-width: 1200px) {
+    .siteCoverAndInfo {
+        --site-card-min-height: 360px;
     }
 }

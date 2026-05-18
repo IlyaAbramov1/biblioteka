@@ -7,6 +7,9 @@ const nextConfig = {
     basePath: isGitHubPagesBuild ? "/biblioteka" : "",
     assetPrefix: isGitHubPagesBuild ? "/biblioteka/" : "",
     trailingSlash: true,
+    turbopack: {
+        root: process.cwd(),
+    },
 };
 
 export default nextConfig;

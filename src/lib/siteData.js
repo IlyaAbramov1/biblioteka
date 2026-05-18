@@ -4,7 +4,20 @@ import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo";
 import { getSiteTags } from "@/lib/siteTags";
 
 const CATEGORY_ORDER = ["Дизайнер", "Дизайн-студия", "Креативная студия"];
-const SITE_PAGE_FALLBACK_DESCRIPTION = "Подборка сайта из дизайн-библиотеки.";
+const SPECIALIZATION_ORDER = [
+    "Design Engineer",
+    "Branding",
+    "Web",
+    "Motion Design",
+    "Art",
+    "Product Design",
+    "3D in Web",
+    "Illustration",
+    "CGI",
+    "Gaming",
+    "Fonts",
+    "IT",
+];
 
 function compareCategories(left, right) {
     const leftIndex = CATEGORY_ORDER.indexOf(left);
@@ -17,57 +30,58 @@ function compareCategories(left, right) {
     return leftIndex - rightIndex;
 }
 
-export const allSites = rawSites;
-export const browsableSites = rawSites.filter((site) => site.slug && site.enabled !== false);
-export const publishedSiteCount = rawSites.filter((site) => site.enabled).length;
+function compareSpecializations(left, right) {
+    const leftIndex = SPECIALIZATION_ORDER.indexOf(left);
+    const rightIndex = SPECIALIZATION_ORDER.indexOf(right);
+
+    if (leftIndex === -1 && rightIndex === -1) return left.localeCompare(right);
+    if (leftIndex === -1) return 1;
+    if (rightIndex === -1) return -1;
+
+    return leftIndex - rightIndex;
+}
+
+function isBrowsableSite(site) {
+    return Boolean(site.slug) && site.enabled !== false;
+}
+
+export const browsableSites = rawSites.filter(isBrowsableSite);
+export const publishedSiteCount = browsableSites.length;
 
 export function getSiteBySlug(slug) {
-    return rawSites.find((site) => site.slug === slug);
+    return browsableSites.find((site) => site.slug === slug);
 }
 
 export function getStaticSiteParams() {
-    const uniqueSlugs = new Set();
-
-    rawSites.forEach((site) => {
-        if (site.slug) uniqueSlugs.add(site.slug);
-    });
-
-    return Array.from(uniqueSlugs, (slug) => ({ slug }));
+    return browsableSites.map((site) => ({ slug: site.slug }));
 }
 
 export function getSiteCategories(sites = browsableSites) {
-    const uniqueCategories = [...new Set(sites.map((site) => site.category).filter(Boolean))];
+    const categories = sites
+        .map((site) => site.category)
+        .filter(Boolean);
 
-    return uniqueCategories.sort(compareCategories);
+    return [...new Set(categories)].sort(compareCategories);
 }
 
 export function getSiteSpecializations(sites = browsableSites) {
-    return [...new Set(sites.flatMap((site) => getSiteTags(site.specialization, Number.POSITIVE_INFINITY)))];
+    return [
+        ...new Set(
+            sites.flatMap((site) => getSiteTags(site.specialization, Number.POSITIVE_INFINITY))
+        ),
+    ].sort(compareSpecializations);
 }
 
-export function filterSitesBySelection(
-    sites,
-    {
-        category = null,
-        tags = [],
-    } = {}
-) {
-    return sites.filter((site) => {
-        const byCategory = category === null || site.category === category;
-        const siteTags = getSiteTags(site.specialization, Number.POSITIVE_INFINITY);
-        const byTags = tags.length === 0 || tags.every((tag) => siteTags.includes(tag));
+export function getSitePreviewImage(site) {
+    return site.previewScreen ? mediaUrl(site.previewScreen) : "";
+}
 
-        return byCategory && byTags;
-    });
+export function getSiteSocialImage(site) {
+    return getSitePreviewImage(site) || DEFAULT_SOCIAL_IMAGE;
 }
 
 export function getSiteDescription(site) {
-    return (
-        site.subtitle ||
-        site.description ||
-        getSiteTags(site.specialization, Number.POSITIVE_INFINITY).join(", ") ||
-        SITE_PAGE_FALLBACK_DESCRIPTION
-    );
+    return site.subtitle || site.description || "Подборка сайта из дизайн-библиотеки.";
 }
 
 export function getSiteKeywords(site) {
@@ -78,15 +92,11 @@ export function getSiteKeywords(site) {
         "дизайн-библиотека",
         "сайты дизайнеров",
         "дизайн-студии",
-    ];
+    ].filter(Boolean);
 }
 
 export function getSiteSocialTitle(site) {
     return `${site.title} — ${site.category}`;
-}
-
-export function getSitePreviewImage(site) {
-    return site.previewScreen ? mediaUrl(site.previewScreen) : DEFAULT_SOCIAL_IMAGE;
 }
 
 export function getSiteScreens(site) {

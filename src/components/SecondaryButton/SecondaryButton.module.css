@@ -1,0 +1,35 @@
+.linkContainer {
+    appearance: none;
+    width: fit-content;
+    min-height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 28px;
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    border: 1px solid var(--stroke);
+    border-radius: 120px;
+    line-height: 1;
+    cursor: pointer;
+
+    transition:
+        background-color 100ms ease-out,
+        border-color 100ms ease-out,
+        color 100ms ease-out;
+}
+
+.linkContainer:hover {
+    background-color: var(--surface);
+    border-color: color-mix(in srgb, var(--accent-color) 34%, var(--stroke));
+    color: var(--text);
+}
+
+@media (max-width: 620px) {
+    .linkContainer {
+        padding: 26px 24px;
+        width: fit-content;
+        min-height: 0;
+        height: 32px !important;
+    }
+}

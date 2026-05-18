@@ -1,0 +1,513 @@
+.page {
+    width: 100%;
+    padding: 0 clamp(20px, 5vw, 80px) 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.heroBlock {
+    --hero-logo-width: 28px;
+    --hero-logo-height: 48px;
+
+    width: min(100%, 1600px);
+    min-height: 60vh;
+    padding: 88px 24px 74px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    text-align: center;
+    isolation: isolate;
+    overflow: visible;
+}
+
+.heroBooks {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.heroBookLeft,
+.heroBookRight {
+    position: absolute;
+    --book-scene-width: 520px;
+    --book-scene-height: 360px;
+    --book-scene-margin-bottom: 0;
+    filter: drop-shadow(0 22px 42px rgba(28, 18, 4, 0.1));
+}
+
+.heroBookLeft {
+    left: -200px;
+    top: -160px;
+    --book-scene-transform: rotate(-13deg) scale(1.3);
+}
+
+.heroBookRight {
+    right: -280px;
+    top: 84px;
+    --book-scene-transform: rotate(10deg) scale(1.3);
+}
+
+.heroBlockText,
+.actions {
+    position: relative;
+    z-index: 2;
+}
+
+.heroBlockText {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.titleRow {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 58px;
+}
+
+.logoMark {
+    margin-right: 18px;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: var(--hero-logo-width);
+    height: var(--hero-logo-height);
+    color: var(--accent-color);
+    pointer-events: none;
+    vertical-align: top;
+}
+
+.logoImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    color: var(--text);
+    font-family: var(--font-garamond), serif;
+    font-weight: 500;
+    font-size: var(--title-text-size);
+    width: 100%;
+    line-height: var(--title-text-line-height);
+    letter-spacing: 0;
+    text-wrap: balance;
+}
+
+.titleSubtext {
+    color: var(--thirdly-text);
+    font-weight: 300;
+}
+
+.titleWord {
+    display: inline-block;
+    will-change: opacity, filter, transform;
+}
+
+.subtitle {
+    color: var(--muted-text);
+    line-height: 1.55;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.navSentinel {
+    width: 100%;
+    height: 1px;
+    margin-top: -1px;
+    pointer-events: none;
+}
+
+.navBar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: min(100%, 1580px);
+    display: flex;
+    align-items: flex-start;
+
+    font-size: var(--little-text-size);
+
+    margin: 0 auto 24px;
+    padding-top: 16px;
+}
+
+.navBar::before,
+.navBar::after {
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    z-index: 2;
+    width: 56px;
+    content: "";
+    pointer-events: none;
+}
+
+.navBar::before {
+    left: 0;
+    background: linear-gradient(
+        to right,
+        var(--bg) 0%,
+        color-mix(in srgb, var(--bg) 0%, transparent) 100%
+    );
+}
+
+.navBar::after {
+    right: 0;
+    background: linear-gradient(
+        to left,
+        var(--bg) 0%,
+        color-mix(in srgb, var(--bg) 0%, transparent) 100%
+    );
+}
+
+.navBarScroller {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 0 0 4px;
+}
+
+.navPinnedFade {
+    position: absolute;
+    left: -78px;
+    top: -16px;
+    right: 0;
+    z-index: 0;
+    height: 240px;
+    width: 100vw;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        var(--bg) 0%,
+        var(--bg) 20%,
+        color-mix(in srgb, var(--bg) 0%, transparent) 100%
+    );
+}
+
+.navLogoMark {
+    position: absolute;
+    left: -40px;
+    top: -8px;
+    width: 42px;
+    height: 68px;
+    color: var(--accent-color);
+    pointer-events: none;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(-120%);
+    transition:
+        opacity 150ms ease,
+        transform 150ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.navLogoVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navLogoImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.navBarScroller::-webkit-scrollbar {
+    display: none;
+}
+
+.navBarTrack {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 100%;
+    width: max-content;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.navBarTrack:first-child {
+    padding-left: 24px;
+}
+
+.navBarTrack:last-child {
+    padding-right: 24px;
+}
+
+.trackDivider {
+    flex: 0 0 auto;
+    width: 1px;
+    height: 28px;
+    background: color-mix(in srgb, var(--stroke) 70%, var(--text) 30%);
+    opacity: 0.68;
+    margin: 0 4px;
+}
+
+.filterOption {
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 20px;
+    border: 1px solid var(--stroke);
+    border-radius: 999px;
+    background: var(--secondary-bg);
+    color: var(--text);
+    font: inherit;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+        background-color 150ms ease,
+        border-color 150ms ease,
+        color 150ms ease;
+}
+
+.filterOption:hover {
+    opacity: 0.8;
+}
+
+.filterOptionSelected:not(.tagOption) {
+    border-color: var(--text);
+    background: var(--text);
+    color: var(--bg);
+}
+
+.allOption {
+    padding-inline: 26px;
+}
+
+.typeOption {
+    color: var(--secondary-text);
+}
+
+.tagOption {
+    padding: 12px 18px 12px 16px;
+    border-color: transparent;
+    background: var(--tag-tone-bg, var(--surface-muted));
+    color: var(--tag-tone-color, var(--secondary-text));
+}
+
+.filterOptionSelected.tagOption {
+    background: var(--tag-tone-bg, var(--surface-muted));
+    color: var(--tag-tone-color, var(--secondary-text));
+    box-shadow:
+        inset 0 0 0 2px currentColor;
+}
+
+.optionIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    opacity: 0.79;
+}
+
+.optionIcon img {
+    width: 22px;
+    height: 22px;
+}
+
+.defaultTagIcon {
+    width: 12px;
+    height: 12px;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+}
+
+.sitesGrid {
+    position: relative;
+    width: min(100%, 1660px);
+    display: grid;
+    z-index: 2;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: 64px 72px;
+    padding-top: 22px;
+}
+
+.sentinel {
+    height: 1px;
+    grid-column: 1 / -1;
+}
+
+.emptyState {
+    width: min(100%, 720px);
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 28px 24px;
+    border: 1px dashed var(--stroke);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.58);
+    color: var(--secondary-text);
+    text-align: center;
+    line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+    .heroBookLeft,
+    .heroBookRight {
+        --book-scene-width: 460px;
+        --book-scene-height: 320px;
+    }
+
+    .sitesGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .logoMark {
+        margin-right: 4px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        height: 32px !important;
+        width: 32px !important;
+    }
+
+    .page {
+        padding: 0 16px 96px;
+    }
+
+    .heroBlock {
+        min-height: 40vh;
+    }
+
+    .heroBlockText {
+        gap: 20px;
+    }
+
+    .navBar {
+        width: calc(100vw - 32px);
+    }
+
+    .navBarTrack:first-child {
+        padding-left: 36px;
+    }
+
+    .navLogoMark {
+        left: -8px;
+        top: -8px;
+        width: 32px;
+        height: 68px;
+    }
+
+    .heroBookLeft {
+        left: -200px;
+        top: -160px;
+        --book-scene-transform: rotate(-13deg) scale(1.1);
+    }
+
+    .heroBookRight {
+        right: -220px;
+        top: 200px;
+        --book-scene-transform: rotate(14deg) scale(0.8);
+    }
+
+    .sitesGrid {
+        width: calc(100vw - 32px);
+        gap: 42px 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .heroBlock {
+        padding: 140px 0;
+    }
+
+    .heroBookLeft {
+        left: -160px;
+        top: -100px;
+        --book-scene-transform: rotate(-13deg) scale(1.1);
+    }
+
+    .heroBookRight {
+        right: -200px;
+        top: -140px;
+        --book-scene-transform: rotate(14deg) scale(1.1);
+    }
+
+    .titleRow {
+        padding-top: 80px;
+    }
+    
+    .actions {
+        gap: 8px;
+    }
+
+    .logoMark {
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        line-height: 1.55;
+    }
+
+    .actions {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .navBar {
+        padding-top: 8px;
+    }
+
+    .navBarTrack:first-child {
+        padding-left: 20px;
+    }
+
+    .navLogoMark {
+        left: -10px;
+        top: -20px;
+        width: 24px;
+    }
+
+    .filterOption {
+        min-height: 42px;
+        padding-inline: 16px;
+        font-size: 16px;
+    }
+
+    .tagOption {
+        min-height: 44px;
+        padding-inline: 16px;
+    }
+
+    .optionIcon,
+    .optionIcon img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .sitesGrid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .emptyState {
+        padding: 22px 18px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .filterOption {
+        transition: none;
+    }
+}

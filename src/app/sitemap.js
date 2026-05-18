@@ -5,7 +5,6 @@ export const dynamic = "force-static";
 
 export default function sitemap() {
     const now = new Date();
-
     const sitePages = browsableSites.map((site) => ({
         url: `${SITE_URL}/site/${site.slug}`,
         lastModified: now,

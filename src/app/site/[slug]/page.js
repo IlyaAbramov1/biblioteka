@@ -1,17 +1,12 @@
-import { Suspense } from "react";
 import { notFound } from "next/navigation";
 
 import FullSiteItem from "@/components/FullSiteItem/FullSiteItem";
-import DetailFullSiteItem from "@/components/FullSiteItem/DetailFullSiteItem";
-import NavPanel from "@/components/NavPanel/NavPanel";
-import DetailNavPanel from "@/components/NavPanel/DetailNavPanel";
-import PageTransitionSurface from "@/components/RouteTransition/PageTransitionSurface";
 import { SITE_URL } from "@/lib/seo";
 import {
     getSiteBySlug,
     getSiteDescription,
     getSiteKeywords,
-    getSitePreviewImage,
+    getSiteSocialImage,
     getSiteSocialTitle,
     getStaticSiteParams,
 } from "@/lib/siteData";
@@ -23,7 +18,7 @@ export async function generateMetadata({ params }) {
     if (!site) return {};
 
     const description = getSiteDescription(site);
-    const previewImage = getSitePreviewImage(site);
+    const previewImage = getSiteSocialImage(site);
     const socialTitle = getSiteSocialTitle(site);
 
     return {
@@ -64,18 +59,5 @@ export default async function SitePage({ params }) {
 
     if (!site) return notFound();
 
-    return (
-        <div className="mainContainer">
-            <div className="sidebarColumn">
-                <Suspense fallback={<NavPanel />}>
-                    <DetailNavPanel />
-                </Suspense>
-            </div>
-            <PageTransitionSurface as="main">
-                <Suspense fallback={<FullSiteItem site={site} />}>
-                    <DetailFullSiteItem site={site} />
-                </Suspense>
-            </PageTransitionSurface>
-        </div>
-    );
+    return <FullSiteItem site={site} backHref="/" />;
 }
