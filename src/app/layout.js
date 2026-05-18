@@ -34,15 +34,15 @@ export const metadata = {
     icons: {
         icon: [
             {
-                url: "/favicon.png?v=4",
-                type: "image/png",
+                url: "/favicon.ico?v=1",
+                type: "image/x-icon",
                 sizes: "32x32",
             },
         ],
         shortcut: [
             {
-                url: "/favicon.png?v=4",
-                type: "image/png",
+                url: "/favicon.ico?v=1",
+                type: "image/x-icon",
                 sizes: "32x32",
             },
         ],
@@ -110,6 +110,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="ru" className={`${roboto.variable} ${garamond.variable}`}>
+            <head>
+                <link rel="icon" href="/favicon.ico?v=1" type="image/x-icon" sizes="32x32" />
+                <link rel="shortcut icon" href="/favicon.ico?v=1" type="image/x-icon" sizes="32x32" />
+            </head>
             <body>
                 <Script id="yandex-metrika" strategy="afterInteractive">
                     {`(function(m,e,t,r,i,k,a){
