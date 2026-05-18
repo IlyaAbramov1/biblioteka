@@ -565,7 +565,9 @@
     }
 
     .siteInfoAndVideo {
+        overflow-x: auto;
         padding: 18px;
+        -webkit-overflow-scrolling: touch;
     }
 
     .siteTitleLine {
@@ -582,8 +584,13 @@
         height: 18px;
     }
 
+    .siteTags {
+        width: 100%;
+    }
+
     .tagsAndButton {
         flex-direction: column;
+        justify-content: start;
         gap: 16px;
     }
 

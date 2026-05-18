@@ -168,9 +168,9 @@ button {
     :root {
         --title-text-size: 36px;
         --title-text-line-height: 104%;
-        --main-text-size: 18px;
+        --main-text-size: 16px;
         --main-text-line-height: 172%;
-        --little-text-size: 16px;
+        --little-text-size: 14px;
     }
 
     body {

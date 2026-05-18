@@ -27,9 +27,14 @@
 
 .heroBooks {
     position: absolute;
-    inset: 0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
     z-index: 0;
     pointer-events: none;
+    overflow-x: clip;
 }
 
 .heroBookLeft,
@@ -50,7 +55,7 @@
 .heroBookRight {
     right: -280px;
     top: 84px;
-    --book-scene-transform: rotate(10deg) scale(1.3);
+    --book-scene-transform: rotate(10deg) scale(1.1);
 }
 
 .heroBlockText,
@@ -431,6 +436,7 @@
 @media (max-width: 720px) {
     .heroBlock {
         padding: 140px 0;
+        height: 80vh;
     }
 
     .heroBookLeft {
@@ -468,6 +474,7 @@
 
     .navBar {
         padding-top: 8px;
+        margin: 0 auto 12px;
     }
 
     .navBarTrack:first-child {
@@ -483,7 +490,6 @@
     .filterOption {
         min-height: 42px;
         padding-inline: 16px;
-        font-size: 16px;
     }
 
     .tagOption {
