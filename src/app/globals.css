@@ -28,11 +28,12 @@
     --tag-tone-fonts: hsl(276 100% 66%);
     --tag-tone-default: var(--secondary-text);
 
-    --title-text-size: 68px;
+    --title-text-size: 60px;
     --title-text-line-height: 92%;
-    --main-text-size: 20px;
+    --main-text-size: 16px;
     --main-text-line-height: 120%;
-    --little-text-size: 18px;
+    --little-text-size: 14px;
+    --little-text-line-height: 80%;
     --hover-bounce-ease: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 

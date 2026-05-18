@@ -20,7 +20,7 @@
 }
 
 .modalPanel {
-    width: min(1040px, calc(100vw - 48px));
+    width: 800px;
     max-height: calc(100dvh - 60px);
     overflow: hidden;
     border: 1px solid var(--stroke);
@@ -119,6 +119,8 @@
     display: inline-flex;
     align-items: center;
     gap: 4px;
+    width: fit-content;
+    height: fit-content;
     padding: 12px 20px;
     border-radius: 120px;
     background: var(--tag-tone-bg, var(--surface-muted));
@@ -152,6 +154,7 @@
 .tagsAndButton {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
