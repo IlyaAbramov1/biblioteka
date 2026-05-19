@@ -13,7 +13,7 @@
 
 .siteCoverAndInfo {
     --site-card-aspect-ratio: 302 / 219;
-    --site-card-height: 240px;
+    --site-card-height: 260px;
     --site-preview-top: 8%;
     --site-preview-left: 5%;
     --site-preview-width: 90%;
@@ -152,9 +152,9 @@
 .abramovStyle .siteInfo {
     background: var(--bg);
 }
-
+/* 
 @media (max-width: 1200px) {
     .siteCoverAndInfo {
         --site-card-min-height: 360px;
     }
-}
+} */

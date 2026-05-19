@@ -22,7 +22,7 @@ import { HOVER_SPRING } from "@/lib/motion";
 import styles from "./page.module.css";
 
 const BATCH_SIZE = 20;
-const TELEGRAM_CHANNEL_HREF = "https://t.me/tehnichka_design/";
+const TELEGRAM_CHANNEL_HREF = "https://t.me/design_biblioteka";
 const CONTACT_HREF = "https://t.me/abramovdesiqn";
 const REVEAL_INITIAL = { opacity: 0, filter: "blur(12px)", y: -20 };
 const REVEAL_VISIBLE = { opacity: 1, filter: "blur(0px)", y: 0 };
@@ -360,12 +360,6 @@ export default function HomePage() {
                     delay: HERO_NAV_DELAY,
                 }}
             >
-                <span
-                    className={`${styles.navLogoMark} ${isNavPinned ? styles.navLogoVisible : ""}`}
-                    aria-hidden="true"
-                >
-                    <BookmarkLogo className={styles.navLogoImage} />
-                </span>
                 <div className={styles.navBarScroller}>
                     <div className={styles.navBarTrack}>
                         <motion.button
@@ -429,10 +423,17 @@ export default function HomePage() {
                         })}
                     </div>
                 </div>
-                {isNavPinned ? (
-                    <span className={styles.navPinnedFade} aria-hidden="true" />
-                ) : null}
+                <span
+                    className={`${styles.navPinnedFade} ${isNavPinned ? styles.navPinnedFadeVisible : ""}`}
+                    aria-hidden="true"
+                />
             </motion.nav>
+            <span
+                className={`${styles.navLogoMark} ${isNavPinned ? styles.navLogoVisible : ""}`}
+                aria-hidden="true"
+            >
+                <BookmarkLogo className={styles.navLogoImage} />
+            </span>
 
             <motion.section
                 id="sites"

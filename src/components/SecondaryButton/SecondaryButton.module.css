@@ -20,7 +20,6 @@
 }
 
 .linkContainer:hover {
-    background-color: var(--surface);
     border-color: color-mix(in srgb, var(--accent-color) 34%, var(--stroke));
     color: var(--text);
 }
