@@ -11,7 +11,7 @@ export default function Footer() {
                 <a href="https://abramovdesign.com/" target="_blank" rel="noreferrer" className={styles.footerLink}>
                     Ilya Abramov
                 </a>
-                . March 2026
+                . May 2026
             </p>
         </footer>
     );

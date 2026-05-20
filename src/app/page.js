@@ -367,7 +367,6 @@ export default function HomePage() {
                             className={`${styles.filterOption} ${styles.allOption} ${!hasActiveFilters ? styles.filterOptionSelected : ""}`}
                             onClick={clearFilters}
                             aria-pressed={!hasActiveFilters}
-                            whileHover={{ y: -1 }}
                             whileTap={{ scale: 0.95 }}
                             transition={HOVER_SPRING}
                         >

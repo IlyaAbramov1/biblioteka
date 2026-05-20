@@ -1,5 +1,161 @@
 [
     {
+        "slug": "gaadesign",
+        "title": "GAA.D.S.",
+        "subtitle": "Испанская креативная студия, специализирующаяся на брендинге и стратегиях. На сайте приятная сетка из проектов, минималистичная вёрстка и выверенная чб-палитра.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Art"
+        ],
+        "link": "https://www.gaadesign.studio/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/gaadesign/gaadesign-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/gaadesign/gaadesign-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "jace-mt",
+        "title": "Jace",
+        "subtitle": "Продуктовый дизайнер из США. На сайте невероятно плавные и красивые микро-анимации. Также стоит отметить бесшовные переходы на внутренние страницы.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product Design",
+            "Design Engineer"
+        ],
+        "link": "https://ja.mt/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/jace-mt/jace-mt-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/jace-mt/jace-mt-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "hamza-alabou",
+        "title": "Hamza Alabou",
+        "subtitle": "Продуктовый дизайнер, специализирующийся на SAAS-стартапах. Сайт сделан в виде двухколончатой сетки с фиксированным блоком о специалисте. Интересно, что Hamza не делает внутренних страниц, а показывает свои работы в виде шотов.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product Design"
+        ],
+        "link": "https://hamzaalabou.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/hamza/hamza-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/hamza/hamza-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "sasha",
+        "title": "Sasha",
+        "subtitle": "Дизайн студия великого Вовы Аюева. Сайт сделан в брутальной стилистике, с микротипографикой на фоне массивных логотипа и проектов.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Art"
+        ],
+        "link": "https://thesasha.co/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/sasha/sasha-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/sasha/sasha-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "mateca",
+        "title": "Маца",
+        "subtitle": "Российская дизайн-студия, специализирующаяся на исследованиях и продуктах. Сайт в процессе разработки, однако уже сейчас можно выделить их стиль и вёрстку, а также 3D сцену в hero block, сделанную с помощью Endless Tools.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Product Design"
+        ],
+        "link": "https://mateca.agency/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/mateca/mateca-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/mateca/mateca-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "harin-nitisvaar",
+        "title": "Harin Nitisvaar",
+        "subtitle": "Дизайн-инженер и продуктовый дизайнер. Сайт представлен в двухколончатой сетке и фиксированной главной информацией. Точно стоит подметить его кейсы, наполненные безумно красивыми интерактивными деталями.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product Design"
+        ],
+        "link": "https://harin.design/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/harin/harin-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/harin/harin-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "charles-shin",
+        "title": "Charles Shin",
+        "subtitle": "Чикагский дизайн-инженер. Сайт — один из лучших сайтов-портфолио, выполненном в минималистичном стиле. Гит-блок, время с анимацией, клик с микро-эффектом, бесшовные переходы на внутреннюю страницы, сделанные на основе Vault от Emil Kowalski. Очень сильная работа.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer",
+            "Product Design"
+        ],
+        "link": "https://ch.sh/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/charles-shin/charles-shin-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/charles-shin/charles-shin-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "ayomide-daniel",
+        "title": "Ayomide",
+        "subtitle": "Продуктовый дизайнер, разрабатывающий SAAS-продукты. Сайт сделан одноколончатой сеткой с плавными переходами и мягкой вёрсткой статей. Отдельно хочется отметить красивую деталь в виде аватарки, которую нужно зажимать, чтобы вывести дополнительную информацию.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product Design"
+        ],
+        "link": "https://dahnizzy.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/ayomide-daniel/ayomide-daniel-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/ayomide-daniel/ayomide-daniel-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "ample",
+        "title": "Ample Studio",
+        "subtitle": "Дизайн студия, специализирующаяся на SAAS-стартапах. Сайт выделятеся пикселизированным стилем и чёткой, грамотной вёрсткой.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://amplestudio.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/ample/ample-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/ample/ample-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "adria",
+        "title": "Adria Studio",
+        "subtitle": "Дизайн студия, специализирующаяся на SAAS-стартапах. Сайт выполнен в чб-палитре, мягкой вёрстке и интересных микро-деталях.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://adria.studio/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/adria/adria-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/adria/adria-preview.webp",
+        "enabled": true
+    },
+    {
         "slug": "koji",
         "title": "KOJI",
         "subtitle": "Студия, основанная ex-CEO Redis Пашей Дергачевым. Одноколончатая вёрстка, брутальные объекты чётко доносят мысли о вызовах, которые хочет брать новая глобальная студия.",
