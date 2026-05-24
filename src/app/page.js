@@ -1,18 +1,16 @@
 "use client";
 
-import { Fragment, useEffect, useMemo, useRef, useState } from "react";
-import Image from "next/image";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
+import CanvasLogo from "@/components/CanvasLogo/CanvasLogo";
 import FullSiteItem from "@/components/FullSiteItem/FullSiteItem";
-import LibraryBook from "@/components/LibraryBook/LibraryBook";
 import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton/SecondaryButton";
 import SiteItem from "@/components/SiteItem/SiteItem";
 import {
     browsableSites,
     getSiteBySlug,
-    getSitePreviewImage,
     siteCategories,
     siteSpecializations,
 } from "@/lib/siteData";
@@ -30,54 +28,13 @@ const REVEAL_TRANSITION = {
     duration: 1,
     ease: [0.22, 1, 0.36, 1],
 };
-const HERO_TITLE_WORDS = [
-    { label: "Дизайн-библиотека" },
-    { label: "–", isSubtext: true  },
-    { label: "курируемая", isSubtext: true },
-    { label: "коллекция", isSubtext: true },
-    { label: "сайтов", isSubtext: true },
-    { label: "дизайнеров", isSubtext: true },
-    { label: "и", isSubtext: true },
-    { label: "студий.", isSubtext: true },
-];
-const HERO_WORD_DELAY = 0.12;
-const HERO_WORD_STAGGER = 0.0;
-const HERO_SUBTITLE_DELAY = HERO_WORD_DELAY + (HERO_TITLE_WORDS.length + 1) * HERO_WORD_STAGGER + 0.08;
+const HERO_TITLE_DELAY = 0.12;
+const HERO_SUBTITLE_DELAY = HERO_TITLE_DELAY + 0.08;
 const HERO_FIRST_BUTTON_DELAY = HERO_SUBTITLE_DELAY + 0.08;
 const HERO_SECOND_BUTTON_DELAY = HERO_FIRST_BUTTON_DELAY + 0.08;
 const HERO_NAV_DELAY = HERO_SECOND_BUTTON_DELAY + 0.08;
-
-const BOOK_IMAGE_BY_SLUG = {
-    after: "/book-item/after-preview.png",
-    "andrew-trousdale": "/book-item/andrew-trousdale-preview.png",
-    "eva-sanchez": "/book-item/eva-sanchez-preview.png",
-    "jake-down-smith": "/book-item/jake-down-smith-preview.png",
-    kowalski: "/book-item/kowalski-preview.png",
-    "michael-garcia": "/book-item/michael-garcia-preview.png",
-    rauno: "/book-item/rauno-preview.png",
-    "ryo-lu": "/book-item/ryo-preview.png",
-};
-
-const HERO_BOOK_SLUGS = [
-    ["ryo-lu", "rauno", "andrew-trousdale", "michael-garcia"],
-    ["after", "eva-sanchez", "jake-down-smith", "kowalski"],
-];
-
-function BookmarkLogo({ className }) {
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="193"
-            height="329"
-            viewBox="0 0 193 329"
-
-            fill="none"
-            className={className}
-        >
-            <path d="M0 328.5V0H193V328.5L96.5 232L0 328.5Z" fill="currentColor" />
-        </svg>
-    );
-}
+const PLUS_ICON_PATH = "/tag-icons/plus.svg";
+const MINUS_ICON_PATH = "/tag-icons/minus.svg";
 
 function getSlugFromPathname(pathname) {
     const match = String(pathname || "").match(/(?:^|\/)site\/([^/]+)\/?$/);
@@ -96,45 +53,19 @@ function buildSitePath(slug) {
     return nextUrl.pathname;
 }
 
-function formatSiteHost(link) {
-    try {
-        return new URL(link).hostname.replace(/^www\./, "");
-    } catch {
-        return String(link || "").replace(/^https?:\/\//, "").replace(/^www\./, "");
-    }
-}
-
-function buildBookItems(slugs) {
-    return slugs
-        .map((slug, index) => {
-            const site = getSiteBySlug(slug);
-
-            if (!site) return null;
-
-            return {
-                id: site.slug,
-                title: site.title,
-                subtitle: site.category,
-                url: formatSiteHost(site.link),
-                image: BOOK_IMAGE_BY_SLUG[site.slug] || getSitePreviewImage(site),
-                targetAngle: 158 - index * 34,
-                delay: 0.14 + index * 0.1,
-            };
-        })
-        .filter(Boolean);
-}
-
-const HERO_BOOK_ITEMS = HERO_BOOK_SLUGS.map(buildBookItems);
-
 export default function HomePage() {
-    const navSentinelRef = useRef(null);
+    const categoryGroupRef = useRef(null);
+    const categoryButtonRefs = useRef([]);
     const sentinelRef = useRef(null);
     const homeUrlRef = useRef("/");
     const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedTags, setSelectedTags] = useState([]);
     const [activeSiteSlug, setActiveSiteSlug] = useState(null);
-    const [isNavPinned, setIsNavPinned] = useState(false);
+    const [categoryIndicatorStyle, setCategoryIndicatorStyle] = useState({
+        "--category-indicator-left": "3px",
+        "--category-indicator-width": "0px",
+    });
 
     const filteredSites = useMemo(() => {
         return browsableSites.filter((site) => {
@@ -147,27 +78,33 @@ export default function HomePage() {
     }, [selectedCategory, selectedTags]);
 
     const visibleSites = filteredSites.slice(0, visibleCount);
-    const hasActiveFilters = Boolean(selectedCategory) || selectedTags.length > 0;
     const activeSite = activeSiteSlug ? getSiteBySlug(activeSiteSlug) : null;
+    const categoryOptions = useMemo(() => [
+        { label: "Все", value: null },
+        ...siteCategories.map((category) => ({ label: category, value: category })),
+    ], []);
+    const selectedCategoryIndex = Math.max(
+        0,
+        categoryOptions.findIndex((option) => option.value === selectedCategory)
+    );
 
-    useEffect(() => {
-        const updateNavPinned = () => {
-            const sentinel = navSentinelRef.current;
+    useLayoutEffect(() => {
+        const updateCategoryIndicator = () => {
+            const activeButton = categoryButtonRefs.current[selectedCategoryIndex];
 
-            if (!sentinel) return;
+            if (!activeButton) return;
 
-            setIsNavPinned(sentinel.getBoundingClientRect().top <= 0);
+            setCategoryIndicatorStyle({
+                "--category-indicator-left": `${activeButton.offsetLeft}px`,
+                "--category-indicator-width": `${activeButton.offsetWidth}px`,
+            });
         };
 
-        updateNavPinned();
-        window.addEventListener("scroll", updateNavPinned, { passive: true });
-        window.addEventListener("resize", updateNavPinned);
+        updateCategoryIndicator();
+        window.addEventListener("resize", updateCategoryIndicator);
 
-        return () => {
-            window.removeEventListener("scroll", updateNavPinned);
-            window.removeEventListener("resize", updateNavPinned);
-        };
-    }, []);
+        return () => window.removeEventListener("resize", updateCategoryIndicator);
+    }, [selectedCategoryIndex]);
 
     useEffect(() => {
         const syncActiveSiteFromUrl = () => {
@@ -260,47 +197,22 @@ export default function HomePage() {
 
     return (
         <main className={styles.page}>
+            <CanvasLogo />
             <section className={styles.heroBlock} aria-labelledby="library-title">
-                <div className={styles.heroBooks} aria-hidden="true">
-                    <LibraryBook
-                        items={HERO_BOOK_ITEMS[0]}
-                        className={styles.heroBookLeft}
-                        animateOnMount={false}
-                    />
-                    <LibraryBook items={HERO_BOOK_ITEMS[1]} className={styles.heroBookRight} isOpen={false} />
-                </div>
                 <div className={styles.heroBlockText}>
                     <div className={styles.titleRow}>
-                        <h1 id="library-title" className={styles.title}>
-                            <motion.span
-                                className={styles.logoMark}
-                                aria-hidden="true"
-                                initial={REVEAL_INITIAL}
-                                animate={REVEAL_VISIBLE}
-                                transition={{
-                                    ...REVEAL_TRANSITION,
-                                    delay: HERO_WORD_DELAY,
-                                }}
-                            >
-                                <BookmarkLogo className={styles.logoImage} />
-                            </motion.span>
-                            {HERO_TITLE_WORDS.map((word, index) => (
-                                <Fragment key={`${word.label}-${index}`}>
-                                    <motion.span
-                                        className={`${styles.titleWord} ${word.isSubtext ? styles.titleSubtext : ""}`}
-                                        initial={REVEAL_INITIAL}
-                                        animate={REVEAL_VISIBLE}
-                                        transition={{
-                                            ...REVEAL_TRANSITION,
-                                            delay: HERO_WORD_DELAY + (index + 1) * HERO_WORD_STAGGER,
-                                        }}
-                                    >
-                                        {word.label}
-                                    </motion.span>
-                                    {index < HERO_TITLE_WORDS.length - 1 ? " " : null}
-                                </Fragment>
-                            ))}
-                        </h1>
+                        <motion.h1
+                            id="library-title"
+                            className={styles.title}
+                            initial={REVEAL_INITIAL}
+                            animate={REVEAL_VISIBLE}
+                            transition={{
+                                ...REVEAL_TRANSITION,
+                                delay: HERO_TITLE_DELAY,
+                            }}
+                        >
+                            <span className="titleAccentText">Дизайн-библиотека</span> — курируемая коллекция сайтов дизайнеров и студий
+                        </motion.h1>
                     </div>
                     <motion.p
                         className={styles.subtitle}
@@ -349,7 +261,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <div ref={navSentinelRef} className={styles.navSentinel} aria-hidden="true" />
+            <div className={styles.navGradient} aria-hidden="true" />
             <motion.nav
                 className={styles.navBar}
                 aria-label="Фильтры библиотеки"
@@ -360,43 +272,38 @@ export default function HomePage() {
                     delay: HERO_NAV_DELAY,
                 }}
             >
-                <div className={styles.navBarScroller}>
-                    <div className={styles.navBarTrack}>
-                        <motion.button
-                            type="button"
-                            className={`${styles.filterOption} ${styles.allOption} ${!hasActiveFilters ? styles.filterOptionSelected : ""}`}
-                            onClick={clearFilters}
-                            aria-pressed={!hasActiveFilters}
-                            whileTap={{ scale: 0.95 }}
-                            transition={HOVER_SPRING}
-                        >
-                            <span>Все</span>
-                        </motion.button>
+                <div
+                    ref={categoryGroupRef}
+                    className={styles.categoryGroup}
+                    style={categoryIndicatorStyle}
+                >
+                    {categoryOptions.map((option, index) => {
+                        const isSelected = selectedCategory === option.value;
 
-                        {siteCategories.map((category) => {
-                            return (
-                                <motion.button
-                                    type="button"
-                                    className={`${styles.filterOption} ${styles.typeOption} ${selectedCategory === category ? styles.filterOptionSelected : ""}`}
-                                    key={category}
-                                    onClick={() => selectCategory(category)}
-                                    aria-pressed={selectedCategory === category}
-                                    whileTap={{ scale: 0.95 }}
-                                    transition={HOVER_SPRING}
-                                >
-                                    <span>{category}</span>
-                                </motion.button>
-                            );
-                        })}
-
-                        {siteSpecializations.length ? (
-                            <span className={styles.trackDivider} aria-hidden="true" />
-                        ) : null}
-
+                        return (
+                            <motion.button
+                                ref={(node) => {
+                                    categoryButtonRefs.current[index] = node;
+                                }}
+                                type="button"
+                                className={styles.categoryOption}
+                                key={option.label}
+                                onClick={() => (option.value === null ? clearFilters() : selectCategory(option.value))}
+                                aria-pressed={isSelected}
+                                transition={HOVER_SPRING}
+                            >
+                                <span>{option.label}</span>
+                            </motion.button>
+                        );
+                    })}
+                </div>
+                <div className={styles.tagScroller}>
+                    <div className={styles.tagTrack}>
                         {siteSpecializations.map((tag) => {
                             const meta = getTagMeta(tag);
                             const iconPath = getTagIconPath(meta.icon);
                             const isSelected = selectedTags.includes(tag);
+                            const toggleIconPath = isSelected ? MINUS_ICON_PATH : PLUS_ICON_PATH;
 
                             return (
                                 <motion.button
@@ -409,30 +316,23 @@ export default function HomePage() {
                                     whileTap={{ scale: 0.95 }}
                                     transition={HOVER_SPRING}
                                 >
-                                    <span className={styles.optionIcon} aria-hidden="true">
-                                        {iconPath ? (
-                                            <Image src={iconPath} alt="" width={22} height={22} />
-                                        ) : (
-                                            <span className={styles.defaultTagIcon} />
-                                        )}
-                                    </span>
+                                    <span
+                                        className={styles.optionIcon}
+                                        style={{ "--icon-url": iconPath ? `url(${iconPath})` : "none" }}
+                                        aria-hidden="true"
+                                    />
                                     <span>{meta.label}</span>
+                                    <span
+                                        className={styles.toggleIcon}
+                                        style={{ "--icon-url": `url(${toggleIconPath})` }}
+                                        aria-hidden="true"
+                                    />
                                 </motion.button>
                             );
                         })}
                     </div>
                 </div>
-                <span
-                    className={`${styles.navPinnedFade} ${isNavPinned ? styles.navPinnedFadeVisible : ""}`}
-                    aria-hidden="true"
-                />
             </motion.nav>
-            <span
-                className={`${styles.navLogoMark} ${isNavPinned ? styles.navLogoVisible : ""}`}
-                aria-hidden="true"
-            >
-                <BookmarkLogo className={styles.navLogoImage} />
-            </span>
 
             <motion.section
                 id="sites"

@@ -1,14 +1,18 @@
 .linkContainer {
     appearance: none;
     width: fit-content;
-    height: 48px;
+    height: 46px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 14px 24px;
-    background-color: var(--secondary-bg);
-    color: var(--secondary-text);
-    border: 1px solid var(--stroke);
+
+    background-color: var(--btn-secondary-bg);
+    color: var(--text-secondary);
+
+    font-size: var(--medium-text-weight);
+    font-weight: var(--medium-text-weight);
+
     border-radius: 120px;
     line-height: 1;
     cursor: pointer;
@@ -20,11 +24,11 @@
 }
 
 .linkContainer:hover {
-    border-color: color-mix(in srgb, var(--accent-color) 34%, var(--stroke));
+    border-color: color-mix(in srgb, var(--blue) 34%, var(--stroke));
     color: var(--text);
 }
 
-@media (max-width: 620px) {
+@media (max-width: 720px) {
     .linkContainer {
         height: 44px;
         padding: 20px 22px;

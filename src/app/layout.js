@@ -24,6 +24,7 @@ const roboto = Roboto({
 
 const garamond = EB_Garamond({
     subsets: ['latin', 'cyrillic'],
+    style: ['normal', 'italic'],
     display: 'swap',
     variable: '--font-garamond',
 });

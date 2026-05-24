@@ -1,100 +1,153 @@
 :root {
-    --accent-color: hsl(218 100% 56%);
-    --button-text-color: hsl(0 0% 100%);
-    --text: hsl(0 0% 18%);
-    --secondary-text: hsl(0 0% 27%);
-    --muted-text: hsl(0 0% 76%);
-    --thirdly-text: hsl(0 0% 79%);
-    --fourthly-text: hsl(0 0% 80%);
-    --stroke: hsl(0 0% 72%);
+    --blue: hsl(212 100% 50%);
+    --text: hsl(0 0% 8%);
+    --text-secondary: hsl(0 0% 56%);
+    --text-tertiary: hsl(0 0% 72%);
+    --bg: hsl(0 0% 98%);
+    --btn-primary-bg: hsl(0 0% 8%);
+    --btn-secondary-bg: hsl(0 0% 92%);
+
+    --fullstack-primary: hsl(276 100% 50%);
+    --fullstack-stroke: hsl(276 100% 80%);
+    --fullstack-bg: hsl(276 100% 94%);
+
+    --design-engineer-primary: hsl(171 100% 28%);
+    --design-engineer-stroke: hsl(171 63% 76%);
+    --design-engineer-bg: hsl(171 64% 93%);
+
+    --branding-primary: hsl(325 100% 50%);
+    --branding-stroke: hsl(325 100% 80%);
+    --branding-bg: hsl(325 100% 94%);
+
+    --art-primary: hsl(359 100% 53%);
+    --art-stroke: hsl(359 100% 81%);
+    --art-bg: hsl(359 100% 94%);
+
+    --web-primary: hsl(221 100% 50%);
+    --web-stroke: hsl(221 100% 80%);
+    --web-bg: hsl(221 100% 94%);
+
+    --motion-primary: hsl(20 100% 50%);
+    --motion-stroke: hsl(20 100% 80%);
+    --motion-bg: hsl(20 100% 94%);
+
+    --product-primary: hsl(200 100% 31%);
+    --product-stroke: hsl(200 45% 72%);
+    --product-bg: hsl(200 45% 92%);
+
+    --illustration-primary: hsl(303 100% 50%);
+    --illustration-stroke: hsl(303 100% 80%);
+    --illustration-bg: hsl(303 100% 94%);
+
+    --cgi-primary: hsl(250 100% 38%);
+    --cgi-stroke: hsl(250 60% 75%);
+    --cgi-bg: hsl(250 60% 93%);
+
+    --3d-primary: hsl(172 100% 31%);
+    --3d-stroke: hsl(172 45% 72%);
+    --3d-bg: hsl(172 45% 92%);
+
+    --font: var(--font-roboto), "Roboto", sans-serif;
+    --text-size: 16px;
+    --text-weight: 400;
+    --text-line-height: 150%;
+    --text-letter-spacing: -0.02em;
+
+    --medium-text-size: 18px;
+    --medium-text-weight: 500;
+    --medium-text-line-height: 150%;
+    --medium-text-letter-spacing: -0.02em;
+
+    --small-text-size: 14px;
+    --small-text-weight: 500;
+    --small-text-line-height: 150%;
+    --small-text-letter-spacing: -0.02em;
+
+    --stroke: var(--text-tertiary);
     --paper-dot: hsl(36 18% 88%);
-
-    --accent-bg-color: var(--accent-color);
-    --accent-hover-bg-color: hsl(218 100% 62%);
-    --accent-secondary-bg: hsl(218 100% 96%);
-    --bg: hsl(42 22% 98%);
-    --secondary-bg: hsl(38 16% 96%);
-
-    --tag-tone-web: hsl(218 100% 68%);
-    --tag-tone-branding: hsl(329 100% 70%);
-    --tag-tone-product: hsl(199 78% 36%);
-    --tag-tone-engineering: hsl(173 58% 57%);
-    --tag-tone-motion: hsl(23 100% 72%);
-    --tag-tone-illustration: hsl(303 100% 66%);
-    --tag-tone-three-d: hsl(252 92% 48%);
-    --tag-tone-cgi: hsl(250 82% 48%);
-    --tag-tone-art: hsl(0 100% 58%);
-    --tag-tone-gaming: hsl(144 70% 40%);
-    --tag-tone-fonts: hsl(276 100% 66%);
-    --tag-tone-default: var(--secondary-text);
-
-    --title-text-size: 60px;
+    --title-text-size: 64px;
     --title-text-line-height: 92%;
-    --main-text-size: 16px;
-    --main-text-line-height: 120%;
-    --little-text-size: 14px;
-    --little-text-line-height: 80%;
-    --hover-bounce-ease: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --title-accent-color: var(--blue);
+    --title-accent-bg: hsl(210 80% 90%);
+    --hover-bounce-ease: cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+
+[data-tag-tone="fullstack"] {
+    --tag-tone-bg: var(--fullstack-bg);
+    --tag-tone-color: var(--fullstack-primary);
+    --tag-tone-stroke: var(--fullstack-stroke);
 }
 
 [data-tag-tone="web"] {
-    --tag-tone-bg: hsl(221 100% 97%);
-    --tag-tone-color: var(--tag-tone-web);
+    --tag-tone-bg: var(--web-bg);
+    --tag-tone-color: var(--web-primary);
+    --tag-tone-stroke: var(--web-stroke);
 }
 
 [data-tag-tone="branding"] {
-    --tag-tone-bg: hsl(325 100% 97%);
-    --tag-tone-color: var(--tag-tone-branding);
+    --tag-tone-bg: var(--branding-bg);
+    --tag-tone-color: var(--branding-primary);
+    --tag-tone-stroke: var(--branding-stroke);
 }
 
 [data-tag-tone="product"] {
-    --tag-tone-bg: hsl(198 100% 97%);
-    --tag-tone-color: var(--tag-tone-product);
+    --tag-tone-bg: var(--product-bg);
+    --tag-tone-color: var(--product-primary);
+    --tag-tone-stroke: var(--product-stroke);
 }
 
 [data-tag-tone="engineering"] {
-    --tag-tone-bg: hsl(171 83% 97%);
-    --tag-tone-color: var(--tag-tone-engineering);
+    --tag-tone-bg: var(--design-engineer-bg);
+    --tag-tone-color: var(--design-engineer-primary);
+    --tag-tone-stroke: var(--design-engineer-stroke);
 }
 
 [data-tag-tone="motion"] {
-    --tag-tone-bg: hsl(22 100% 97%);
-    --tag-tone-color: var(--tag-tone-motion);
+    --tag-tone-bg: var(--motion-bg);
+    --tag-tone-color: var(--motion-primary);
+    --tag-tone-stroke: var(--motion-stroke);
 }
 
 [data-tag-tone="illustration"] {
-    --tag-tone-bg: hsl(304 100% 97%);
-    --tag-tone-color: var(--tag-tone-illustration);
+    --tag-tone-bg: var(--illustration-bg);
+    --tag-tone-color: var(--illustration-primary);
+    --tag-tone-stroke: var(--illustration-stroke);
 }
 
 [data-tag-tone="threeD"] {
-    --tag-tone-bg: hsl(253 100% 97%);
-    --tag-tone-color: var(--tag-tone-three-d);
+    --tag-tone-bg: var(--3d-bg);
+    --tag-tone-color: var(--3d-primary);
+    --tag-tone-stroke: var(--3d-stroke);
 }
 
 [data-tag-tone="cgi"] {
-    --tag-tone-bg: hsl(253 100% 97%);
-    --tag-tone-color: var(--tag-tone-cgi);
+    --tag-tone-bg: var(--cgi-bg);
+    --tag-tone-color: var(--cgi-primary);
+    --tag-tone-stroke: var(--cgi-stroke);
 }
 
 [data-tag-tone="art"] {
-    --tag-tone-bg: hsl(0 100% 97%);
-    --tag-tone-color: var(--tag-tone-art);
+    --tag-tone-bg: var(--art-bg);
+    --tag-tone-color: var(--art-primary);
+    --tag-tone-stroke: var(--art-stroke);
 }
 
 [data-tag-tone="gaming"] {
-    --tag-tone-bg: hsl(144 82% 97%);
-    --tag-tone-color: var(--tag-tone-gaming);
+    --tag-tone-bg: var(--design-engineer-bg);
+    --tag-tone-color: var(--design-engineer-primary);
+    --tag-tone-stroke: var(--design-engineer-stroke);
 }
 
 [data-tag-tone="fonts"] {
-    --tag-tone-bg: hsl(275 100% 97%);
-    --tag-tone-color: var(--tag-tone-fonts);
+    --tag-tone-bg: var(--fullstack-bg);
+    --tag-tone-color: var(--fullstack-primary);
+    --tag-tone-stroke: var(--fullstack-stroke);
 }
 
 [data-tag-tone="default"] {
-    --tag-tone-bg: var(--surface-muted);
-    --tag-tone-color: var(--tag-tone-default);
+    --tag-tone-bg: var(--btn-secondary-bg);
+    --tag-tone-color: var(--text-secondary);
+    --tag-tone-stroke: var(--text-tertiary);
 }
 
 html {
@@ -120,15 +173,13 @@ body {
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    background:
-        radial-gradient(circle at 1px 1px, var(--paper-dot) 1.1px, transparent 1.2px) 0 0 / 24px 24px,
-        var(--bg);
+    background-color: var(--bg);
     color: var(--text);
-    font-family: var(--font-roboto), sans-serif;
-    font-weight: 450;
-    font-size: var(--main-text-size);
-    letter-spacing: 0;
-    line-height: var(--main-text-line-height);
+    font-family: var(--font);
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
+    letter-spacing: var(--text-letter-spacing);
+    line-height: var(--text-line-height);
     text-wrap: pretty;
 }
 
@@ -139,6 +190,26 @@ a {
 
 button {
     font: inherit;
+}
+
+.titleAccentText {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    color: var(--title-accent-color);
+    font-style: italic;
+    font-weight: var(--medium-text-weight);
+}
+
+.titleAccentText::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    background: var(--title-accent-bg);
+    content: "";
 }
 
 .strokeContainer {
@@ -152,14 +223,6 @@ button {
 
 
 @media (max-width: 1200px) {
-    :root {
-        --title-text-size: 44px;
-        --title-text-line-height: 92%;
-        --main-text-size: 18px;
-        --main-text-line-height: 172%;
-        --little-text-size: 16px;
-    }
-
     body {
         height: auto;
         overflow-y: auto;
@@ -170,9 +233,9 @@ button {
     :root {
         --title-text-size: 36px;
         --title-text-line-height: 104%;
-        --main-text-size: 16px;
-        --main-text-line-height: 172%;
-        --little-text-size: 14px;
+        --text-size: 16px;
+        --text-line-height: 172%;
+        --small-text-size: 14px;
     }
 
     body {

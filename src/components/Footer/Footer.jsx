@@ -5,14 +5,7 @@ import { publishedSiteCount } from "@/lib/siteData";
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <p>Количество сайтов: <span className={styles.siteCounter}>{publishedSiteCount}</span></p>
-            <p className={styles.footerDesc}>
-                Designed and developed by{" "}
-                <a href="https://abramovdesign.com/" target="_blank" rel="noreferrer" className={styles.footerLink}>
-                    Ilya Abramov
-                </a>
-                . May 2026
-            </p>
+            <p>Количество сайтов: <span className={styles.siteCounter}>{publishedSiteCount}</span>. Designed and Developed by Ilya Abramov. May 2026</p>
         </footer>
     );
 }

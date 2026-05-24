@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
+import CanvasLogo from "@/components/CanvasLogo/CanvasLogo";
 import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
-import SecondaryButton from "@/components/SecondaryButton/SecondaryButton";
 import { mediaUrl } from "@/lib/media";
 import { getSiteScreens, getSiteVideoUrl } from "@/lib/siteData";
 import { getSiteTags, getTagIconPath, getTagMeta } from "@/lib/siteTags";
@@ -13,6 +13,7 @@ import { getSiteTags, getTagIconPath, getTagMeta } from "@/lib/siteTags";
 import styles from "./FullSiteItem.module.css";
 
 const BOOK_LOADER_PAGES = Array.from({ length: 18 }, (_, index) => index + 1);
+const MODAL_EXIT_DURATION = 280;
 
 function BookLoader() {
     return (
@@ -62,10 +63,38 @@ export default function FullSiteItem({
     onClose,
 }) {
     const router = useRouter();
+    const closeTimerRef = useRef(null);
+    const [isClosing, setIsClosing] = useState(false);
     const isModal = mode === "modal";
     const siteScreens = getSiteScreens(site);
     const fullVideoSrc = getSiteVideoUrl(site);
     const tags = getSiteTags(site.specialization, Number.POSITIVE_INFINITY);
+
+    const completeClose = useCallback(() => {
+        if (onClose) {
+            onClose();
+            return;
+        }
+
+        if (isModal) {
+            router.back();
+            return;
+        }
+
+        router.push(backHref);
+    }, [backHref, isModal, onClose, router]);
+
+    const closeFullSite = useCallback(() => {
+        if (!isModal) {
+            completeClose();
+            return;
+        }
+
+        if (isClosing || closeTimerRef.current) return;
+
+        setIsClosing(true);
+        closeTimerRef.current = window.setTimeout(completeClose, MODAL_EXIT_DURATION);
+    }, [completeClose, isClosing, isModal]);
 
     useEffect(() => {
         if (!isModal) return undefined;
@@ -75,12 +104,7 @@ export default function FullSiteItem({
 
         const closeOnEscape = (event) => {
             if (event.key === "Escape") {
-                if (onClose) {
-                    onClose();
-                    return;
-                }
-
-                router.back();
+                closeFullSite();
             }
         };
 
@@ -90,41 +114,34 @@ export default function FullSiteItem({
             document.body.style.overflow = previousOverflow;
             window.removeEventListener("keydown", closeOnEscape);
         };
-    }, [isModal, onClose, router]);
+    }, [closeFullSite, isModal]);
 
-    const closeModal = () => {
-        if (onClose) {
-            onClose();
-            return;
-        }
-
-        router.back();
-    };
-
-    const backControl = isModal ? (
-        <SecondaryButton as="button" onClick={closeModal}>
-            Назад
-        </SecondaryButton>
-    ) : (
-        <SecondaryButton href={backHref} external={false}>
-            Назад
-        </SecondaryButton>
-    );
+    useEffect(() => {
+        return () => {
+            if (closeTimerRef.current) {
+                window.clearTimeout(closeTimerRef.current);
+            }
+        };
+    }, []);
 
     const content = (
         <div className={styles.siteInfoAndVideo}>
-            {backControl}
+            <button
+                type="button"
+                className={styles.closeButton}
+                onClick={closeFullSite}
+                aria-label="Закрыть"
+            />
 
             <div className={styles.siteInfo}>
                 <div className={styles.siteHeader}>
-                    <div className={styles.siteTitleAndSubtitle}>
+                    <div className={styles.siteTextColumn}>
                         <div className={styles.siteTitleLine}>
-                            <div className={styles.siteTitle}>{site.title}</div>
+                            <div className={styles.siteTitle}>
+                                <span className="titleAccentText">{site.title}</span>
+                            </div>
                             <div className={styles.siteCategory}>{site.category}</div>
                         </div>
-                        <p className={styles.siteSubtitle}>{site.subtitle}</p>
-                    </div>
-                    <div className={styles.tagsAndButton}>
                         <div className={styles.siteTags}>
                             {tags.map((tag) => {
                                 const meta = getTagMeta(tag);
@@ -136,19 +153,19 @@ export default function FullSiteItem({
                                         key={tag}
                                         data-tag-tone={meta.tone}
                                     >
-                                        <span className={styles.siteTagIcon} aria-hidden="true">
-                                            {iconPath ? (
-                                                <Image src={iconPath} alt="" width={22} height={22} />
-                                            ) : (
-                                                <span className={styles.defaultTagIcon} />
-                                            )}
-                                        </span>
+                                        <span
+                                            className={styles.siteTagIcon}
+                                            style={{ "--icon-url": iconPath ? `url(${iconPath})` : "none" }}
+                                            aria-hidden="true"
+                                        />
                                         <span>{meta.label}</span>
                                     </span>
                                 );
                             })}
                         </div>
+                    </div>
 
+                    <div className={styles.siteAction}>
                         {site.link ? (
                             <PrimaryButton href={site.link}>
                                 Перейти к сайту
@@ -156,6 +173,7 @@ export default function FullSiteItem({
                         ) : null}
                     </div>
                 </div>
+                <p className={styles.siteSubtitle}>{site.subtitle}</p>
             </div>
 
             {siteScreens.length > 0 ? (
@@ -184,13 +202,16 @@ export default function FullSiteItem({
     if (isModal) {
         return (
             <div
-                className={styles.modalOverlay}
+                className={`${styles.modalOverlay} ${isClosing ? styles.modalOverlayClosing : ""}`}
                 role="dialog"
                 aria-modal="true"
                 aria-label={site.title}
-                onClick={closeModal}
+                onClick={closeFullSite}
             >
-                <div className={styles.modalPanel} onClick={(event) => event.stopPropagation()}>
+                <div
+                    className={`${styles.modalPanel} ${isClosing ? styles.modalPanelClosing : ""}`}
+                    onClick={(event) => event.stopPropagation()}
+                >
                     {content}
                 </div>
             </div>
@@ -199,6 +220,7 @@ export default function FullSiteItem({
 
     return (
         <main className={styles.pageShell}>
+            <CanvasLogo />
             {content}
         </main>
     );

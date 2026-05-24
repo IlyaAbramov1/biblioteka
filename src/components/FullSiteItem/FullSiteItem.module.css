@@ -3,7 +3,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 32px clamp(20px, 5vw, 80px) 72px;
 }
 
 .modalOverlay {
@@ -11,63 +10,104 @@
     inset: 0;
     z-index: 100;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.2);
+    padding: 0;
+    background: rgba(85, 85, 85, 0.2);
     backdrop-filter: blur(12px);
     animation: overlayFadeIn 180ms ease-out;
 }
 
+.modalOverlayClosing {
+    pointer-events: none;
+    animation: overlayFadeOut 400ms ease-in;
+}
+
 .modalPanel {
-    width: 800px;
-    max-height: calc(100dvh - 60px);
+    position: relative;
+    width: 100%;
+    height: 90vh;
     overflow: hidden;
-    border: 1px solid var(--stroke);
-    border-radius: 32px;
     background: var(--bg);
     box-shadow: 0 30px 80px rgba(18, 14, 7, 0.28);
-    animation: panelScaleIn 220ms cubic-bezier(0.22, 1, 0.36, 1);
+    animation: panelSlideUp 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.modalPanelClosing {
+    animation: panelSlideDown 280ms cubic-bezier(0.64, 0, 0.78, 0) forwards;
 }
 
 .siteInfoAndVideo {
     width: 100%;
-    max-height: calc(100dvh - 60px);
+    height: 100%;
+    max-height: none;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 52px;
     overflow-y: auto;
-    padding: 28px;
+    padding: 64px clamp(24px, 8vw, 160px) 56px;
     background: var(--bg);
+    -webkit-overflow-scrolling: touch;
 }
 
 .pageShell .siteInfoAndVideo {
+    position: relative;
     max-height: none;
-    width: min(1040px, 100%);
-    border: 1px solid var(--stroke);
+    height: auto;
+    width: min(1440px, 100%);
     border-radius: 32px;
 }
 
+.closeButton {
+    appearance: none;
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    z-index: 10;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--btn-secondary-bg);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.closeButton::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 28px;
+    background: currentColor;
+    content: "";
+    transform: translate(-50%, -50%);
+    -webkit-mask: url("/tag-icons/cross.svg") center / contain no-repeat;
+    mask: url("/tag-icons/cross.svg") center / contain no-repeat;
+}
+
 .siteInfo {
+    width: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 24px;
 }
 
 .siteHeader {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 28px;
+    gap: 48px;
 }
 
-.siteTitleAndSubtitle {
+.siteTextColumn {
     min-width: 0;
+    width: min(100%, 760px);
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    width: 100%;
+    gap: 16px;
 }
 
 .siteTitleLine {
@@ -75,7 +115,6 @@
     align-items: baseline;
     flex-wrap: wrap;
     gap: 12px;
-
     font-family: var(--font-garamond), serif;
     font-weight: 500;
     font-size: 2.4em;
@@ -83,50 +122,35 @@
 
 .siteTitle {
     color: var(--text);
-    font-weight: 450;
+    font-weight: 500;
     line-height: 0.92;
-    letter-spacing: 0;
-}
-
-.siteCategory {
-    color: var(--muted-text);
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: 0;
+    letter-spacing: var(--text-letter-spacing);
 }
 
 .siteSubtitle {
-    color: var(--muted-text);
+    color: var(--text-tertiary);
     line-height: 1.55;
 }
 
 .siteTags {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    font-size: var(--little-text-size);
+    gap: 8px;
+    font-size: var(--small-text-size);
     line-height: 1;
-}
-
-.filterOptionSelected.tagOption {
-    background: var(--tag-tone-bg, var(--surface-muted));
-    color: var(--tag-tone-color, var(--secondary-text));
-    box-shadow:
-        inset 0 0 0 2px currentColor;
 }
 
 .siteTagItem {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     width: fit-content;
-    height: fit-content;
-    padding: 12px 20px;
-    border-radius: 120px;
-    background: var(--tag-tone-bg, var(--surface-muted));
-    color: var(--tag-tone-color, var(--secondary-text));
-    box-shadow:
-        inset 0 0 0 0.2px currentColor;
+    height: 36px;
+    padding: 0 13px 0 10px;
+    border: 1px solid var(--btn-secondary-bg);
+    border-radius: 999px;
+    background: var(--btn-secondary-bg);
+    color: var(--text-tertiary);
     min-width: 0;
 }
 
@@ -137,36 +161,29 @@
     width: 18px;
     height: 18px;
     flex: 0 0 18px;
+    background: currentColor;
+    -webkit-mask: var(--icon-url) center / contain no-repeat;
+    mask: var(--icon-url) center / contain no-repeat;
 }
 
-.siteTagIcon img {
-    width: 18px;
-    height: 18px;
-}
-
-.defaultTagIcon {
-    width: 12px;
-    height: 12px;
-    border: 1px solid currentColor;
-    border-radius: 3px;
-}
-
-.tagsAndButton {
+.siteAction {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding-top: 6px;
 }
 
 .siteVideoFrame {
     position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    width: 920px;
+    margin: 0 auto;
+    aspect-ratio: 2 / 1;
     flex: 0 0 auto;
     overflow: hidden;
-    border: 1px solid color-mix(in srgb, var(--stroke) 72%, var(--text) 28%);
+    border: 1px solid var(--btn-secondary-bg);
     border-radius: 16px;
-    background: var(--secondary-bg);
+    background: var(--btn-secondary-bg);
 }
 
 .siteVideoLoader {
@@ -175,7 +192,7 @@
     z-index: 1;
     display: grid;
     place-items: center;
-    background: var(--secondary-bg);
+    background: var(--btn-secondary-bg);
 }
 
 .siteVideo {
@@ -194,7 +211,7 @@
 }
 
 .bookLoader {
-    --loader-color: var(--fourthly-text);
+    --loader-color: var(--text-tertiary);
     --loader-duration: 6.8s;
 
     position: relative;
@@ -354,6 +371,8 @@
 }
 
 .siteImages {
+    width: 920px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -379,15 +398,37 @@
     }
 }
 
-@keyframes panelScaleIn {
+@keyframes overlayFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes panelSlideUp {
     from {
         opacity: 0;
-        transform: translateY(10px) scale(0.985);
+        transform: translateY(100%);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: translateY(0);
+    }
+}
+
+@keyframes panelSlideDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
     }
 }
 
@@ -532,75 +573,88 @@
     96% { transform: rotateZ(-90deg); }
 }
 
-@media (max-width: 900px) {
-    .modalOverlay {
-        padding: 18px;
+@media (max-width: 1200px) {
+    .modalPanel {
+        height: 80vh;
     }
 
-    .modalPanel {
-        width: min(100%, calc(100vw - 24px));
-        max-height: calc(100dvh - 24px);
-        border-radius: 24px;
+    .siteInfo {
+        width: 100%;
+    }
+
+    .siteVideoFrame {
+        width: 100%
+    }
+
+    .siteSubtitle {
+        width: 100%
     }
 
     .siteInfoAndVideo {
-        max-height: calc(100dvh - 24px);
-        padding: 22px;
-        gap: 20px;
+        padding: 56px 32px 48px;
+        gap: 32px;
     }
 
     .siteHeader {
-        flex-direction: column;
-        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .siteTextColumn {
+        width: min(100%, 680px);
     }
 }
 
-@media (max-width: 600px) {
-    .modalOverlay {
-        padding: 10px;
-    }
-
-    .siteHeader {
-        gap: 8px;
-    }
-
+@media (max-width: 720px) {
     .modalPanel {
-        width: calc(100vw - 20px);
-        border-radius: 20px;
+        height: 80vh;
+        max-height: 80vh;
+        border-radius: 20px 20px 0 0;
     }
 
     .siteInfoAndVideo {
         overflow-x: hidden;
         overflow-y: auto;
-        padding: 18px;
-        -webkit-overflow-scrolling: touch;
+        padding: 48px 18px 108px;
+        gap: 28px;
     }
 
-    .siteTitleLine {
-        gap: 8px 12px;
+    .closeButton {
+        top: 14px;
+        right: 14px;
+        width: 44px;
+        height: 44px;
     }
 
-    .siteTagItem {
-        font-size: var(--little-text-size);
-    }
-
-    .siteTagIcon,
-    .siteTagIcon img {
-        width: 18px;
-        height: 18px;
-    }
-
-    .siteTags {
-        width: 100%;
-    }
-
-    .tagsAndButton {
+    .siteHeader {
         flex-direction: column;
-        justify-content: start;
+        gap: 20px;
+    }
+
+    .siteTextColumn {
         gap: 24px;
     }
 
-    .tagsAndButton button {
+    .siteTitleLine {
+        flex-direction: column;
+        gap: 8px;
+        font-size: 2.6em;
+    }
+
+    .siteSubtitle {
+        line-height: 1.5;
+    }
+
+    .siteAction {
+        position: absolute;
+        width: fit-content;
+        left: 31%;
+        right: 20px;
+        bottom: 20px;
+        z-index: 8;
+        padding-top: 0;
+    }
+
+    .siteAction a {
         width: 100%;
     }
 }

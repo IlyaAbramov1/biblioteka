@@ -1,0 +1,24 @@
+.logo {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    z-index: 120;
+    width: 44px;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    transform: translateX(-50%);
+}
+
+.logo svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 720px) {
+    .logo {
+        top: -19px;
+        width: 52px;
+    }
+}

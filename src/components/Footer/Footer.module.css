@@ -1,32 +1,35 @@
 .footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
 
-    width: min(100%, 1180px);
-    margin: 24px auto 0;
-    padding: 0 20px 28px;
+    width: 100%;
+    padding: 52px 0 140px 0;
 
     line-height: 1.4;
 
-    color: var(--fourthly-text);
+    color: var(--text-tertiary);
+}
+
+.footer p {
+    margin: 0 auto;
 }
 
 .siteCounter {
     padding: 2px 4px;
     border: 1px dashed var(--stroke);
     border-radius: 6px;
-    background: var(--secondary-bg);
+    background: var(--btn-secondary-bg);
     color: var(--text);
 }
 
 .footerLink:hover {
-    background: hsl(220, 100%, 98%);
-    color: hsl(220, 100%, 50%);
+    background: color-mix(in srgb, var(--blue) 6%, var(--bg));
+    color: var(--blue);
     text-decoration: underline;
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1200px) {
     .footer {
         gap: 6px;
         width: 100%;
@@ -34,11 +37,11 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     .footer {
         gap: 6px;
         text-align: left;
-        font-size: var(--little-text-size);
+        font-size: var(--small-text-size);
         padding: 12px 16px 12px;
     }
 }

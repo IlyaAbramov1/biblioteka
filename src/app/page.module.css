@@ -1,7 +1,7 @@
 .page {
     position: relative;
     width: 100%;
-    padding: 0 clamp(20px, 5vw, 80px) 96px;
+    padding: 0 100px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,12 +9,9 @@
 }
 
 .heroBlock {
-    --hero-logo-width: 28px;
-    --hero-logo-height: 48px;
-
     width: min(100%, 1600px);
-    min-height: 60vh;
-    padding: 88px 24px 74px;
+    min-height: 70vh;
+    padding-top: 40px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,39 +21,6 @@
     text-align: center;
     isolation: isolate;
     overflow: visible;
-}
-
-.heroBooks {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 100vw;
-    transform: translateX(-50%);
-    z-index: 0;
-    pointer-events: none;
-    overflow-x: clip;
-}
-
-.heroBookLeft,
-.heroBookRight {
-    position: absolute;
-    --book-scene-width: 520px;
-    --book-scene-height: 360px;
-    --book-scene-margin-bottom: 0;
-    filter: drop-shadow(0 22px 42px rgba(28, 18, 4, 0.1));
-}
-
-.heroBookLeft {
-    left: -200px;
-    top: -160px;
-    --book-scene-transform: rotate(-13deg) scale(1.3);
-}
-
-.heroBookRight {
-    right: -280px;
-    top: 84px;
-    --book-scene-transform: rotate(10deg) scale(1.1);
 }
 
 .heroBlockText,
@@ -78,48 +42,20 @@
     min-height: 58px;
 }
 
-.logoMark {
-    margin-right: 18px;
-    margin-top: 10px;
-    display: inline-flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: var(--hero-logo-width);
-    height: var(--hero-logo-height);
-    color: var(--accent-color);
-    pointer-events: none;
-    vertical-align: top;
-}
-
-.logoImage {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
 .title {
     color: var(--text);
     font-family: var(--font-garamond), serif;
-    font-weight: 500;
+    font-weight: var(--medium-text-weight);
     font-size: var(--title-text-size);
     width: 100%;
     line-height: var(--title-text-line-height);
-    letter-spacing: 0;
+    letter-spacing: var(--medium-text-letter-spacing);
     text-wrap: balance;
 }
 
-.titleSubtext {
-    color: var(--thirdly-text);
-    font-weight: 300;
-}
-
-.titleWord {
-    display: inline-block;
-    will-change: opacity, filter, transform;
-}
-
 .subtitle {
-    color: var(--muted-text);
+    color: var(--text-secondary);
+    font-size: var(--medium-text-size);
     line-height: 1.55;
 }
 
@@ -131,161 +67,145 @@
     flex-wrap: wrap;
 }
 
-.navSentinel {
-    width: 100%;
-    height: 1px;
-    margin-top: -1px;
-    pointer-events: none;
-}
-
 .navBar {
-    position: sticky;
-    top: 0;
+    position: fixed;
+    bottom: 24px;
     z-index: 50;
-    width: 100vw;
+    width: 70vw;
+    height: 36px;
     display: flex;
-    align-items: flex-start;
-
-    font-size: var(--little-text-size);
-
-    margin: 0 calc(50% - 50vw) 24px;
-    padding-top: 12px;
-}
-
-/*
-.navBar::before,
-.navBar::after {
-    position: absolute;
-    top: 0;
-    bottom: 4px;
-    z-index: 2;
-    width: 56px;
-    content: "";
+    align-items: center;
+    justify-content: center;
+    font-size: var(--small-text-size);
     pointer-events: none;
+    transform: translateX(-50%);
 }
 
-.navBar::before {
+.navGradient {
+    position: fixed;
     left: 0;
-    background: linear-gradient(
-        to right,
-        var(--bg) 0%,
-        color-mix(in srgb, var(--bg) 0%, transparent) 100%
-    );
-}
-.navBar::after {
     right: 0;
+    bottom: 0;
+    z-index: 40;
+    height: 180px;
+    width: 100vw;
+    pointer-events: none;
     background: linear-gradient(
-        to left,
+        to top,
         var(--bg) 0%,
+        var(--bg) 34%,
         color-mix(in srgb, var(--bg) 0%, transparent) 100%
     );
 }
-*/
 
-.navBarScroller {
+.categoryGroup {
+    position: relative;
+    z-index: 3;
+    height: 36px;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    padding: 3px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: var(--btn-secondary-bg);
+    pointer-events: auto;
+}
+
+.categoryGroup::after {
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: var(--category-indicator-left);
+    z-index: 0;
+    width: var(--category-indicator-width);
+    border-radius: 999px;
+    background: var(--bg);
+    content: "";
+    transition:
+        left 200ms var(--hover-bounce-ease),
+        width 200ms var(--hover-bounce-ease);
+}
+
+.categoryOption {
+    appearance: none;
     position: relative;
     z-index: 1;
-    width: 100%;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-tertiary);
+    font: inherit;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 150ms ease;
+}
+
+.categoryOption[aria-pressed="true"] {
+    color: var(--text);
+}
+
+.tagScroller {
+    position: relative;
+    z-index: 2;
     min-width: 0;
+    flex: 1 1 auto;
+    height: 36px;
+    margin-left: -12px;
     overflow-x: auto;
+    overflow-y: visible;
     scrollbar-width: none;
-    padding: 0 0 4px;
-}
-
-.navPinnedFade {
-    position: absolute;
-    left: -78px;
-    top: -16px;
-    right: 0;
-    z-index: 0;
-    height: 240px;
-    width: 100vw;
-    opacity: 0;
-    pointer-events: none;
-    background: linear-gradient(
-        to bottom,
-        var(--bg) 0%,
-        var(--bg) 20%,
-        color-mix(in srgb, var(--bg) 0%, transparent) 100%
+    pointer-events: auto;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0,
+        black 18px,
+        rgb(77, 43, 43) calc(100% - 40px),
+        transparent 100%
     );
-    transition: opacity 150ms ease;
+    mask-image: linear-gradient(
+        to right,
+        transparent 0,
+        black 18px,
+        black calc(100% - 40px),
+        transparent 100%
+    );
 }
 
-.navPinnedFadeVisible {
-    opacity: 1;
-}
-
-.navLogoMark {
-    position: fixed;
-    right: 24px;
-    bottom: -20px;
-    width: 42px;
-    height: 68px;
-    color: var(--accent-color);
-    pointer-events: none;
-    z-index: 60;
-    opacity: 0;
-    transform: translateY(120%) rotate(180deg);
-    transform-origin: center;
-    transition:
-        opacity 150ms ease,
-        transform 150ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.navLogoVisible {
-    opacity: 1;
-    transform: translateY(0) rotate(180deg);
-}
-
-.navLogoImage {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.navBarScroller::-webkit-scrollbar {
+.tagScroller::-webkit-scrollbar {
     display: none;
 }
 
-.navBarTrack {
+.tagTrack {
+    width: max-content;
+    min-width: 100%;
+    height: 36px;
     display: inline-flex;
     align-items: center;
-    justify-content: flex-start;
-    min-width: 100%;
-    width: max-content;
-    gap: 10px;
+    gap: 8px;
+    padding: 0 48px 0 24px;
     white-space: nowrap;
-}
-
-.navBarTrack:first-child {
-    padding-left: 48px;
-}
-
-.navBarTrack:last-child {
-    padding-right: 48px;
-}
-
-.trackDivider {
-    flex: 0 0 auto;
-    width: 1px;
-    height: 28px;
-    background: color-mix(in srgb, var(--stroke) 70%, var(--text) 30%);
-    opacity: 0.68;
-    margin: 0 4px;
 }
 
 .filterOption {
     appearance: none;
+    height: 36px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    padding: 12px 14px;
-    height: 40px;
-    border: 1px solid var(--stroke);
+    gap: 6px;
+    padding: 0 12px;
+    border: 1px solid var(--btn-secondary-bg);
     border-radius: 999px;
-    background: var(--secondary-bg);
-    color: var(--text);
+    background: var(--btn-secondary-bg);
+    color: var(--text-tertiary);
     font: inherit;
     line-height: 1;
     cursor: pointer;
@@ -299,54 +219,34 @@
     opacity: 0.8;
 }
 
-.filterOptionSelected:not(.tagOption) {
-    border-color: var(--text);
-    background: var(--text);
-    color: var(--bg);
-}
-
-.allOption {
-    padding-inline: 26px;
-}
-
-.typeOption {
-    color: var(--secondary-text);
-}
-
 .tagOption {
-    padding: 12px 18px 12px 16px;
-    border-color: transparent;
-    background: var(--tag-tone-bg, var(--surface-muted));
-    color: var(--tag-tone-color, var(--secondary-text));
+    padding: 0 10px;
+    border-color: var(--btn-secondary-bg);
+    background: var(--btn-secondary-bg);
+    color: var(--text-tertiary);
 }
 
 .filterOptionSelected.tagOption {
-    background: var(--tag-tone-bg, var(--surface-muted));
-    color: var(--tag-tone-color, var(--secondary-text));
-    box-shadow:
-        inset 0 0 0 2px currentColor;
+    background: var(--tag-tone-bg, var(--btn-secondary-bg));
+    color: var(--tag-tone-color, var(--text-secondary));
+    border-color: var(--tag-tone-stroke, currentColor);
 }
 
-.optionIcon {
+.optionIcon,
+.toggleIcon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 22px;
-    height: 22px;
-    flex: 0 0 22px;
-    opacity: 0.79;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    background: currentColor;
+    -webkit-mask: var(--icon-url) center / contain no-repeat;
+    mask: var(--icon-url) center / contain no-repeat;
 }
 
-.optionIcon img {
-    width: 22px;
-    height: 22px;
-}
-
-.defaultTagIcon {
-    width: 12px;
-    height: 12px;
-    border: 1px solid currentColor;
-    border-radius: 3px;
+.toggleIcon {
+    margin-left: 2px;
 }
 
 .sitesGrid {
@@ -373,32 +273,19 @@
     border: 1px dashed var(--stroke);
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.58);
-    color: var(--secondary-text);
+    color: var(--text-secondary);
     text-align: center;
     line-height: 1.6;
 }
 
 @media (max-width: 1200px) {
-    .heroBookLeft,
-    .heroBookRight {
-        --book-scene-width: 460px;
-        --book-scene-height: 320px;
-    }
-
     .sitesGrid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .logoMark {
-        margin-right: 4px;
-        margin-top: 4px;
-        margin-bottom: 10px;
-        height: 32px !important;
-        width: 32px !important;
-    }
 
     .page {
-        padding: 0 16px 96px;
+        padding: 0 16px 144px;
     }
 
     .heroBlock {
@@ -409,27 +296,8 @@
         gap: 20px;
     }
 
-    .navBarTrack:first-child {
-        padding-left: 36px;
-    }
-
-    .navLogoMark {
-        right: 16px;
-        bottom: 16px;
-        width: 32px;
-        height: 68px;
-    }
-
-    .heroBookLeft {
-        left: -200px;
-        top: -160px;
-        --book-scene-transform: rotate(-13deg) scale(1.1);
-    }
-
-    .heroBookRight {
-        right: -220px;
-        top: 200px;
-        --book-scene-transform: rotate(14deg) scale(0.8);
+    .navBar {
+        width: 92vw;
     }
 
     .sitesGrid {
@@ -444,28 +312,12 @@
         height: 80vh;
     }
 
-    .heroBookLeft {
-        left: -160px;
-        top: -100px;
-        --book-scene-transform: rotate(-13deg) scale(1.1);
-    }
-
-    .heroBookRight {
-        right: -200px;
-        top: -140px;
-        --book-scene-transform: rotate(14deg) scale(1.1);
-    }
-
     .titleRow {
         padding-top: 80px;
     }
     
     .actions {
         gap: 8px;
-    }
-
-    .logoMark {
-        margin-bottom: 0;
     }
 
     .subtitle {
@@ -478,39 +330,52 @@
     }
 
     .navBar {
-        padding-top: 8px;
-        margin: 0 calc(50% - 50vw) 12px;
-    }
-
-    .navBarTrack:first-child {
-        padding-left: 20px;
-    }
-
-    .navLogoMark {
+        bottom: 16px;
+        left: 0;
         right: 0;
-        bottom: 18px;
-        width: 32px;
-        transform: translateX(120%) rotate(90deg);
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 0 12px;
+        transform: none;
     }
 
-    .navLogoVisible {
-        transform: translateX(0) rotate(90deg);
+    .categoryGroup {
+        max-width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+    }
+
+    .categoryGroup::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tagScroller {
+        width: 100%;
+        flex: 0 0 auto;
+        margin-left: 0;
+    }
+
+    .categoryOption {
+        padding-inline: 10px;
     }
 
     .filterOption {
-        min-height: 42px;
-        padding-inline: 16px;
+        padding-inline: 10px;
     }
 
     .tagOption {
-        min-height: 44px;
-        padding-inline: 16px;
+        padding-inline: 10px;
     }
 
-    .optionIcon,
-    .optionIcon img {
-        width: 18px;
-        height: 18px;
+    .tagTrack {
+        min-width: max-content;
+        padding: 0 24px;
     }
 
     .sitesGrid {

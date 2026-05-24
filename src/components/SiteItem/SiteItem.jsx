@@ -43,19 +43,22 @@ export default function SiteItem({ site, onOpen }) {
         <div className={styles.siteCoverAndInfo}>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 302 219"
+                viewBox="0 0 308 226"
                 fill="none"
                 preserveAspectRatio="none"
                 className={styles.siteBackplate}
                 aria-hidden="true"
             >
                 <path
-                    d="M32 0.452148H90.5918C95.9321 0.452148 101.185 1.80826 105.858 4.39258L122.538 13.6162C127.346 16.2747 132.75 17.6689 138.243 17.6689H270C287.423 17.6689 301.548 31.7935 301.548 49.2168V187C301.548 204.423 287.423 218.548 270 218.548H32C14.5766 218.548 0.452153 204.423 0.452148 187V32C0.452148 14.5766 14.5766 0.452148 32 0.452148Z"
-                    fill="var(--site-card-fill)"
-                    stroke="var(--stroke)"
-                    strokeWidth="0.6"
-                    vectorEffect="non-scaling-stroke"
+                    d="M0 22.1377C0 9.91138 9.91137 0 22.1377 0H92.9738C98.0465 0 102.965 1.74212 106.907 4.93486L126.474 20.7831C130.416 23.9759 135.335 25.718 140.408 25.718H285.862C298.089 25.718 308 35.6294 308 47.8556V203.253C308 215.479 298.089 225.391 285.862 225.391H22.1377C9.91136 225.391 0 215.479 0 203.253V22.1377Z"
+                    fill="url(#siteItemBackplateGradient)"
                 />
+                <defs>
+                    <linearGradient id="siteItemBackplateGradient" x1="154" y1="0" x2="154" y2="225.391" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#F5F5F5" />
+                        <stop offset="1" stopColor="#D6D6D6" />
+                    </linearGradient>
+                </defs>
             </svg>
             <div className={styles.sitePreviewStage}>
                 {previewSrc ? (
@@ -100,13 +103,11 @@ export default function SiteItem({ site, onOpen }) {
                                     key={tag}
                                     data-tag-tone={meta.tone}
                                 >
-                                    <span className={styles.siteTagIcon} aria-hidden="true">
-                                        {iconPath ? (
-                                            <Image src={iconPath} alt="" width={18} height={18} />
-                                        ) : (
-                                            <span className={styles.defaultTagIcon} />
-                                        )}
-                                    </span>
+                                    <span
+                                        className={styles.siteTagIcon}
+                                        style={{ "--icon-url": iconPath ? `url(${iconPath})` : "none" }}
+                                        aria-hidden="true"
+                                    />
                                     <span>{meta.label}</span>
                                 </span>
                             );
