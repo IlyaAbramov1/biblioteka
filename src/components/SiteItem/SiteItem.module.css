@@ -40,7 +40,7 @@
     position: absolute;
     inset: 0;
     z-index: 1;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 24px;
     pointer-events: none;
 }
@@ -60,6 +60,7 @@
 
 .siteCover {
     object-fit: cover;
+    object-position: top center;
     pointer-events: none;
 }
 
