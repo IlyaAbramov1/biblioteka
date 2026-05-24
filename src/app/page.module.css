@@ -375,7 +375,7 @@
 
     .tagTrack {
         min-width: max-content;
-        padding: 0 24px;
+        padding: 0;
     }
 
     .sitesGrid {

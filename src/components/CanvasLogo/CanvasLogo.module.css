@@ -1,6 +1,6 @@
 .logo {
     position: fixed;
-    top: 0px;
+    top: -24px;
     left: 50%;
     z-index: 120;
     width: 44px;
@@ -8,6 +8,7 @@
     display: block;
     pointer-events: none;
     transform: translateX(-50%);
+    overflow-y: visible;
 }
 
 .logo svg {
