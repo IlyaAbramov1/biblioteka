@@ -1,5 +1,411 @@
 [
     {
+        "slug": "shcherban",
+        "title": "Artem Shcherban",
+        "subtitle": "Артём — цифровой дизайнер с невероятным портфолио. Сайт был признан Awwwards, CSS Design Awards и Muzli. Безупречные микроинтеракции и красивейшая вёрстка каждой страницы в бруталистском стиле. Сам Артём отмечает, что сайт делался два года с огромным количеством правок и итераций. В результате получилось то, на что можно и нужно равняться.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Web",
+            "Branding"
+        ],
+        "link": "https://artemshcherban.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/shcherban/shcherban-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/shcherban/shcherban-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "naer",
+        "title": "Misha Naer",
+        "subtitle": "Миша — основатель прекрасного Telegram-канала с одноимённым названием. Ex-lead product designer в Т-Банке, ныне развивает AI-продукты в Сбере. На сайте мягкая и компактная двухколоночная вёрстка, вдохновлённая стилем дизайн-инженеров. Главный акцент идёт на продукт, а основная информация закреплена — грамотная структура, которую точно можно взять на заметку.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product Design"
+        ],
+        "link": "https://mishanaer.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/naer/naer-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/naer/naer-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "together",
+        "title": "Together Agency",
+        "subtitle": "Студия, специализирующаяся на B2B Tech-проектах. Их сайт сделан в выверенной чёрно-белой палитре с ясными акцентами и большим количеством маленьких, мягких интеракций. Приятные easing-анимации, плавные переходы между страницами, необычные и милые детали — например, подзаголовок на главной странице с успешными метриками проектов Together Agency, контент которого плавно меняется.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://together.agency/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/together/together-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/together/together-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "uvarine",
+        "title": "Иван Uvarine",
+        "subtitle": "Иван — продуктовый дизайнер. Сайт сделан в выверенной тёмной палитре с красивыми tech-иллюстрациями, на которые наложен приятный hover-шейдер.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://uvarine.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/uvarine/uvarine-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/uvarine/uvarine-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "wonderweek",
+        "title": "Wonderpeek",
+        "subtitle": "Студия, специализирующаяся на создании 3D-графики и моушн-дизайна. На сайте мягкая минималистичная вёрстка, полностью акцентирующая внимание на работах студии. Стоит отметить саму структуру: описание, showreel, информация в несколько блоков и CTA. Ничего лишнего.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "CGI"
+        ],
+        "link": "https://www.wonderpeek.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/wonderpeek/wonderpeek-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/wonderpeek/wonderpeek-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "murea",
+        "title": "Victor Murea",
+        "subtitle": "Фриланс-дизайнер из Молдавии, специализирующийся на брендинге. Сайт сделан в чёткой двухколоночной сетке с закреплённой основной информацией и скролл-блоком с яркими, красивыми проектами.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Branding"
+        ],
+        "link": "https://www.victormurea.co/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/murea/murea-1.webp",
+            "screens/murea/murea-2.webp",
+            "screens/murea/murea-3.webp"
+        ],
+        "previewScreen": "screens/murea/murea-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "studiopaaack",
+        "title": "StudioPaaack",
+        "subtitle": "Одна из лучших и красивейших маленьких дизайн-студий мира, берущая свои корни во Франции. Сайт сделан функционально и чётко, без лишних деталей. Ведь основа здесь — безумно красивые кейсы по графике и брендингу.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding"
+        ],
+        "link": "https://studiopaack.fr/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/studiopaaack/studiopaaack-1.webp",
+            "screens/studiopaaack/studiopaaack-2.webp",
+            "screens/studiopaaack/studiopaaack-3.webp",
+            "screens/studiopaaack/studiopaaack-4.webp",
+            "screens/studiopaaack/studiopaaack-5.webp"
+        ],
+        "previewScreen": "screens/studiopaaack/studiopaaack-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "repponen",
+        "title": "Anton Repponen",
+        "subtitle": "Антон — большой коммерческий дизайнер из Нью-Йорка, работавший с Google, Microsoft, Balenciaga и другими брендами. Сайт сделан в артовом колоночном стиле, с наложением элементов друг на друга и красивой, грамотной типографикой. Главное здесь — необычная структура повествования, хаотично накладывающаяся на элементы проектов Антона.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Web",
+            "Branding",
+            "Art"
+        ],
+        "link": "https://repponen.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/repponen/repponen-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/repponen/repponen-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "rabbit",
+        "title": "Evil Rabbit",
+        "subtitle": "Founding Designer из Vercel. Стиль сайта знаком любому фанату дизайна Vercel. Однако Evil Rabbit пошёл дальше, применив их уникальный минималистичный стиль к собственной обёртке. На сайте представлена карьера и путь дизайнера в формате таймлайна с мягкими motion-эффектами.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://www.evilrabbit.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/rabbit/rabbit-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/rabbit/rabbit-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "alexabraham",
+        "title": "Alex Victor Abraham",
+        "subtitle": "Alex — дизайнер X и xAI. Его сайт, хоть и сделан в минималистичной вёрстке, наполнен большим количеством маленьких, приятных деталей: sound-дизайн, bounce-анимации, мягкие ховеры и scroll-анимации. Кладезь интерактивного дизайна.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://alexvictorabraham.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/alexabraham/alexabraham-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/alexabraham/alexabraham-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "tobi",
+        "title": "Tobi B.",
+        "subtitle": "Tobi — UI- и web-дизайнер, фронтендер. На сайте ясно видно, что человек понимает и дизайн, и код. Большое количество мелких интерактивных элементов, WebGL-элементы, красивые и плавные easing-анимации, переходы между страницами — всё это даёт сайту уникальный визуальный язык.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer",
+            "Web"
+        ],
+        "link": "https://tobi.computer/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/tobi/tobi-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/tobi/tobi-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "rabotyagi",
+        "title": "Работяги",
+        "subtitle": "Российская дизайн-студия, специализирующаяся на B2B SaaS-продуктах. Сайт, безусловно, выделяется своим визуальным стилем: брутальная вёрстка, акцентная вытянутая антиква, 3D-элементы и sticky-элементы. Отдельно забавляют стилизованные аватарки сотрудников студии.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://rbtg.studio/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/rabotyagi/rabotyagi-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/rabotyagi/rabotyagi-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "hex",
+        "title": "HEX",
+        "subtitle": "Hex — одна из сильнейших студий с точки зрения визуала. Их работа с цветом, паттернами и деталями всегда вызывает не только живой интерес, но и удивление: насколько сильно это умеют дизайнеры. Сайт сделан в интересной зелёной палитре, а сама вёрстка довольно функциональна. Всё сделано для того, чтобы подчеркнуть визуальные работы студии.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://www.hex.inc/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/hex/hex-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/hex/hex-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "bolshakov",
+        "title": "Vladimir Bolshakov",
+        "subtitle": "Хед-дизайнер Ламоды. Ранее работал в Депо, где сделал множество интересных проектов — от логотипа Яндекс 360 до ребрендинга Святого Источника. Сайт устроен просто и лаконично: проекты собраны в сетку, минималистичная вёрстка дополнена акцентной гротескной типографикой. Особенно цепляет hero-блок с меняющимися милыми иллюстрациями.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Branding"
+        ],
+        "link": "https://bolshakovdesign.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/bolshakov/bolshakov-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/bolshakov/bolshakov-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "mouthwash",
+        "title": "Mouthwash",
+        "subtitle": "Студия из США, специализирующаяся на разработке брендинга и креативных кампаний для крупных брендов — The North Face, Nike и других. Сайт особенно выделяется типографической системой и вёрсткой: всё выглядит максимально аккуратно и уместно.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Art"
+        ],
+        "link": "https://mouthwash.studio/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/mouthwash/mouthwash-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/mouthwash/mouthwash-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "oledzka",
+        "title": "Natalia Oledzka",
+        "subtitle": "Дизайнер из Нью-Йорка, ныне работающая в Mouthwash, а ранее — в Porto Rocha. Сайт самобытен благодаря широкой вёрстке, акцентной типографике и надписям, меняющим цвет после наведения курсора.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Branding"
+        ],
+        "link": "https://natalia.earth/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/oledzka/oledzka-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/oledzka/oledzka-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "unms",
+        "title": "UNMS",
+        "subtitle": "Независимая студия дизайна и исследований. Сайт сделан просто, но в необычном ключе: выровненная по левому краю сетка проектов и нестандартные графические решения как в брендинге студии, так и в её проектах. Здесь точно есть за что зацепиться.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Web"
+        ],
+        "link": "https://un.ms/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/unms/unms-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/unms/unms-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "chipsa",
+        "title": "Chipsa",
+        "subtitle": "Российская дизайн-студия, специализирующаяся на цифровых продуктах. Сайт Чипсы сразу завлекает лоадером с меняющимся логотипом, который переходит в масштабный интерактивный 3D-элемент, сделанный на Three.js. Красивые анимации по скроллу и ховеру сопровождают блоки, каждый из которых выполнен с уникальным подходом.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://chipsa.ru/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/chipsa/chipsa-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/chipsa/chipsa-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "crauch",
+        "title": "Crauch",
+        "subtitle": "Независимая студия цифрового дизайна из России. Сайт сделан в одноколоночной сетке с минимальным количеством деталей и мягкой, аккуратной типографикой.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://crauch.ru/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/crauch/crauch-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/crauch/crauch-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "guglieri",
+        "title": "Claudio Guglieri",
+        "subtitle": "Преподаватель и дизайнер из Сан-Франциско, сотрудничавший с Apple, Google, Microsoft и другими компаниями. Сайт особенно прекрасен микроинтерактивными элементами — от мягких и плавных переходов между страницами до заметок, которые появляются после непродолжительного бездействия. Великолепный сайт великолепного дизайнера.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Web",
+            "Product Design",
+            "Branding"
+        ],
+        "link": "https://guglieri.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/guglieri/guglieri-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/guglieri/guglieri-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "m18",
+        "title": "М18",
+        "subtitle": "Дизайн-студия из Петербурга, специализирующаяся на сайтах и интерфейсах. Сайт сделан в уникально минимальном формате: цепляющий интерактивный логотип и краткий рассказ о себе, прекрасно оформленный с точки зрения типографики.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Web",
+            "Product Design"
+        ],
+        "link": "https://m18.ru/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/m18/m18-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/m18/m18-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "chulakov",
+        "title": "Чулаков",
+        "subtitle": "Одна из известнейших дизайн-студий России, специализирующаяся на создании продуктов и интерфейсов. Сайт сделан в сдержанном корпоративном стиле: минималистичная вёрстка и упор на проекты и их визуальную подачу.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Product Design",
+            "Web"
+        ],
+        "link": "https://chulakov.ru/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/chulakov/chulakov-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/chulakov/chulakov-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "axon",
+        "title": "Lochie Axon",
+        "subtitle": "Американский дизайнер, тесно сотрудничавший над проектами Бенджи Тейлора — Aave, Family, Honk и другими. Сайт Lochie удивителен по своей сути: он сделан в стилистике старого веба на чистом HTML, со шрифтом Times New Roman и вёрсткой по HTML-потоку. В самом конце Lochie подмечает этот подход фразой: «Design is my passion.»",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product Design",
+            "Web"
+        ],
+        "link": "https://www.lochieaxon.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/axon/axon-1.webp"
+        ],
+        "previewScreen": "screens/axon/axon-preview.webp",
+        "enabled": true
+    },
+    {
+        "slug": "wh4tislove",
+        "title": "wh4tislove",
+        "subtitle": "Студия из России, специализирующаяся на арт-проектах. Сайт выполнен в стилистике Web 1.0 с интересными деталями: кликабельными клавишами, интерактивными звуками и дополнительными элементами.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Art",
+            "Web",
+            "Branding"
+        ],
+        "link": "https://wh4tislove.ru/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/wh4tislove/wh4tislove-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/wh4tislove/wh4tislove-preview.webp",
+        "enabled": true
+    },
+    {
         "slug": "gaadesign",
         "title": "GAA.D.S.",
         "subtitle": "Испанская креативная студия, специализирующаяся на брендинге и стратегиях. На сайте приятная сетка из проектов, минималистичная вёрстка и выверенная чб-палитра.",
@@ -862,7 +1268,7 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/guglieri/guglieri-full.mp4",
         "siteScreens": [],
-        "enabled": true,
+        "enabled": false,
         "previewScreen": "screens/guglieri/guglieri-preview.webp",
         "customStyle": ""
     },
@@ -1523,7 +1929,7 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/mouthwash-studio/mouthwash-studio-full.mp4",
         "siteScreens": [],
-        "enabled": true,
+        "enabled": false,
         "previewScreen": "screens/mouthwash-studio/mouthwash-studio-preview.webp",
         "customStyle": ""
     },
@@ -1987,20 +2393,6 @@
         "enabled": false
     },
     {
-        "slug": "symbol-studio",
-        "title": "Symbol Studio",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Branding"
-        ],
-        "link": "https://www.symbolstudio.pl/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "",
         "title": "ЦЕХ",
         "subtitle": "",
@@ -2053,20 +2445,6 @@
             "Product Design"
         ],
         "link": "https://www.rebooot.me/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "aic",
-        "title": "AIC",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Product Design"
-        ],
-        "link": "aic.ru",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],

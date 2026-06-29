@@ -14,8 +14,7 @@
     line-height: 1;
     transition:
         background-color 100ms ease-out,
-        border-color 100ms ease-out,
-        box-shadow 100ms ease-out;
+        border-color 100ms ease-out;
 }
 
 .withIcon {
@@ -43,8 +42,7 @@
 
 .linkContainer:hover {
     border-color: color-mix(in srgb, var(--btn-primary-bg) 74%, var(--blue) 26%);
-    background-color: color-mix(in srgb, var(--btn-primary-bg) 84%, var(--blue) 16%);
-    box-shadow: 0 16px 28px color-mix(in srgb, var(--btn-primary-bg) 24%, transparent);
+    background-color: color-mix(in srgb, var(--btn-primary-bg) 84%, var(--blue) 32%);
 }
 
 @media (max-width: 720px) {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -65,10 +66,18 @@ export default function FullSiteItem({
     const router = useRouter();
     const closeTimerRef = useRef(null);
     const [isClosing, setIsClosing] = useState(false);
+    const [portalNode, setPortalNode] = useState(null);
     const isModal = mode === "modal";
     const siteScreens = getSiteScreens(site);
     const fullVideoSrc = getSiteVideoUrl(site);
     const tags = getSiteTags(site.specialization, Number.POSITIVE_INFINITY);
+    const renderSiteAction = () => (
+        site.link ? (
+            <PrimaryButton href={site.link}>
+                Перейти к сайту
+            </PrimaryButton>
+        ) : null
+    );
 
     const completeClose = useCallback(() => {
         if (onClose) {
@@ -97,9 +106,23 @@ export default function FullSiteItem({
     }, [completeClose, isClosing, isModal]);
 
     useEffect(() => {
+        setPortalNode(document.body);
+    }, []);
+
+    useEffect(() => {
         if (!isModal) return undefined;
 
-        const previousOverflow = document.body.style.overflow;
+        const scrollY = window.scrollY;
+        const previousBodyPosition = document.body.style.position;
+        const previousBodyTop = document.body.style.top;
+        const previousBodyWidth = document.body.style.width;
+        const previousBodyOverflow = document.body.style.overflow;
+        const previousHtmlOverflow = document.documentElement.style.overflow;
+
+        document.documentElement.style.overflow = "hidden";
+        document.body.style.position = "fixed";
+        document.body.style.top = `-${scrollY}px`;
+        document.body.style.width = "100%";
         document.body.style.overflow = "hidden";
 
         const closeOnEscape = (event) => {
@@ -111,7 +134,12 @@ export default function FullSiteItem({
         window.addEventListener("keydown", closeOnEscape);
 
         return () => {
-            document.body.style.overflow = previousOverflow;
+            document.documentElement.style.overflow = previousHtmlOverflow;
+            document.body.style.position = previousBodyPosition;
+            document.body.style.top = previousBodyTop;
+            document.body.style.width = previousBodyWidth;
+            document.body.style.overflow = previousBodyOverflow;
+            window.scrollTo(0, scrollY);
             window.removeEventListener("keydown", closeOnEscape);
         };
     }, [closeFullSite, isModal]);
@@ -165,15 +193,14 @@ export default function FullSiteItem({
                         </div>
                     </div>
 
-                    <div className={styles.siteAction}>
-                        {site.link ? (
-                            <PrimaryButton href={site.link}>
-                                Перейти к сайту
-                            </PrimaryButton>
-                        ) : null}
+                    <div className={`${styles.siteAction} ${styles.siteActionDesktop}`}>
+                        {renderSiteAction()}
                     </div>
                 </div>
                 <p className={styles.siteSubtitle}>{site.subtitle}</p>
+                <div className={styles.siteActionInline}>
+                    {renderSiteAction()}
+                </div>
             </div>
 
             {siteScreens.length > 0 ? (
@@ -200,7 +227,7 @@ export default function FullSiteItem({
     );
 
     if (isModal) {
-        return (
+        const modal = (
             <div
                 className={`${styles.modalOverlay} ${isClosing ? styles.modalOverlayClosing : ""}`}
                 role="dialog"
@@ -216,6 +243,8 @@ export default function FullSiteItem({
                 </div>
             </div>
         );
+
+        return portalNode ? createPortal(modal, portalNode) : null;
     }
 
     return (

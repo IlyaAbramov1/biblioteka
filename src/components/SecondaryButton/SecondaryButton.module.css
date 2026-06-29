@@ -26,6 +26,7 @@
 .linkContainer:hover {
     border-color: color-mix(in srgb, var(--blue) 34%, var(--stroke));
     color: var(--text);
+    background-color: color-mix(in srgb, var(--btn-secondary-bg) 84%, var(--text-secondary) 20%);
 }
 
 @media (max-width: 720px) {

@@ -29,6 +29,12 @@ const garamond = EB_Garamond({
     variable: '--font-garamond',
 });
 
+export const viewport = {
+    width: "device-width",
+    initialScale: 1,
+    viewportFit: "cover",
+};
+
 export const metadata = {
     metadataBase: new URL(`${SITE_URL}/`),
     applicationName: SITE_NAME,

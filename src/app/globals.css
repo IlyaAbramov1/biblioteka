@@ -1,4 +1,7 @@
 :root {
+    --vvh: 100dvh;
+    --vvt: 0px;
+
     --blue: hsl(212 100% 50%);
     --text: hsl(0 0% 8%);
     --text-secondary: hsl(0 0% 56%);
@@ -181,6 +184,13 @@ body {
     letter-spacing: var(--text-letter-spacing);
     line-height: var(--text-line-height);
     text-wrap: pretty;
+}
+
+@supports (overflow-x: clip) {
+    html,
+    body {
+        overflow-x: clip;
+    }
 }
 
 a {

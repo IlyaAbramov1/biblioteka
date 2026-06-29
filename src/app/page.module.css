@@ -145,7 +145,11 @@
     line-height: 1;
     white-space: nowrap;
     cursor: pointer;
-    transition: color 150ms ease;
+    transition: color 100ms ease;
+}
+
+.categoryOption:hover {
+    color: var(--text-secondary);
 }
 
 .categoryOption[aria-pressed="true"] {
@@ -224,6 +228,12 @@
     border-color: var(--btn-secondary-bg);
     background: var(--btn-secondary-bg);
     color: var(--text-tertiary);
+
+    transition: color 100ms ease;
+}
+
+.tagOption:hover {
+    color: var(--text-secondary);
 }
 
 .filterOptionSelected.tagOption {
@@ -283,9 +293,8 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-
     .page {
-        padding: 0 16px 144px;
+        padding: 0 8px 60px 8px;
     }
 
     .heroBlock {
@@ -308,8 +317,8 @@
 
 @media (max-width: 720px) {
     .heroBlock {
-        padding: 140px 0;
-        height: 80vh;
+        padding: 92px 0;
+        height: 72vh;
     }
 
     .titleRow {
