@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://design-biblioteka.ru
+Sitemap: https://design-biblioteka.ru/sitemap.xml

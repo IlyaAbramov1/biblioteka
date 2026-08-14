@@ -1,0 +1,280 @@
+:root {
+    --vvh: 100dvh;
+    --vvt: 0px;
+
+    --blue: #0079ff;
+    --text: #141414;
+    --text-secondary: #8f8f8f;
+    --text-tertiary: #a9b8c6;
+    --bg: #fafafa;
+    --btn-primary-bg: #141414;
+    --btn-primary-root-fill: #141414;
+    --btn-secondary-bg: #e7eaed;
+    --btn-secondary-content: #8599ad;
+    --btn-secondary-hover-fill: #d8dde2;
+
+    --fullstack-primary: hsl(276 100% 50%);
+    --fullstack-stroke: hsl(276 100% 80%);
+    --fullstack-bg: hsl(276 100% 94%);
+
+    --design-engineer-primary: #00c6a9;
+    --design-engineer-stroke: hsl(171 63% 76%);
+    --design-engineer-bg: hsl(171 64% 93%);
+
+    --branding-primary: hsl(325 100% 50%);
+    --branding-stroke: hsl(325 100% 80%);
+    --branding-bg: hsl(325 100% 94%);
+
+    --art-primary: #ff0e12;
+    --art-stroke: hsl(359 100% 81%);
+    --art-bg: hsl(359 100% 94%);
+
+    --web-primary: #1900f7;
+    --web-stroke: hsl(221 100% 80%);
+    --web-bg: hsl(221 100% 94%);
+
+    --motion-primary: hsl(20 100% 50%);
+    --motion-stroke: hsl(20 100% 80%);
+    --motion-bg: hsl(20 100% 94%);
+
+    --product-primary: #0054a9;
+    --product-stroke: hsl(200 45% 72%);
+    --product-bg: hsl(200 45% 92%);
+
+    --illustration-primary: hsl(303 100% 50%);
+    --illustration-stroke: hsl(303 100% 80%);
+    --illustration-bg: hsl(303 100% 94%);
+
+    --cgi-primary: #1900f7;
+    --cgi-stroke: hsl(250 60% 75%);
+    --cgi-bg: hsl(250 60% 93%);
+
+    --3d-primary: hsl(172 100% 31%);
+    --3d-stroke: hsl(172 45% 72%);
+    --3d-bg: hsl(172 45% 92%);
+
+    --font: var(--font-roboto), "Roboto", sans-serif;
+    --text-size: var(--font-size-body);
+    --font-size-title: 48px;
+    --font-size-title-mobile: 36px;
+    --font-size-body: 16px;
+    --font-size-small: 14px;
+    --font-size-badge: 10.356px;
+    --font-size-detail-title: calc(var(--font-size-body) * 2.4);
+    --font-size-detail-title-mobile: calc(var(--font-size-body) * 2.6);
+    --text-weight: 400;
+    --text-line-height: 150%;
+    --text-letter-spacing: -0.02em;
+
+    --medium-text-size: 18px;
+    --medium-text-weight: 500;
+    --medium-text-line-height: 150%;
+    --medium-text-letter-spacing: -0.02em;
+
+    --small-text-size: var(--font-size-small);
+    --small-text-weight: 500;
+    --small-text-line-height: 150%;
+    --small-text-letter-spacing: -0.02em;
+
+    --stroke: var(--text-tertiary);
+    --paper-dot: hsl(36 18% 88%);
+    --title-text-size: 48px;
+    --title-text-line-height: 92%;
+    --title-accent-color: var(--blue);
+    --title-accent-bg: #d8e9fa;
+    --hover-bounce-ease: cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+
+[data-tag-tone="fullstack"] {
+    --tag-tone-bg: var(--fullstack-bg);
+    --tag-tone-color: var(--fullstack-primary);
+    --tag-tone-stroke: var(--fullstack-stroke);
+}
+
+[data-tag-tone="web"] {
+    --tag-tone-bg: var(--web-bg);
+    --tag-tone-color: var(--web-primary);
+    --tag-tone-stroke: var(--web-stroke);
+}
+
+[data-tag-tone="branding"] {
+    --tag-tone-bg: var(--branding-bg);
+    --tag-tone-color: var(--branding-primary);
+    --tag-tone-stroke: var(--branding-stroke);
+}
+
+[data-tag-tone="product"] {
+    --tag-tone-bg: var(--product-bg);
+    --tag-tone-color: var(--product-primary);
+    --tag-tone-stroke: var(--product-stroke);
+}
+
+[data-tag-tone="engineering"] {
+    --tag-tone-bg: var(--design-engineer-bg);
+    --tag-tone-color: var(--design-engineer-primary);
+    --tag-tone-stroke: var(--design-engineer-stroke);
+}
+
+[data-tag-tone="motion"] {
+    --tag-tone-bg: var(--motion-bg);
+    --tag-tone-color: var(--motion-primary);
+    --tag-tone-stroke: var(--motion-stroke);
+}
+
+[data-tag-tone="illustration"] {
+    --tag-tone-bg: var(--illustration-bg);
+    --tag-tone-color: var(--illustration-primary);
+    --tag-tone-stroke: var(--illustration-stroke);
+}
+
+[data-tag-tone="threeD"] {
+    --tag-tone-bg: var(--3d-bg);
+    --tag-tone-color: var(--3d-primary);
+    --tag-tone-stroke: var(--3d-stroke);
+}
+
+[data-tag-tone="cgi"] {
+    --tag-tone-bg: var(--cgi-bg);
+    --tag-tone-color: var(--cgi-primary);
+    --tag-tone-stroke: var(--cgi-stroke);
+}
+
+[data-tag-tone="art"] {
+    --tag-tone-bg: var(--art-bg);
+    --tag-tone-color: var(--art-primary);
+    --tag-tone-stroke: var(--art-stroke);
+}
+
+[data-tag-tone="gaming"] {
+    --tag-tone-bg: var(--design-engineer-bg);
+    --tag-tone-color: var(--design-engineer-primary);
+    --tag-tone-stroke: var(--design-engineer-stroke);
+}
+
+[data-tag-tone="fonts"] {
+    --tag-tone-bg: var(--fullstack-bg);
+    --tag-tone-color: var(--fullstack-primary);
+    --tag-tone-stroke: var(--fullstack-stroke);
+}
+
+[data-tag-tone="default"] {
+    --tag-tone-bg: var(--btn-secondary-bg);
+    --tag-tone-color: var(--text-secondary);
+    --tag-tone-stroke: var(--text-tertiary);
+}
+
+html {
+    max-width: 100vw;
+    background-color: var(--bg);
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
+    font-variant-numeric: normal;
+    font-kerning: auto;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--bg);
+    overscroll-behavior-y: none;
+    color: var(--text);
+    font-family: var(--font);
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
+    letter-spacing: var(--text-letter-spacing);
+    line-height: var(--text-line-height);
+    text-wrap: pretty;
+}
+
+body::after {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: url("/noise.webp?v=20260811") center / cover no-repeat;
+    content: "";
+    mix-blend-mode: overlay;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+@supports (overflow-x: clip) {
+    html,
+    body {
+        overflow-x: clip;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+}
+
+.titleAccentText {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    color: var(--title-accent-color);
+    font-style: italic;
+    font-weight: var(--medium-text-weight);
+}
+
+.titleAccentText::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    background: var(--title-accent-bg);
+    content: "";
+}
+
+.strokeContainer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: var(--bg);
+}
+
+
+@media (max-width: 1200px) {
+    body {
+        height: auto;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 720px) {
+    :root {
+        --title-text-size: 36px;
+        --title-text-line-height: 104%;
+        --text-size: 16px;
+        --text-line-height: 172%;
+        --small-text-size: 14px;
+    }
+
+    body {
+        height: auto;
+        overflow-y: auto;
+    }
+}

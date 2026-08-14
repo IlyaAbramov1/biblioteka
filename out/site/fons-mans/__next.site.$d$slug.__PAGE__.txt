@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[98387,["/_next/static/chunks/744355e03808d4c7.js","/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/c4f7c652b5f9acfe.js","/_next/static/chunks/e0e755b6a89a1d7e.js"],"default"]
+3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+:HL["/_next/static/chunks/b76c6c64659c89c8.css","style"]
+0:{"buildId":"9rl5t0xOpFfpPYmLUPwgr","rsc":["$","$1","c",{"children":[["$","$L2",null,{"site":{"slug":"fons-mans","title":"Fons Mans","subtitle":"Графический дизайнер из Нидерландов, работавший с The New York Times, Figma, The Wall Street Journal. Сайт — минималистичная визитка с доминантной фотографией дизайнера и перечислением его социальных сетей.","category":"Дизайнер","specialization":["Branding"],"link":"https://fonsmans.com/","previewVideoKey":"","fullVideoKey":"","siteScreens":["screens/fons-mans/fons-mans-1.webp"],"previewScreen":"screens/fons-mans/fons-mans-preview.webp","enabled":true},"backHref":"/"}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/b76c6c64659c89c8.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/ff1a16fafef87110.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/c4f7c652b5f9acfe.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/e0e755b6a89a1d7e.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null

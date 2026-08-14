@@ -1,0 +1,230 @@
+.siteReveal {
+    position: relative;
+    z-index: 1;
+    width: 312px;
+    height: 233px;
+}
+
+.siteReveal::after {
+    position: absolute;
+    right: 1px;
+    bottom: 0;
+    left: 3px;
+    z-index: -1;
+    height: 8px;
+    border-radius: 124px;
+    background: #4a2b05;
+    content: "";
+    filter: blur(2px);
+    opacity: 0.4;
+    pointer-events: none;
+    transform: scaleX(1);
+    transform-origin: center;
+    transition:
+        opacity 180ms ease,
+        transform 220ms var(--hover-bounce-ease);
+}
+
+.siteReveal:hover::after {
+    opacity: 0.44;
+    transform: scaleX(1.035);
+}
+
+.siteMotion {
+    position: relative;
+    width: 312px;
+    height: 233px;
+}
+
+.siteContainer {
+    --site-info-background: linear-gradient(180deg, #f0f2f5 0%, #cfd9e0 100%);
+    --site-backplate-start: #f0f2f5;
+    --site-backplate-end: #cfd9e0;
+
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 308px;
+    height: 225px;
+    display: block;
+    color: inherit;
+    cursor: pointer;
+}
+
+.siteCoverAndInfo {
+    position: relative;
+    width: 308px;
+    height: 225px;
+    overflow: visible;
+}
+
+.siteBackplate {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+    width: 308px;
+    height: 225px;
+    pointer-events: none;
+}
+
+.siteBackplateStart {
+    stop-color: var(--site-backplate-start);
+}
+
+.siteBackplateEnd {
+    stop-color: var(--site-backplate-end);
+}
+
+.sitePreviewStage {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 21.682px;
+    pointer-events: none;
+}
+
+.siteCoverFrame {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 288px;
+    height: 146px;
+    overflow: hidden;
+    border: 1px solid #e2e2e2;
+    border-radius: 12.238px;
+    transform-origin: center;
+    background: #e7eaed;
+}
+
+.siteCover {
+    object-fit: cover;
+    object-position: top center;
+    pointer-events: none;
+}
+
+.newBadge {
+    position: absolute;
+    top: -26px;
+    right: 24px;
+    z-index: 1;
+    width: 60px;
+    height: 58px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/new-badge.svg?v=20260814") center / 100% 100% no-repeat;
+    color: #fafafa;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.newBadgeLabel {
+    position: relative;
+    z-index: 1;
+    margin-top: -12px;
+}
+
+.siteCoverPlaceholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-tertiary);
+}
+
+.siteInfo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 308px;
+    min-height: 91px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 20px 18px 16px;
+    border-radius: 0 0 21.682px 21.682px;
+    background: var(--site-info-background), #efeee5;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.siteTextInfo {
+    display: flex;
+    align-items: center;
+    gap: 4.079px;
+    overflow: hidden;
+    font-size: var(--font-size-body);
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.siteTitle {
+    min-width: 0;
+    overflow: hidden;
+    color: #08090c;
+    text-overflow: ellipsis;
+}
+
+.siteCategory {
+    min-width: 0;
+    overflow: hidden;
+    color: #a9b8c6;
+    opacity: 0.5;
+    text-overflow: ellipsis;
+}
+
+.siteTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    overflow: visible;
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+}
+
+.siteTag {
+    height: 28px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    min-width: 0;
+    padding: 4px 10px 4px 8px;
+    border: 0;
+    border-radius: 93.607px;
+    background: #f0f2f5;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    color: #a9b8c6;
+    font-weight: 500;
+    letter-spacing: -0.28px;
+}
+
+.siteTagIcon {
+    width: 16px;
+    height: 16px;
+    display: block;
+    flex: 0 0 16px;
+    object-fit: contain;
+}
+
+.abramovStyle {
+    --site-info-background: linear-gradient(180deg, #f0f2f5 0%, #cfd9e0 100%);
+    --site-backplate-start: #f0f2f5;
+    --site-backplate-end: #cfd9e0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .siteReveal::after {
+        transition: none;
+    }
+
+}

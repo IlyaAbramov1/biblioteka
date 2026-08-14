@@ -1,0 +1,50 @@
+.linkContainer {
+    width: auto;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 18px;
+    background: var(--btn-primary-root-fill);
+    color: #fafafa;
+    font-size: var(--font-size-body);
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    line-height: 1.5;
+    transition: background-color 160ms ease-out;
+}
+
+.withIcon {
+    gap: 6px;
+    padding: 12px 16px 12px 12px;
+}
+
+.withoutIcon {
+    padding: 12px 16px;
+}
+
+.iconContainer {
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    flex: 0 0 22px;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconContainer img,
+.iconContainer svg {
+    display: block;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.iconContainer img {
+    filter: none;
+}
+
+.linkContainer:hover {
+    background: color-mix(in srgb, var(--btn-primary-root-fill) 88%, white 12%);
+}

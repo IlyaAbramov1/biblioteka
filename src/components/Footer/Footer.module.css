@@ -1,0 +1,48 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    width: 100%;
+    padding: 40px 0 110px 0;
+
+    line-height: 1.4;
+
+    color: var(--text-tertiary);
+}
+
+.footer p {
+    margin: 0 auto;
+}
+
+.siteCounter {
+    padding: 2px 4px;
+    border: 1px dashed var(--stroke);
+    border-radius: 6px;
+    background: var(--btn-secondary-bg);
+    color: var(--text);
+}
+
+.footerLink:hover {
+    background: color-mix(in srgb, var(--blue) 6%, var(--bg));
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        gap: 6px;
+        width: 100%;
+        padding: 8px 16px 12px;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer {
+        gap: 6px;
+        text-align: center;
+        font-size: var(--small-text-size);
+        line-height: 1.8;
+        padding: 0px 0 180px 0;
+    }
+}
