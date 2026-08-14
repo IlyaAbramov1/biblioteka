@@ -1,0 +1,179 @@
+.shell {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 720px;
+    margin: 0 0 72px;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.shell canvas {
+    display: block;
+    cursor: grab;
+}
+
+.shell canvas:active {
+    cursor: grabbing;
+}
+
+.previewCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 308px;
+    overflow: hidden;
+    border: 1px solid #dce4eb;
+    border-radius: 21.682px;
+    background: #fafafa;
+    box-shadow: 0 14px 38px rgb(20 20 20 / 22%);
+    pointer-events: none;
+    transform: translate(
+        min(calc(var(--preview-x) + 18px), calc(100vw - 356px)),
+        min(calc(var(--preview-y) + 18px), 420px)
+    );
+    animation: previewAppear 180ms var(--hover-bounce-ease) both;
+}
+
+.previewImage {
+    position: relative;
+    width: 100%;
+    height: 146px;
+    overflow: hidden;
+    background: #e7eaed;
+}
+
+.previewImage img {
+    object-fit: cover;
+    object-position: top center;
+}
+
+.newBadge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: var(--blue);
+    color: #fafafa;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.previewContent {
+    padding: 16px 16px 18px;
+    background: linear-gradient(180deg, #f0f2f5 0%, #cfd9e0 100%);
+}
+
+.previewHeading {
+    display: flex;
+    gap: 4px;
+    overflow: hidden;
+    font-size: var(--font-size-body);
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.previewHeading strong,
+.previewHeading span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.previewHeading span {
+    color: var(--text-tertiary);
+    opacity: 0.7;
+}
+
+.previewContent p {
+    display: -webkit-box;
+    margin: 10px 0 12px;
+    overflow: hidden;
+    color: var(--text-secondary);
+    font-size: 12px;
+    line-height: 1.45;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+.previewTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.previewTag {
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 4px 10px 4px 8px;
+    border-radius: 999px;
+    background: #f0f2f5;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    color: var(--text-tertiary);
+    font-size: var(--font-size-small);
+    font-weight: 500;
+}
+
+.previewTag img {
+    width: 16px;
+    height: 16px;
+}
+
+.hint {
+    position: absolute;
+    right: 16px;
+    bottom: 14px;
+    z-index: 2;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgb(240 242 245 / 88%);
+    color: var(--text-tertiary);
+    font-size: 11px;
+    pointer-events: none;
+}
+
+@keyframes previewAppear {
+    from {
+        opacity: 0;
+        scale: 0.96;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@media (max-width: 720px) {
+    .shell {
+        width: 100vw;
+        height: 100svh;
+        min-height: 640px;
+        margin: 0 0 92px;
+    }
+
+    .previewCard {
+        width: min(288px, calc(100vw - 48px));
+        transform: translate(18px, min(calc(var(--preview-y) + 18px), 340px));
+    }
+
+    .hint {
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .previewCard {
+        animation: none;
+    }
+}

@@ -9,6 +9,50 @@
     background-color: var(--bg);
 }
 
+.viewSwitcher {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 60;
+    display: inline-flex;
+    gap: 3px;
+    padding: 3px;
+    border-radius: 999px;
+    background: #e7eaed;
+    box-shadow: 0 1px 2px rgb(20 20 20 / 10%);
+    display: none;
+}
+
+.viewButton,
+.viewButtonActive {
+    height: 30px;
+    padding: 4px 11px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    transition: background-color 160ms ease, color 160ms ease, transform 160ms var(--hover-bounce-ease);
+}
+
+.viewButton:hover {
+    color: var(--text);
+    transform: scale(1.02);
+}
+
+.viewButton:active,
+.viewButtonActive:active {
+    transform: scale(0.96);
+}
+
+.viewButtonActive {
+    background: #fff;
+    color: var(--text);
+    box-shadow: 0 1px 2px rgb(20 20 20 / 10%);
+}
+
 .heroBlock {
     position: relative;
     width: 1040px;
@@ -104,10 +148,10 @@
 .navGradient {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: calc(-1 * env(safe-area-inset-bottom, 0px));
     left: 0;
     z-index: 40;
-    height: 98px;
+    height: calc(98px + env(safe-area-inset-bottom, 0px));
     pointer-events: none;
     background: linear-gradient(to top, #fafafa 65%, rgba(250, 250, 250, 0) 100%);
 }
@@ -124,6 +168,20 @@
     border-radius: 109.346px;
     background: #e7eaed;
     pointer-events: auto;
+}
+
+.categoryViewport {
+    width: fit-content;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+    pointer-events: auto;
+}
+
+.categoryViewport::-webkit-scrollbar {
+    display: none;
 }
 
 .categoryGroup::after {
@@ -447,11 +505,16 @@
         padding-bottom: 110px;
     }
 
+    .viewSwitcher {
+        top: 14px;
+        right: 14px;
+    }
+
     .heroBlock {
         width: 396px;
         height: 346px;
         flex-basis: 346px;
-        padding: 30vh 0 22vh 0;
+        padding: 240px 0 200px 0;
     }
 
     .heroBlockText,
@@ -473,7 +536,7 @@
 
     .navBar {
         right: 0;
-        bottom: 16px;
+        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
         left: 0;
         width: 396px;
         height: 72px;
@@ -484,19 +547,24 @@
     }
 
     .navGradient {
-        height: 96px;
+        height: calc(118px + env(safe-area-inset-bottom, 0px));
     }
 
     .categoryGroup {
-        max-width: 396px;
+        width: max-content;
+        min-width: max-content;
         height: 32px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scrollbar-width: none;
+        padding: 4px;
+        justify-content: flex-start;
+        overflow: hidden;
     }
 
-    .categoryGroup::-webkit-scrollbar {
-        display: none;
+    .categoryViewport {
+        width: 396px;
+        max-width: 396px;
+        overflow-x: auto;
+        overflow-y: visible;
+        padding: 0 20px;
     }
 
     .categoryOption {
@@ -520,10 +588,6 @@
 
     .tagScroller::after {
         width: 42px;
-    }
-
-    .tagTrack {
-        padding: 0 40px 0 18px;
     }
 
     .sitesGrid {

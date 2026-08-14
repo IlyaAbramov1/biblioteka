@@ -9,6 +9,7 @@ import FullSiteItem from "@/components/FullSiteItem/FullSiteItem";
 import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton/SecondaryButton";
 import SiteItem from "@/components/SiteItem/SiteItem";
+import SiteGraph from "@/components/SiteGraph/SiteGraph";
 import {
     browsableSites,
     getSiteBySlug,
@@ -66,6 +67,7 @@ export default function HomePage() {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedTags, setSelectedTags] = useState([]);
     const [activeSiteSlug, setActiveSiteSlug] = useState(null);
+    const [viewMode, setViewMode] = useState("gallery");
     const [categoryIndicatorStyle, setCategoryIndicatorStyle] = useState({
         "--category-indicator-left": "3px",
         "--category-indicator-width": "0px",
@@ -202,6 +204,24 @@ export default function HomePage() {
     return (
         <main className={styles.page}>
             <CanvasLogo />
+            <div className={styles.viewSwitcher} role="group" aria-label="Режим отображения">
+                <button
+                    type="button"
+                    className={viewMode === "gallery" ? styles.viewButtonActive : styles.viewButton}
+                    onClick={() => setViewMode("gallery")}
+                    aria-pressed={viewMode === "gallery"}
+                >
+                    Галерея
+                </button>
+                <button
+                    type="button"
+                    className={viewMode === "graph" ? styles.viewButtonActive : styles.viewButton}
+                    onClick={() => setViewMode("graph")}
+                    aria-pressed={viewMode === "graph"}
+                >
+                    Граф
+                </button>
+            </div>
             <section className={styles.heroBlock} aria-labelledby="library-title">
                 <div className={styles.heroBlockText}>
                     <div className={styles.titleRow}>
@@ -295,30 +315,32 @@ export default function HomePage() {
                     delay: HERO_NAV_DELAY,
                 }}
             >
-                <div
-                    ref={categoryGroupRef}
-                    className={styles.categoryGroup}
-                    style={categoryIndicatorStyle}
-                >
-                    {categoryOptions.map((option, index) => {
-                        const isSelected = selectedCategory === option.value;
+                <div className={styles.categoryViewport}>
+                    <div
+                        ref={categoryGroupRef}
+                        className={styles.categoryGroup}
+                        style={categoryIndicatorStyle}
+                    >
+                        {categoryOptions.map((option, index) => {
+                            const isSelected = selectedCategory === option.value;
 
-                        return (
-                            <motion.button
-                                ref={(node) => {
-                                    categoryButtonRefs.current[index] = node;
-                                }}
-                                type="button"
-                                className={styles.categoryOption}
-                                key={option.label}
-                                onClick={() => (option.value === null ? clearFilters() : selectCategory(option.value))}
-                                aria-pressed={isSelected}
-                                transition={HOVER_SPRING}
-                            >
-                                <span>{option.label}</span>
-                            </motion.button>
-                        );
-                    })}
+                            return (
+                                <motion.button
+                                    ref={(node) => {
+                                        categoryButtonRefs.current[index] = node;
+                                    }}
+                                    type="button"
+                                    className={styles.categoryOption}
+                                    key={option.label}
+                                    onClick={() => (option.value === null ? clearFilters() : selectCategory(option.value))}
+                                    aria-pressed={isSelected}
+                                    transition={HOVER_SPRING}
+                                >
+                                    <span>{option.label}</span>
+                                </motion.button>
+                            );
+                        })}
+                    </div>
                 </div>
                 <div className={styles.tagScroller}>
                     <div className={styles.tagTrack}>
@@ -365,59 +387,63 @@ export default function HomePage() {
                 </div>
             </motion.nav>
 
-            <motion.section
-                id="sites"
-                className={styles.sitesGrid}
-                aria-label="Сайты библиотеки"
-                initial={REVEAL_INITIAL}
-                animate={REVEAL_VISIBLE}
-                transition={REVEAL_TRANSITION}
-            >
-                {visibleSites.map((site) => (
-                    <SiteItem
-                        key={site.slug}
-                        site={site}
-                        onOpen={openSite}
-                    />
-                ))}
+            {viewMode === "graph" ? (
+                <SiteGraph sites={filteredSites} onOpen={openSite} />
+            ) : (
+                <motion.section
+                    id="sites"
+                    className={styles.sitesGrid}
+                    aria-label="Сайты библиотеки"
+                    initial={REVEAL_INITIAL}
+                    animate={REVEAL_VISIBLE}
+                    transition={REVEAL_TRANSITION}
+                >
+                    {visibleSites.map((site) => (
+                        <SiteItem
+                            key={site.slug}
+                            site={site}
+                            onOpen={openSite}
+                        />
+                    ))}
 
-                {!filteredSites.length ? (
-                    <div className={styles.emptyState}>
-                        <div className={styles.emptyFolder}>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 308 226"
-                                fill="none"
-                                preserveAspectRatio="none"
-                                className={styles.emptyFolderShape}
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M0 22.1377C0 9.91138 9.91137 0 22.1377 0H92.9738C98.0465 0 102.965 1.74212 106.907 4.93486L126.474 20.7831C130.416 23.9759 135.335 25.718 140.408 25.718H285.862C298.089 25.718 308 35.6294 308 47.8556V203.253C308 215.479 298.089 225.391 285.862 225.391H22.1377C9.91136 225.391 0 215.479 0 203.253V22.1377Z"
-                                    fill="url(#empty-folder-gradient)"
-                                />
-                                <defs>
-                                    <linearGradient id="empty-folder-gradient" x1="154" y1="0" x2="154" y2="225.391" gradientUnits="userSpaceOnUse">
-                                        <stop stopColor="#F0F2F5" />
-                                        <stop offset="1" stopColor="#CFD9E0" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                            <div className={styles.emptyPreview}>
-                                <div className={styles.emptyFace} aria-hidden="true">:-(</div>
-                                <div className={styles.emptyMessage}>
+                    {!filteredSites.length ? (
+                        <div className={styles.emptyState}>
+                            <div className={styles.emptyFolder}>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 308 226"
+                                    fill="none"
+                                    preserveAspectRatio="none"
+                                    className={styles.emptyFolderShape}
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M0 22.1377C0 9.91138 9.91137 0 22.1377 0H92.9738C98.0465 0 102.965 1.74212 106.907 4.93486L126.474 20.7831C130.416 23.9759 135.335 25.718 140.408 25.718H285.862C298.089 25.718 308 35.6294 308 47.8556V203.253C308 215.479 298.089 225.391 285.862 225.391H22.1377C9.91136 225.391 0 215.479 0 203.253V22.1377Z"
+                                        fill="url(#empty-folder-gradient)"
+                                    />
+                                    <defs>
+                                        <linearGradient id="empty-folder-gradient" x1="154" y1="0" x2="154" y2="225.391" gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#F0F2F5" />
+                                            <stop offset="1" stopColor="#CFD9E0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div className={styles.emptyPreview}>
+                                    <div className={styles.emptyFace} aria-hidden="true">:-(</div>
+                                    <div className={styles.emptyMessage}>
                                     По этим фильтрам пока ничего не найдено. Попробуйте снять часть тегов или вернуться ко всем сайтам.
+                                    </div>
                                 </div>
+                                <div className={styles.emptyInfo} aria-hidden="true" />
                             </div>
-                            <div className={styles.emptyInfo} aria-hidden="true" />
                         </div>
-                    </div>
-                ) : null}
+                    ) : null}
 
-                {visibleCount < filteredSites.length ? (
-                    <div ref={sentinelRef} aria-hidden="true" className={styles.sentinel} />
-                ) : null}
-            </motion.section>
+                    {visibleCount < filteredSites.length ? (
+                        <div ref={sentinelRef} aria-hidden="true" className={styles.sentinel} />
+                    ) : null}
+                </motion.section>
+            )}
 
             {activeSite ? (
                 <FullSiteItem site={activeSite} mode="modal" onClose={closeSite} />
