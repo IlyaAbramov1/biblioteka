@@ -30,7 +30,7 @@ function isPlainLeftClick(event) {
     );
 }
 
-export default function SiteItem({ site, onOpen }) {
+export default function SiteItem({ site, onOpen, active = false, previewOnly = false }) {
     const previewSrc = getSitePreviewImage(site);
     const tags = getSiteTags(site.specialization);
     const backplateGradientId = `site-item-backplate-${String(site.slug || site.title || "site").replace(/[^a-zA-Z0-9_-]/g, "-")}`;
@@ -130,6 +130,11 @@ export default function SiteItem({ site, onOpen }) {
     );
 
     const handleClick = (event) => {
+        if (previewOnly) {
+            event.preventDefault();
+            return;
+        }
+
         if (!isPlainLeftClick(event)) return;
 
         event.preventDefault();
@@ -138,10 +143,11 @@ export default function SiteItem({ site, onOpen }) {
 
     return (
         <motion.div
-            className={styles.siteReveal}
+            className={`${styles.siteReveal} ${previewOnly ? styles.siteRevealPreview : ""}`}
             initial="rest"
-            animate="rest"
-            whileHover="hover"
+            animate={active ? "hover" : "rest"}
+            whileHover={previewOnly ? undefined : "hover"}
+            aria-hidden={previewOnly || undefined}
         >
             <motion.div
                 className={styles.siteMotion}
@@ -153,6 +159,7 @@ export default function SiteItem({ site, onOpen }) {
                     scroll={false}
                     className={containerClassName}
                     onClick={handleClick}
+                    tabIndex={previewOnly ? -1 : undefined}
                 >
                     {content}
                 </Link>

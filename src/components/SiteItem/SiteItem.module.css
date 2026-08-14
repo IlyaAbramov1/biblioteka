@@ -30,6 +30,10 @@
     transform: scaleX(1.035);
 }
 
+.siteReveal.siteRevealPreview::after {
+    display: none;
+}
+
 .siteMotion {
     position: relative;
     width: 312px;

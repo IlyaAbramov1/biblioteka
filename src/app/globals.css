@@ -256,6 +256,16 @@ button {
     background-color: var(--bg);
 }
 
+html.graph-view-active,
+html.graph-view-active body {
+    height: var(--vvh, 100dvh);
+    overflow: hidden;
+}
+
+html.graph-view-active .strokeContainer > footer {
+    display: none;
+}
+
 
 @media (max-width: 1200px) {
     body {

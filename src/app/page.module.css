@@ -9,6 +9,21 @@
     background-color: var(--bg);
 }
 
+.pageGraph {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    width: 100vw;
+    height: var(--vvh, 100dvh);
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pageGraph .heroBlock {
+    display: none;
+}
+
 .viewSwitcher {
     position: fixed;
     top: 24px;

@@ -3,19 +3,69 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 import CanvasLogo from "@/components/CanvasLogo/CanvasLogo";
 import CloseButton from "@/components/CloseButton/CloseButton";
 import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
 import { mediaUrl } from "@/lib/media";
-import { getSiteScreens, getSiteVideoUrl } from "@/lib/siteData";
+import { getSiteBySlug, getSiteScreens, getSiteVideoUrl } from "@/lib/siteData";
+import { getDescriptionMentions } from "@/lib/siteRelations";
 import { getSiteTags, getTagIconPath, getTagMeta } from "@/lib/siteTags";
 
 import styles from "./FullSiteItem.module.css";
 
 const BOOK_LOADER_PAGES = Array.from({ length: 18 }, (_, index) => index + 1);
 const MODAL_EXIT_DURATION = 280;
+
+function isPlainLeftClick(event) {
+    return (
+        event.button === 0 &&
+        !event.metaKey &&
+        !event.ctrlKey &&
+        !event.shiftKey &&
+        !event.altKey
+    );
+}
+
+function SiteDescription({ site, onRelatedSiteOpen }) {
+    const mentions = getDescriptionMentions(site);
+
+    if (!mentions.length) return site.subtitle;
+
+    const mentionByText = new Map(
+        mentions.map((mention) => [mention.text.toLocaleLowerCase("ru"), mention])
+    );
+    const pattern = new RegExp(
+        `(${mentions
+            .map((mention) => mention.text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+            .sort((left, right) => right.length - left.length)
+            .join("|")})`,
+        "giu"
+    );
+
+    return site.subtitle.split(pattern).map((part, index) => {
+        const mention = mentionByText.get(part.toLocaleLowerCase("ru"));
+        const relatedSite = mention ? getSiteBySlug(mention.slug) : null;
+
+        if (!relatedSite) return part;
+
+        return (
+            <Link
+                href={`/site/${relatedSite.slug}`}
+                key={`${relatedSite.slug}-${index}`}
+                onClick={(event) => {
+                    if (!onRelatedSiteOpen || !isPlainLeftClick(event)) return;
+                    event.preventDefault();
+                    onRelatedSiteOpen(relatedSite);
+                }}
+            >
+                {part}
+            </Link>
+        );
+    });
+}
 
 function BookLoader() {
     return (
@@ -63,6 +113,7 @@ export default function FullSiteItem({
     backHref = "/",
     mode = "page",
     onClose,
+    onRelatedSiteOpen,
 }) {
     const router = useRouter();
     const closeTimerRef = useRef(null);
@@ -206,7 +257,9 @@ export default function FullSiteItem({
                         {renderSiteAction()}
                     </div>
                 </div>
-                <p className={styles.siteSubtitle}>{site.subtitle}</p>
+                <p className={styles.siteSubtitle}>
+                    <SiteDescription site={site} onRelatedSiteOpen={onRelatedSiteOpen} />
+                </p>
                 <div className={styles.siteActionInline}>
                     {renderSiteAction()}
                 </div>

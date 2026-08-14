@@ -152,6 +152,18 @@
     line-height: 1.55;
 }
 
+.siteSubtitle a {
+    color: var(--blue);
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 2px;
+    transition: color 120ms ease, font-weight 120ms ease;
+}
+
+.siteSubtitle a:hover {
+    font-weight: 500;
+}
+
 .siteTags {
     display: flex;
     flex-wrap: wrap;

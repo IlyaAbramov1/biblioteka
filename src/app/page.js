@@ -130,6 +130,12 @@ export default function HomePage() {
     }, []);
 
     useEffect(() => {
+        document.documentElement.classList.toggle("graph-view-active", viewMode === "graph");
+
+        return () => document.documentElement.classList.remove("graph-view-active");
+    }, [viewMode]);
+
+    useEffect(() => {
         const sentinel = sentinelRef.current;
 
         if (!sentinel || visibleCount >= filteredSites.length) return undefined;
@@ -202,7 +208,7 @@ export default function HomePage() {
     };
 
     return (
-        <main className={styles.page}>
+        <main className={`${styles.page} ${viewMode === "graph" ? styles.pageGraph : ""}`}>
             <CanvasLogo />
             <div className={styles.viewSwitcher} role="group" aria-label="Режим отображения">
                 <button
@@ -446,7 +452,12 @@ export default function HomePage() {
             )}
 
             {activeSite ? (
-                <FullSiteItem site={activeSite} mode="modal" onClose={closeSite} />
+                <FullSiteItem
+                    site={activeSite}
+                    mode="modal"
+                    onClose={closeSite}
+                    onRelatedSiteOpen={openSite}
+                />
             ) : null}
         </main>
     );
