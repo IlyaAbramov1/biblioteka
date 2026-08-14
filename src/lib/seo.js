@@ -2,7 +2,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://design-bib
 export const SITE_NAME = "Дизайн-библиотека";
 export const DEFAULT_TITLE = SITE_NAME;
 export const DEFAULT_DESCRIPTION = "Дизайн-библиотека. Курируемая коллекция сайтов дизайнер и студий.";
-export const DEFAULT_SOCIAL_IMAGE = "/og-v2.webp";
+export const DEFAULT_SOCIAL_IMAGE = "/og.webp?v=20260814";
 export const DEFAULT_SOCIAL_IMAGE_ALT = "Дизайн-библиотека — каталог сайтов дизайнеров и дизайн-студий";
 export const DEFAULT_KEYWORDS = [
     "дизайн библиотека",
