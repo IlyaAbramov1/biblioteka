@@ -184,6 +184,12 @@
     display: none;
 }
 
+@media (min-width: 721px) {
+    .categoryViewport {
+        display: contents;
+    }
+}
+
 .categoryGroup::after {
     position: absolute;
     top: 4px;
@@ -544,6 +550,10 @@
         justify-content: center;
         gap: 4px;
         overflow: visible;
+    }
+
+    .tagScroller {
+        padding-left: 20px;
     }
 
     .navGradient {
