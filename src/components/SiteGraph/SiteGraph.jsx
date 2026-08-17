@@ -1,16 +1,33 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 
 import SiteItem from "@/components/SiteItem/SiteItem";
 import { getSiteRelations } from "@/lib/siteRelations";
 
 import styles from "./SiteGraph.module.css";
 
-const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), { ssr: false });
+const forceGraph2DModulePromise = typeof window === "undefined"
+    ? null
+    : import("react-force-graph-2d");
+const ForceGraph2D = dynamic(
+    () => forceGraph2DModulePromise || import("react-force-graph-2d"),
+    { ssr: false }
+);
 const NODE_COLOR = "#0079ff";
 const LABEL_COLOR = "#141414";
+const GRAPH_SPACING_MULTIPLIER = 8;
+const LINK_SPACING_MULTIPLIER = 2.4;
+const CONNECTED_COLLISION_MULTIPLIER = 6.0;
+const SOLO_COLLISION_MULTIPLIER = 2.8;
+const SOLO_COLLISION_FORCE_MULTIPLIER = 2.2;
+const SOLO_COLLISION_DAMPING_MULTIPLIER = 3;
+const NODE_SIZE_MULTIPLIER = 1.2;
+const MIN_ZOOM = 0.00125;
+const MAX_ZOOM = 16;
+const INITIAL_LAYOUT_RADIUS = 280000;
+const MOBILE_LAYOUT_SCALE = 0.36;
 const CATEGORY_LABELS = {
     "Дизайнер": "Designer",
     "Дизайн-студия": "Design Studio",
@@ -29,11 +46,37 @@ function seededUnit(seed) {
     return value - Math.floor(value);
 }
 
-function getCollisionRadius(node) {
-    return 280 + Math.min(420, String(node.site?.title || "").length * 12);
+function getViewportSize() {
+    if (typeof window === "undefined") {
+        return { width: 960, height: 720 };
+    }
+
+    return {
+        width: Math.max(320, window.innerWidth),
+        height: Math.max(520, window.innerHeight),
+    };
 }
 
-function createCollisionForce() {
+function hasHoverCapability() {
+    if (typeof window === "undefined") return true;
+
+    return window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+}
+
+function getCollisionRadius(node, layoutScale = 1) {
+    const collisionMultiplier = node.relationDegree > 0
+        ? CONNECTED_COLLISION_MULTIPLIER
+        : SOLO_COLLISION_MULTIPLIER;
+
+    return (
+        (280 + Math.min(420, String(node.site?.title || "").length * 12))
+        * GRAPH_SPACING_MULTIPLIER
+        * collisionMultiplier
+        * layoutScale
+    );
+}
+
+function createCollisionForce(layoutScale = 1) {
     let nodes = [];
     let strength = 0.11;
     let damping = 0.16;
@@ -42,11 +85,11 @@ function createCollisionForce() {
     const force = (alpha = 1) => {
         for (let index = 0; index < nodes.length; index += 1) {
             const node = nodes[index];
-            const nodeRadius = getCollisionRadius(node);
+            const nodeRadius = getCollisionRadius(node, layoutScale);
 
             for (let otherIndex = index + 1; otherIndex < nodes.length; otherIndex += 1) {
                 const other = nodes[otherIndex];
-                const otherRadius = getCollisionRadius(other);
+                const otherRadius = getCollisionRadius(other, layoutScale);
                 const rawDx = (node.x + (node.vx || 0)) - (other.x + (other.vx || 0));
                 const rawDy = (node.y + (node.vy || 0)) - (other.y + (other.vy || 0));
                 const distance = Math.hypot(rawDx, rawDy);
@@ -57,11 +100,21 @@ function createCollisionForce() {
                 if (distance >= minimumDistance) continue;
 
                 const overlap = minimumDistance - distance;
+                const includesSoloNode = node.relationDegree === 0 || other.relationDegree === 0;
+                const pairStrength = includesSoloNode
+                    ? strength * SOLO_COLLISION_FORCE_MULTIPLIER
+                    : strength;
+                const pairDamping = includesSoloNode
+                    ? damping * SOLO_COLLISION_DAMPING_MULTIPLIER
+                    : damping;
                 const relativeVelocity =
                     ((node.vx || 0) - (other.vx || 0)) * directionX
                     + ((node.vy || 0) - (other.vy || 0)) * directionY;
-                const springImpulse = overlap * strength * Math.max(alpha, 0.18);
-                const dampedImpulse = Math.max(0, springImpulse - relativeVelocity * damping);
+                const springImpulse = overlap * pairStrength * Math.max(alpha, 0.18);
+                const dampedImpulse = Math.max(
+                    0,
+                    springImpulse - relativeVelocity * pairDamping
+                );
                 const impulse = Math.min(maxImpulse, dampedImpulse);
                 const nodeWeight = node.fx == null && node.fy == null ? 0.5 : 0;
                 const otherWeight = other.fx == null && other.fy == null ? 0.5 : 0;
@@ -104,15 +157,21 @@ function createCollisionForce() {
     return force;
 }
 
-function getInitialPosition(site, index, total) {
-    const seed = Math.abs(hashString(site.slug));
+function getInitialPosition(site, index, total, layoutSeed = 0, layoutScale = 1) {
+    const seed = Math.abs(hashString(site.slug) ^ layoutSeed);
     const angle = index * 2.399963 + seededUnit(seed) * 0.9;
-    const radius = 160 + Math.sqrt((index + 1) / Math.max(total, 1)) * 1300;
-    const scatter = 0.72 + seededUnit(seed + 17) * 0.58;
+    const radius = 12000 + Math.sqrt((index + 1) / Math.max(total, 1)) * INITIAL_LAYOUT_RADIUS;
+    const jitter = 0.72 + seededUnit(seed + 17) * 0.58;
 
     return {
-        x: Math.cos(angle) * radius * scatter + (seededUnit(seed + 31) - 0.5) * 300,
-        y: Math.sin(angle) * radius / scatter + (seededUnit(seed + 47) - 0.5) * 260,
+        x: (
+            Math.cos(angle) * radius * jitter
+            + (seededUnit(seed + 31) - 0.5) * 9000
+        ) * layoutScale,
+        y: (
+            Math.sin(angle) * radius / jitter
+            + (seededUnit(seed + 47) - 0.5) * 7800
+        ) * layoutScale,
     };
 }
 
@@ -136,25 +195,35 @@ function getPreviewPosition(anchor, viewport) {
 export default function SiteGraph({ sites, onOpen }) {
     const shellRef = useRef(null);
     const graphRef = useRef(null);
+    const randomizedGraphDataRef = useRef(null);
     const revealStartRef = useRef(0);
     const hoveredNodeRef = useRef(null);
-    const hasAutoFittedRef = useRef(false);
     const dragMotionRef = useRef(new Map());
-    const [size, setSize] = useState({ width: 960, height: 720 });
+    const [size, setSize] = useState(getViewportSize);
+    const [hasHoverInput, setHasHoverInput] = useState(hasHoverCapability);
+    const [graphInstance, setGraphInstance] = useState(null);
     const [hoveredNode, setHoveredNode] = useState(null);
     const [previewAnchor, setPreviewAnchor] = useState({ x: 0, y: 0 });
 
+    const layoutScale = hasHoverInput ? 1 : MOBILE_LAYOUT_SCALE;
+
     const graphData = useMemo(() => {
+        const links = getSiteRelations(sites);
+        const relationDegrees = links.reduce((degrees, link) => {
+            degrees.set(link.source, (degrees.get(link.source) || 0) + 1);
+            degrees.set(link.target, (degrees.get(link.target) || 0) + 1);
+            return degrees;
+        }, new Map());
         const nodes = sites.map((site, index) => ({
             id: site.slug,
             site,
-            ...getInitialPosition(site, index, sites.length),
+            ...getInitialPosition(site, index, sites.length, 0, layoutScale),
+            relationDegree: relationDegrees.get(site.slug) || 0,
             revealDelay: Math.min(index * 5, 420),
         }));
-        const links = getSiteRelations(sites);
 
         return { nodes, links };
-    }, [sites]);
+    }, [layoutScale, sites]);
 
     const neighbourIds = useMemo(() => {
         if (!hoveredNode) return new Set();
@@ -170,60 +239,133 @@ export default function SiteGraph({ sites, onOpen }) {
         return ids;
     }, [graphData.links, hoveredNode]);
 
-    useEffect(() => {
-        revealStartRef.current = performance.now();
-        hoveredNodeRef.current = null;
-        hasAutoFittedRef.current = false;
-        setHoveredNode(null);
+    useLayoutEffect(() => {
         const shell = shellRef.current;
         if (!shell) return undefined;
 
-        const observer = new ResizeObserver(([entry]) => {
-            setSize({
-                width: Math.max(320, entry.contentRect.width),
-                height: Math.max(520, entry.contentRect.height),
+        const syncSize = (width, height) => {
+            const nextSize = {
+                width: Math.max(320, Math.round(width)),
+                height: Math.max(520, Math.round(height)),
+            };
+
+            setSize((currentSize) => {
+                if (
+                    currentSize.width === nextSize.width
+                    && currentSize.height === nextSize.height
+                ) {
+                    return currentSize;
+                }
+
+                return nextSize;
             });
+        };
+
+        const rect = shell.getBoundingClientRect();
+        if (rect.width && rect.height) {
+            syncSize(rect.width, rect.height);
+        }
+
+        const observer = new ResizeObserver(([entry]) => {
+            syncSize(entry.contentRect.width, entry.contentRect.height);
         });
+
         observer.observe(shell);
 
         return () => {
             observer.disconnect();
         };
+    }, []);
+
+    useEffect(() => {
+        const hoverQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+        const syncHoverCapability = () => {
+            setHasHoverInput(hoverQuery.matches);
+            if (!hoverQuery.matches) {
+                hoveredNodeRef.current = null;
+                setHoveredNode(null);
+            }
+        };
+
+        syncHoverCapability();
+        hoverQuery.addEventListener("change", syncHoverCapability);
+
+        return () => hoverQuery.removeEventListener("change", syncHoverCapability);
+    }, []);
+
+    useEffect(() => {
+        revealStartRef.current = performance.now();
+        hoveredNodeRef.current = null;
+        setHoveredNode(null);
     }, [graphData]);
 
     useEffect(() => {
-        const graph = graphRef.current;
-        if (!graph) return;
+        const graph = graphInstance;
+        if (!graph || !size.width || !size.height) return undefined;
+
+        if (randomizedGraphDataRef.current !== graphData) {
+            const layoutSeed = Math.floor(Math.random() * 0x7fffffff);
+
+            graphData.nodes.forEach((node, index) => {
+                Object.assign(
+                    node,
+                    getInitialPosition(
+                        node.site,
+                        index,
+                        graphData.nodes.length,
+                        layoutSeed,
+                        layoutScale
+                    ),
+                    { vx: 0, vy: 0 }
+                );
+            });
+            randomizedGraphDataRef.current = graphData;
+        }
 
         const chargeForce = graph.d3Force("charge");
         const linkForce = graph.d3Force("link");
         const centerForce = graph.d3Force("center");
-        const collisionForce = createCollisionForce()
+        const collisionForce = createCollisionForce(layoutScale)
             .strength(0.11)
             .damping(0.16)
-            .maxImpulse(54);
+            .maxImpulse(54 * GRAPH_SPACING_MULTIPLIER * layoutScale);
 
-        chargeForce?.strength?.((node) => -850 - seededUnit(Math.abs(hashString(node.id))) * 550);
-        linkForce?.distance?.((link) => 2340 + seededUnit(hashString(link.label)) * 1620);
-        linkForce?.strength?.(0.22);
-        linkForce?.iterations?.(2);
-        centerForce?.strength?.(0.025);
+        chargeForce?.strength?.((node) => (
+            (-850 - seededUnit(Math.abs(hashString(node.id))) * 550) * GRAPH_SPACING_MULTIPLIER
+            * layoutScale
+            * layoutScale
+        ));
+        linkForce?.distance?.((link) => (
+            (2340 + seededUnit(hashString(link.label)) * 1620)
+            * GRAPH_SPACING_MULTIPLIER
+            * LINK_SPACING_MULTIPLIER
+            * layoutScale
+        ));
+        linkForce?.strength?.(0.12);
+        linkForce?.iterations?.(1);
+        centerForce?.strength?.(0.025 / GRAPH_SPACING_MULTIPLIER);
         graph.d3Force("collide", collisionForce);
         graph.d3ReheatSimulation();
 
-        // Frame the complete layout immediately when the graph view appears,
-        // then refine the framing after the first force ticks have spread it out.
-        const initialFitTimer = window.setTimeout(() => graph.zoomToFit(0, 96), 80);
-        const settledFitTimer = window.setTimeout(() => {
-            graph.zoomToFit(650, 96);
-            hasAutoFittedRef.current = true;
-        }, 900);
+        const setOverviewCamera = () => {
+            graph.centerAt(0, 0, 0);
+            graph.zoom(MIN_ZOOM, 0);
+        };
+
+        setOverviewCamera();
+        const overviewFrame = window.requestAnimationFrame(setOverviewCamera);
+        const overviewTimer = window.setTimeout(setOverviewCamera, 120);
 
         return () => {
-            window.clearTimeout(initialFitTimer);
-            window.clearTimeout(settledFitTimer);
+            window.cancelAnimationFrame(overviewFrame);
+            window.clearTimeout(overviewTimer);
         };
-    }, [graphData, size.height, size.width]);
+    }, [graphData, graphInstance, layoutScale, size.height, size.width]);
+
+    const handleGraphRef = useCallback((node) => {
+        graphRef.current = node;
+        setGraphInstance((currentNode) => (currentNode === node ? currentNode : node));
+    }, []);
 
     const updatePreviewAnchor = useCallback((node = hoveredNodeRef.current) => {
         if (!node || !graphRef.current) return;
@@ -282,11 +424,13 @@ export default function SiteGraph({ sites, onOpen }) {
         const isRelated = !hoveredNode || hoveredNode.id === node.id || neighbourIds.has(node.id);
         const focusOpacity = !hoveredNode ? 1 : isHovered ? 1 : isRelated ? 0.48 : 0.12;
         const category = CATEGORY_LABELS[node.site.category] || node.site.category || "";
-        // Keep a generous minimum on the overview, then let both type and nodes
-        // grow with the camera instead of staying optically fixed while zooming.
-        const fontSize = 14 / globalScale + 8;
+        const normalizedScale = Math.max(globalScale, MIN_ZOOM);
+        const zoomRatio = normalizedScale / MIN_ZOOM;
+        const nodeZoomFactor = Math.max(0.72, Math.min(2.55, 0.72 * Math.pow(zoomRatio, 0.3)));
+        const labelZoomFactor = Math.max(0.78, Math.min(2.15, 0.78 * Math.pow(zoomRatio, 0.28)));
+        const fontSize = 14 * labelZoomFactor / normalizedScale;
         const baseRadius = isHovered ? 9.5 : 6.5;
-        const radius = baseRadius / globalScale + 2;
+        const radius = baseRadius * NODE_SIZE_MULTIPLIER * nodeZoomFactor / normalizedScale;
 
         context.save();
         context.globalAlpha = focusOpacity;
@@ -301,23 +445,23 @@ export default function SiteGraph({ sites, onOpen }) {
         context.shadowColor = "transparent";
         context.textBaseline = "bottom";
         context.font = `500 ${fontSize}px Roboto, sans-serif`;
-        context.letterSpacing = "-0.32px";
+        context.letterSpacing = "0px";
         const titleWidth = context.measureText(node.site.title).width;
         const categoryWidth = category ? context.measureText(category).width : 0;
-        const labelGap = category ? 4 / globalScale : 0;
+        const labelGap = category ? 4 * labelZoomFactor / normalizedScale : 0;
         const labelWidth = titleWidth + labelGap + categoryWidth;
         const labelX = -labelWidth / 2;
-        const labelY = -radius - 7 / globalScale;
-        const pointerPadding = 12 / globalScale;
+        const labelY = -radius - 7 * labelZoomFactor / normalizedScale;
+        const pointerPadding = 12 * labelZoomFactor / normalizedScale;
         node.__pointerBounds = {
             x: labelX - pointerPadding,
             y: labelY - fontSize - pointerPadding,
             width: labelWidth + pointerPadding * 2,
-            height: fontSize + radius + 7 / globalScale + pointerPadding * 2,
+            height: fontSize + radius + 7 * labelZoomFactor / normalizedScale + pointerPadding * 2,
         };
         context.textAlign = "left";
         context.strokeStyle = "#fafafa";
-        context.lineWidth = 4 / globalScale;
+        context.lineWidth = 4 * labelZoomFactor / normalizedScale;
         context.lineJoin = "round";
         context.globalAlpha = focusOpacity;
         context.strokeText(node.site.title, labelX, labelY);
@@ -333,7 +477,7 @@ export default function SiteGraph({ sites, onOpen }) {
         }
         context.restore();
 
-        node.__paintRadius = Math.max(radius, 9 / globalScale);
+        node.__paintRadius = Math.max(radius, 9 * nodeZoomFactor / normalizedScale);
     }, [hoveredNode, neighbourIds]);
 
     const paintPointerArea = useCallback((node, color, context) => {
@@ -357,7 +501,7 @@ export default function SiteGraph({ sites, onOpen }) {
     return (
         <section
             ref={shellRef}
-            className={`${styles.shell} ${hoveredNode ? styles.shellHover : ""}`}
+            className={`${styles.shell} ${hasHoverInput && hoveredNode ? styles.shellHover : ""}`}
             aria-label="Граф связей дизайнеров и студий"
             onMouseLeave={() => {
                 hoveredNodeRef.current = null;
@@ -365,7 +509,7 @@ export default function SiteGraph({ sites, onOpen }) {
             }}
         >
             <ForceGraph2D
-                ref={graphRef}
+                ref={handleGraphRef}
                 width={size.width}
                 height={size.height}
                 graphData={graphData}
@@ -388,11 +532,11 @@ export default function SiteGraph({ sites, onOpen }) {
                 }}
                 linkCurvature={0.035}
                 linkLabel="label"
-                onNodeHover={(node) => {
+                onNodeHover={hasHoverInput ? (node) => {
                     hoveredNodeRef.current = node || null;
                     setHoveredNode(node || null);
                     if (node) updatePreviewAnchor(node);
-                }}
+                } : undefined}
                 onNodeClick={(node) => onOpen(node.site)}
                 onBackgroundClick={() => {
                     hoveredNodeRef.current = null;
@@ -400,23 +544,19 @@ export default function SiteGraph({ sites, onOpen }) {
                 }}
                 onNodeDrag={handleNodeDrag}
                 onNodeDragEnd={handleNodeDragEnd}
-                onEngineStop={() => {
-                    if (hasAutoFittedRef.current) return;
-                    hasAutoFittedRef.current = true;
-                    graphRef.current?.zoomToFit(700, 96);
-                }}
                 onZoom={() => updatePreviewAnchor()}
-                enableNodeDrag
-                warmupTicks={100}
-                cooldownTicks={480}
-                cooldownTime={20000}
-                d3AlphaDecay={0.012}
-                d3VelocityDecay={0.09}
-                minZoom={0.02}
-                maxZoom={4}
+                enableNodeDrag={hasHoverInput}
+                showPointerCursor={hasHoverInput}
+                warmupTicks={0}
+                cooldownTicks={hasHoverInput ? 900 : 180}
+                cooldownTime={hasHoverInput ? 30000 : 6000}
+                d3AlphaDecay={hasHoverInput ? 0.006 : 0.028}
+                d3VelocityDecay={hasHoverInput ? 0.09 : 0.22}
+                minZoom={MIN_ZOOM}
+                maxZoom={MAX_ZOOM}
             />
 
-            {hoveredSite ? (
+            {hasHoverInput && hoveredSite ? (
                 <div
                     key={hoveredSite.slug}
                     className={styles.previewCard}
