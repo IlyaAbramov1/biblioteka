@@ -24,47 +24,134 @@
     display: none;
 }
 
-.viewSwitcher {
+.viewTabs {
+    --view-tabs-padding: 4px;
     position: fixed;
     top: 24px;
     right: 24px;
     z-index: 60;
+    width: 161px;
+    height: 36px;
     display: inline-flex;
-    gap: 3px;
-    padding: 3px;
-    border-radius: 999px;
-    background: #e7eaed;
-    box-shadow: 0 1px 2px rgb(20 20 20 / 10%);
+    align-items: center;
+    padding: var(--view-tabs-padding);
+    border-radius: 109px;
+    background: #f0f2f5;
 }
 
-.viewButton,
-.viewButtonActive {
-    height: 30px;
-    padding: 4px 11px;
+.viewTabs::after {
+    position: absolute;
+    top: var(--view-tabs-padding);
+    bottom: var(--view-tabs-padding);
+    left: var(--view-tabs-padding);
+    z-index: 0;
+    width: calc((100% - (2 * var(--view-tabs-padding))) / 2);
+    border-radius: 108px;
+    background: #fff;
+    content: "";
+    transform: translateX(0);
+    transition: transform 200ms var(--hover-bounce-ease);
+}
+
+.viewTabsGraph::after {
+    transform: translateX(100%);
+}
+
+.viewTab {
+    appearance: none;
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+    height: 28px;
+    display: inline-flex;
+    flex: 1 1 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px 6px;
     border: 0;
-    border-radius: 999px;
+    border-radius: 108px;
     background: transparent;
-    color: var(--text-tertiary);
+    color: #1d1300;
     cursor: pointer;
     font-size: var(--font-size-small);
     font-weight: 500;
-    transition: background-color 160ms ease, color 160ms ease, transform 160ms var(--hover-bounce-ease);
+    letter-spacing: -0.28px;
+    line-height: 1.5;
+    white-space: nowrap;
+    transition: color 160ms ease, transform 160ms var(--hover-bounce-ease);
 }
 
-.viewButton:hover {
-    color: var(--text);
+.viewTab:hover {
     transform: scale(1.02);
 }
 
-.viewButton:active,
-.viewButtonActive:active {
+.viewTab:active {
     transform: scale(0.96);
 }
 
-.viewButtonActive {
-    background: #fff;
-    color: var(--text);
-    box-shadow: 0 1px 2px rgb(20 20 20 / 10%);
+.viewTab:focus-visible {
+    outline: 2px solid color-mix(in srgb, var(--blue) 60%, white 40%);
+    outline-offset: 1px;
+}
+
+.viewTabIcon,
+.shelfIcon {
+    width: 16px;
+    height: 16px;
+    display: block;
+    flex: 0 0 16px;
+}
+
+.viewTabIcon {
+    object-fit: contain;
+}
+
+.shelfIcon {
+    position: relative;
+    opacity: 0.8;
+}
+
+.shelfLineTop,
+.shelfLineBottom {
+    position: absolute;
+    left: 1px;
+    width: 14px;
+    height: 1.5px;
+    border-radius: 12px;
+    background: currentColor;
+}
+
+.shelfLineTop {
+    top: 6px;
+}
+
+.shelfLineBottom {
+    top: 13.5px;
+}
+
+.shelfBracketTop,
+.shelfBracketBottom {
+    position: absolute;
+    left: 4.5px;
+    width: 7px;
+    height: 6.5px;
+    border: 1.5px solid currentColor;
+    border-top: 0;
+    border-radius: 0 0 2px 2px;
+    transform: scaleY(-1);
+}
+
+.shelfBracketTop {
+    top: 1px;
+}
+
+.shelfBracketBottom {
+    top: 8.5px;
+}
+
+.mobileControls {
+    display: none;
 }
 
 .heroBlock {
@@ -275,6 +362,7 @@
     display: block;
     background: linear-gradient(90deg, transparent 0%, var(--bg) 92%);
     content: "";
+    opacity: 0;
     pointer-events: none;
 }
 
@@ -289,7 +377,13 @@
     display: block;
     background: linear-gradient(-90deg, transparent 0%, var(--bg) 92%);
     content: "";
+    opacity: 0;
     pointer-events: none;
+}
+
+.tagScrollerHasHiddenLeft::before,
+.tagScrollerHasHiddenRight::after {
+    opacity: 1;
 }
 
 .tagScroller::-webkit-scrollbar {
@@ -370,8 +464,263 @@
     opacity: 1;
 }
 
+.filterModalBackdrop {
+    display: none;
+}
+
+.filterModal {
+    position: relative;
+    width: min(390px, 100vw);
+    height: 521px;
+    min-height: 521px;
+    max-height: calc(var(--vvh, 100dvh) - 32px);
+    padding: 46px 20px calc(19px + env(safe-area-inset-bottom, 0px));
+    overflow-y: auto;
+    background: transparent;
+    box-shadow: 0 -8px 32px rgb(20 20 20 / 8%);
+}
+
+.filterModalShape {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+}
+
+.filterModal > :not(.filterModalShape) {
+    position: relative;
+    z-index: 1;
+}
+
+.filterModalHeader {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.filterModalHeader h2 {
+    color: #141414;
+    font-family: var(--font-garamond), serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.64px;
+    line-height: 1;
+}
+
+.filterModalBookmark {
+    width: 20px;
+    height: 30px;
+    display: inline-flex;
+    flex: 0 0 20px;
+    color: #0079ff;
+}
+
+.filterModalBookmark svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.filterModalClose {
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    flex: 0 0 32px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    border: 0;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #adb6bc 0%, #546f84 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: filter 160ms ease, transform 160ms var(--hover-bounce-ease);
+}
+
+.filterModalClose::after {
+    width: 22px;
+    height: 22px;
+    background: currentColor;
+    content: "";
+    -webkit-mask: url("/tag-icons/cross.svg") center / contain no-repeat;
+    mask: url("/tag-icons/cross.svg") center / contain no-repeat;
+}
+
+.filterModalClose:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+.filterModalClose:active {
+    filter: brightness(0.86);
+    transform: scale(0.96);
+}
+
+.filterModalSection {
+    margin-top: 20px;
+}
+
+.filterModalSection h3 {
+    margin-bottom: 8px;
+    color: #c7d1da;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    line-height: 1.5;
+}
+
+.modalCategoryGroup {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 109px;
+    background: #f0f2f5;
+}
+
+.modalCategoryGroup::after {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: var(--modal-category-indicator-left);
+    z-index: 0;
+    width: var(--modal-category-indicator-width);
+    border-radius: 108px;
+    background: #fff;
+    content: "";
+    transition:
+        left 200ms var(--hover-bounce-ease),
+        width 200ms var(--hover-bounce-ease);
+}
+
+.modalCategoryOption {
+    appearance: none;
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+    height: 28px;
+    display: inline-flex;
+    flex: 1 1 0;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 9px;
+    border: 0;
+    border-radius: 108px;
+    background: transparent;
+    color: #8599ad;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    line-height: 1.5;
+    white-space: nowrap;
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+.modalCategoryOption[aria-pressed="true"] {
+    background: transparent;
+    color: #1d1300;
+}
+
+.modalTagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px 5px;
+}
+
+.modalTag {
+    appearance: none;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 8px 8px 10px;
+    border: 0;
+    border-radius: 124px;
+    background: #f0f2f5;
+    color: #8599ad;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    line-height: 1.5;
+    white-space: nowrap;
+    transition: background-color 150ms ease, color 150ms ease, opacity 150ms ease;
+}
+
+.modalTag:hover {
+    background: #e5e9ed;
+}
+
+.modalTagSelected {
+    background: var(--tag-tone-color, #0079ff);
+    color: #fafafa;
+    opacity: 0.85;
+}
+
+.modalTagSelected:hover {
+    background: var(--tag-tone-color, #0079ff);
+    opacity: 0.7;
+}
+
+.modalTagIcon,
+.modalTagToggle {
+    display: block;
+    flex: 0 0 auto;
+    object-fit: contain;
+}
+
+.modalTagIcon {
+    width: 18px;
+    height: 18px;
+}
+
+.modalTagToggle {
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+}
+
+.modalTagSelected .modalTagIcon,
+.modalTagSelected .modalTagToggle {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+}
+
+.filterModalActions {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.filterModalActions > * {
+    min-width: 0;
+    flex: 1 1 0;
+}
+
+@keyframes filter-sheet-in {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .sitesGrid {
     position: relative;
+    z-index: 1;
     z-index: 2;
     width: 1040px;
     display: grid;
@@ -525,9 +874,61 @@
         padding-bottom: 110px;
     }
 
-    .viewSwitcher {
-        top: 14px;
-        right: 14px;
+    .desktopViewTabs {
+        display: none;
+    }
+
+    .mobileControls {
+        position: fixed;
+        left: 20px;
+        right: auto;
+        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+        z-index: 80;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        pointer-events: auto;
+    }
+
+    .mobileFilterButton {
+        appearance: none;
+        width: 36px;
+        height: 36px;
+        display: inline-flex;
+        flex: 0 0 36px;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        border: 0;
+        border-radius: 18px;
+        background: linear-gradient(180deg, #adb6bc 0%, #546f84 100%);
+        cursor: pointer;
+        transition: filter 160ms ease, transform 160ms var(--hover-bounce-ease);
+    }
+
+    .mobileFilterButton:hover {
+        filter: brightness(1.1);
+    }
+
+    .mobileFilterButton:active {
+        filter: brightness(0.86);
+        transform: scale(0.96);
+    }
+
+    .mobileFilterButton img {
+        width: 22px;
+        height: 22px;
+        display: block;
+        filter: brightness(0) invert(1);
+        object-fit: contain;
+    }
+
+    .mobileViewTabs {
+        position: relative;
+        top: auto;
+        right: auto;
+        z-index: auto;
+        width: 166px;
     }
 
     .heroBlock {
@@ -555,15 +956,7 @@
     }
 
     .navBar {
-        right: 0;
-        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
-        left: 0;
-        width: 396px;
-        height: 72px;
-        flex-direction: column;
-        justify-content: center;
-        gap: 4px;
-        overflow: visible;
+        display: none;
     }
 
     .tagScroller {
@@ -572,6 +965,31 @@
 
     .navGradient {
         height: calc(118px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .filterModalBackdrop {
+        position: fixed;
+        inset: 0;
+        z-index: 200;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background: rgb(20 20 20 / 18%);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+    }
+
+    .filterModal {
+        animation: filter-sheet-in 240ms var(--hover-bounce-ease) both;
+    }
+
+    .pageGraph .mobileControls .mobileFilterButton {
+        padding: 0;
+        background: transparent;
+    }
+
+    .pageGraph .mobileControls .mobileFilterButton img {
+        filter: none;
     }
 
     .categoryGroup {

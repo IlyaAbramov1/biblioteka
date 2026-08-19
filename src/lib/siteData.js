@@ -3,14 +3,14 @@ import { mediaUrl } from "@/lib/media";
 import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo";
 import { getSiteTags } from "@/lib/siteTags";
 
-const CATEGORY_ORDER = ["Дизайнер", "Дизайн-студия", "Креативная студия"];
+const CATEGORY_ORDER = ["Дизайнер", "Дизайн-студия"];
 const SPECIALIZATION_ORDER = [
     "Design Engineer",
     "Branding",
     "Web",
     "Motion Design",
     "Art",
-    "Product Design",
+    "Product",
     "3D in Web",
     "Illustration",
     "CGI",

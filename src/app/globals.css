@@ -266,6 +266,10 @@ html.graph-view-active .strokeContainer > footer {
     display: none;
 }
 
+body.filter-modal-open {
+    overflow: hidden;
+}
+
 
 @media (max-width: 1200px) {
     body {

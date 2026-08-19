@@ -6,7 +6,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://evilmartians.com/",
         "previewVideoKey": "",
@@ -24,7 +24,7 @@
         "specialization": [
             "Web",
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://spoony.work/play",
         "previewVideoKey": "",
@@ -42,7 +42,7 @@
         "specialization": [
             "Web",
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://m-a-x.online/",
         "previewVideoKey": "",
@@ -58,7 +58,7 @@
         "subtitle": "Madhurima Chatterjee — продуктовый дизайнер из Сиэтла. И её сайт... Знаете, наверное именно из-за подобных сайтов я начал делать дизайн-библиотеку. Настолько красиво, утончённо и мягко показать себя через веб и графику, копирайт — это очень ценный навык дизайнера. Великолепный сайт с мягким лоадером, довольно простой вёрсткой, которая акцентирует внимание на маленьких красивых деталях. А какой футер! В общем, отличный сайт.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.madhurima.me/",
         "previewVideoKey": "",
@@ -74,7 +74,7 @@
         "subtitle": "Alex Vanderzon — продуктовый дизайнер. Ранее руководил дизайном в Los Feliz Engineering, создателях Family и Honk, что тесно связывает его с другим прекрасным дизайнером — Бенджи Тейлором. Сайт выполнен в узнаваемом стиле дизайн-инженеров с авто-скроллящимся блоком из проектов в нижней части композиции, что уникализирует данный проект.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.alexvanderzon.com/",
         "previewVideoKey": "",
@@ -90,7 +90,7 @@
         "subtitle": "Moonsight — фуллстек дизайн-агентство с фокусом на финтех. Сайт хорошо отражает уникальный стиль ребят — концепция, завязанная на луне, красивые переходящие анимации, мягкая и чёткая вёрстка. Особенно классно они продумали и сверстали манифест, что сильно очеловечивает данный проект.",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design",
+            "Product",
             "Branding",
             "Web"
         ],
@@ -158,7 +158,7 @@
         "subtitle": "Aina Kanatkyzy — продуктовый дизайнер из Астаны. Сайт выполнен уникально: все проекты распределены на 3 категории внутри 2D-плоскости, навигация по которым производится через ховеры или таб-бар.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design",
+            "Product",
             "Web"
         ],
         "link": "https://desaina.co/",
@@ -243,7 +243,7 @@
         "subtitle": "Миша — основатель прекрасного Telegram-канала с одноимённым названием. Ex-lead product designer в Т-Банке, ныне развивает AI-продукты в Сбере. На сайте мягкая и компактная двухколоночная вёрстка, вдохновлённая стилем дизайн-инженеров. Главный акцент идёт на продукт, а основная информация закреплена — грамотная структура, которую точно можно взять на заметку.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://mishanaer.com/",
         "previewVideoKey": "",
@@ -259,7 +259,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://together.agency/",
         "previewVideoKey": "",
@@ -275,7 +275,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://uvarine.com/",
         "previewVideoKey": "",
@@ -363,7 +363,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.evilrabbit.com/",
         "previewVideoKey": "",
@@ -379,7 +379,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://alexvictorabraham.com/",
         "previewVideoKey": "",
@@ -411,7 +411,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://rbtg.studio/",
         "previewVideoKey": "",
@@ -427,7 +427,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.hex.inc/",
         "previewVideoKey": "",
@@ -505,7 +505,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://chipsa.ru/",
         "previewVideoKey": "",
@@ -521,7 +521,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://crauch.ru/",
         "previewVideoKey": "",
@@ -537,7 +537,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Web",
-            "Product Design",
+            "Product",
             "Branding"
         ],
         "link": "https://guglieri.com/",
@@ -554,7 +554,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://m18.ru/",
         "previewVideoKey": "",
@@ -569,7 +569,7 @@
         "subtitle": "Одна из известнейших дизайн-студий России, специализирующаяся на создании продуктов и интерфейсов. Сайт сделан в сдержанном корпоративном стиле: минималистичная вёрстка и упор на проекты и их визуальную подачу.",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design",
+            "Product",
             "Web"
         ],
         "link": "https://chulakov.ru/",
@@ -585,7 +585,7 @@
         "subtitle": "Американский дизайнер, тесно сотрудничавший над проектами Бенджи Тейлора — Aave, Family, Honk и другими. Сайт Lochie удивителен по своей сути: он сделан в стилистике старого веба на чистом HTML, со шрифтом Times New Roman и вёрсткой по HTML-потоку. В самом конце Lochie подмечает этот подход фразой: «Design is my passion.»",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design",
+            "Product",
             "Web"
         ],
         "link": "https://www.lochieaxon.com/",
@@ -636,7 +636,7 @@
         "subtitle": "Продуктовый дизайнер из США. На сайте невероятно плавные и красивые микро-анимации. Также стоит отметить бесшовные переходы на внутренние страницы.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design",
+            "Product",
             "Design Engineer"
         ],
         "link": "https://ja.mt/",
@@ -652,7 +652,7 @@
         "subtitle": "Продуктовый дизайнер, специализирующийся на SAAS-стартапах. Сайт сделан в виде двухколончатой сетки с фиксированным блоком о специалисте. Интересно, что Hamza не делает внутренних страниц, а показывает свои работы в виде шотов.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://hamzaalabou.com/",
         "previewVideoKey": "",
@@ -683,7 +683,7 @@
         "subtitle": "Российская дизайн-студия, специализирующаяся на исследованиях и продуктах. Сайт в процессе разработки, однако уже сейчас можно выделить их стиль и вёрстку, а также 3D сцену в hero block, сделанную с помощью Endless Tools.",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://mateca.agency/",
         "previewVideoKey": "",
@@ -698,7 +698,7 @@
         "subtitle": "Дизайн-инженер и продуктовый дизайнер. Сайт представлен в двухколончатой сетке и фиксированной главной информацией. Точно стоит подметить его кейсы, наполненные безумно красивыми интерактивными деталями.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://harin.design/",
         "previewVideoKey": "",
@@ -714,7 +714,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
-            "Product Design"
+            "Product"
         ],
         "link": "https://ch.sh/",
         "previewVideoKey": "",
@@ -729,7 +729,7 @@
         "subtitle": "Продуктовый дизайнер, разрабатывающий SAAS-продукты. Сайт сделан одноколончатой сеткой с плавными переходами и мягкой вёрсткой статей. Отдельно хочется отметить красивую деталь в виде аватарки, которую нужно зажимать, чтобы вывести дополнительную информацию.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://dahnizzy.com/",
         "previewVideoKey": "",
@@ -745,7 +745,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://amplestudio.com/",
         "previewVideoKey": "",
@@ -761,7 +761,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://adria.studio/",
         "previewVideoKey": "",
@@ -821,7 +821,7 @@
         "slug": "feelfactory",
         "title": "Feel Factory",
         "subtitle": "Большая мультидисциплинарная студия из России. В их проектах как большие коллаборации с Яндексом, Иви и Авито, так и подготовка визуалов к фильмам «Майор Гром», «Король и Шут» и другим проектам. Сайт полностью строится на структуре, акцентирующей внимание на их завораживающих и больших кейсах.",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Motion Design",
             "Branding",
@@ -857,7 +857,7 @@
         "slug": "rocketpand",
         "title": "ROCKETPAND",
         "subtitle": "Анимационная студия из Италии. На сайте в двухколончатой сетке представлены работы студии с Discord, McDonalds etc. Прекрасные анимации, продуманные изинги в переходах и детализация — достоверная демонстрация мастерства анимации ребят из ROCKETPANDA на своем сайте.",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Motion Design",
             "Illustration",
@@ -961,7 +961,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://humbleteam.com/",
         "previewVideoKey": "",
@@ -1031,7 +1031,7 @@
         "subtitle": "Дизайнер в Apple, специализирующийся на прототипировании пользовательского пути в VR/AR-пространстве. Из последних его работ смело можно выделить Apple Vision Pro и visionOS. Стоит отметить довольно сильный ход: Джонатан в футере добавил все свои зарегистрированные патенты.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://jonathanravasz.com/",
         "previewVideoKey": "",
@@ -1099,7 +1099,7 @@
         "slug": "make-me-pulse",
         "title": "Make Me Pulse",
         "subtitle": "Небольшая европейская дизайн-студия.",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1134,7 +1134,7 @@
         "subtitle": "Chan Karunamuni — Human Interface дизайнер в Apple. Его сайт устроен предельно прямолинейно: в центре страницы список его работ, которые знают все.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://chankarunamuni.com/",
         "previewVideoKey": "",
@@ -1152,7 +1152,7 @@
         "subtitle": "Дизайнер с 10-летним опытом работы внутри продуктов. На сайте мягкая и аккуратная верстка по одной колонке, четкой иерархией серого цвета и лапидарной презентацией работ.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design",
+            "Product",
             "Web",
             "Branding"
         ],
@@ -1187,7 +1187,7 @@
         "subtitle": "Глобальная продуктовая студия, добавляющая в свои работы глубокую и яркую графику. Сайт базируется на простой разводящей с основными большими кейсами. Отдельно нужно отметить ease-анимации с переходами между страницами.",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.metalab.com/",
         "previewVideoKey": "",
@@ -1201,7 +1201,7 @@
         "slug": "further",
         "title": "Further",
         "subtitle": "На сайте — брутальная, уверенная верстка с мягкой скролльной анимацией и жёстким акцентом на кейсах: большие блоки, факты, метрики, цитаты — и всё сразу в работу.",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -1220,7 +1220,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Web",
-            "Product Design"
+            "Product"
         ],
         "link": "https://mattstromawn.com/",
         "previewVideoKey": "",
@@ -1239,7 +1239,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
-            "Product Design",
+            "Product",
             "Web"
         ],
         "link": "https://evasanchez.info/",
@@ -1284,7 +1284,7 @@
         "slug": "petrick",
         "title": "Petrick",
         "subtitle": "Одна из лучших дизайн-студий России, специализирующихся на иллюстрациях, стори-теллинге и моушне. Сайт сделан студией Интуиция.",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Illustration",
             "Motion Design",
@@ -1323,7 +1323,7 @@
         "subtitle": "Топовая российская коммерческая студия. На сайте мягкая минималистичная вёрстка, базирующаяся на гротескной типографике.",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design",
+            "Product",
             "Branding",
             "Web"
         ],
@@ -1340,7 +1340,7 @@
         "subtitle": "Российская продуктовая дизайн-студия. На сайте представлена мягкая и аккуратная вёрстка с красивой пастельной палитрой.",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.loo.ch/",
         "previewVideoKey": "",
@@ -1387,7 +1387,7 @@
         "subtitle": "Фаундер студии after, в прошлом ко-фаундер студии baked design. У Алекса уникальный сайт, полностью завязанный на истории его становления, как специалиста. Сильный копирайт, мягкая и приятная верстка.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.aliszu.co",
         "previewVideoKey": "",
@@ -1452,7 +1452,7 @@
         "subtitle": "Большой продуктовый дизайнер из Сан-Франциско. Сайт Клаудио отличается прекрасными мягкими переходами между страницами, удобной и легкой навигацией и отличной работой с акцентами.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design",
+            "Product",
             "Web",
             "Branding"
         ],
@@ -1503,7 +1503,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://abarabonova.com/",
         "previewVideoKey": "",
@@ -1520,7 +1520,7 @@
         "specialization": [
             "Web",
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.rndrealm.com/",
         "previewVideoKey": "",
@@ -1535,7 +1535,7 @@
         "subtitle": "Вильям — дизайнер из Google, разработывающий Material Design System. Ранее работал в Apple на позиции Human Interface Designer. На сайте в необычном контексте 3D-иллюстрации Вильям рассказывает нам о себе и своих проектах. Отдельно хочется отметить небольшие анимации сайта.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://williamle.design/?ref=3dwebsites.design",
         "previewVideoKey": "",
@@ -1603,7 +1603,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.raphaelsalaja.com/",
         "previewVideoKey": "",
@@ -1652,7 +1652,7 @@
         "subtitle": "Томми — продуктовый дизайнер из Лондона. Разработчик пет-проекта Chrono. Сайт минималистичен, но имеет красивые микроанимации, прекрасно сверстанные кейсы, а также анимированного с помощью Rive робота.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.tommy-s.co.uk/",
         "previewVideoKey": "",
@@ -1699,7 +1699,7 @@
         "slug": "phantom",
         "title": "Phantom Studio",
         "subtitle": "Европейская креативная студия, работающая с Google и другими большими брендами. Сайт в уникальном формате 2D-endless матрице презентует проекты студий. Отдельно стоит отметить огромное количество микродеталей на сайте, а также высокую оптимизацию кода сайта.",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Motion Design"
         ],
@@ -1767,7 +1767,7 @@
         "subtitle": "Даниэль — дизайнер из FAANG+. На сайте типографически доминантно представлен рассказ о себе. С другой стороны — мягко и нежно сверстаны статьи с работами Daniel-а.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://daneden.me/",
         "previewVideoKey": "",
@@ -1799,7 +1799,7 @@
         "subtitle": "Дизайн-студия, ориентированная на SAAS и AI-стартапы. На сайте модульная вёрстка, схожая со студией based design — справа кейсы, слева основная информация. Отдельно хочется подметить небольшой саунд-дизайн для кнопок.",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design",
+            "Product",
             "Web",
             "Branding"
         ],
@@ -1840,7 +1840,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
-            "Product Design"
+            "Product"
         ],
         "link": "https://benji.org/",
         "previewVideoKey": "",
@@ -1877,7 +1877,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
-            "Product Design"
+            "Product"
         ],
         "link": "https://irung.me/",
         "previewVideoKey": "",
@@ -1910,7 +1910,7 @@
         "subtitle": "Натали — дизайнер из Notion. Её сайт — уникальный случай стыка четкого повествования о себе и креативной идеи. Выполнен в двух модах — Fidget, где можно потягать кейсы, и Карусель, где можно где цельно рассмотреть её прекрасные работы. В сайте есть жизнь, есть персональный уникальный подход.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design",
+            "Product",
             "Web"
         ],
         "link": "https://nataliealmosa.ca/",
@@ -1925,7 +1925,7 @@
         "slug": "merci-michel",
         "title": "Merci Michel",
         "subtitle": "Топ-1 студия в сфере интерактивного 3D/2D-веба.",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "3D in Web"
         ],
@@ -1973,7 +1973,7 @@
         "slug": "robert-borghesi",
         "title": "Robert Borghesi",
         "subtitle": "Роберт — в прошлом экономист, а ныне дизайн-инженер, специализируйющийся на WebGl-анимации. На его странице в стиле типографического брутализма описаны его работы и информация о нём, но также есть и вкрапления красивой WebGl-анимаций.",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Design Engineer"
         ],
@@ -2007,7 +2007,7 @@
         "subtitle": "Продуктовый дизайнер из Лос-Анджелеса. В резюме — крупные компании, такие как Apple и Meta. Сайт предельно стерилен по подаче и собран вокруг кейсов: без лишних объяснений — только последовательный перечень проектов, который фиксирует масштаб и узнаваемость выполненной работы.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design",
+            "Product",
             "Web"
         ],
         "link": "https://www.zegzulka.com/",
@@ -2025,7 +2025,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
-            "Product Design"
+            "Product"
         ],
         "link": "https://pqoqubbw.dev/",
         "previewVideoKey": "",
@@ -2045,7 +2045,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.benja.dev/",
         "previewVideoKey": "",
@@ -2063,7 +2063,7 @@
         "subtitle": "Baked — продуктовая дизайн-студия для фаундеров: помогают быстро собирать продукты, маркетинговые сайты и интерфейсы, работая в формате подписки без созвонов. Их сайт про свежесть и темп: минималистичная двухколончатая сетка, монохромная палитра и аккуратные детали.",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design",
+            "Product",
             "Web"
         ],
         "link": "https://www.baked.design/",
@@ -2081,7 +2081,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Branding",
-            "Product Design",
+            "Product",
             "Web"
         ],
         "link": "https://www.redis.agency/",
@@ -2097,7 +2097,7 @@
         "subtitle": "Todd Hamilton — продуктовый дизайнер и разработчик с 20+ годами опыта: долгое время делал продукты в Facebook, а сейчас строит AIProxy. Его сайт довольно уникален: центральная сцена собрана в виде монитора, в который ты буквально проваливаешься, и погружаешься в выбранный материал.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design",
+            "Product",
             "Design Engineer"
         ],
         "link": "https://toddham.com/",
@@ -2168,7 +2168,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://playlist.studio/about",
         "previewVideoKey": "",
@@ -2235,7 +2235,7 @@
         "subtitle": "Дизайнер, специализирующийся на проектах SAAS и Web3. На сайте краски бьют ключем, каждая деталь выполнена с любовью и Жизнью.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design",
+            "Product",
             "Web"
         ],
         "link": "https://danielsun.space/",
@@ -2387,7 +2387,7 @@
         "subtitle": "Минималистичный сайт продуктового дизайнера Аарона. Сайт сделан с акцентом на шоты из кейсов с добавлением микроанимаций.",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.mahlke.design/",
         "previewVideoKey": "",
@@ -2468,7 +2468,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://bcho.info/",
         "previewVideoKey": "",
@@ -2546,7 +2546,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://chulakov.ru/",
         "previewVideoKey": "",
@@ -2576,7 +2576,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://m18.ru/",
         "previewVideoKey": "",
@@ -2606,7 +2606,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://guglieri.com/",
         "previewVideoKey": "",
@@ -2620,7 +2620,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://crauch.ru/#slider_right",
         "previewVideoKey": "",
@@ -2634,7 +2634,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.rebooot.me/",
         "previewVideoKey": "",
@@ -2692,7 +2692,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.pragmatica.design/",
         "previewVideoKey": "",
@@ -2732,9 +2732,9 @@
         "slug": "samokat-tech",
         "title": "SAMOKAT TECH",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://samokat.tech/",
         "previewVideoKey": "",
@@ -2837,7 +2837,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://endless.design/",
         "previewVideoKey": "",
@@ -2851,7 +2851,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://startupvisuals.com/",
         "previewVideoKey": "",
@@ -2880,7 +2880,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://bricxlabs.com/",
         "previewVideoKey": "",
@@ -3095,7 +3095,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.preciousm.co/about",
         "previewVideoKey": "",
@@ -3138,7 +3138,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.doho.io/",
         "previewVideoKey": "",
@@ -3195,7 +3195,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://dalee.ru/",
         "previewVideoKey": "",
@@ -3322,7 +3322,7 @@
         "slug": "salt-pepper",
         "title": "Salt & Pepper",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "CGI",
             "Art",
@@ -3338,10 +3338,10 @@
         "slug": "webisoft",
         "title": "WEBISOFT",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "CGI",
-            "Product Design"
+            "Product"
         ],
         "link": "https://webisoft.com/",
         "previewVideoKey": "",
@@ -3353,7 +3353,7 @@
         "slug": "we-go-again",
         "title": "WE GO AGAIN",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3396,7 +3396,7 @@
         "slug": "watson",
         "title": "WATSON",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding",
             "Illustration"
@@ -3411,7 +3411,7 @@
         "slug": "alex-hunting-studio",
         "title": "Alex Hunting Studio",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3512,12 +3512,12 @@
         "slug": "monogrid",
         "title": "MONOGRID",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "CGI",
             "Art",
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://monogrid.com/",
         "previewVideoKey": "",
@@ -3529,7 +3529,7 @@
         "slug": "mvsm",
         "title": "MVSM",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -3558,7 +3558,7 @@
         "slug": "space10",
         "title": "SPACE10",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -3630,7 +3630,7 @@
         "slug": "ben-jo",
         "title": "Ben&Jo",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -3675,7 +3675,7 @@
         "slug": "panorama-space",
         "title": "Panorama Space",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art"
         ],
@@ -3921,7 +3921,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://azumbrunnen.me/",
         "previewVideoKey": "",
@@ -3935,7 +3935,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://vla.so/",
         "previewVideoKey": "",
@@ -3947,7 +3947,7 @@
         "slug": "tric",
         "title": "TRIC",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4028,7 +4028,7 @@
         "slug": "dseya",
         "title": "Dseya",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4086,7 +4086,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://mateca.agency/",
         "previewVideoKey": "",
@@ -4182,7 +4182,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.sergeikudinov.com/",
         "previewVideoKey": "",
@@ -4240,7 +4240,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.madebymad.co/",
         "previewVideoKey": "",
@@ -4266,7 +4266,7 @@
         "slug": "rogue",
         "title": "Rogue",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4324,7 +4324,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.struggle.wtf/",
         "previewVideoKey": "",
@@ -4452,7 +4452,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://antro.cx/",
         "previewVideoKey": "",
@@ -4550,7 +4550,7 @@
         "slug": "ilovecreatives",
         "title": "ILOVECREATIVES",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4578,7 +4578,7 @@
         "slug": "tux",
         "title": "TUX",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],
@@ -4594,7 +4594,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://vemula.me/",
         "previewVideoKey": "",
@@ -4623,7 +4623,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.borisverks.com/",
         "previewVideoKey": "",
@@ -4637,7 +4637,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://yevhenyurchuk.com/#spinner",
         "previewVideoKey": "",
@@ -4709,7 +4709,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://imbarinov.com/",
         "previewVideoKey": "",
@@ -4738,7 +4738,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://pixelwrld.co/",
         "previewVideoKey": "",
@@ -4767,7 +4767,7 @@
         "category": "Дизайн-студия",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://evra.design/",
         "previewVideoKey": "",
@@ -4869,7 +4869,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://munk.design/",
         "previewVideoKey": "",
@@ -4883,7 +4883,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://yannglt.com/",
         "previewVideoKey": "",
@@ -4897,7 +4897,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://ustinov.design/",
         "previewVideoKey": "",
@@ -4927,7 +4927,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://ja.mt/",
         "previewVideoKey": "",
@@ -4941,7 +4941,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://robb.is/?ref=deadsimplesitesz#work-experience",
         "previewVideoKey": "",
@@ -4955,7 +4955,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://mw.works/?ref=deadsimplesites",
         "previewVideoKey": "",
@@ -4969,7 +4969,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.gktk.us/",
         "previewVideoKey": "",
@@ -4983,7 +4983,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://mouhany.com/?ref=deadsimplesites",
         "previewVideoKey": "",
@@ -5071,7 +5071,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Illustration",
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.heyvalentin.club/",
         "previewVideoKey": "",
@@ -5085,7 +5085,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.schwaiboldandvos.com/",
         "previewVideoKey": "",
@@ -5099,7 +5099,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://kons.fyi/",
         "previewVideoKey": "",
@@ -5141,7 +5141,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://vladkalashnikov.framer.website/",
         "previewVideoKey": "",
@@ -5185,7 +5185,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://micahcarroll.com/",
         "previewVideoKey": "",
@@ -5213,7 +5213,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.jyang.io/",
         "previewVideoKey": "",
@@ -5255,7 +5255,7 @@
         "slug": "",
         "title": "Студия Мира",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Art",
             "Branding"
@@ -5373,7 +5373,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://ekso.framer.website/",
         "previewVideoKey": "",
@@ -5387,7 +5387,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://j-alyavdin.com/",
         "previewVideoKey": "",
@@ -5402,7 +5402,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://artmilitonian.com/",
         "previewVideoKey": "",
@@ -5417,7 +5417,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://zhigulingo.zgo.design/",
         "previewVideoKey": "",
@@ -5445,7 +5445,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.guochen.design/",
         "previewVideoKey": "",
@@ -5502,7 +5502,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://www.nataliealmosa.ca/#",
         "previewVideoKey": "",
@@ -5530,7 +5530,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://noff.me/?ref=deadsimplesites",
         "previewVideoKey": "",
@@ -5544,7 +5544,7 @@
         "subtitle": "",
         "category": "Дизайн-студия",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://finetune.co/",
         "previewVideoKey": "",
@@ -5616,7 +5616,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://anthonyhobday.com/",
         "previewVideoKey": "",
@@ -5699,7 +5699,7 @@
         "subtitle": "",
         "category": "Дизайнер",
         "specialization": [
-            "Product Design"
+            "Product"
         ],
         "link": "https://dmitry-santalov.webflow.io/",
         "previewVideoKey": "",
@@ -5756,7 +5756,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Branding",
-            "Product Design"
+            "Product"
         ],
         "link": "https://amicaliuc.com/",
         "previewVideoKey": "",
@@ -5782,7 +5782,7 @@
         "slug": "tom-yorky",
         "title": "Tom Yorky",
         "subtitle": "",
-        "category": "Креативная студия",
+        "category": "Дизайн-студия",
         "specialization": [
             "Branding"
         ],

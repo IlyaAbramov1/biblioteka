@@ -12,19 +12,23 @@ export default function SecondaryButton({
     children,
     as = "a",
     external = true,
+    disabled = false,
     ...props
 }) {
     const MotionComponent = as === "button" ? motion.button : motion.a;
 
     return (
         <MotionComponent
-            href={href}
+            href={as === "a" && !disabled ? href : undefined}
             type={as === "button" ? "button" : undefined}
             className={`${styles.linkContainer} ${icon ? styles.withIcon : ""}`}
-            target={as === "a" && external ? "_blank" : undefined}
-            rel={as === "a" && external ? "noreferrer" : undefined}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.99 }}
+            target={as === "a" && external && !disabled ? "_blank" : undefined}
+            rel={as === "a" && external && !disabled ? "noreferrer" : undefined}
+            disabled={as === "button" ? disabled : undefined}
+            aria-disabled={disabled || undefined}
+            tabIndex={as === "a" && disabled ? -1 : undefined}
+            whileHover={disabled ? undefined : { y: -2 }}
+            whileTap={disabled ? undefined : { scale: 0.99 }}
             transition={HOVER_SPRING}
             {...props}
         >

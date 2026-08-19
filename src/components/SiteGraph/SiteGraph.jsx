@@ -32,7 +32,6 @@ const MOBILE_LAYOUT_SCALE = 2;
 const CATEGORY_LABELS = {
     "Дизайнер": "Designer",
     "Дизайн-студия": "Design Studio",
-    "Креативная студия": "Creative Studio",
 };
 
 function hashString(value) {

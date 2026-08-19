@@ -40,6 +40,63 @@ const TELEGRAM_ICON_PATH = `/tg.svg?v=${ASSET_VERSION}`;
 const ADD_WEBSITE_ICON_PATH = `/add_website.svg?v=${ASSET_VERSION}`;
 const PLUS_ICON_PATH = `/tag-icons/plus.svg?v=${ASSET_VERSION}`;
 const MINUS_ICON_PATH = `/tag-icons/minus.svg?v=${ASSET_VERSION}`;
+const FILTER_ICON_PATH = `/filter.svg?v=${ASSET_VERSION}`;
+const GRAPH_ICON_PATH = `/graph.svg?v=${ASSET_VERSION}`;
+
+function ShelfIcon() {
+    return (
+        <span className={styles.shelfIcon} aria-hidden="true">
+            <span className={styles.shelfLineTop} />
+            <span className={styles.shelfLineBottom} />
+            <span className={styles.shelfBracketTop} />
+            <span className={styles.shelfBracketBottom} />
+        </span>
+    );
+}
+
+function BookmarkIcon() {
+    return (
+        <svg aria-hidden="true" viewBox="0 0 35 55" fill="none">
+            <path d="M0 52.6577V2C0 0.895431 0.89543 0 2 0H33C34.1046 0 35 0.895432 35 2V52.6577C35 54.5068 32.706 55.3656 31.4917 53.9711L19.0083 39.6352C18.2111 38.7197 16.7889 38.7197 15.9917 39.6352L3.5083 53.9711C2.294 55.3656 0 54.5068 0 52.6577Z" fill="currentColor" />
+        </svg>
+    );
+}
+
+function ViewTabs({ viewMode, onChange, className = "" }) {
+    return (
+        <div
+            className={`${styles.viewTabs} ${viewMode === "graph" ? styles.viewTabsGraph : ""} ${className}`.trim()}
+            role="group"
+            aria-label="Режим отображения"
+        >
+            <button
+                type="button"
+                className={styles.viewTab}
+                onClick={() => onChange("gallery")}
+                aria-pressed={viewMode === "gallery"}
+            >
+                <ShelfIcon />
+                <span>Полки</span>
+            </button>
+            <button
+                type="button"
+                className={styles.viewTab}
+                onClick={() => onChange("graph")}
+                aria-pressed={viewMode === "graph"}
+            >
+                <Image
+                    className={styles.viewTabIcon}
+                    src={GRAPH_ICON_PATH}
+                    alt=""
+                    width={16}
+                    height={16}
+                    unoptimized
+                />
+                <span>Граф</span>
+            </button>
+        </div>
+    );
+}
 
 function getSlugFromPathname(pathname) {
     const match = String(pathname || "").match(/(?:^|\/)site\/([^/]+)\/?$/);
@@ -61,6 +118,8 @@ function buildSitePath(slug) {
 export default function HomePage() {
     const categoryGroupRef = useRef(null);
     const categoryButtonRefs = useRef([]);
+    const modalCategoryButtonRefs = useRef([]);
+    const tagScrollerRef = useRef(null);
     const sentinelRef = useRef(null);
     const homeUrlRef = useRef("/");
     const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
@@ -68,9 +127,20 @@ export default function HomePage() {
     const [selectedTags, setSelectedTags] = useState([]);
     const [activeSiteSlug, setActiveSiteSlug] = useState(null);
     const [viewMode, setViewMode] = useState("gallery");
+    const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
+    const [draftCategory, setDraftCategory] = useState(null);
+    const [draftTags, setDraftTags] = useState([]);
+    const [tagScrollEdges, setTagScrollEdges] = useState({
+        hasHiddenLeft: false,
+        hasHiddenRight: false,
+    });
     const [categoryIndicatorStyle, setCategoryIndicatorStyle] = useState({
         "--category-indicator-left": "3px",
         "--category-indicator-width": "0px",
+    });
+    const [modalCategoryIndicatorStyle, setModalCategoryIndicatorStyle] = useState({
+        "--modal-category-indicator-left": "4px",
+        "--modal-category-indicator-width": "0px",
     });
 
     const filteredSites = useMemo(() => {
@@ -93,6 +163,14 @@ export default function HomePage() {
         0,
         categoryOptions.findIndex((option) => option.value === selectedCategory)
     );
+    const draftFiltersChanged = draftCategory !== selectedCategory
+        || draftTags.length !== selectedTags.length
+        || draftTags.some((tag) => !selectedTags.includes(tag));
+    const hasDraftFilters = draftCategory !== null || draftTags.length > 0;
+    const draftCategoryIndex = Math.max(
+        0,
+        categoryOptions.findIndex((option) => option.value === draftCategory)
+    );
 
     useLayoutEffect(() => {
         const updateCategoryIndicator = () => {
@@ -111,6 +189,62 @@ export default function HomePage() {
 
         return () => window.removeEventListener("resize", updateCategoryIndicator);
     }, [selectedCategoryIndex]);
+
+    useLayoutEffect(() => {
+        if (!isFilterModalOpen) return undefined;
+
+        const updateModalCategoryIndicator = () => {
+            const activeButton = modalCategoryButtonRefs.current[draftCategoryIndex];
+
+            if (!activeButton) return;
+
+            setModalCategoryIndicatorStyle({
+                "--modal-category-indicator-left": `${activeButton.offsetLeft}px`,
+                "--modal-category-indicator-width": `${activeButton.offsetWidth}px`,
+            });
+        };
+
+        updateModalCategoryIndicator();
+        window.addEventListener("resize", updateModalCategoryIndicator);
+
+        return () => window.removeEventListener("resize", updateModalCategoryIndicator);
+    }, [draftCategoryIndex, isFilterModalOpen]);
+
+    useEffect(() => {
+        const scroller = tagScrollerRef.current;
+
+        if (!scroller) return undefined;
+
+        const updateTagScrollEdges = () => {
+            const maxScrollLeft = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
+            const hasHiddenLeft = scroller.scrollLeft > 1;
+            const hasHiddenRight = maxScrollLeft - scroller.scrollLeft > 1;
+
+            setTagScrollEdges((current) => {
+                if (
+                    current.hasHiddenLeft === hasHiddenLeft
+                    && current.hasHiddenRight === hasHiddenRight
+                ) {
+                    return current;
+                }
+
+                return { hasHiddenLeft, hasHiddenRight };
+            });
+        };
+
+        updateTagScrollEdges();
+        scroller.addEventListener("scroll", updateTagScrollEdges, { passive: true });
+        window.addEventListener("resize", updateTagScrollEdges);
+
+        const resizeObserver = new ResizeObserver(updateTagScrollEdges);
+        resizeObserver.observe(scroller);
+
+        return () => {
+            scroller.removeEventListener("scroll", updateTagScrollEdges);
+            window.removeEventListener("resize", updateTagScrollEdges);
+            resizeObserver.disconnect();
+        };
+    }, []);
 
     useEffect(() => {
         const syncActiveSiteFromUrl = () => {
@@ -134,6 +268,22 @@ export default function HomePage() {
 
         return () => document.documentElement.classList.remove("graph-view-active");
     }, [viewMode]);
+
+    useEffect(() => {
+        if (!isFilterModalOpen) return undefined;
+
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") setIsFilterModalOpen(false);
+        };
+
+        document.body.classList.add("filter-modal-open");
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            document.body.classList.remove("filter-modal-open");
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [isFilterModalOpen]);
 
     useEffect(() => {
         const sentinel = sentinelRef.current;
@@ -180,6 +330,34 @@ export default function HomePage() {
         ));
     };
 
+    const openFilterModal = () => {
+        setDraftCategory(selectedCategory);
+        setDraftTags(selectedTags);
+        setIsFilterModalOpen(true);
+    };
+
+    const toggleDraftTag = (tag) => {
+        setDraftTags((currentTags) => (
+            currentTags.includes(tag)
+                ? currentTags.filter((item) => item !== tag)
+                : [...currentTags, tag]
+        ));
+    };
+
+    const clearDraftFilters = () => {
+        setDraftCategory(null);
+        setDraftTags([]);
+    };
+
+    const applyDraftFilters = () => {
+        if (!draftFiltersChanged) return;
+
+        resetVisibleCount();
+        setSelectedCategory(draftCategory);
+        setSelectedTags(draftTags);
+        setIsFilterModalOpen(false);
+    };
+
     const openSite = (site) => {
         if (!site.slug || typeof window === "undefined") return;
 
@@ -210,24 +388,11 @@ export default function HomePage() {
     return (
         <main className={`${styles.page} ${viewMode === "graph" ? styles.pageGraph : ""}`}>
             <CanvasLogo />
-            <div className={styles.viewSwitcher} role="group" aria-label="Режим отображения">
-                <button
-                    type="button"
-                    className={viewMode === "gallery" ? styles.viewButtonActive : styles.viewButton}
-                    onClick={() => setViewMode("gallery")}
-                    aria-pressed={viewMode === "gallery"}
-                >
-                    Галерея
-                </button>
-                <button
-                    type="button"
-                    className={viewMode === "graph" ? styles.viewButtonActive : styles.viewButton}
-                    onClick={() => setViewMode("graph")}
-                    aria-pressed={viewMode === "graph"}
-                >
-                    Граф
-                </button>
-            </div>
+            <ViewTabs
+                viewMode={viewMode}
+                onChange={setViewMode}
+                className={styles.desktopViewTabs}
+            />
             <section className={styles.heroBlock} aria-labelledby="library-title">
                 <div className={styles.heroBlockText}>
                     <div className={styles.titleRow}>
@@ -348,7 +513,10 @@ export default function HomePage() {
                         })}
                     </div>
                 </div>
-                <div className={styles.tagScroller}>
+                <div
+                    ref={tagScrollerRef}
+                    className={`${styles.tagScroller} ${tagScrollEdges.hasHiddenLeft ? styles.tagScrollerHasHiddenLeft : ""} ${tagScrollEdges.hasHiddenRight ? styles.tagScrollerHasHiddenRight : ""}`}
+                >
                     <div className={styles.tagTrack}>
                         {siteSpecializations.map((tag) => {
                             const meta = getTagMeta(tag);
@@ -392,6 +560,30 @@ export default function HomePage() {
                     </div>
                 </div>
             </motion.nav>
+
+            <div className={styles.mobileControls}>
+                <button
+                    type="button"
+                    className={styles.mobileFilterButton}
+                    onClick={openFilterModal}
+                    aria-label="Открыть фильтры"
+                    aria-haspopup="dialog"
+                    aria-expanded={isFilterModalOpen}
+                >
+                    <Image
+                        src={FILTER_ICON_PATH}
+                        alt=""
+                        width={22}
+                        height={22}
+                        unoptimized
+                    />
+                </button>
+                <ViewTabs
+                    viewMode={viewMode}
+                    onChange={setViewMode}
+                    className={styles.mobileViewTabs}
+                />
+            </div>
 
             {viewMode === "graph" ? (
                 <SiteGraph sites={filteredSites} onOpen={openSite} />
@@ -458,6 +650,136 @@ export default function HomePage() {
                     onClose={closeSite}
                     onRelatedSiteOpen={openSite}
                 />
+            ) : null}
+
+            {isFilterModalOpen ? (
+                <div
+                    className={styles.filterModalBackdrop}
+                    role="presentation"
+                    onMouseDown={(event) => {
+                        if (event.target === event.currentTarget) setIsFilterModalOpen(false);
+                    }}
+                >
+                    <section
+                        className={styles.filterModal}
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="filter-modal-title"
+                    >
+                        <svg
+                            className={styles.filterModalShape}
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="390"
+                            height="521"
+                            viewBox="0 0 390 521"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M0 29C0 12.9838 12.9837 0 29 0H100.212C108.126 0 115.696 3.23443 121.167 8.95317L122.736 10.5929C128.207 16.3116 135.777 19.5461 143.691 19.5461H360.5C376.516 19.5461 389.5 32.5298 389.5 48.5461V492C389.5 508.016 376.516 521 360.5 521H29C12.9837 521 0 508.016 0 492L0 29Z"
+                                fill="#FAFAFA"
+                            />
+                        </svg>
+                        <header className={styles.filterModalHeader}>
+                            <span className={styles.filterModalBookmark}>
+                                <BookmarkIcon />
+                            </span>
+                            <h2 id="filter-modal-title">Фильтры</h2>
+                            <button
+                                type="button"
+                                className={styles.filterModalClose}
+                                onClick={() => setIsFilterModalOpen(false)}
+                                aria-label="Закрыть фильтры"
+                            />
+                        </header>
+
+                        <div className={styles.filterModalSection}>
+                            <h3>Категории</h3>
+                            <div
+                                className={styles.modalCategoryGroup}
+                                style={modalCategoryIndicatorStyle}
+                            >
+                                {categoryOptions.map((option, index) => {
+                                    const isSelected = draftCategory === option.value;
+
+                                    return (
+                                        <button
+                                            type="button"
+                                            key={option.label}
+                                            className={styles.modalCategoryOption}
+                                            ref={(node) => {
+                                                modalCategoryButtonRefs.current[index] = node;
+                                            }}
+                                            onClick={() => setDraftCategory(option.value)}
+                                            aria-pressed={isSelected}
+                                        >
+                                            {option.label}
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                        </div>
+
+                        <div className={styles.filterModalSection}>
+                            <h3>Теги</h3>
+                            <div className={styles.modalTagList}>
+                                {siteSpecializations.map((tag) => {
+                                    const meta = getTagMeta(tag);
+                                    const iconPath = getTagIconPath(meta.icon);
+                                    const isSelected = draftTags.includes(tag);
+
+                                    return (
+                                        <button
+                                            type="button"
+                                            className={`${styles.modalTag} ${isSelected ? styles.modalTagSelected : ""}`}
+                                            key={tag}
+                                            data-tag-tone={meta.tone}
+                                            onClick={() => toggleDraftTag(tag)}
+                                            aria-pressed={isSelected}
+                                        >
+                                            {iconPath ? (
+                                                <Image
+                                                    className={styles.modalTagIcon}
+                                                    src={iconPath}
+                                                    alt=""
+                                                    width={18}
+                                                    height={18}
+                                                    unoptimized
+                                                />
+                                            ) : null}
+                                            <span>{meta.label}</span>
+                                            <Image
+                                                className={styles.modalTagToggle}
+                                                src={isSelected ? MINUS_ICON_PATH : PLUS_ICON_PATH}
+                                                alt=""
+                                                width={20}
+                                                height={20}
+                                                unoptimized
+                                            />
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                        </div>
+
+                        <div className={styles.filterModalActions}>
+                            <SecondaryButton
+                                as="button"
+                                disabled={!hasDraftFilters}
+                                onClick={clearDraftFilters}
+                            >
+                                Удалить
+                            </SecondaryButton>
+                            <PrimaryButton
+                                as="button"
+                                disabled={!draftFiltersChanged}
+                                onClick={applyDraftFilters}
+                            >
+                                Применить
+                            </PrimaryButton>
+                        </div>
+                    </section>
+                </div>
             ) : null}
         </main>
     );

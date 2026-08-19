@@ -6,13 +6,17 @@
     justify-content: center;
     border: 0;
     border-radius: 18px;
-    background: var(--btn-primary-root-fill);
+    background: #0065ff;
     color: #fafafa;
     font-size: var(--font-size-body);
     font-weight: 500;
     letter-spacing: -0.32px;
     line-height: 1.5;
-    transition: background-color 160ms ease-out;
+    cursor: pointer;
+    transition:
+        background-color 160ms ease-out,
+        color 160ms ease-out,
+        opacity 160ms ease-out;
 }
 
 .withIcon {
@@ -46,5 +50,22 @@
 }
 
 .linkContainer:hover {
-    background: color-mix(in srgb, var(--btn-primary-root-fill) 88%, white 12%);
+    background: #0079ff;
+}
+
+.linkContainer:active {
+    background: #0054a9;
+}
+
+.linkContainer:disabled,
+.linkContainer[aria-disabled="true"] {
+    background: #dce9fb;
+    color: #fff;
+    cursor: default;
+    pointer-events: none;
+}
+
+.linkContainer:focus-visible {
+    outline: 2px solid color-mix(in srgb, #0065ff 72%, white 28%);
+    outline-offset: 3px;
 }

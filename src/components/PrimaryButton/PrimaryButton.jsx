@@ -10,22 +10,29 @@ export default function PrimaryButton({
     href,
     icon = null,
     children,
+    as = "a",
     external = true,
+    disabled = false,
     ...props
 }) {
+    const MotionComponent = as === "button" ? motion.button : motion.a;
     const className = [
         styles.linkContainer,
         icon ? styles.withIcon : styles.withoutIcon,
     ].join(" ");
 
     return (
-        <motion.a
-            href={href}
+        <MotionComponent
+            href={as === "a" && !disabled ? href : undefined}
+            type={as === "button" ? "button" : undefined}
             className={className}
-            target={external ? "_blank" : undefined}
-            rel={external ? "noreferrer" : undefined}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.99 }}
+            target={as === "a" && external && !disabled ? "_blank" : undefined}
+            rel={as === "a" && external && !disabled ? "noreferrer" : undefined}
+            disabled={as === "button" ? disabled : undefined}
+            aria-disabled={disabled || undefined}
+            tabIndex={as === "a" && disabled ? -1 : undefined}
+            whileHover={disabled ? undefined : { y: -2 }}
+            whileTap={disabled ? undefined : { scale: 0.99 }}
             transition={HOVER_SPRING}
             {...props}
         >
@@ -35,6 +42,6 @@ export default function PrimaryButton({
                 </span>
             ) : null}
             {children}
-        </motion.a>
+        </MotionComponent>
     );
 }

@@ -7,7 +7,6 @@ export const TAG_BANK = {
     "illustration": { tone: "illustration", icon: "illustration" },
     "art": { tone: "art", icon: "art" },
     product: { tone: "product", icon: "product" },
-    "product design": { tone: "product", icon: "product" },
     cgi: { tone: "cgi", icon: "cgi" },
     "3d in web": { tone: "threeD", icon: "threeD" },
     "3d": { tone: "cgi", icon: "cgi" },
