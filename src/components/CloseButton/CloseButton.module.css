@@ -1,29 +1,33 @@
 .button {
     appearance: none;
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border: 0;
-    border-radius: 50%;
-    background: var(--btn-secondary-bg);
-    color: var(--text);
+    border-radius: 20px;
+    background: linear-gradient(180deg, #adb6bc 0%, #546f84 100%);
+    color: #fff;
     cursor: pointer;
     transition:
-        background-color 160ms ease-out,
+        filter 160ms ease-out,
         color 160ms ease-out;
 }
 
 .button:hover {
-    background: var(--btn-secondary-hover-fill);
-    color: var(--text);
+    color: #fff;
+    filter: brightness(1.1);
+}
+
+.button:active {
+    filter: brightness(0.86);
 }
 
 
 .button::after {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     background: currentColor;
     content: "";
     -webkit-mask: url("/tag-icons/cross.svg") center / contain no-repeat;

@@ -227,23 +227,17 @@ button {
 }
 
 .titleAccentText {
-    position: relative;
-    z-index: 0;
-    display: inline-block;
+    display: inline;
     color: var(--title-accent-color);
     font-style: italic;
     font-weight: var(--medium-text-weight);
+    background: var(--title-accent-bg);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 .titleAccentText::after {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-
-    width: 100%;
-    height: 100%;
-    background: var(--title-accent-bg);
-    content: "";
+    display: none;
 }
 
 .strokeContainer {

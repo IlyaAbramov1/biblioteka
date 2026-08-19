@@ -206,6 +206,11 @@
     padding-top: 6px;
 }
 
+.siteAction a,
+.siteActionInline a {
+    height: 40px;
+}
+
 .siteActionInline {
     display: none;
 }

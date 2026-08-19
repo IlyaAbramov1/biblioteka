@@ -42,17 +42,7 @@ const PLUS_ICON_PATH = `/tag-icons/plus.svg?v=${ASSET_VERSION}`;
 const MINUS_ICON_PATH = `/tag-icons/minus.svg?v=${ASSET_VERSION}`;
 const FILTER_ICON_PATH = `/filter.svg?v=${ASSET_VERSION}`;
 const GRAPH_ICON_PATH = `/graph.svg?v=${ASSET_VERSION}`;
-
-function ShelfIcon() {
-    return (
-        <span className={styles.shelfIcon} aria-hidden="true">
-            <span className={styles.shelfLineTop} />
-            <span className={styles.shelfLineBottom} />
-            <span className={styles.shelfBracketTop} />
-            <span className={styles.shelfBracketBottom} />
-        </span>
-    );
-}
+const BOOK_ICON_PATH = `/book.svg?v=${ASSET_VERSION}`;
 
 function BookmarkIcon() {
     return (
@@ -75,7 +65,14 @@ function ViewTabs({ viewMode, onChange, className = "" }) {
                 onClick={() => onChange("gallery")}
                 aria-pressed={viewMode === "gallery"}
             >
-                <ShelfIcon />
+                <Image
+                    className={styles.viewTabIcon}
+                    src={BOOK_ICON_PATH}
+                    alt=""
+                    width={16}
+                    height={16}
+                    unoptimized
+                />
                 <span>Полки</span>
             </button>
             <button
