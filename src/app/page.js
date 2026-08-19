@@ -666,20 +666,6 @@ export default function HomePage() {
                         aria-modal="true"
                         aria-labelledby="filter-modal-title"
                     >
-                        <svg
-                            className={styles.filterModalShape}
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="390"
-                            height="521"
-                            viewBox="0 0 390 521"
-                            fill="none"
-                            aria-hidden="true"
-                        >
-                            <path
-                                d="M0 29C0 12.9838 12.9837 0 29 0H100.212C108.126 0 115.696 3.23443 121.167 8.95317L122.736 10.5929C128.207 16.3116 135.777 19.5461 143.691 19.5461H360.5C376.516 19.5461 389.5 32.5298 389.5 48.5461V492C389.5 508.016 376.516 521 360.5 521H29C12.9837 521 0 508.016 0 492L0 29Z"
-                                fill="#FAFAFA"
-                            />
-                        </svg>
                         <header className={styles.filterModalHeader}>
                             <span className={styles.filterModalBookmark}>
                                 <BookmarkIcon />

@@ -18,6 +18,7 @@ import styles from "./FullSiteItem.module.css";
 
 const BOOK_LOADER_PAGES = Array.from({ length: 18 }, (_, index) => index + 1);
 const MODAL_EXIT_DURATION = 280;
+const MODAL_GHOST_CLICK_GUARD = 600;
 
 function isPlainLeftClick(event) {
     return (
@@ -117,6 +118,7 @@ export default function FullSiteItem({
 }) {
     const router = useRouter();
     const closeTimerRef = useRef(null);
+    const modalOpenedAtRef = useRef(0);
     const [isClosing, setIsClosing] = useState(false);
     const [portalNode, setPortalNode] = useState(null);
     const isModal = mode === "modal";
@@ -167,6 +169,8 @@ export default function FullSiteItem({
 
     useEffect(() => {
         if (!isModal) return undefined;
+
+        modalOpenedAtRef.current = performance.now();
 
         const scrollY = window.scrollY;
         const previousBodyPosition = document.body.style.position;
@@ -295,7 +299,13 @@ export default function FullSiteItem({
                 role="dialog"
                 aria-modal="true"
                 aria-label={site.title}
-                onClick={closeFullSite}
+                onClick={(event) => {
+                    if (event.target !== event.currentTarget) return;
+
+                    if (performance.now() - modalOpenedAtRef.current < MODAL_GHOST_CLICK_GUARD) return;
+
+                    closeFullSite();
+                }}
             >
                 <div
                     className={`${styles.modalPanel} ${isClosing ? styles.modalPanelClosing : ""}`}

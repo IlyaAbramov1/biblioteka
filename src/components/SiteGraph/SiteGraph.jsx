@@ -481,6 +481,15 @@ export default function SiteGraph({ sites, onOpen }) {
         graphRef.current?.d3ReheatSimulation();
     }, []);
 
+    const handleNodeClick = useCallback((node, event) => {
+        if (!node?.site) return;
+
+        event?.stopPropagation?.();
+        hoveredNodeRef.current = null;
+        setHoveredNode(null);
+        onOpen(node.site);
+    }, [onOpen]);
+
     const isNodeVisible = useCallback((node) => {
         const camera = cameraRef.current;
         const viewport = viewportSizeRef.current;
@@ -646,11 +655,11 @@ export default function SiteGraph({ sites, onOpen }) {
                     setHoveredNode(node || null);
                     if (node) updatePreviewAnchor(node);
                 } : undefined}
-                onNodeClick={(node) => onOpen(node.site)}
-                onBackgroundClick={() => {
+                onNodeClick={handleNodeClick}
+                onBackgroundClick={hasHoverInput ? () => {
                     hoveredNodeRef.current = null;
                     setHoveredNode(null);
-                }}
+                } : undefined}
                 onNodeDrag={handleNodeDrag}
                 onNodeDragEnd={handleNodeDragEnd}
                 onZoom={(camera) => {

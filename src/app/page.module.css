@@ -471,28 +471,21 @@
 .filterModal {
     position: relative;
     width: min(390px, 100vw);
-    height: 521px;
-    min-height: 521px;
-    max-height: calc(var(--vvh, 100dvh) - 32px);
-    padding: 46px 20px calc(19px + env(safe-area-inset-bottom, 0px));
+    height: auto;
+    min-height: 0;
+    max-height: calc(var(--vvh, 100dvh) - 24px);
+    padding: 46px 20px calc(10px + env(safe-area-inset-bottom, 0px));
     overflow-y: auto;
-    background: transparent;
+    background: #fafafa;
+    -webkit-mask-image: url("/filter-modal.svg?v=20260819");
+    mask-image: url("/filter-modal.svg?v=20260819");
+    -webkit-mask-position: top center;
+    mask-position: top center;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     box-shadow: 0 -8px 32px rgb(20 20 20 / 8%);
-}
-
-.filterModalShape {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    pointer-events: none;
-}
-
-.filterModal > :not(.filterModalShape) {
-    position: relative;
-    z-index: 1;
 }
 
 .filterModalHeader {
@@ -568,7 +561,7 @@
 .filterModalSection h3 {
     margin-bottom: 8px;
     color: #c7d1da;
-    font-size: 16px;
+    font-size: var(--font-size-body);
     font-weight: 500;
     letter-spacing: -0.32px;
     line-height: 1.5;
@@ -616,7 +609,7 @@
     background: transparent;
     color: #8599ad;
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--font-size-body);
     font-weight: 500;
     letter-spacing: -0.32px;
     line-height: 1.5;
@@ -648,7 +641,7 @@
     background: #f0f2f5;
     color: #8599ad;
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--font-size-body);
     font-weight: 500;
     letter-spacing: -0.32px;
     line-height: 1.5;
@@ -679,13 +672,13 @@
 }
 
 .modalTagIcon {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
 }
 
 .modalTagToggle {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     opacity: 0.4;
 }
 
@@ -698,7 +691,7 @@
 .filterModalActions {
     display: flex;
     gap: 12px;
-    margin-top: 28px;
+    margin-top: 20px;
 }
 
 .filterModalActions > * {
@@ -898,10 +891,10 @@
         flex: 0 0 36px;
         align-items: center;
         justify-content: center;
-        padding: 7px;
+        padding: 0;
         border: 0;
         border-radius: 18px;
-        background: linear-gradient(180deg, #adb6bc 0%, #546f84 100%);
+        background: transparent;
         cursor: pointer;
         transition: filter 160ms ease, transform 160ms var(--hover-bounce-ease);
     }
@@ -919,7 +912,7 @@
         width: 22px;
         height: 22px;
         display: block;
-        filter: brightness(0) invert(1);
+        filter: none;
         object-fit: contain;
     }
 
@@ -964,7 +957,7 @@
     }
 
     .navGradient {
-        height: calc(118px + env(safe-area-inset-bottom, 0px));
+        display: none;
     }
 
     .filterModalBackdrop {
