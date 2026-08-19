@@ -412,7 +412,8 @@
 }
 
 .siteImages {
-    width: 920px;
+    width: min(920px, 100%);
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -422,6 +423,7 @@
 
 .siteImage {
     width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     border: 1px solid var(--stroke);
@@ -697,6 +699,11 @@
 
     .siteSubtitle {
         line-height: 1.5;
+    }
+
+    .siteImages {
+        width: 100%;
+        gap: 12px;
     }
 
 }

@@ -632,6 +632,8 @@
     appearance: none;
     height: 36px;
     display: inline-flex;
+    flex: 0 0 auto;
+    max-width: 100%;
     align-items: center;
     justify-content: center;
     gap: 4px;
@@ -883,17 +885,25 @@
         pointer-events: auto;
     }
 
+    .mobileFilterControl {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        display: inline-flex;
+        flex: 0 0 36px;
+    }
+
     .mobileFilterButton {
         appearance: none;
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
         display: inline-flex;
-        flex: 0 0 40px;
+        flex: 0 0 36px;
         align-items: center;
         justify-content: center;
         padding: 0;
         border: 0;
-        border-radius: 20px;
+        border-radius: 18px;
         background: linear-gradient(180deg, #adb6bc 0%, #546f84 100%);
         cursor: pointer;
         transition: filter 160ms ease, transform 160ms var(--hover-bounce-ease);
@@ -916,12 +926,32 @@
         object-fit: contain;
     }
 
+    .mobileFilterBadge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        min-width: 16px;
+        height: 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4px;
+        border: 2px solid var(--bg);
+        border-radius: 999px;
+        background: var(--blue);
+        color: #fff;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 1;
+        pointer-events: none;
+    }
+
     .mobileViewTabs {
         position: relative;
         top: auto;
         right: auto;
         z-index: auto;
-        width: 166px;
+        width: 170px;
     }
 
     .heroBlock {

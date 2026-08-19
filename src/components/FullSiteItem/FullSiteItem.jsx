@@ -1,11 +1,12 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+import AccentText from "@/components/AccentText/AccentText";
 import CanvasLogo from "@/components/CanvasLogo/CanvasLogo";
 import CloseButton from "@/components/CloseButton/CloseButton";
 import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
@@ -56,8 +57,15 @@ function SiteDescription({ site, onRelatedSiteOpen }) {
             <Link
                 href={`/site/${relatedSite.slug}`}
                 key={`${relatedSite.slug}-${index}`}
+                scroll
                 onClick={(event) => {
-                    if (!onRelatedSiteOpen || !isPlainLeftClick(event)) return;
+                    if (!isPlainLeftClick(event)) return;
+
+                    if (!onRelatedSiteOpen) {
+                        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+                        return;
+                    }
+
                     event.preventDefault();
                     onRelatedSiteOpen(relatedSite);
                 }}
@@ -118,6 +126,7 @@ export default function FullSiteItem({
 }) {
     const router = useRouter();
     const closeTimerRef = useRef(null);
+    const siteInfoRef = useRef(null);
     const modalOpenedAtRef = useRef(0);
     const [isClosing, setIsClosing] = useState(false);
     const [portalNode, setPortalNode] = useState(null);
@@ -212,8 +221,16 @@ export default function FullSiteItem({
         };
     }, []);
 
+    useLayoutEffect(() => {
+        siteInfoRef.current?.scrollTo({ top: 0, left: 0, behavior: "auto" });
+
+        if (!isModal) {
+            window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        }
+    }, [isModal, site.slug]);
+
     const content = (
-        <div className={styles.siteInfoAndVideo}>
+        <div ref={siteInfoRef} className={styles.siteInfoAndVideo}>
             <CloseButton
                 className={styles.closeButtonPosition}
                 onClick={closeFullSite}
@@ -225,7 +242,7 @@ export default function FullSiteItem({
                     <div className={styles.siteTextColumn}>
                         <div className={styles.siteTitleLine}>
                             <div className={styles.siteTitle}>
-                                <span className="titleAccentText">{site.title}</span>
+                                <AccentText>{site.title}</AccentText>
                             </div>
                             <div className={styles.siteCategory}>{site.category}</div>
                         </div>

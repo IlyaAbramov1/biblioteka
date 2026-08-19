@@ -25,8 +25,6 @@ const SOLO_COLLISION_FORCE_MULTIPLIER = 2.2;
 const SOLO_COLLISION_DAMPING_MULTIPLIER = 3;
 const NODE_SIZE_MULTIPLIER = 1.2;
 const MIN_ZOOM = 0.00125;
-const MAX_ZOOM = 20;
-const MOBILE_MAX_ZOOM = 400;
 const INITIAL_LAYOUT_RADIUS = 280000;
 const MOBILE_LAYOUT_SCALE = 2;
 const CATEGORY_LABELS = {
@@ -250,7 +248,6 @@ export default function SiteGraph({ sites, onOpen }) {
     const [previewAnchor, setPreviewAnchor] = useState({ x: 0, y: 0 });
 
     const layoutScale = hasHoverInput ? 1 : MOBILE_LAYOUT_SCALE;
-    const maxZoom = hasHoverInput ? MAX_ZOOM : MOBILE_MAX_ZOOM;
     viewportSizeRef.current = size;
 
     const graphData = useMemo(() => {
@@ -673,8 +670,8 @@ export default function SiteGraph({ sites, onOpen }) {
                 cooldownTime={hasHoverInput ? 30000 : 6000}
                 d3AlphaDecay={hasHoverInput ? 0.006 : 0.028}
                 d3VelocityDecay={hasHoverInput ? 0.09 : 0.22}
-                minZoom={MIN_ZOOM}
-                maxZoom={maxZoom}
+                minZoom={0}
+                maxZoom={Number.POSITIVE_INFINITY}
             />
 
             {hasHoverInput && hoveredSite ? (

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import CanvasLogo from "@/components/CanvasLogo/CanvasLogo";
+import AccentText from "@/components/AccentText/AccentText";
 import FullSiteItem from "@/components/FullSiteItem/FullSiteItem";
 import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton/SecondaryButton";
@@ -164,6 +165,7 @@ export default function HomePage() {
         || draftTags.length !== selectedTags.length
         || draftTags.some((tag) => !selectedTags.includes(tag));
     const hasDraftFilters = draftCategory !== null || draftTags.length > 0;
+    const filterCount = (selectedCategory === null ? 0 : 1) + selectedTags.length;
     const draftCategoryIndex = Math.max(
         0,
         categoryOptions.findIndex((option) => option.value === draftCategory)
@@ -305,13 +307,21 @@ export default function HomePage() {
         setVisibleCount(BATCH_SIZE);
     };
 
+    const scrollToPageTop = () => {
+        if (typeof window === "undefined") return;
+
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    };
+
     const clearFilters = () => {
+        scrollToPageTop();
         resetVisibleCount();
         setSelectedCategory(null);
         setSelectedTags([]);
     };
 
     const selectCategory = (category) => {
+        scrollToPageTop();
         resetVisibleCount();
         setSelectedCategory((currentCategory) => (
             currentCategory === category ? null : category
@@ -319,6 +329,7 @@ export default function HomePage() {
     };
 
     const toggleTag = (tag) => {
+        scrollToPageTop();
         resetVisibleCount();
         setSelectedTags((currentTags) => (
             currentTags.includes(tag)
@@ -349,6 +360,7 @@ export default function HomePage() {
     const applyDraftFilters = () => {
         if (!draftFiltersChanged) return;
 
+        scrollToPageTop();
         resetVisibleCount();
         setSelectedCategory(draftCategory);
         setSelectedTags(draftTags);
@@ -362,6 +374,7 @@ export default function HomePage() {
             homeUrlRef.current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
         }
 
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
         window.history.pushState({ siteSlug: site.slug }, "", buildSitePath(site.slug));
         setActiveSiteSlug(site.slug);
     };
@@ -403,7 +416,7 @@ export default function HomePage() {
                                 delay: HERO_TITLE_DELAY,
                             }}
                         >
-                            <span className="titleAccentText">Дизайн-библиотека</span> — курируемая коллекция сайтов дизайнеров и студий
+                            <AccentText>Дизайн-библиотека</AccentText> — курируемая коллекция сайтов дизайнеров и студий
                         </motion.h1>
                     </div>
                     <motion.p
@@ -559,22 +572,29 @@ export default function HomePage() {
             </motion.nav>
 
             <div className={styles.mobileControls}>
-                <button
-                    type="button"
-                    className={styles.mobileFilterButton}
-                    onClick={openFilterModal}
-                    aria-label="Открыть фильтры"
-                    aria-haspopup="dialog"
-                    aria-expanded={isFilterModalOpen}
-                >
-                    <Image
-                        src={FILTER_ICON_PATH}
-                        alt=""
-                        width={22}
-                        height={22}
-                        unoptimized
-                    />
-                </button>
+                <span className={styles.mobileFilterControl}>
+                    <button
+                        type="button"
+                        className={styles.mobileFilterButton}
+                        onClick={openFilterModal}
+                        aria-label="Открыть фильтры"
+                        aria-haspopup="dialog"
+                        aria-expanded={isFilterModalOpen}
+                    >
+                        <Image
+                            src={FILTER_ICON_PATH}
+                            alt=""
+                            width={22}
+                            height={22}
+                            unoptimized
+                        />
+                    </button>
+                    {filterCount > 0 ? (
+                        <span className={styles.mobileFilterBadge} aria-label={`Активных фильтров: ${filterCount}`}>
+                            {filterCount}
+                        </span>
+                    ) : null}
+                </span>
                 <ViewTabs
                     viewMode={viewMode}
                     onChange={setViewMode}
