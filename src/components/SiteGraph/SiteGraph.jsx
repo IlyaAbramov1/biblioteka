@@ -25,9 +25,10 @@ const SOLO_COLLISION_FORCE_MULTIPLIER = 2.2;
 const SOLO_COLLISION_DAMPING_MULTIPLIER = 3;
 const NODE_SIZE_MULTIPLIER = 1.2;
 const MIN_ZOOM = 0.00125;
-const MAX_ZOOM = 16;
+const MAX_ZOOM = 20;
+const MOBILE_MAX_ZOOM = 400;
 const INITIAL_LAYOUT_RADIUS = 280000;
-const MOBILE_LAYOUT_SCALE = 0.36;
+const MOBILE_LAYOUT_SCALE = 2;
 const CATEGORY_LABELS = {
     "Дизайнер": "Designer",
     "Дизайн-студия": "Design Studio",
@@ -78,18 +79,55 @@ function getCollisionRadius(node, layoutScale = 1) {
 
 function createCollisionForce(layoutScale = 1) {
     let nodes = [];
+    let collisionRadii = [];
+    let collisionCellSize = 1;
     let strength = 0.11;
     let damping = 0.16;
     let maxImpulse = 54;
 
     const force = (alpha = 1) => {
+        const spatialGrid = new Map();
+        const predictedPositions = nodes.map((node, index) => {
+            const x = node.x + (node.vx || 0);
+            const y = node.y + (node.vy || 0);
+            const cellX = Math.floor(x / collisionCellSize);
+            const cellY = Math.floor(y / collisionCellSize);
+            const cellKey = `${cellX}:${cellY}`;
+            const cell = spatialGrid.get(cellKey);
+
+            if (cell) {
+                cell.push(index);
+            } else {
+                spatialGrid.set(cellKey, [index]);
+            }
+
+            return { x, y, cellX, cellY };
+        });
+
         for (let index = 0; index < nodes.length; index += 1) {
             const node = nodes[index];
-            const nodeRadius = getCollisionRadius(node, layoutScale);
+            const nodeRadius = collisionRadii[index];
+            const nodePosition = predictedPositions[index];
+            const nearbyIndices = [];
 
-            for (let otherIndex = index + 1; otherIndex < nodes.length; otherIndex += 1) {
+            for (let offsetX = -1; offsetX <= 1; offsetX += 1) {
+                for (let offsetY = -1; offsetY <= 1; offsetY += 1) {
+                    const cell = spatialGrid.get(
+                        `${nodePosition.cellX + offsetX}:${nodePosition.cellY + offsetY}`
+                    );
+
+                    if (!cell) continue;
+                    cell.forEach((otherIndex) => {
+                        if (otherIndex > index) nearbyIndices.push(otherIndex);
+                    });
+                }
+            }
+
+            nearbyIndices.sort((firstIndex, secondIndex) => firstIndex - secondIndex);
+
+            for (const otherIndex of nearbyIndices) {
                 const other = nodes[otherIndex];
-                const otherRadius = getCollisionRadius(other, layoutScale);
+                const otherRadius = collisionRadii[otherIndex];
                 const rawDx = (node.x + (node.vx || 0)) - (other.x + (other.vx || 0));
                 const rawDy = (node.y + (node.vy || 0)) - (other.y + (other.vy || 0));
                 const distance = Math.hypot(rawDx, rawDy);
@@ -137,6 +175,8 @@ function createCollisionForce(layoutScale = 1) {
 
     force.initialize = (nextNodes) => {
         nodes = nextNodes;
+        collisionRadii = nodes.map((node) => getCollisionRadius(node, layoutScale));
+        collisionCellSize = Math.max(1, Math.max(...collisionRadii) * 2);
     };
     force.strength = (nextStrength) => {
         if (nextStrength === undefined) return strength;
@@ -199,6 +239,11 @@ export default function SiteGraph({ sites, onOpen }) {
     const revealStartRef = useRef(0);
     const hoveredNodeRef = useRef(null);
     const dragMotionRef = useRef(new Map());
+    const cameraRef = useRef({ k: MIN_ZOOM, x: 0, y: 0 });
+    const viewportSizeRef = useRef(getViewportSize());
+    const fontsReadyRef = useRef(
+        typeof document === "undefined" || !document.fonts || document.fonts.status === "loaded"
+    );
     const [size, setSize] = useState(getViewportSize);
     const [hasHoverInput, setHasHoverInput] = useState(hasHoverCapability);
     const [graphInstance, setGraphInstance] = useState(null);
@@ -206,6 +251,8 @@ export default function SiteGraph({ sites, onOpen }) {
     const [previewAnchor, setPreviewAnchor] = useState({ x: 0, y: 0 });
 
     const layoutScale = hasHoverInput ? 1 : MOBILE_LAYOUT_SCALE;
+    const maxZoom = hasHoverInput ? MAX_ZOOM : MOBILE_MAX_ZOOM;
+    viewportSizeRef.current = size;
 
     const graphData = useMemo(() => {
         const links = getSiteRelations(sites);
@@ -300,8 +347,27 @@ export default function SiteGraph({ sites, onOpen }) {
     }, [graphData]);
 
     useEffect(() => {
+        if (!document.fonts || fontsReadyRef.current) return undefined;
+
+        let isActive = true;
+        document.fonts.ready.then(() => {
+            if (!isActive) return;
+
+            fontsReadyRef.current = true;
+            graphData.nodes.forEach((node) => {
+                delete node.__labelMetrics;
+            });
+            graphRef.current?.refresh();
+        });
+
+        return () => {
+            isActive = false;
+        };
+    }, [graphData]);
+
+    useEffect(() => {
         const graph = graphInstance;
-        if (!graph || !size.width || !size.height) return undefined;
+        if (!graph) return undefined;
 
         if (randomizedGraphDataRef.current !== graphData) {
             const layoutSeed = Math.floor(Math.random() * 0x7fffffff);
@@ -356,11 +422,13 @@ export default function SiteGraph({ sites, onOpen }) {
         const overviewFrame = window.requestAnimationFrame(setOverviewCamera);
         const overviewTimer = window.setTimeout(setOverviewCamera, 120);
 
+        // Keep viewport resizing separate from camera initialization. On mobile,
+        // visualViewport changes during pinch gestures and must not reset the zoom.
         return () => {
             window.cancelAnimationFrame(overviewFrame);
             window.clearTimeout(overviewTimer);
         };
-    }, [graphData, graphInstance, layoutScale, size.height, size.width]);
+    }, [graphData, graphInstance, layoutScale]);
 
     const handleGraphRef = useCallback((node) => {
         graphRef.current = node;
@@ -414,6 +482,25 @@ export default function SiteGraph({ sites, onOpen }) {
         graphRef.current?.d3ReheatSimulation();
     }, []);
 
+    const isNodeVisible = useCallback((node) => {
+        const camera = cameraRef.current;
+        const viewport = viewportSizeRef.current;
+        const screenX = (node.x - camera.x) * camera.k + viewport.width / 2;
+        const screenY = (node.y - camera.y) * camera.k + viewport.height / 2;
+        const category = CATEGORY_LABELS[node.site.category] || node.site.category || "";
+        const fallbackHorizontalMargin =
+            (String(node.site.title).length + String(category).length) * 18 + 32;
+        const horizontalMargin = node.__visibilityMarginX || fallbackHorizontalMargin;
+        const verticalMargin = 96;
+
+        return (
+            screenX >= -horizontalMargin
+            && screenX <= viewport.width + horizontalMargin
+            && screenY >= -verticalMargin
+            && screenY <= viewport.height + verticalMargin
+        );
+    }, []);
+
     const drawNode = useCallback((node, context, globalScale) => {
         const elapsed = performance.now() - revealStartRef.current - node.revealDelay;
         const progress = Math.max(0, Math.min(1, elapsed / 300));
@@ -446,8 +533,26 @@ export default function SiteGraph({ sites, onOpen }) {
         context.textBaseline = "bottom";
         context.font = `500 ${fontSize}px Roboto, sans-serif`;
         context.letterSpacing = "0px";
-        const titleWidth = context.measureText(node.site.title).width;
-        const categoryWidth = category ? context.measureText(category).width : 0;
+        const font = context.font;
+        const cachedMetrics = node.__labelMetrics;
+        let titleWidth;
+        let categoryWidth;
+
+        if (
+            fontsReadyRef.current
+            && cachedMetrics?.font === font
+            && cachedMetrics.category === category
+        ) {
+            titleWidth = cachedMetrics.titleWidth;
+            categoryWidth = cachedMetrics.categoryWidth;
+        } else {
+            titleWidth = context.measureText(node.site.title).width;
+            categoryWidth = category ? context.measureText(category).width : 0;
+
+            if (fontsReadyRef.current) {
+                node.__labelMetrics = { font, category, titleWidth, categoryWidth };
+            }
+        }
         const labelGap = category ? 4 * labelZoomFactor / normalizedScale : 0;
         const labelWidth = titleWidth + labelGap + categoryWidth;
         const labelX = -labelWidth / 2;
@@ -478,6 +583,10 @@ export default function SiteGraph({ sites, onOpen }) {
         context.restore();
 
         node.__paintRadius = Math.max(radius, 9 * nodeZoomFactor / normalizedScale);
+        node.__visibilityMarginX = Math.max(
+            96,
+            labelWidth * normalizedScale / labelZoomFactor * 2.15 / 2 + 24
+        );
     }, [hoveredNode, neighbourIds]);
 
     const paintPointerArea = useCallback((node, color, context) => {
@@ -514,6 +623,7 @@ export default function SiteGraph({ sites, onOpen }) {
                 height={size.height}
                 graphData={graphData}
                 backgroundColor="#fafafa"
+                nodeVisibility={isNodeVisible}
                 nodeCanvasObject={drawNode}
                 nodePointerAreaPaint={paintPointerArea}
                 linkColor={(link) => {
@@ -544,7 +654,10 @@ export default function SiteGraph({ sites, onOpen }) {
                 }}
                 onNodeDrag={handleNodeDrag}
                 onNodeDragEnd={handleNodeDragEnd}
-                onZoom={() => updatePreviewAnchor()}
+                onZoom={(camera) => {
+                    cameraRef.current = camera;
+                    updatePreviewAnchor();
+                }}
                 enableNodeDrag={hasHoverInput}
                 showPointerCursor={hasHoverInput}
                 warmupTicks={0}
@@ -553,7 +666,7 @@ export default function SiteGraph({ sites, onOpen }) {
                 d3AlphaDecay={hasHoverInput ? 0.006 : 0.028}
                 d3VelocityDecay={hasHoverInput ? 0.09 : 0.22}
                 minZoom={MIN_ZOOM}
-                maxZoom={MAX_ZOOM}
+                maxZoom={maxZoom}
             />
 
             {hasHoverInput && hoveredSite ? (
