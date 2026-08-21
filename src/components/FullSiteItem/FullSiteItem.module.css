@@ -215,10 +215,23 @@
     display: none;
 }
 
-.siteVideoFrame {
+@property --tomat-sticker-dist {
+    syntax: "<percentage>";
+    initial-value: 100%;
+    inherits: true;
+}
+
+.siteMedia {
     position: relative;
     width: 920px;
     margin: 0 auto;
+    flex: 0 0 auto;
+}
+
+.siteVideoFrame {
+    position: relative;
+    width: 920px;
+    margin: 0;
     aspect-ratio: 2 / 1;
     flex: 0 0 auto;
     overflow: hidden;
@@ -249,6 +262,166 @@
 
 .siteVideoReady {
     opacity: 1;
+}
+
+.tomatSticker {
+    position: absolute;
+    top: -78px;
+    right: -38px;
+    z-index: 3;
+    display: block;
+    width: min(139px, 22vw);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.40));
+    cursor: pointer;
+    perspective: 700px;
+    transition: transform 240ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.tomatSticker::before {
+    position: absolute;
+    inset: 7%;
+    z-index: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(49, 110, 255, 0.7), transparent 68%);
+    content: "";
+    filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+    animation: tomatStickerGlow 3.6s ease-in-out 700ms infinite;
+}
+
+.tomatSticker:hover,
+.tomatSticker:focus-visible {
+    transform: translateY(-3px) rotate(-1deg) scale(1.04);
+}
+
+.tomatSticker:hover::before,
+.tomatSticker:focus-visible::before {
+    animation: tomatStickerHoverGlow 1.2s ease-in-out infinite;
+}
+
+.tomatStickerInner {
+    --tomat-sticker-remaining: calc(100% - var(--tomat-sticker-dist));
+
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    transform-origin: 76% 80%;
+    animation: tomatStickerPlace 1s cubic-bezier(.68, .71, .33, 1.06) both;
+}
+
+.tomatStickerImage {
+    position: absolute;
+    inset: 0;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: url("#tomat-sticker-filter");
+    mask: linear-gradient(
+        -45deg,
+        black var(--tomat-sticker-remaining),
+        transparent var(--tomat-sticker-remaining)
+    );
+    -webkit-mask: linear-gradient(
+        -45deg,
+        black var(--tomat-sticker-remaining),
+        transparent var(--tomat-sticker-remaining)
+    );
+}
+
+.tomatStickerPeel {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    transform: translate(
+        calc(var(--tomat-sticker-dist) - var(--tomat-sticker-remaining)),
+        calc(var(--tomat-sticker-dist) - var(--tomat-sticker-remaining))
+    );
+    mask: linear-gradient(
+        -45deg,
+        black var(--tomat-sticker-dist),
+        transparent var(--tomat-sticker-dist)
+    );
+    -webkit-mask: linear-gradient(
+        -45deg,
+        black var(--tomat-sticker-dist),
+        transparent var(--tomat-sticker-dist)
+    );
+}
+
+.tomatStickerPeel::after {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+        -45deg,
+        transparent calc(var(--tomat-sticker-dist) - 15%),
+        rgba(0, 0, 0, 0.34) var(--tomat-sticker-dist)
+    );
+    content: "";
+}
+
+.tomatStickerPeelInner {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: url("/tomat-medal.svg") center / contain no-repeat;
+    filter: contrast(10%) brightness(170%);
+    transform: scale(-1, -1);
+}
+
+@keyframes tomatStickerPlace {
+    0% {
+        --tomat-sticker-dist: 100%;
+        opacity: 0;
+        transform: translate(28px, -26px) rotate(17deg) scale(1.16);
+    }
+
+    100% {
+        --tomat-sticker-dist: 0%;
+        opacity: 1;
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+}
+
+@keyframes tomatStickerGlow {
+    0%,
+    100% {
+        opacity: 0.18;
+        transform: scale(0.88);
+    }
+
+    50% {
+        opacity: 0.62;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes tomatStickerHoverGlow {
+    0%,
+    100% {
+        opacity: 0.48;
+        transform: scale(0.96);
+    }
+
+    50% {
+        opacity: 0.95;
+        transform: scale(1.18);
+    }
+}
+
+.tomatStickerFilterDefs {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: visible;
+    pointer-events: none;
 }
 
 .bookLoader {
@@ -629,8 +802,18 @@
         width: 100%
     }
 
+    .siteMedia {
+        width: 100%;
+    }
+
     .siteSubtitle {
         width: 100%
+    }
+
+    .tomatSticker {
+        top: -56px;
+        right: -12px;
+        width: min(112px, 26vw);
     }
 
     .siteInfoAndVideo {

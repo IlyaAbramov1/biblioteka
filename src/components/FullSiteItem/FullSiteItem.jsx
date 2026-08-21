@@ -139,6 +139,89 @@ function SiteVideo({ src }) {
     );
 }
 
+function TomatStickerFilter() {
+    return (
+        <svg className={styles.tomatStickerFilterDefs} aria-hidden="true">
+            <defs>
+                <filter
+                    id="tomat-sticker-filter"
+                    x="-20%"
+                    y="-20%"
+                    width="140%"
+                    height="140%"
+                    colorInterpolationFilters="sRGB"
+                >
+                    <feMorphology
+                        in="SourceAlpha"
+                        result="dilate"
+                        operator="dilate"
+                        radius="2"
+                    />
+                    <feFlood floodColor="#fafafa" result="outlineColor" />
+                    <feTurbulence
+                        baseFrequency="0.03"
+                        seed="1"
+                        numOctaves="3"
+                        type="turbulence"
+                        result="turbulence"
+                    />
+                    <feComposite
+                        in="turbulence"
+                        in2="dilate"
+                        operator="in"
+                        result="outline"
+                    />
+                    <feComposite
+                        in="outlineColor"
+                        in2="dilate"
+                        operator="in"
+                        result="outlineFlat"
+                    />
+                    <feMerge result="merged">
+                        <feMergeNode in="outlineFlat" />
+                        <feMergeNode in="outline" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                    <feSpecularLighting
+                        in="blur"
+                        result="lighting"
+                        surfaceScale="5"
+                        specularConstant="0.5"
+                        specularExponent="120"
+                        lightingColor="#ffffff"
+                    >
+                        <fePointLight x="72" y="28" z="300" />
+                    </feSpecularLighting>
+                    <feComposite
+                        in="lighting"
+                        in2="SourceAlpha"
+                        operator="in"
+                        result="composite"
+                    />
+                    <feComposite
+                        in="merged"
+                        in2="composite"
+                        operator="arithmetic"
+                        k1="0"
+                        k2="1"
+                        k3="1"
+                        k4="0"
+                        result="litPaint"
+                    />
+                    <feDropShadow
+                        dx="0"
+                        dy="2"
+                        stdDeviation="2"
+                        floodColor="#000"
+                        floodOpacity="0.5"
+                    />
+                </filter>
+            </defs>
+        </svg>
+    );
+}
+
 export default function FullSiteItem({
     site,
     backHref = "/",
@@ -155,6 +238,7 @@ export default function FullSiteItem({
     const isModal = mode === "modal";
     const siteScreens = getSiteScreens(site);
     const fullVideoSrc = getSiteVideoUrl(site);
+    const isJoguman = site.slug === "joguman";
     const tags = getSiteTags(site.specialization, Number.POSITIVE_INFINITY);
     const renderSiteAction = () => (
         site.link ? (
@@ -326,7 +410,35 @@ export default function FullSiteItem({
             ) : null}
 
             {fullVideoSrc ? (
-                <SiteVideo key={fullVideoSrc} src={fullVideoSrc} />
+                <div className={`${styles.siteMedia} ${isJoguman ? styles.jogumanMedia : ""}`}>
+                    <SiteVideo key={fullVideoSrc} src={fullVideoSrc} />
+                    {isJoguman ? (
+                        <>
+                            <TomatStickerFilter />
+                            <a
+                                className={styles.tomatSticker}
+                                href="https://tomat.team/"
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label="Перейти на сайт агентства Tomat"
+                            >
+                                <span className={styles.tomatStickerInner}>
+                                    <Image
+                                        src="/tomat-medal.svg"
+                                        alt=""
+                                        width={139}
+                                        height={139}
+                                        unoptimized
+                                        className={styles.tomatStickerImage}
+                                    />
+                                    <span className={styles.tomatStickerPeel} aria-hidden="true">
+                                        <span className={styles.tomatStickerPeelInner} />
+                                    </span>
+                                </span>
+                            </a>
+                        </>
+                    ) : null}
+                </div>
             ) : null}
         </div>
     );
