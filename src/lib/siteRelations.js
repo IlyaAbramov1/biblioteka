@@ -1,4 +1,5 @@
 const CURATED_RELATIONS = [
+    ["xchyler", "hex", "Работа Xchyler Drenth в HEX"],
     ["evil-martians", "redis-agency", "Иллюстрации Redis Agency для Evil Martians"],
     ["koji", "redis-agency", "KOJI основана экс-CEO Redis"],
     ["alex-vanderzon", "benji-taylor", "Los Feliz Engineering / Family"],
@@ -25,6 +26,9 @@ const CURATED_RELATIONS = [
 ];
 
 const DESCRIPTION_MENTIONS = {
+    xchyler: [
+        ["hex.inc", "hex"],
+    ],
     "evil-martians": [
         ["Redis Agency", "redis-agency"],
     ],

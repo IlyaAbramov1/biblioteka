@@ -1,5 +1,113 @@
 [
     {
+        "slug": "devtown",
+        "title": "DevTown",
+        "subtitle": "DevTown — город с проектами дизайн-студии .dev. Сайт выполнен в стилистике трёхмерного города с динамичными иллюстрациями, по которым можно кликать: каждая из них открывает отдельный проект. В портфолио есть работа с репером Платина, Omanko и Яндексом. Очень креативный, сильный и безумно динамичный проект, один из самых впечатляющих в библиотеке!",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Art",
+            "Branding"
+        ],
+        "link": "https://devtown.srnk.dev/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/devtown/devtown-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/devtown/devtown-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "xchyler",
+        "title": "Xchyler Drenth",
+        "subtitle": "Xchyler Drenth — мультидисциплинарный и продуктовый дизайнер с Филиппин, работающий в hex.inc. Сайт сделан безумно минималистично: одностраничная вёрстка без скролла, несколько абзацев, выразительная иллюстрация и ссылки. Всё это очень точно относит нас к стилистике как дизайн-инженерии, хотя сам Xchyler позиционирует себя как продуктовый дизайнер.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product",
+            "Web"
+        ],
+        "link": "https://www.xchyler.works/",
+        "previewVideoKey": "",
+        "fullVideoKey": "",
+        "siteScreens": [
+            "screens/xchyler/xchyler-1.webp"
+        ],
+        "previewScreen": "screens/xchyler/xchyler-1.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "kons",
+        "title": "Kons",
+        "subtitle": "Kons — продуктовый дизайнер и дизайн-инженер. Красивый одностраничный сайт с классными анимациями по скроллу, интересными типографическими решениями и акцидентным пикселизованным шрифтом. Особенно важна лапидарная структура сайта — сначала дизайнер коротко описывает себя в хиро-блоке, затем большим скроллом показывает портфолио в классных дриббл-шотах и постепенно раскрывает себя глубже — этап за этапом.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer",
+            "Product",
+            "Web"
+        ],
+        "link": "https://kons.design/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/kons/kons-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/kons/kons-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "ozzy",
+        "title": "Ozzy",
+        "subtitle": "Ozzy — дизайн-инженер, который собрал сайт в минималистичной стилистике с акцентом на его работы: простая чёрно-белая вёрстка и дриббл-шоты, показывающие его анимационные и интерактивные проекты.  Очень сильное портфолио, сразу создающее впечатление о нём как о специалисте по интерактивному дизайну.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer",
+            "Web",
+            "Motion Design"
+        ],
+        "link": "https://www.ozzyx.xyz/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/ozzy/ozzy-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/ozzy/ozzy-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "florian-keim",
+        "title": "Florian Kiem",
+        "subtitle": "Florian Kiem — немецкий дизайн-инженер, специализирующийся на дизайне программных обеспечений. Его сайт разделён на три секции — работы, информация о нём и статьи — и сделан очень минималистично и точно. Ничего лишнего: только выверенная до мелочей вёрстка, портфолио в формате анимационных шотов и прекрасные микроэлементы, вроде логотипа слева сверху, который постепенно складывается в его полное имя.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Design Engineer",
+            "Web",
+            "Product"
+        ],
+        "link": "https://floriankiem.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/florian-keim/florian-keim-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/florian-keim/florian-keim-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "joguman",
+        "title": "JOGUMAN",
+        "subtitle": "JOGUMAN — корейская креативная студия с безумно интересным и уникальным иллюстративным портфолио. Главный герой сайта — прекрасный зелёненький динозаврик, а каждый объект на сцене кликабелен: лампа переключает светлую и тёмную тему, полка ведёт к проектам, а колбочка — к экспериментам студии.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Web",
+            "Illustration",
+            "Motion Design"
+        ],
+        "link": "https://en.joguman.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/joguman/joguman-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/joguman/joguman-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
         "slug": "evil-martians",
         "title": "Evil Martians",
         "subtitle": "Evil Martians — зарубежная студия с фаундерами из России, занимающаяся дизайном и разработкой цифровых продуктов. Круто, как чётко в херо-блоке ребята описывают свои основные направления разработки — developer tools, AI и стартапы. Сайт был недавно обновлён и получил новый дизайн главной страницы, сохранив уникальную «громкую» вёрстку. Также отмечу их прекрасный лого инопланетянина, а также иллюстрации, которые им делает студия Redis Agency.",
@@ -13,8 +121,7 @@
         "fullVideoKey": "screens/evil-martians/evil-martians-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/evil-martians/evil-martians-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "spoony",
@@ -31,8 +138,7 @@
         "fullVideoKey": "screens/spoony/spoony-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/spoony/spoony-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "max",
@@ -49,8 +155,7 @@
         "fullVideoKey": "screens/max/max-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/max/max-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "madhurima",
@@ -65,8 +170,7 @@
         "fullVideoKey": "screens/madhurima/madhurima-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/madhurima/madhurima-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "alex-vanderzon",
@@ -81,8 +185,7 @@
         "fullVideoKey": "screens/alex-vanderzon/alex-vanderzon-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/alex-vanderzon/alex-vanderzon-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "moonsight",
@@ -99,8 +202,7 @@
         "fullVideoKey": "screens/moonsight/moonsight-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/moonsight/moonsight-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "martin-azambuja",
@@ -115,8 +217,7 @@
         "fullVideoKey": "screens/martin-azambuja/martin-azambuja-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/martin-azambuja/martin-azambuja-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "juan-mora",
@@ -132,8 +233,7 @@
         "fullVideoKey": "screens/juan-mora/juan-mora-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/juan-mora/juan-mora-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "sonicxboy",
@@ -149,8 +249,7 @@
         "fullVideoKey": "screens/sonicxboy/sonicxboy-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/sonicxboy/sonicxboy-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "desaina",
@@ -166,8 +265,7 @@
         "fullVideoKey": "screens/desaina/desaina-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/desaina/desaina-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "michael-goldstein",
@@ -185,8 +283,7 @@
             "screens/michael-goldstein/michael-goldstein-2.webp"
         ],
         "previewScreen": "screens/michael-goldstein/michael-goldstein-1.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "ubernatural",
@@ -202,8 +299,7 @@
         "fullVideoKey": "screens/ubernatural/ubernatural-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/ubernatural/ubernatural-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "saud",
@@ -218,8 +314,7 @@
         "fullVideoKey": "screens/saud/saud-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/saud/saud-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "shcherban",
@@ -1279,7 +1374,6 @@
         "previewScreen": "screens/wojtek-witkowski/wojtek-witkowski-preview.webp",
         "enabled": true
     },
-    
     {
         "slug": "petrick",
         "title": "Petrick",
@@ -5094,20 +5188,6 @@
         "enabled": false
     },
     {
-        "slug": "konstantin-filatov",
-        "title": "Konstantin Filatov",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Product"
-        ],
-        "link": "https://kons.fyi/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "martin-pohmall",
         "title": "Martin Pohmall",
         "subtitle": "",
@@ -5482,20 +5562,6 @@
         "enabled": false
     },
     {
-        "slug": "florian-kiem",
-        "title": "Florian Kiem",
-        "subtitle": "",
-        "category": "Дизайнер",
-        "specialization": [
-            "Design Engineer"
-        ],
-        "link": "https://floriankiem.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "natali-almosa",
         "title": "Natali Almosa",
         "subtitle": "",
@@ -5852,4 +5918,3 @@
         "enabled": false
     }
 ]
-

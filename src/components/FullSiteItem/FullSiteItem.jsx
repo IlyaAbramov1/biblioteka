@@ -95,6 +95,24 @@ function BookLoader() {
 
 function SiteVideo({ src }) {
     const [isReady, setIsReady] = useState(false);
+    const videoRef = useRef(null);
+
+    const markReady = useCallback(() => {
+        setIsReady(true);
+    }, []);
+
+    useEffect(() => {
+        const video = videoRef.current;
+
+        // On a statically rendered page the browser can finish loading the
+        // video before React attaches the media event listeners.
+        if (video?.readyState >= 2) {
+            const frame = window.requestAnimationFrame(markReady);
+            return () => window.cancelAnimationFrame(frame);
+        }
+
+        return undefined;
+    }, [markReady, src]);
 
     return (
         <div className={styles.siteVideoFrame}>
@@ -104,13 +122,17 @@ function SiteVideo({ src }) {
                 </div>
             ) : null}
             <video
+                ref={videoRef}
                 src={src}
                 autoPlay
                 muted
                 loop
                 playsInline
                 preload="auto"
-                onLoadedData={() => setIsReady(true)}
+                onLoadedMetadata={markReady}
+                onLoadedData={markReady}
+                onCanPlay={markReady}
+                onError={markReady}
                 className={`${styles.siteVideo} ${isReady ? styles.siteVideoReady : ""}`}
             />
         </div>

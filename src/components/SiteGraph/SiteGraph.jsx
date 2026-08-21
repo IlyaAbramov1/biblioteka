@@ -26,6 +26,8 @@ const SOLO_COLLISION_DAMPING_MULTIPLIER = 3;
 const NODE_SIZE_MULTIPLIER = 1.2;
 const MIN_ZOOM = 0.00125;
 const INITIAL_LAYOUT_RADIUS = 280000;
+const CONNECTED_COMPONENT_RADIUS = 190000;
+const CONNECTED_NODE_RADIUS = 68000;
 const MOBILE_LAYOUT_SCALE = 2;
 const CATEGORY_LABELS = {
     "Дизайнер": "Designer",
@@ -194,22 +196,122 @@ function createCollisionForce(layoutScale = 1) {
     return force;
 }
 
-function getInitialPosition(site, index, total, layoutSeed = 0, layoutScale = 1) {
-    const seed = Math.abs(hashString(site.slug) ^ layoutSeed);
-    const angle = index * 2.399963 + seededUnit(seed) * 0.9;
-    const radius = 12000 + Math.sqrt((index + 1) / Math.max(total, 1)) * INITIAL_LAYOUT_RADIUS;
-    const jitter = 0.72 + seededUnit(seed + 17) * 0.58;
+function getLinkNodeId(endpoint) {
+    return typeof endpoint === "object" ? endpoint.id : endpoint;
+}
 
-    return {
-        x: (
-            Math.cos(angle) * radius * jitter
-            + (seededUnit(seed + 31) - 0.5) * 9000
-        ) * layoutScale,
-        y: (
-            Math.sin(angle) * radius / jitter
-            + (seededUnit(seed + 47) - 0.5) * 7800
-        ) * layoutScale,
-    };
+function getGraphLayoutPositions(nodes, links, layoutSeed = 0, layoutScale = 1) {
+    const nodeById = new Map(nodes.map((node) => [node.id, node]));
+    const adjacency = new Map(nodes.map((node) => [node.id, new Set()]));
+
+    links.forEach((link) => {
+        const source = getLinkNodeId(link.source);
+        const target = getLinkNodeId(link.target);
+
+        if (!nodeById.has(source) || !nodeById.has(target)) return;
+        adjacency.get(source).add(target);
+        adjacency.get(target).add(source);
+    });
+
+    const connectedIds = nodes
+        .filter((node) => adjacency.get(node.id).size > 0)
+        .map((node) => node.id);
+    const visited = new Set();
+    const components = [];
+
+    connectedIds.forEach((startId) => {
+        if (visited.has(startId)) return;
+
+        const component = [];
+        const queue = [startId];
+        visited.add(startId);
+
+        while (queue.length) {
+            const nodeId = queue.shift();
+            component.push(nodeId);
+            adjacency.get(nodeId).forEach((neighbourId) => {
+                if (visited.has(neighbourId)) return;
+                visited.add(neighbourId);
+                queue.push(neighbourId);
+            });
+        }
+
+        components.push(component);
+    });
+
+    components.sort((first, second) => second.length - first.length);
+    const positions = new Map();
+    const goldenAngle = Math.PI * (3 - Math.sqrt(5));
+    const seedAngle = seededUnit(layoutSeed + 97) * Math.PI * 2;
+
+    components.forEach((component, componentIndex) => {
+        const componentAngle = seedAngle + componentIndex * goldenAngle;
+        const componentRadius = componentIndex === 0
+            ? 0
+            : (
+                CONNECTED_COMPONENT_RADIUS
+                + Math.sqrt(componentIndex / Math.max(1, components.length - 1)) * 150000
+            ) * layoutScale;
+        const centerX = Math.cos(componentAngle) * componentRadius;
+        const centerY = Math.sin(componentAngle) * componentRadius;
+        const orderedIds = [...component].sort((firstId, secondId) => {
+            const degreeDifference = adjacency.get(secondId).size - adjacency.get(firstId).size;
+            return degreeDifference || firstId.localeCompare(secondId);
+        });
+
+        if (orderedIds.length === 2) {
+            const pairAngle = componentAngle + Math.PI / 2;
+            const pairOffset = CONNECTED_NODE_RADIUS * 0.58 * layoutScale;
+            positions.set(orderedIds[0], {
+                x: centerX - Math.cos(pairAngle) * pairOffset,
+                y: centerY - Math.sin(pairAngle) * pairOffset,
+            });
+            positions.set(orderedIds[1], {
+                x: centerX + Math.cos(pairAngle) * pairOffset,
+                y: centerY + Math.sin(pairAngle) * pairOffset,
+            });
+            return;
+        }
+
+        const hubId = orderedIds[0];
+        positions.set(hubId, { x: centerX, y: centerY });
+        const spokeIds = orderedIds.slice(1);
+        const spokeOffset = seededUnit(hashString(hubId) ^ layoutSeed) * Math.PI * 2;
+
+        spokeIds.forEach((nodeId, spokeIndex) => {
+            const angle = spokeOffset + spokeIndex * Math.PI * 2 / spokeIds.length;
+            const isDirectNeighbour = adjacency.get(hubId).has(nodeId);
+            const radius = CONNECTED_NODE_RADIUS
+                * (isDirectNeighbour ? 1 : 1.55)
+                * (1 + (spokeIndex % 2) * 0.08)
+                * layoutScale;
+
+            positions.set(nodeId, {
+                x: centerX + Math.cos(angle) * radius,
+                y: centerY + Math.sin(angle) * radius,
+            });
+        });
+    });
+
+    const soloNodes = nodes.filter((node) => adjacency.get(node.id).size === 0);
+    soloNodes.forEach((node, soloIndex) => {
+        const seed = Math.abs(hashString(node.id) ^ layoutSeed);
+        const angle = seedAngle + soloIndex * goldenAngle + seededUnit(seed) * 0.18;
+        const distribution = Math.sqrt((soloIndex + 1) / Math.max(1, soloNodes.length));
+        const radius = (90000 + distribution * INITIAL_LAYOUT_RADIUS * 1.48) * layoutScale;
+
+        positions.set(node.id, {
+            x: Math.cos(angle) * radius + (seededUnit(seed + 31) - 0.5) * 18000 * layoutScale,
+            y: Math.sin(angle) * radius + (seededUnit(seed + 47) - 0.5) * 18000 * layoutScale,
+        });
+    });
+
+    return positions;
+}
+
+function getLinkCurvature(link) {
+    const curvatureIndex = Math.abs(hashString(link.label || "")) % 3;
+    return [0, 0.045, -0.045][curvatureIndex];
 }
 
 function getPreviewPosition(anchor, viewport) {
@@ -260,10 +362,11 @@ export default function SiteGraph({ sites, onOpen }) {
         const nodes = sites.map((site, index) => ({
             id: site.slug,
             site,
-            ...getInitialPosition(site, index, sites.length, 0, layoutScale),
             relationDegree: relationDegrees.get(site.slug) || 0,
             revealDelay: Math.min(index * 5, 420),
         }));
+        const initialPositions = getGraphLayoutPositions(nodes, links, 0, layoutScale);
+        nodes.forEach((node) => Object.assign(node, initialPositions.get(node.id)));
 
         return { nodes, links };
     }, [layoutScale, sites]);
@@ -367,19 +470,15 @@ export default function SiteGraph({ sites, onOpen }) {
 
         if (randomizedGraphDataRef.current !== graphData) {
             const layoutSeed = Math.floor(Math.random() * 0x7fffffff);
+            const positions = getGraphLayoutPositions(
+                graphData.nodes,
+                graphData.links,
+                layoutSeed,
+                layoutScale
+            );
 
-            graphData.nodes.forEach((node, index) => {
-                Object.assign(
-                    node,
-                    getInitialPosition(
-                        node.site,
-                        index,
-                        graphData.nodes.length,
-                        layoutSeed,
-                        layoutScale
-                    ),
-                    { vx: 0, vy: 0 }
-                );
+            graphData.nodes.forEach((node) => {
+                Object.assign(node, positions.get(node.id), { vx: 0, vy: 0 });
             });
             randomizedGraphDataRef.current = graphData;
         }
@@ -514,7 +613,7 @@ export default function SiteGraph({ sites, onOpen }) {
 
         const isHovered = hoveredNode?.id === node.id;
         const isRelated = !hoveredNode || hoveredNode.id === node.id || neighbourIds.has(node.id);
-        const focusOpacity = !hoveredNode ? 1 : isHovered ? 1 : isRelated ? 0.48 : 0.12;
+        const focusOpacity = !hoveredNode ? 1 : isHovered ? 1 : isRelated ? 0.9 : 0.7;
         const category = CATEGORY_LABELS[node.site.category] || node.site.category || "";
         const normalizedScale = Math.max(globalScale, MIN_ZOOM);
         const zoomRatio = normalizedScale / MIN_ZOOM;
@@ -636,8 +735,8 @@ export default function SiteGraph({ sites, onOpen }) {
                     const source = typeof link.source === "object" ? link.source.id : link.source;
                     const target = typeof link.target === "object" ? link.target.id : link.target;
                     return source === hoveredNode.id || target === hoveredNode.id
-                        ? "rgba(0, 121, 255, 0.98)"
-                        : "rgba(0, 121, 255, 0.2)";
+                        ? "rgba(0, 121, 255, 0.9)"
+                        : "rgba(0, 121, 255, 0.7)";
                 }}
                 linkWidth={(link) => {
                     if (!hoveredNode) return 2.2;
@@ -645,7 +744,7 @@ export default function SiteGraph({ sites, onOpen }) {
                     const target = typeof link.target === "object" ? link.target.id : link.target;
                     return source === hoveredNode.id || target === hoveredNode.id ? 4 : 1.1;
                 }}
-                linkCurvature={0.035}
+                linkCurvature={getLinkCurvature}
                 linkLabel="label"
                 onNodeHover={hasHoverInput ? (node) => {
                     hoveredNodeRef.current = node || null;
