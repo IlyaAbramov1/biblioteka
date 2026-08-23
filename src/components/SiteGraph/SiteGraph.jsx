@@ -51,9 +51,11 @@ function getViewportSize() {
         return { width: 960, height: 720 };
     }
 
+    const viewport = window.visualViewport;
+
     return {
-        width: Math.max(320, window.innerWidth),
-        height: Math.max(520, window.innerHeight),
+        width: Math.max(320, Math.round(viewport?.width || window.innerWidth)),
+        height: Math.max(320, Math.round(viewport?.height || window.innerHeight)),
     };
 }
 
@@ -392,7 +394,7 @@ export default function SiteGraph({ sites, onOpen }) {
         const syncSize = (width, height) => {
             const nextSize = {
                 width: Math.max(320, Math.round(width)),
-                height: Math.max(520, Math.round(height)),
+                height: Math.max(320, Math.round(height)),
             };
 
             setSize((currentSize) => {
@@ -418,8 +420,24 @@ export default function SiteGraph({ sites, onOpen }) {
 
         observer.observe(shell);
 
+        const syncViewportSize = () => {
+            const nextRect = shell.getBoundingClientRect();
+            if (nextRect.width && nextRect.height) {
+                syncSize(nextRect.width, nextRect.height);
+            }
+        };
+
+        window.visualViewport?.addEventListener("resize", syncViewportSize);
+        window.visualViewport?.addEventListener("scroll", syncViewportSize);
+        window.addEventListener("resize", syncViewportSize);
+        window.addEventListener("orientationchange", syncViewportSize);
+
         return () => {
             observer.disconnect();
+            window.visualViewport?.removeEventListener("resize", syncViewportSize);
+            window.visualViewport?.removeEventListener("scroll", syncViewportSize);
+            window.removeEventListener("resize", syncViewportSize);
+            window.removeEventListener("orientationchange", syncViewportSize);
         };
     }, []);
 
