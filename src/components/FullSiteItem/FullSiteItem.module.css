@@ -269,7 +269,7 @@
     top: -78px;
     right: -38px;
     z-index: 3;
-    display: block;
+    display: none;
     width: min(139px, 22vw);
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.40));
     cursor: pointer;
