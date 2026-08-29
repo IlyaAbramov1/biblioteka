@@ -220,6 +220,22 @@
     object-fit: contain;
 }
 
+.siteMedalBadge {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    flex: 0 0 28px;
+    align-items: center;
+    justify-content: center;
+}
+
+.siteMedalBadge img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
 .abramovStyle {
     --site-info-background: linear-gradient(180deg, #f0f2f5 0%, #cfd9e0 100%);
     --site-backplate-start: #f0f2f5;

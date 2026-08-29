@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import { getSitePreviewImage } from "@/lib/siteData";
 import { HOVER_SPRING } from "@/lib/motion";
+import { getSiteMedal } from "@/lib/siteMedals";
 import { getSiteTags, getTagMeta, getTagIconPath } from "@/lib/siteTags";
 
 import styles from "./SiteItem.module.css";
@@ -33,6 +34,7 @@ function isPlainLeftClick(event) {
 export default function SiteItem({ site, onOpen, active = false, previewOnly = false }) {
     const previewSrc = getSitePreviewImage(site);
     const tags = getSiteTags(site.specialization);
+    const medal = getSiteMedal(site);
     const backplateGradientId = `site-item-backplate-${String(site.slug || site.title || "site").replace(/[^a-zA-Z0-9_-]/g, "-")}`;
     const customStyleClass = site.customStyle
         ? (styles[site.customStyle] || site.customStyle)
@@ -99,6 +101,17 @@ export default function SiteItem({ site, onOpen, active = false, previewOnly = f
                 </div>
                 {tags.length ? (
                     <div className={styles.siteTags}>
+                        {medal ? (
+                            <span className={styles.siteMedalBadge} title={medal.alt}>
+                                <Image
+                                    src={medal.src}
+                                    alt={medal.alt}
+                                    width={28}
+                                    height={28}
+                                    unoptimized
+                                />
+                            </span>
+                        ) : null}
                         {tags.map((tag) => {
                             const meta = getTagMeta(tag);
                             const iconPath = getTagIconPath(meta.icon);

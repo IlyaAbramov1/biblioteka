@@ -1,5 +1,147 @@
 [
     {
+        "slug": "alex-ezhov",
+        "title": "Alex Ezhov",
+        "subtitle": "Alex Ezhov — российский графический дизайнер, промпт-инженер и арт-директор. Сайт Саши сделан в центральной выключке с доминантными кейсами и мягкой моноширинным шрифтом. Особенно стоит заметить его логотип, а также гамбургер, сдееланный в сильнейшем типографическом стиле, схожим с оформлением кино-титров.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Branding"
+        ],
+        "link": "https://alexezhov.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/alex-ezhov/alex-ezhov-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/alex-ezhov/alex-ezhov-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "chester",
+        "title": "Chester",
+        "subtitle": "Chester — известный дизайнер с собственным стилем, основатель Mobbin и куратор проекта Design Spells. Сайт сделан в безумно мягком светлом стиле с красивейшей акцидентной антиквой и мягкой сеточной вёрсткой. Стоит точно заметить ховер и интерактивные эффекты сайта, также выполненные в мягком, воздушном стиле.",
+        "category": "Дизайнер",
+        "specialization": [
+            "Product",
+            "Web"
+        ],
+        "link": "https://chester.how/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/chester/chester-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/chester/chester-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "esh-gruppa",
+        "title": "ESH Gruppa",
+        "subtitle": "ESH Gruppa — российская дизайн-студия, работающая с айдентикой, брендингом и вебом. Сайт особенный, мягко говоря. Болдровый стиль повествования, заточенный в формате карусели, с уникальной, яркой типографикой.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Web",
+            "Art"
+        ],
+        "link": "https://eshgruppa.com/#",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/esh-gruppa/esh-gruppa-full.mp4",
+        "siteScreens": [],
+        "enabled": true,
+        "previewScreen": "screens/esh-gruppa/esh-gruppa-preview.webp",
+        "isNew": true
+    },
+    {
+        "slug": "reboot",
+        "title": "REB8T",
+        "subtitle": "REB8T — российская студия цифрового и продуктового дизайна. Сайт насыщен эффектам и обромлён жирной типографикой, сочетающую в себя моноширинный и акцидентный шрифты. Особенно хочется отметить системность и чёткость вёрстки внутри столь насыщенного и яркого сайта. Круто!",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Product",
+            "Web"
+        ],
+        "link": "https://rebooot.me/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/reboot/reboot-full.mp4",
+        "siteScreens": [],
+        "enabled": true,
+        "previewScreen": "screens/reboot/reboot-preview.webp",
+        "isNew": true
+    },
+    {
+        "slug": "oddworks",
+        "title": "OddWorks",
+        "subtitle": "OddWorks — артовая дизайн-студия с российскими корнями, работающая за рубежом. Одним из основателей является известный и прекрасный Павел Риплей! Сайт сделан в артовом, броском стиле, но с мягкой типографикой, моно-палитрной. Главный акцент — на кейсах. Интерактивный логотип компании на ховерее = кайф!.",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Art",
+            "Branding",
+            "Web",
+            "Motion Design"
+        ],
+        "link": "https://oddworks.studio/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/oddworks/oddworks-full.mp4",
+        "siteScreens": [],
+        "enabled": true,
+        "previewScreen": "screens/oddworks/oddworks-preview.webp",
+        "isNew": true
+    },
+    {
+        "slug": "pentagram",
+        "title": "Pentagram",
+        "subtitle": "Pentagram — великая и, наверняка, наиболее известная международная дизайн-студия, в стенах которой собрались сильнейшие и опытнейшие дизайнеры планеты — Пола Шер, Майкл Бейрут и другие. Сайт сделан в строгом, коммерческом стиле с явным акцентом на уровень дизайна. Радует классный, фановый интерактивный элемент интеграции!",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Web",
+            "Product",
+            "Motion Design",
+            "Art"
+        ],
+        "link": "https://www.pentagram.com/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/pentagram/pentagram-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/pentagram/pentagram-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "dfy",
+        "title": "DFY",
+        "subtitle": "DFY — креативная дизайн-студия из Южной Кореи. Сайт уникален своей детализацией и яркостью эффектов. Текстуризация, кастомный курсор, плавные скролл-анимации — здесь, определённо, многое есть для вдохновения. ",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Art",
+            "Web"
+        ],
+        "link": "https://dfy.co.kr/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/dfy/dfy-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/dfy/dfy-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
+        "slug": "tomat",
+        "title": "Tomat",
+        "subtitle": "ТОМАТ — маркетинг и дизайн-студия из Самары. Сайт сделан в нежном и приятном стиле, с чёткой вёрсткой и упором на взгляд будущего клиента. Ребята максимально постарались сделать ясные и прямые CTA-блоки на протяжении всего сайта, но также это показывает ясная структура повествования на главной. Особенно нежно ребята добавили награды на свои проекты. Здесь многое можно подчеркнуть для агентств!",
+        "category": "Дизайн-студия",
+        "specialization": [
+            "Branding",
+            "Web"
+        ],
+        "link": "https://tomat.team/",
+        "previewVideoKey": "",
+        "fullVideoKey": "screens/tomat/tomat-full.mp4",
+        "siteScreens": [],
+        "previewScreen": "screens/tomat/tomat-preview.webp",
+        "enabled": true,
+        "isNew": true
+    },
+    {
         "slug": "devtown",
         "title": "DevTown",
         "subtitle": "DevTown — город с проектами дизайн-студии .dev. Сайт выполнен в стилистике трёхмерного города с динамичными иллюстрациями, по которым можно кликать: каждая из них открывает отдельный проект. В портфолио есть работа с репером Платина, Omanko и Яндексом. Очень креативный, сильный и безумно динамичный проект, один из самых впечатляющих в библиотеке!",
@@ -13,8 +155,7 @@
         "fullVideoKey": "screens/devtown/devtown-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/devtown/devtown-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "xchyler",
@@ -32,8 +173,7 @@
             "screens/xchyler/xchyler-1.webp"
         ],
         "previewScreen": "screens/xchyler/xchyler-1.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "kons",
@@ -50,8 +190,7 @@
         "fullVideoKey": "screens/kons/kons-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/kons/kons-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "ozzy",
@@ -60,16 +199,14 @@
         "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
-            "Web",
-            "Motion Design"
+            "Web"
         ],
         "link": "https://www.ozzyx.xyz/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/ozzy/ozzy-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/ozzy/ozzy-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "florian-keim",
@@ -86,8 +223,7 @@
         "fullVideoKey": "screens/florian-keim/florian-keim-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/florian-keim/florian-keim-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "joguman",
@@ -95,17 +231,15 @@
         "subtitle": "JOGUMAN — корейская креативная студия с безумно интересным и уникальным иллюстративным портфолио. Главный герой сайта — прекрасный зелёненький динозаврик, а каждый объект на сцене кликабелен: лампа переключает светлую и тёмную тему, полка ведёт к проектам, а колбочка — к экспериментам студии.",
         "category": "Дизайн-студия",
         "specialization": [
-            "Web",
-            "Illustration",
-            "Motion Design"
+            "Art",
+            "Illustration"
         ],
         "link": "https://en.joguman.com/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/joguman/joguman-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/joguman/joguman-preview.webp",
-        "enabled": true,
-        "isNew": true
+        "enabled": true
     },
     {
         "slug": "evil-martians",
@@ -2308,7 +2442,7 @@
     {
         "slug": "abramov-ilya",
         "title": "Abramov Ilya",
-        "subtitle": "Мультидисциплинарный дизайнер из Самары. Работает в «Сирене»/Спортсе.",
+        "subtitle": "Мультидисциплинарный дизайнер из Самары. Ранее работал дизайнером в Tomat, где создал логотип студии. Сейчас работает в «Сирене»/Спортсе.",
         "category": "Дизайнер",
         "specialization": [
             "Design Engineer",
@@ -2723,20 +2857,6 @@
         "enabled": false
     },
     {
-        "slug": "reboot",
-        "title": "REBOOT",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Product"
-        ],
-        "link": "https://www.rebooot.me/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "chips",
         "title": "Chips",
         "subtitle": "",
@@ -3097,21 +3217,6 @@
         "enabled": false
     },
     {
-        "slug": "oddworks",
-        "title": "OddWorks",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Art",
-            "Branding"
-        ],
-        "link": "https://oddworks.studio/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
         "slug": "deux-huit-huit",
         "title": "DEUX HUIT HUIT",
         "subtitle": "",
@@ -3393,20 +3498,6 @@
             "Motion Design"
         ],
         "link": "https://ranlus.fr/",
-        "previewVideoKey": "",
-        "fullVideoKey": "",
-        "siteScreens": [],
-        "enabled": false
-    },
-    {
-        "slug": "esh-gruppa",
-        "title": "ESH Gruppa",
-        "subtitle": "",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Branding"
-        ],
-        "link": "https://eshgruppa.com",
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [],

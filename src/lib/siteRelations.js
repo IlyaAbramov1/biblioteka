@@ -11,12 +11,14 @@ const CURATED_RELATIONS = [
     ["jake-down-smith", "alex-vanderzon", "Работа над сайтом Los Feliz Engineering"],
     ["alex-vanderzon", "axon", "Совместная работа над Family в Los Feliz Engineering"],
     ["martin-azambuja", "porto-rocha", "Дизайн-директор PORTO ROCHA"],
+    ["martin-azambuja", "pentagram", "Работа в Pentagram"],
     ["oledzka", "porto-rocha", "Работа в Porto Rocha"],
     ["oledzka", "mouthwash", "Работа в Mouthwash"],
     ["oledzka", "martin-azambuja", "Совместные проекты в PORTO ROCHA"],
     ["aliszu", "after", "Фаундер After"],
     ["aliszu", "baked-design", "Ко-фаундер Baked Design"],
     ["abramov-ilya", "sirena", "Работа в Сирене / Спортсе"],
+    ["abramov-ilya", "tomat", "Ранее работал дизайнером в Tomat и создал логотип студии"],
     ["rabbit", "rauno", "Команда Vercel"],
     ["william-le", "brain-cho", "Google и Apple"],
     ["william-le", "june-lee", "Команда Apple"],
@@ -50,6 +52,7 @@ const DESCRIPTION_MENTIONS = {
     ],
     "martin-azambuja": [
         ["PORTO ROCHA", "porto-rocha"],
+        ["Pentagram", "pentagram"],
     ],
     oledzka: [
         ["Mouthwash", "mouthwash"],
@@ -70,6 +73,7 @@ const DESCRIPTION_MENTIONS = {
     ],
     "abramov-ilya": [
         ["Сирене", "sirena"],
+        ["Tomat", "tomat"],
     ],
     after: [
         ["based design", "base-design"],

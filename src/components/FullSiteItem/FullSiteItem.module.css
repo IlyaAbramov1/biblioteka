@@ -269,9 +269,9 @@
     top: -78px;
     right: -38px;
     z-index: 3;
-    display: none;
+    display: block;
     width: min(139px, 22vw);
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.40));
+    filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.62));
     cursor: pointer;
     perspective: 700px;
     transition: transform 240ms cubic-bezier(.22, 1, .36, 1);
@@ -321,7 +321,6 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    filter: url("#tomat-sticker-filter");
     mask: linear-gradient(
         -45deg,
         black var(--tomat-sticker-remaining),
@@ -414,14 +413,6 @@
         opacity: 0.95;
         transform: scale(1.18);
     }
-}
-
-.tomatStickerFilterDefs {
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: visible;
-    pointer-events: none;
 }
 
 .bookLoader {
