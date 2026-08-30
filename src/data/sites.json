@@ -12,7 +12,7 @@
         "fullVideoKey": "screens/alex-ezhov/alex-ezhov-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/alex-ezhov/alex-ezhov-preview.webp",
-        "enabled": true,
+        "enabled": false,
         "isNew": true
     },
     {
@@ -29,7 +29,7 @@
         "fullVideoKey": "screens/chester/chester-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/chester/chester-preview.webp",
-        "enabled": true,
+        "enabled": false,
         "isNew": true
     },
     {
@@ -46,7 +46,7 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/esh-gruppa/esh-gruppa-full.mp4",
         "siteScreens": [],
-        "enabled": true,
+        "enabled": false,
         "previewScreen": "screens/esh-gruppa/esh-gruppa-preview.webp",
         "isNew": true
     },
@@ -63,7 +63,7 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/reboot/reboot-full.mp4",
         "siteScreens": [],
-        "enabled": true,
+        "enabled": false,
         "previewScreen": "screens/reboot/reboot-preview.webp",
         "isNew": true
     },
@@ -82,7 +82,7 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/oddworks/oddworks-full.mp4",
         "siteScreens": [],
-        "enabled": true,
+        "enabled": false,
         "previewScreen": "screens/oddworks/oddworks-preview.webp",
         "isNew": true
     },
@@ -103,7 +103,7 @@
         "fullVideoKey": "screens/pentagram/pentagram-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/pentagram/pentagram-preview.webp",
-        "enabled": true,
+        "enabled": false,
         "isNew": true
     },
     {
@@ -121,7 +121,7 @@
         "fullVideoKey": "screens/dfy/dfy-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/dfy/dfy-preview.webp",
-        "enabled": true,
+        "enabled": false,
         "isNew": true
     },
     {
@@ -138,7 +138,7 @@
         "fullVideoKey": "screens/tomat/tomat-full.mp4",
         "siteScreens": [],
         "previewScreen": "screens/tomat/tomat-preview.webp",
-        "enabled": true,
+        "enabled": false,
         "isNew": true
     },
     {
