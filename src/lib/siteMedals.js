@@ -1,11 +1,11 @@
 const SITE_MEDALS = {
-    "alex-ezhov": { alt: "Медаль Tomat", src: "/tomat-medal.svg" },
-    chester: { alt: "Медаль Tomat", src: "/tomat-medal.svg" },
-    "esh-gruppa": { alt: "Медаль Tomat", src: "/tomat-medal.svg" },
-    reboot: { alt: "Медаль Tomat", src: "/tomat-medal.svg" },
-    oddworks: { alt: "Медаль Tomat", src: "/tomat-medal.svg" },
-    pentagram: { alt: "Медаль Tomat", src: "/tomat-medal.svg" },
-    dfy: { alt: "Медаль Tomat", src: "/tomat-medal.svg" },
+    "alex-ezhov": { alt: "Медаль Tomat", src: "/tomat-medal-flat.svg" },
+    chester: { alt: "Медаль Tomat", src: "/tomat-medal-flat.svg" },
+    "esh-gruppa": { alt: "Медаль Tomat", src: "/tomat-medal-flat.svg" },
+    reboot: { alt: "Медаль Tomat", src: "/tomat-medal-flat.svg" },
+    oddworks: { alt: "Медаль Tomat", src: "/tomat-medal-flat.svg" },
+    pentagram: { alt: "Медаль Tomat", src: "/tomat-medal-flat.svg" },
+    dfy: { alt: "Медаль Tomat", src: "/tomat-medal-flat.svg" },
 };
 
 export function getSiteMedal(site) {

@@ -120,10 +120,12 @@ export default function HomePage() {
     const tagScrollerRef = useRef(null);
     const sentinelRef = useRef(null);
     const homeUrlRef = useRef("/");
+    const shelfScrollYRef = useRef(0);
     const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedTags, setSelectedTags] = useState([]);
     const [activeSiteSlug, setActiveSiteSlug] = useState(null);
+    const [modalScrollY, setModalScrollY] = useState(0);
     const [viewMode, setViewMode] = useState("gallery");
     const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
     const [draftCategory, setDraftCategory] = useState(null);
@@ -253,6 +255,9 @@ export default function HomePage() {
 
             if (!nextSlug) {
                 homeUrlRef.current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+                window.requestAnimationFrame(() => {
+                    window.scrollTo({ top: shelfScrollYRef.current, left: 0, behavior: "auto" });
+                });
             }
         };
 
@@ -285,23 +290,46 @@ export default function HomePage() {
     }, [isFilterModalOpen]);
 
     useEffect(() => {
+        if (viewMode !== "gallery") return undefined;
+
         const sentinel = sentinelRef.current;
 
         if (!sentinel || visibleCount >= filteredSites.length) return undefined;
+
+        let hasRequestedNextBatch = false;
+        const revealNextBatch = () => {
+            if (hasRequestedNextBatch) return;
+
+            hasRequestedNextBatch = true;
+            setVisibleCount((count) => Math.min(count + BATCH_SIZE, filteredSites.length));
+        };
+        const revealIfNearViewport = () => {
+            const bounds = sentinel.getBoundingClientRect();
+
+            if (bounds.top <= window.innerHeight + 800) revealNextBatch();
+        };
 
         const observer = new IntersectionObserver(
             (entries) => {
                 if (!entries[0]?.isIntersecting) return;
 
-                setVisibleCount((count) => Math.min(count + BATCH_SIZE, filteredSites.length));
+                revealNextBatch();
             },
-            { root: null, rootMargin: "120px 0px" }
+            { root: null, rootMargin: "800px 0px" }
         );
 
         observer.observe(sentinel);
+        window.addEventListener("scroll", revealIfNearViewport, { passive: true });
+        window.addEventListener("resize", revealIfNearViewport);
+        const checkFrame = window.requestAnimationFrame(revealIfNearViewport);
 
-        return () => observer.disconnect();
-    }, [filteredSites.length, visibleCount]);
+        return () => {
+            observer.disconnect();
+            window.cancelAnimationFrame(checkFrame);
+            window.removeEventListener("scroll", revealIfNearViewport);
+            window.removeEventListener("resize", revealIfNearViewport);
+        };
+    }, [filteredSites.length, viewMode, visibleCount]);
 
     const resetVisibleCount = () => {
         setVisibleCount(BATCH_SIZE);
@@ -372,9 +400,10 @@ export default function HomePage() {
 
         if (!getSlugFromPathname(window.location.pathname)) {
             homeUrlRef.current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+            shelfScrollYRef.current = window.scrollY;
+            setModalScrollY(window.scrollY);
         }
 
-        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
         window.history.pushState({ siteSlug: site.slug }, "", buildSitePath(site.slug));
         setActiveSiteSlug(site.slug);
     };
@@ -385,18 +414,16 @@ export default function HomePage() {
             return;
         }
 
-        setActiveSiteSlug(null);
-
-        if (getSlugFromPathname(window.location.pathname) && window.history.length > 1) {
+        if (getSlugFromPathname(window.location.pathname)) {
             window.history.back();
             return;
         }
 
-        window.history.pushState(null, "", homeUrlRef.current);
+        setActiveSiteSlug(null);
     };
 
     return (
-        <main className={`${styles.page} ${viewMode === "graph" ? styles.pageGraph : ""}`}>
+        <main className={viewMode === "graph" ? styles.pageGraph : styles.page}>
             <CanvasLogo />
             <ViewTabs
                 viewMode={viewMode}
@@ -662,8 +689,10 @@ export default function HomePage() {
 
             {activeSite ? (
                 <FullSiteItem
+                    key={activeSite.slug}
                     site={activeSite}
                     mode="modal"
+                    backgroundScrollY={modalScrollY}
                     onClose={closeSite}
                     onRelatedSiteOpen={openSite}
                 />

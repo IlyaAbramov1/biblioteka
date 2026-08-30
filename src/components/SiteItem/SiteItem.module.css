@@ -227,6 +227,8 @@
     flex: 0 0 28px;
     align-items: center;
     justify-content: center;
+    box-shadow: none;
+    filter: none;
 }
 
 .siteMedalBadge img {
@@ -234,6 +236,8 @@
     width: 28px;
     height: 28px;
     object-fit: contain;
+    box-shadow: none;
+    filter: none;
 }
 
 .abramovStyle {

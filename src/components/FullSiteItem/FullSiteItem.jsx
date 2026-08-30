@@ -145,9 +145,11 @@ export default function FullSiteItem({
     mode = "page",
     onClose,
     onRelatedSiteOpen,
+    backgroundScrollY,
 }) {
     const router = useRouter();
     const closeTimerRef = useRef(null);
+    const closeFullSiteRef = useRef(null);
     const siteInfoRef = useRef(null);
     const modalOpenedAtRef = useRef(0);
     const [isClosing, setIsClosing] = useState(false);
@@ -201,6 +203,10 @@ export default function FullSiteItem({
     }, [completeClose, isClosing, isModal]);
 
     useEffect(() => {
+        closeFullSiteRef.current = closeFullSite;
+    }, [closeFullSite]);
+
+    useEffect(() => {
         const frame = window.requestAnimationFrame(() => {
             setPortalNode(document.body);
         });
@@ -213,7 +219,10 @@ export default function FullSiteItem({
 
         modalOpenedAtRef.current = performance.now();
 
-        const scrollY = window.scrollY;
+        const scrollY = Number.isFinite(backgroundScrollY)
+            ? backgroundScrollY
+            : window.scrollY;
+        const shouldFixBody = window.matchMedia("(max-width: 1200px)").matches;
         const previousBodyPosition = document.body.style.position;
         const previousBodyTop = document.body.style.top;
         const previousBodyWidth = document.body.style.width;
@@ -221,14 +230,16 @@ export default function FullSiteItem({
         const previousHtmlOverflow = document.documentElement.style.overflow;
 
         document.documentElement.style.overflow = "hidden";
-        document.body.style.position = "fixed";
-        document.body.style.top = `-${scrollY}px`;
-        document.body.style.width = "100%";
+        if (shouldFixBody) {
+            document.body.style.position = "fixed";
+            document.body.style.top = `-${scrollY}px`;
+            document.body.style.width = "100%";
+        }
         document.body.style.overflow = "hidden";
 
         const closeOnEscape = (event) => {
             if (event.key === "Escape") {
-                closeFullSite();
+                closeFullSiteRef.current?.();
             }
         };
 
@@ -243,7 +254,7 @@ export default function FullSiteItem({
             window.scrollTo(0, scrollY);
             window.removeEventListener("keydown", closeOnEscape);
         };
-    }, [closeFullSite, isModal]);
+    }, [backgroundScrollY, isModal]);
 
     useEffect(() => {
         return () => {
@@ -257,6 +268,11 @@ export default function FullSiteItem({
         siteInfoRef.current?.scrollTo({ top: 0, left: 0, behavior: "auto" });
 
         if (!isModal) {
+            document.documentElement.style.removeProperty("overflow");
+            document.body.style.removeProperty("position");
+            document.body.style.removeProperty("top");
+            document.body.style.removeProperty("width");
+            document.body.style.removeProperty("overflow");
             window.scrollTo({ top: 0, left: 0, behavior: "auto" });
         }
     }, [isModal, site.slug]);
@@ -348,7 +364,7 @@ export default function FullSiteItem({
                         >
                             <span className={styles.tomatStickerInner}>
                                 <Image
-                                    src="/tomat-medal.svg"
+                                    src="/tomat-medal-flat.svg"
                                     alt=""
                                     width={139}
                                     height={139}

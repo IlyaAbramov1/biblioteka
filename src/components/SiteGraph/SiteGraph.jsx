@@ -28,7 +28,7 @@ const MIN_ZOOM = 0.00125;
 const INITIAL_LAYOUT_RADIUS = 280000;
 const CONNECTED_COMPONENT_RADIUS = 190000;
 const CONNECTED_NODE_RADIUS = 68000;
-const MOBILE_LAYOUT_SCALE = 2;
+const MOBILE_LAYOUT_SCALE = 0.72;
 const CATEGORY_LABELS = {
     "Дизайнер": "Designer",
     "Дизайн-студия": "Design Studio",
@@ -527,8 +527,7 @@ export default function SiteGraph({ sites, onOpen }) {
         graph.d3ReheatSimulation();
 
         const setOverviewCamera = () => {
-            graph.centerAt(0, 0, 0);
-            graph.zoom(MIN_ZOOM, 0);
+            graph.zoomToFit(0, hasHoverInput ? 72 : 28);
         };
 
         setOverviewCamera();
@@ -541,7 +540,7 @@ export default function SiteGraph({ sites, onOpen }) {
             window.cancelAnimationFrame(overviewFrame);
             window.clearTimeout(overviewTimer);
         };
-    }, [graphData, graphInstance, layoutScale]);
+    }, [graphData, graphInstance, hasHoverInput, layoutScale]);
 
     const handleGraphRef = useCallback((node) => {
         graphRef.current = node;
