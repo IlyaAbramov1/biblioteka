@@ -9,7 +9,7 @@ import { publishedSiteCount } from "@/lib/siteData";
 export default function Footer() {
     const pathname = usePathname();
 
-    if (/(?:^|\/)site\/[^/]+\/?$/.test(pathname || "")) return null;
+    if (/(?:^|\/)site\/[^/]+\/?$/.test(pathname || "") || /(?:^|\/)search\/?$/.test(pathname || "")) return null;
 
     return (
         <footer className={styles.footer}>

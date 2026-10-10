@@ -1,0 +1,257 @@
+.page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 72px;
+    background: var(--bg);
+}
+
+.visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.page .searchTitle {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 20px;
+    width: auto;
+    text-align: center;
+}
+
+.searchHero {
+    width: 100%;
+    height: 340px;
+    display: flex;
+    flex: 0 0 340px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 165px 24px 0;
+}
+
+.searchControls {
+    width: min(700px, 100%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.searchField {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 16px;
+    border-radius: 999px;
+    background: #e7eaed;
+    color: #08090c;
+    transition: background-color 160ms ease;
+}
+
+.searchField:hover {
+    background: #dfe3e7;
+}
+
+.searchField > img {
+    flex: 0 0 22px;
+    opacity: 0.28;
+}
+
+.searchField input {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    flex: 1 1 auto;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: var(--font-size-body);
+    font-weight: 500;
+    letter-spacing: var(--text-letter-spacing);
+}
+
+.inputWrap {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.inputWrap input {
+    position: relative;
+    z-index: 1;
+}
+
+.animatedPlaceholder {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: #8599ad;
+    font-size: var(--font-size-body);
+    font-weight: 500;
+    letter-spacing: var(--text-letter-spacing);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.caret {
+    width: 2px;
+    height: 18px;
+    flex: 0 0 2px;
+    margin-left: 2px;
+    background: currentColor;
+    animation: caret-blink 900ms steps(2, start) infinite;
+}
+
+@keyframes caret-blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.emptyShelves {
+    height: 330px;
+    min-height: 330px;
+    flex: 0 0 330px;
+    margin-top: -60px;
+}
+
+.searchField input::placeholder {
+    color: #8599ad;
+    opacity: 1;
+}
+
+.searchField input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.searchField:focus-within {
+    outline: 2px solid color-mix(in srgb, var(--blue) 42%, transparent);
+    outline-offset: 2px;
+}
+
+.closeButton {
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    flex: 0 0 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    border-radius: 20px;
+    background: #e7eaed;
+    color: #8599ad;
+    cursor: pointer;
+    transition: background-color 160ms ease, transform 160ms var(--hover-bounce-ease);
+}
+
+.closeButton::after {
+    width: 20px;
+    height: 20px;
+    background: currentColor;
+    content: "";
+    -webkit-mask: url("/tag-icons/cross.svg") center / contain no-repeat;
+    mask: url("/tag-icons/cross.svg") center / contain no-repeat;
+}
+
+.closeButton:hover {
+    background: #d8dde2;
+    transform: translateY(-2px);
+}
+
+.closeButton:active {
+    transform: scale(0.96);
+}
+
+.closeButton:focus-visible,
+.moreButton:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
+
+.moreButton {
+    z-index: 2;
+    margin-top: 54px;
+    padding: 10px 24px;
+    border: 0;
+    border-radius: 999px;
+    background: #e7eaed;
+    color: var(--text);
+    cursor: pointer;
+    font: inherit;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    transition: background-color 160ms ease;
+}
+
+.moreButton:hover {
+    background: #d8dde2;
+}
+
+.emptyState {
+    min-height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--text-tertiary);
+    text-align: center;
+}
+
+.emptyState p {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.emptyFace {
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 1;
+}
+
+@media (max-width: 720px) {
+    .page .searchTitle {
+        top: 88px;
+    }
+
+    .searchHero {
+        height: 280px;
+        flex-basis: 280px;
+        padding: 148px 20px 0;
+    }
+
+    .searchField {
+        height: 44px;
+        gap: 8px;
+        padding-inline: 14px;
+    }
+
+    .emptyState {
+        padding: 0 20px;
+    }
+}

@@ -3,6 +3,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 import CanvasLogo from "@/components/CanvasLogo/CanvasLogo";
 import AccentText from "@/components/AccentText/AccentText";
@@ -11,6 +12,7 @@ import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton/SecondaryButton";
 import SiteItem from "@/components/SiteItem/SiteItem";
 import SiteGraph from "@/components/SiteGraph/SiteGraph";
+import { usePageTransition } from "@/components/PageTransition/PageTransition";
 import {
     browsableSites,
     getSiteBySlug,
@@ -114,6 +116,12 @@ function buildSitePath(slug) {
 }
 
 export default function HomePage() {
+    const navigateWithTransition = usePageTransition();
+    const handleSearchLinkClick = (event) => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        navigateWithTransition("/search");
+    };
     const categoryGroupRef = useRef(null);
     const categoryButtonRefs = useRef([]);
     const modalCategoryButtonRefs = useRef([]);
@@ -425,11 +433,16 @@ export default function HomePage() {
     return (
         <main className={viewMode === "graph" ? styles.pageGraph : styles.page}>
             <CanvasLogo />
-            <ViewTabs
-                viewMode={viewMode}
-                onChange={setViewMode}
-                className={styles.desktopViewTabs}
-            />
+            <div className={styles.desktopViewControls}>
+                <Link className={styles.searchButton} href="/search" onClick={handleSearchLinkClick} aria-label="Открыть поиск" title="Поиск">
+                    <Image src="/search.svg" alt="" width={20} height={20} unoptimized />
+                </Link>
+                <ViewTabs
+                    viewMode={viewMode}
+                    onChange={setViewMode}
+                    className={styles.desktopViewTabs}
+                />
+            </div>
             <section className={styles.heroBlock} aria-labelledby="library-title">
                 <div className={styles.heroBlockText}>
                     <div className={styles.titleRow}>
@@ -627,6 +640,9 @@ export default function HomePage() {
                     onChange={setViewMode}
                     className={styles.mobileViewTabs}
                 />
+                <Link className={styles.searchButton} href="/search" onClick={handleSearchLinkClick} aria-label="Открыть поиск" title="Поиск">
+                    <Image src="/search.svg" alt="" width={20} height={20} unoptimized />
+                </Link>
             </div>
 
             {viewMode === "graph" ? (
@@ -640,6 +656,7 @@ export default function HomePage() {
                     animate={REVEAL_VISIBLE}
                     transition={REVEAL_TRANSITION}
                 >
+                    <div className={styles.shelfBeam} data-transition-shelf="true" aria-hidden="true" />
                     {visibleSites.map((site) => (
                         <SiteItem
                             key={site.slug}

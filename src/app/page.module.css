@@ -27,6 +27,53 @@
     display: none;
 }
 
+.desktopViewControls {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.desktopViewControls .desktopViewTabs {
+    position: relative;
+    top: auto;
+    right: auto;
+}
+
+.searchButton {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    flex: 0 0 36px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e7eaed;
+    transition: background-color 160ms ease, transform 160ms var(--hover-bounce-ease);
+}
+
+.searchButton:hover {
+    background: #d8dde2;
+    transform: translateY(-2px);
+}
+
+.searchButton:active {
+    transform: scale(0.92);
+}
+
+.searchButton:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
+
+.searchButton img {
+    display: block;
+    object-fit: contain;
+}
+
 .viewTabs {
     --view-tabs-padding: 4px;
     position: fixed;
@@ -740,6 +787,27 @@
     transform: translateX(-50%);
 }
 
+.shelfBeam {
+    position: absolute;
+    top: 244px;
+    left: 50%;
+    z-index: 0;
+    width: 100vw;
+    height: 48px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 225, 137, 0.8) 0,
+        rgba(192, 126, 46, 0.8) 8.952px,
+        rgba(192, 126, 46, 0.8) 24px,
+        rgba(255, 225, 137, 0.8) 24px,
+        rgba(225, 160, 82, 0.8) 32.952px,
+        rgba(225, 160, 82, 0.8) 48px
+    );
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    view-transition-name: library-shelf;
+}
+
 .sitesGrid::before {
     top: 244px;
     bottom: -48px;
@@ -755,6 +823,7 @@
         transparent 48px,
         transparent 322px
     );
+    mask: repeating-linear-gradient(to bottom, transparent 0 48px, #000 48px 322px);
 }
 
 .sitesGrid::after {
@@ -768,6 +837,7 @@
         transparent 322px
     );
     filter: blur(2px);
+    mask: repeating-linear-gradient(to bottom, transparent 0 8px, #000 8px 322px);
 }
 
 .sentinel,
@@ -873,7 +943,7 @@
         padding-bottom: 110px;
     }
 
-    .desktopViewTabs {
+    .desktopViewControls {
         display: none;
     }
 
@@ -971,6 +1041,12 @@
 
     .mobileViewTabs .viewTab[aria-pressed="true"] {
         background: #fff;
+    }
+
+    .mobileControls .searchButton {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
     }
 
     .heroBlock {

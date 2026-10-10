@@ -150,6 +150,8 @@ export default function SiteItem({ site, onOpen, active = false, previewOnly = f
 
         if (!isPlainLeftClick(event)) return;
 
+        if (!onOpen) return;
+
         event.preventDefault();
         onOpen(site);
     };
@@ -168,7 +170,7 @@ export default function SiteItem({ site, onOpen, active = false, previewOnly = f
                 transition={HOVER_SPRING}
             >
                 <Link
-                    href={`site/${site.slug}`}
+                    href={`/site/${site.slug}`}
                     scroll={false}
                     className={containerClassName}
                     onClick={handleClick}

@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Roboto, EB_Garamond } from "next/font/google";
 
 import Footer from "@/components/Footer/Footer";
+import { PageTransitionProvider } from "@/components/PageTransition/PageTransition";
 import {
     DEFAULT_DESCRIPTION,
     DEFAULT_KEYWORDS,
@@ -155,8 +156,10 @@ export default function RootLayout({ children }) {
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_STRUCTURED_DATA) }}
                 />
                 <div className="strokeContainer">
-                    {children}
-                    <Footer />
+                    <PageTransitionProvider>
+                        {children}
+                        <Footer />
+                    </PageTransitionProvider>
                 </div>
             </body>
         </html>
