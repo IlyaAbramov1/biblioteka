@@ -635,7 +635,11 @@ export default function SiteGraph({ sites, onOpen }) {
         const normalizedScale = Math.max(globalScale, MIN_ZOOM);
         const zoomRatio = normalizedScale / MIN_ZOOM;
         const nodeZoomFactor = Math.max(0.72, Math.min(2.55, 0.72 * Math.pow(zoomRatio, 0.3)));
-        const labelZoomFactor = Math.max(0.78, Math.min(2.15, 0.78 * Math.pow(zoomRatio, 0.28)));
+        // Keep labels readable in the overview. The graph has a very large
+        // world coordinate space, so a purely proportional label scale makes
+        // the farthest zoom unusably small while closer zoom levels already
+        // have the right size.
+        const labelZoomFactor = Math.max(1, Math.min(2.15, 0.78 * Math.pow(zoomRatio, 0.28)));
         const fontSize = 14 * labelZoomFactor / normalizedScale;
         const baseRadius = isHovered ? 9.5 : 6.5;
         const radius = baseRadius * NODE_SIZE_MULTIPLIER * nodeZoomFactor / normalizedScale;

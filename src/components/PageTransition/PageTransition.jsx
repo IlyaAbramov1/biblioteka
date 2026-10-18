@@ -42,27 +42,24 @@ export function PageTransitionProvider({ children }) {
         navigationInProgress.current = true;
         document.documentElement.classList.add("route-transitioning");
 
-        // Let the exit animation reach the screen before the view transition freezes it.
-        window.setTimeout(() => {
-            startTransition(() => new Promise((resolve) => {
-                const timeout = window.setTimeout(() => {
-                    if (pendingNavigation.current?.resolve === finish) {
-                        pendingNavigation.current = null;
-                        navigationInProgress.current = false;
-                        document.documentElement.classList.remove("route-transitioning");
-                        finish();
-                    }
-                }, 1800);
-
-                function finish() {
-                    window.clearTimeout(timeout);
-                    resolve();
+        startTransition(() => new Promise((resolve) => {
+            const timeout = window.setTimeout(() => {
+                if (pendingNavigation.current?.resolve === finish) {
+                    pendingNavigation.current = null;
+                    navigationInProgress.current = false;
+                    document.documentElement.classList.remove("route-transitioning");
+                    finish();
                 }
+            }, 1800);
 
-                pendingNavigation.current = { pathname: target.pathname, resolve: finish };
-                router.push(targetPath);
-            }));
-        }, 140);
+            function finish() {
+                window.clearTimeout(timeout);
+                resolve();
+            }
+
+            pendingNavigation.current = { pathname: target.pathname, resolve: finish };
+            router.push(targetPath);
+        }));
     }, [router]);
 
     return (

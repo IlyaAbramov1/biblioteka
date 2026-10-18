@@ -805,7 +805,6 @@
         rgba(225, 160, 82, 0.8) 48px
     );
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    view-transition-name: library-shelf;
 }
 
 .sitesGrid::before {
@@ -823,7 +822,6 @@
         transparent 48px,
         transparent 322px
     );
-    mask: repeating-linear-gradient(to bottom, transparent 0 48px, #000 48px 322px);
 }
 
 .sitesGrid::after {
@@ -837,7 +835,6 @@
         transparent 322px
     );
     filter: blur(2px);
-    mask: repeating-linear-gradient(to bottom, transparent 0 8px, #000 8px 322px);
 }
 
 .sentinel,

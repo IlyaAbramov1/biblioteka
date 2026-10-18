@@ -25,6 +25,16 @@ const CURATED_RELATIONS = [
     ["brain-cho", "june-lee", "Команда Apple"],
     ["petrick", "intuition", "Сайт Petrick сделан Интуицией"],
     ["charles-shin", "kowalski", "Использование библиотеки Vaul Эмиля"],
+    ["joel-rosen", "hex", "Сооснователь HEX"],
+    ["pablo-stanley", "rauno", "Коллеги в Vercel"],
+    ["pablo-stanley", "rabbit", "Коллеги в Vercel"],
+    ["peng-zheng", "ryo-lu", "Коллеги в Cursor"],
+    ["jesse-gazaway", "ryo-lu", "Общие проекты в Asana"],
+    ["jesse-gazaway", "william-le", "Коллеги в Google"],
+    ["jesse-gazaway", "guglieri", "Коллеги в Google"],
+    ["jesse-gazaway", "repponen", "Коллеги в Google"],
+    ["marcelo-somers", "michael-goldstein", "Коллеги в Ramp"],
+    ["marco-cornacchia", "daniel-eden", "Коллеги в Figma"],
 ];
 
 const DESCRIPTION_MENTIONS = {
@@ -67,6 +77,9 @@ const DESCRIPTION_MENTIONS = {
     ],
     petrick: [
         ["Интуиция", "intuition"],
+    ],
+    "joel-rosen": [
+        ["Hex", "hex"],
     ],
     intuition: [
         ["Петрик", "petrick"],

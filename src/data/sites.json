@@ -12,7 +12,7 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/j-d-reeves/j-d-reeves-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/j-d-reeves/reeves-preview.webp",
+        "previewScreen": "screens/j-d-reeves/j-d-reeves-preview.webp",
         "enabled": true,
         "isNew": true
     },
@@ -46,7 +46,7 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/ample-studio/ample-studio-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/ample-studio/ample-preview.webp",
+        "previewScreen": "screens/ample-studio/ample-studio-preview.webp",
         "enabled": true,
         "isNew": true
     },
@@ -64,7 +64,7 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/joel-rosen/joel-rosen-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/joel-rosen/rosen-preview.webp",
+        "previewScreen": "screens/joel-rosen/joel-rosen-preview.webp",
         "enabled": true,
         "isNew": true
     },
@@ -74,20 +74,21 @@
         "subtitle": "Mike Barton — продуктовый дизайнер и сreative technologist(круто же звучит). Сайт уникален свой подачей — главным объектом сайта является эллюимантор, который при интеракции переводит сайт в другую тему. При это анимации выполнены максимально плавно, аккуратно и детально.",
         "category": "Дизайнер",
         "specialization": [
-        "Web"
+            "Web",
+            "Product"
         ],
         "link": "https://www.mikes.cv/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/mike-barton/mike-barton-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/mike-barton/barton-preview.webp",
+        "previewScreen": "screens/mike-barton/mike-barton-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
-        "slug": "studio-loop",
+        "slug": "loop",
         "title": "Studio Loop",
-        "subtitle": "Studio Loop — бразильская мультидисциплинарная студия, работающая с видео, дизайном, 3D и моушном. На сайте направления пронумерованы, а проекты раскрываются через кейсы для Universal Music и Paramount. Классно, что многоформатность команды не мешает довольно ясной структуре портфолио.",
+        "subtitle": "Studio Loop — бразильская мультидисциплинарная студия. Сайт студии удивляет своей графичностью с первой же секунды, морф-анимация логотипап представлена прекрасно. Множество красивых интерактивных деталей, приятная мягкая вёрстка, особенно приятная палитра! Красивый сайт, ничего не скажешь. Только мягкий скролл смущает, но это вкусовщина.",
         "category": "Дизайн-студия",
         "specialization": [
         "Motion Design",
@@ -96,16 +97,16 @@
         ],
         "link": "https://www.studioloop.com.br/",
         "previewVideoKey": "",
-        "fullVideoKey": "screens/studio-loop/studio-loop-full.mp4",
+        "fullVideoKey": "screens/loop/loop-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/studio-loop/loop-preview.webp",
+        "previewScreen": "screens/loop/loop-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "daniel-white",
         "title": "Daniel White",
-        "subtitle": "Daniel White — дизайн-инженер, превративший портфолио в небольшую иллюстрированную книгу из семи глав. Вместо привычного hero-блока — оглавление, литературные названия и гравюры. Особенно хороши интерактивные вставки внутри истории: инженерные эксперименты становятся частью повествования о человеке.",
+        "subtitle": "Daniel White — дизайн-инженер, превративший портфолио в небольшую иллюстрированную книгу из семи глав. Вместо привычного hero-блока — оглавление, литературные названия и гравюры. Особенно хороши интерактивные вставки внутри истории: интерактивные блоки, мягкие анимашки... Круто постарался Daniel.",
         "category": "Дизайнер",
         "specialization": [
         "Design Engineer",
@@ -115,14 +116,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/daniel-white/daniel-white-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/daniel-white/white-preview.webp",
+        "previewScreen": "screens/daniel-white/daniel-white-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "ayda-oz",
         "title": "Ayda Oz",
-        "subtitle": "Ayda Oz — продуктовый дизайнер и дизайн-инженер с опытом работы над цифровыми продуктами и стартапами. На сайте отдельно вынесены кейсы, журнал, информация о специалисте и возможность связаться. Нравится, что персональное позиционирование сразу связано с конкретными работами и опытом создания продуктов с нуля.",
+        "subtitle": "Ayda Oz — продуктовый дизайнер и дизайн-инженер. Её сайт — пример чёткого коммерческого портфолио. Вёрстка мягкая, фундаментальная. Блоки структурно и ясно описывают сильные стороны дизайнера. Словно мы смотрим на международную AAA-студию. Хороший пример портфолио для тех, кто в поиске работы.",
         "category": "Дизайнер",
         "specialization": [
         "Design Engineer",
@@ -132,14 +133,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/ayda-oz/ayda-oz-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/ayda-oz/ayda-preview.webp",
+        "previewScreen": "screens/ayda-oz/ayda-oz-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "arlan-marat",
         "title": "Arlan Marat",
-        "subtitle": "Arlan Marat — дизайн-инженер из Казахстана, работающий в Сан-Франциско. Сайт разделяет коммерческий опыт, собственные проекты и Vault с визуальными экспериментами. Удачная, очень прямая структура: по нескольким спискам можно быстро понять и специализацию, и любопытство автора.",
+        "subtitle": "Arlan Marat — дизайн-инженер из Казахстана, работающий в Сан-Франциско. Сайт — мой любимый дизайн-инженерский стиль! Белый лист с регалиями на главной странице и не более, круто! Но ещё круче — его скиллы дизайн-инженера. В подстранице Vault Арлан собирает свои наработки по анимациям, и это что-то невероятное.",
         "category": "Дизайнер",
         "specialization": [
         "Design Engineer",
@@ -149,49 +150,50 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/arlan-marat/arlan-marat-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/arlan-marat/arlan-preview.webp",
+        "previewScreen": "screens/arlan-marat/arlan-marat-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "pablo-stanley",
         "title": "Pablo Stanley",
-        "subtitle": "Pablo Stanley — дизайнер и автор Avataaars, Humaaans и Open Peeps. Его портфолио — нарисованный от руки интерактивный мир, по которому можно перемещаться стрелками. Отличный пример сайта, где знакомство с работами превращается в маленькую игру, а иллюстрация становится самой навигацией.",
+        "subtitle": "Pablo Stanley — дизайнер из Antropic, ранее был в Vercel. Его портфолио — нарисованный от руки интерактивный мир, по которому можно перемещаться и иследовать деятельность Пабло. Уверен, слова излишни. Гениальное портфолио.",
         "category": "Дизайнер",
         "specialization": [
-        "Illustration",
-        "Web",
-        "Art"
+                "Product",
+                "Web",
+                "Design Engineer"
         ],
         "link": "https://world.pablostanley.com/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/pablo-stanley/pablo-stanley-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/pablo-stanley/pablo-preview.webp",
+        "previewScreen": "screens/pablo-stanley/pablo-stanley-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
-        "slug": "william-gibson",
+        "slug": "gibson",
         "title": "William Gibson",
-        "subtitle": "William Gibson — автор персонального дизайн-портфолио. Точная структура и визуальные приёмы сайта не подтверждены; оставляю нейтральное описание, чтобы не выдавать предположения за наблюдения.",
+        "subtitle": "William Gibson — дизайн-инженер. Удивительный сайт имеет наш коллега. Вильям просто добавил фотку с блокнота со своим CV. Сильно!",
         "category": "Дизайнер",
         "specialization": [
-        "Product",
-        "Web"
+            "Product",
+            "Web",
+            "Design Engineer"
         ],
         "link": "https://william.cv/",
         "previewVideoKey": "",
-        "fullVideoKey": "screens/william-gibson/william-gibson-full.mp4",
-        "siteScreens": [],
-        "previewScreen": "screens/william-gibson/gibson-preview.webp",
+        "fullVideoKey": "",
+        "siteScreens": ["screens/gibson/gibson-1.webp"],
+        "previewScreen": "screens/gibson/gibson-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "jesse-gazaway",
         "title": "Jesse Gazaway",
-        "subtitle": "Jesse Gazaway — дизайнер с персональным портфолио, опубликованным на Framer. Подробности анимаций и композиции требуют визуальной проверки. Пока запись оставлена лаконичной, без приписывания сайту конкретных эффектов.",
+        "subtitle": "Jesse Gazaway — большой коммерческий дизайнер. Многие из его работ мы видели — Asana, Uber, Tinder, Google. Как и подобает такой величине, сайт свёсртан в рамках коммерческого подхода с чёткой структурой, акцентом на опыт дизайнера и его кейсы.",
         "category": "Дизайнер",
         "specialization": [
         "Web"
@@ -200,31 +202,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/jesse-gazaway/jesse-gazaway-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/jesse-gazaway/gazaway-preview.webp",
-        "enabled": true,
-        "isNew": true
-    },
-    {
-        "slug": "studio-herrstrom",
-        "title": "Studio Herrström",
-        "subtitle": "Studio Herrström — независимая дизайн-студия. Сайт добавлен в подборку студийных портфолио; конкретные особенности типографики и взаимодействий ещё не подтверждены.",
-        "category": "Дизайн-студия",
-        "specialization": [
-        "Branding",
-        "Web"
-        ],
-        "link": "https://www.studioherrstrom.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "screens/studio-herrstrom/studio-herrstrom-full.mp4",
-        "siteScreens": [],
-        "previewScreen": "screens/studio-herrstrom/herrstrom-preview.webp",
+        "previewScreen": "screens/jesse-gazaway/jesse-gazaway-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "felipe",
         "title": "Felipe",
-        "subtitle": "Felipe — дизайнер с персональным сайтом. В этой записи пока нет проверенных деталей о композиции и интерфейсных приёмах, поэтому описание намеренно оставлено кратким.",
+        "subtitle": "Felipe — продуктовый дизайнер. Сайт выполнен в максимально утилитарном стиле, представляя из себя одностраничник с одноколончатой вёрсткой, его дизайн-шотами и несколькими описательными абзацами.",
         "category": "Дизайнер",
         "specialization": [
         "Web",
@@ -241,24 +226,25 @@
     {
         "slug": "kalok-yeung",
         "title": "Kalok Yeung",
-        "subtitle": "Kalok Yeung — цифровой дизайнер, создающий игривые и функциональные сайты. На главной собрана компактная подборка проектов, среди которых i-D Magazine и See You Later. Особенно интересна работа с digital-портфолио как с каталогом разных визуальных характеров.",
+        "subtitle": "Kalok Yeung — дигитал-дизайнер. Портфолио ощущается максимально артово! С одной стороны — привычная двухколончатая вёрстка. С другой — красивые детали, endless-scroll, интерактивные анимации, как и инстант-анимации прогруза добавляет диджитальную «глянцевость» сайту и самому дизайнеру. Круто, артово.",
         "category": "Дизайнер",
         "specialization": [
         "Web",
-        "Branding"
+        "Branding",
+        "Art"
         ],
         "link": "https://kalokyeung.com/",
         "previewVideoKey": "",
         "fullVideoKey": "screens/kalok-yeung/kalok-yeung-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/kalok-yeung/kalok-preview.webp",
+        "previewScreen": "screens/kalok-yeung/kalok-yeung-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "pedro-marques",
         "title": "Pedro Marques",
-        "subtitle": "Pedro Marques — продуктовый дизайнер и разработчик собственных проектов. Сайт включён как референс персонального портфолио; неподтверждённые детали визуального устройства здесь не описываю.",
+        "subtitle": "Pedro Marques — продуктовый дизайнер из Бразилии. Дизайн-инженерный подход к портфолио :), но с интерсными деталями — текстурным фоном, довольно большим абзацем про себя — тут на заметку, хороший копирайт. Забавляет одна большая деталь — переключение темы на сайте сделано реалистичным переключателем света.",
         "category": "Дизайнер",
         "specialization": [
         "Product",
@@ -268,14 +254,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/pedro-marques/pedro-marques-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/pedro-marques/marques-preview.webp",
+        "previewScreen": "screens/pedro-marques/pedro-marques-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "peng-zheng",
         "title": "Peng Zheng",
-        "subtitle": "Peng Zheng — автор персонального портфолио. Для точного разбора вёрстки, анимации и подачи кейсов нужна дополнительная визуальная проверка сайта.",
+        "subtitle": "Peng Zheng — дизайнер из SpaceX, ранее работал в Cursor и Zoom. С одной стороны — мой любимый дизайн-инженерный подход с мягкой монохромной вёрсткой. С другой стороны, Peng сделал уникальную деталь. Заглавием сайта является 3д-элемент в виде здания, в котором последний раз побывал дизайнер. Удивляет то, что таких зданий, интерактивных, которые можно подкрутить, множество! Каждый день — по несколько. Как он их делает, не ясно. Ясно, что это очень круто.",
         "category": "Дизайнер",
         "specialization": [
         "Product",
@@ -285,14 +271,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/peng-zheng/peng-zheng-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/peng-zheng/peng-preview.webp",
+        "previewScreen": "screens/peng-zheng/peng-zheng-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "sasha-birukoff",
         "title": "Sasha Birukoff",
-        "subtitle": "Sasha Birukoff — независимый дизайнер, работающий с айдентикой технологических компаний. Сайт устроен как большой индекс логотипов и бренд-систем, с отдельными разделами об авторе и его текстах. Особенно сильна работа с повторяющимися графическими системами: каждый проект узнаваем, но коллекция выглядит цельно.",
+        "subtitle": "Sasha Birukoff — дизайнер из Нью-Йорка. Сайт, как и его работы, сделан в технологичном, чётком стиле и вёрстке, с типографической связкой гротеска и моноширинного шрифта. Особенно нравится прогрузка страницы, очень выделяющая сайт Саши. Артово, круто, особенно в связке с технологичным стилкём!",
         "category": "Дизайнер",
         "specialization": [
         "Branding",
@@ -303,14 +289,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/sasha-birukoff/sasha-birukoff-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/sasha-birukoff/birukoff-preview.webp",
+        "previewScreen": "screens/sasha-birukoff/sasha-birukoff-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "ilya-grishin",
         "title": "Ilya Grishin",
-        "subtitle": "Ilya Grishin — продуктовый дизайнер, руководящий дизайном Wallet in Telegram. Сайт максимально утилитарен: короткое представление, профессиональный путь и результаты дизайн-конкурсов Telegram. Хорошая демонстрация того, как сильная карьера может быть рассказана почти без декоративных элементов.",
+        "subtitle": "Ilya Grishin — продуктовый дизайнер, руководящий дизайном Wallet в Telegram. Сайт максимально утилитарен и дизайн-инженерный: короткое представление, карьера и его результаты по телеграм-контестам.",
         "category": "Дизайнер",
         "specialization": [
         "Product"
@@ -319,14 +305,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/ilya-grishin/ilya-grishin-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/ilya-grishin/grishin-preview.webp",
+        "previewScreen": "screens/ilya-grishin/ilya-grishin-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "prand",
         "title": "Prand",
-        "subtitle": "Prand — анимационная студия из Тбилиси, работающая с 2D, 3D и смешанными техниками. Главная сразу ведёт к визуальным кейсам, которые можно фильтровать по формату. Приятно, что сайт буквально продаёт эмоции через движение, не пряча сами работы за сложной навигацией.",
+        "subtitle": "Prand — анимационная студия из Тбилиси, работающая с 2D и 3D. Максимально уникальный стиль сайта — мультипликационный стиль, типографика, анимации по скроллу. Кайф!",
         "category": "Дизайн-студия",
         "specialization": [
         "Motion Design",
@@ -344,7 +330,7 @@
     {
         "slug": "sutera",
         "title": "Sutéra",
-        "subtitle": "Sutéra — креативная студия. Без дополнительного просмотра не стану приписывать её сайту определённую композицию, анимации или типографическую систему.",
+        "subtitle": "Sutéra — креативная студия из Германии. Сайт с уникальной стилистикой технологичности и брутализма. Определённо, нагромождено большим количеством элементов, однако смотрится это сильно и стилёво. Особенно красиво выглядит переключение между стилями.",
         "category": "Дизайн-студия",
         "specialization": [
         "Branding",
@@ -359,25 +345,9 @@
         "isNew": true
     },
     {
-        "slug": "oscar-dumlao",
-        "title": "Oscar Dumlao",
-        "subtitle": "Oscar Dumlao — автор персонального портфолио. Детали визуальной подачи сайта пока не удалось подтвердить, поэтому не дополняю описание вымышленными наблюдениями.",
-        "category": "Дизайнер",
-        "specialization": [
-        "Web"
-        ],
-        "link": "https://oscardumlao.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "screens/oscar-dumlao/oscar-dumlao-full.mp4",
-        "siteScreens": [],
-        "previewScreen": "screens/oscar-dumlao/dumlao-preview.webp",
-        "enabled": true,
-        "isNew": true
-    },
-    {
         "slug": "juliette",
         "title": "Juliette",
-        "subtitle": "Juliette — независимый дизайнер, работающая с цифровыми интерфейсами, AI и блокчейн-проектами. Сайт делится на коммерческие работы, playground и заметки; в экспериментальном разделе можно найти интерактивные компоненты. Очень удачное сочетание портфолио, лаборатории и авторского блога.",
+        "subtitle": "Juliette — независимый дизайнер с прекрасным минималистичным сайтом. Мягкие ховеры, приятные микро-анимации, сильные работы и дизайн-шоты. Особенно нравится блок с персональными фотками, очень живо представляющий Juliette.",
         "category": "Дизайнер",
         "specialization": [
         "Product",
@@ -393,26 +363,27 @@
         "isNew": true
     },
     {
-        "slug": "studio-evra",
+        "slug": "evra",
         "title": "Studio Evra",
-        "subtitle": "Studio Evra — дизайн-студия, представляющая себя как партнёра по дизайну. Конкретные детали сайта требуют дополнительного просмотра; описание оставлено без неподтверждённых визуальных характеристик.",
+        "subtitle": "Studio Evra — мультидисциплинарная дизайн-студия из Австралии. Сайт утилитарен, и этим очень красив. Структура выполнена по-коммерчески — о себе, клиенты и дизайн-шоты.",
         "category": "Дизайн-студия",
         "specialization": [
         "Branding",
-        "Web"
+        "Web",
+        "Product"
         ],
         "link": "https://www.evra.design/",
         "previewVideoKey": "",
-        "fullVideoKey": "screens/studio-evra/studio-evra-full.mp4",
+        "fullVideoKey": "screens/evra/evra-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/studio-evra/evra-preview.webp",
+        "previewScreen": "screens/evra/evra-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "fons-mans",
         "title": "Fons Mans",
-        "subtitle": "Fons Mans — графический дизайнер из Нидерландов. Его сайт — минималистичная визитка с доминантной фотографией и ссылками на социальные сети. Хороший пример того, как персональное присутствие можно собрать почти без полноценного портфолио.",
+        "subtitle": "Fons Mans — графический дизайнер из Нидерландов, фаундер студии Offrid. Его сайт — минималистичная визитка с доминантной фотографией дизайнера и ссылками на социальные сети, без внутренниз страниц и кейсов. Особенно приятно смотреть, как раскрывается данная информация плавной анимацией.",
         "category": "Дизайнер",
         "specialization": [
         "Branding"
@@ -421,14 +392,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/fons-mans/fons-mans-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/fons-mans/fons-preview.webp",
+        "previewScreen": "screens/fons-mans/fons-mans-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "marco-cornacchia",
         "title": "Marco Cornacchia",
-        "subtitle": "Marco Cornacchia — продуктовый дизайнер, ранее работавший в Vercel, v0, Figma и Diagram. Его сайт строится вокруг коротких мыслей о дизайне и собственных проектов. Особенно нравится открытая, почти разговорная манера подачи: не громкий манифест, а последовательность личных принципов.",
+        "subtitle": "Marco Cornacchia — продуктовый дизайнер из Figma. Его сайт строится на принципе бенто-блоков, довольно сложном дизайн-приёме для скроллящихся сайтов. Однако он применил его изящно, чётко и красиво! Особенно нравится копирайт — живой, натуральный. Отличный пример сильного портфолио большого дизайнера.",
         "category": "Дизайнер",
         "specialization": [
         "Product",
@@ -438,14 +409,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/marco-cornacchia/marco-cornacchia-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/marco-cornacchia/cornacchia-preview.webp",
+        "previewScreen": "screens/marco-cornacchia/marco-cornacchia-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "bt-norris",
-        "title": "bt norris",
-        "subtitle": "BT Norris — дизайн-инженер с опытом работы в Backbone. Портфолио стилизовано под технический архив: field log, registry, operational manifest и каталог экспериментальных артефактов. Внутри — прототипы игр, интерфейсов и инструментов. Очень характерная идея, в которой визуальный язык прямо вырастает из инженерной специализации.",
+        "title": "BT Norris",
+        "subtitle": "BT Norris — дизайн-инженер из города Феникс, Аризона. Стильное портфолио! Определённо, тяжело считывать всю информацию :) Однако стильно! Сам рассказ о специалисте представлен в 3 листах бумаги в технологичном стиле. Приятные анимашки переходов, мелкая вёрстка, интеракции.",
         "category": "Дизайнер",
         "specialization": [
         "Design Engineer",
@@ -456,14 +427,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/bt-norris/bt-norris-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/bt-norris/norris-preview.webp",
+        "previewScreen": "screens/bt-norris/bt-norris-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "marcelo-somers",
         "title": "Marcelo Somers",
-        "subtitle": "Marcelo Somers — автор персонального портфолио. Не удалось надёжно подтвердить конкретные визуальные решения сайта; запись оставлена без предположений о его сетке и анимациях.",
+        "subtitle": "Marcelo Somers — лид дизайнер из Ramp. Сайт портфолио Marcelo сделал в стиле терминала, что выглядит оч свежо и стильно. Особенно здорово, что он сделал ясную и чёткую навигацию, что хорошо показывает его UX-скиллы.",
         "category": "Дизайнер",
         "specialization": [
         "Web",
@@ -473,14 +444,14 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/marcelo-somers/marcelo-somers-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/marcelo-somers/somers-preview.webp",
+        "previewScreen": "screens/marcelo-somers/marcelo-somers-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
         "slug": "daniel-eden",
         "title": "Daniel Eden",
-        "subtitle": "Daniel Eden — дизайнер, рассказывающий о себе через выразительную типографику и статьи о своей работе. Здесь интересен баланс доминантного текстового вступления и спокойной подачи материалов.",
+        "subtitle": "Daniel Eden — дизайнер из Figma. Его сайт отлично выделяется выразительной типографикой и прекрасными оттенками черного и белого с доминантным оранжевым. Очень сильно!",
         "category": "Дизайнер",
         "specialization": [
         "Product"
@@ -489,81 +460,44 @@
         "previewVideoKey": "",
         "fullVideoKey": "screens/daniel-eden/daniel-eden-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/daniel-eden/eden-preview.webp",
+        "previewScreen": "screens/daniel-eden/daniel-eden-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
-        "slug": "anton-half-of-eight",
-        "title": "Anton — Half of Eight",
-        "subtitle": "Anton — автор проекта Half of Eight. Для содержательного разбора сайта пока недостаточно подтверждённых наблюдений о композиции и интерактиве.",
+        "slug": "anton",
+        "title": "Anton",
+        "subtitle": "Anton — большой дизайнер в сфере 3д-веба. Сам сайт сделан в минималистичной и чёткой подаче с акцентом на его прекрасные кейсы. Особенно хочу подметить то, как Антон задизайнил награды своих кейсов - отличный приём на заметку всем. Ну и, конечно, точно стоит чуток задержатся на его сильнейших работах.",
         "category": "Дизайнер",
         "specialization": [
-        "Branding",
+        "3D in Web",
         "Web"
         ],
         "link": "https://halfof8.com/",
         "previewVideoKey": "",
-        "fullVideoKey": "screens/anton-half-of-eight/anton-half-of-eight-full.mp4",
+        "fullVideoKey": "screens/anton/anton-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/anton-half-of-eight/halfof8-preview.webp",
+        "previewScreen": "screens/anton/anton-preview.webp",
         "enabled": true,
         "isNew": true
     },
     {
-        "slug": "vide-infra",
-        "title": "Vide Infra",
-        "subtitle": "Vide Infra — агентство цифрового продуктового дизайна и разработки. В библиотеке сайт интересен как пример презентации комплексной digital-команды; конкретные анимации и визуальные решения пока не подтверждены.",
+        "slug": "ram",
+        "title": "Рамиль Ram",
+        "subtitle": "Рамиль — интерактивный цифровой дизайнер с специализацией в 3д-веб. Само портфолио прекрасно представляет его скиллы. Очень круто сделана главная 3д-сцена с несколькими кайфовые отсылками на попкурльтуру. Внутренние страницы также стилизованы под старый веб. Очень и очень со вкусом всё сделано и артово!",
         "category": "Дизайн-студия",
         "specialization": [
-        "Web",
-        "Product",
-        "Branding"
+            "Web",
+            "3D in Web"
         ],
-        "link": "https://videinfra.com/",
+        "link": "https://ram-works.shop/my_pocket_dimention/",
         "previewVideoKey": "",
-        "fullVideoKey": "screens/vide-infra/vide-infra-full.mp4",
+        "fullVideoKey": "screens/ram/ram-full.mp4",
         "siteScreens": [],
-        "previewScreen": "screens/vide-infra/videinfra-preview.webp",
+        "previewScreen": "screens/ram/ram-preview.webp",
         "enabled": true,
         "isNew": true
     },
-    {
-        "slug": "anderson-mancini",
-        "title": "Anderson Mancini",
-        "subtitle": "Anderson Mancini — креативный разработчик, специализирующийся на Three.js. Его портфолио стоит рассматривать прежде всего как пример соединения веб-разработки с интерактивной 3D-графикой; детали отдельных эффектов требуют просмотра.",
-        "category": "Дизайнер",
-        "specialization": [
-        "3D in Web",
-        "Design Engineer",
-        "Web"
-        ],
-        "link": "https://andersonmancini.dev/",
-        "previewVideoKey": "",
-        "fullVideoKey": "screens/anderson-mancini/anderson-mancini-full.mp4",
-        "siteScreens": [],
-        "previewScreen": "screens/anderson-mancini/mancini-preview.webp",
-        "enabled": true,
-        "isNew": true
-    },
-    {
-        "slug": "ocula",
-        "title": "Ocula",
-        "subtitle": "Ocula — платформа о современном искусстве, а не дизайн-студия и не персональное портфолио. Сохраняю отдельно как спорную ссылку: она не подходит под строгий фильтр «студии и дизайнеры».",
-        "category": "Дизайн-студия",
-        "specialization": [
-        "Art",
-        "Web"
-        ],
-        "link": "https://ocula.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "screens/ocula/ocula-full.mp4",
-        "siteScreens": [],
-        "previewScreen": "screens/ocula/ocula-preview.webp",
-        "enabled": true,
-        "isNew": true
-    },
-
 
 
     {
@@ -1382,6 +1316,7 @@
         "category": "Дизайнер",
         "specialization": [
             "Product",
+            "Design Engineer",
             "Web"
         ],
         "link": "https://www.lochieaxon.com/",
@@ -1535,22 +1470,6 @@
         "enabled": true
     },
     {
-        "slug": "ample",
-        "title": "Ample Studio",
-        "subtitle": "Дизайн студия, специализирующаяся на SAAS-стартапах. Сайт выделятеся пикселизированным стилем и чёткой, грамотной вёрсткой.",
-        "category": "Дизайн-студия",
-        "specialization": [
-            "Web",
-            "Product"
-        ],
-        "link": "https://amplestudio.com/",
-        "previewVideoKey": "",
-        "fullVideoKey": "screens/ample/ample-full.mp4",
-        "siteScreens": [],
-        "previewScreen": "screens/ample/ample-preview.webp",
-        "enabled": true
-    },
-    {
         "slug": "adria",
         "title": "Adria Studio",
         "subtitle": "Дизайн студия, специализирующаяся на SAAS-стартапах. Сайт выполнен в чб-палитре, мягкой вёрстке и интересных микро-деталях.",
@@ -1643,8 +1562,7 @@
         "previewVideoKey": "",
         "fullVideoKey": "",
         "siteScreens": [
-            "screens/preet/preet-1.webp",
-            "screens/preet/preet-2.webp"
+            "screens/preet/preet-1.webp"
         ],
         "previewScreen": "screens/preet/preet-preview.webp",
         "enabled": true
@@ -5513,7 +5431,7 @@
         "enabled": false
     },
     {
-        "slug": "studio-evra",
+        "slug": "evra",
         "title": "STUDIO EVRA",
         "subtitle": "",
         "category": "Дизайн-студия",

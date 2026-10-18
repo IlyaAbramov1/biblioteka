@@ -2,7 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
+import AccentText from "@/components/AccentText/AccentText";
 import CanvasLogo from "@/components/CanvasLogo/CanvasLogo";
 import SiteItem from "@/components/SiteItem/SiteItem";
 import { usePageTransition } from "@/components/PageTransition/PageTransition";
@@ -11,7 +13,14 @@ import { browsableSites } from "@/lib/siteData";
 import shelfStyles from "../page.module.css";
 import styles from "./search.module.css";
 
+const INITIAL_VISIBLE_COUNT = 3;
 const PAGE_SIZE = 30;
+const SEARCH_REVEAL_INITIAL = { opacity: 0, filter: "blur(12px)", y: -20 };
+const SEARCH_REVEAL_VISIBLE = { opacity: 1, filter: "blur(0px)", y: 0 };
+const SEARCH_REVEAL_TRANSITION = {
+    duration: 1,
+    ease: [0.22, 1, 0.36, 1],
+};
 const uniqueSites = browsableSites.filter((site, index, sites) => (
     sites.findIndex((candidate) => candidate.slug === site.slug) === index
 ));
@@ -32,7 +41,7 @@ function normalize(value) {
 export default function SearchPageClient() {
     const navigateWithTransition = usePageTransition();
     const [query, setQuery] = useState("");
-    const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+    const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
     const [animatedPlaceholder, setAnimatedPlaceholder] = useState("");
     const [isInputFocused, setIsInputFocused] = useState(false);
 
@@ -101,11 +110,34 @@ export default function SearchPageClient() {
         });
     }, [query]);
 
+    useEffect(() => {
+        if (!query.trim() || !matchingSites.length) return undefined;
+
+        const revealFrame = window.requestAnimationFrame(() => {
+            setVisibleCount(Math.min(PAGE_SIZE, matchingSites.length));
+        });
+
+        return () => window.cancelAnimationFrame(revealFrame);
+    }, [matchingSites, query]);
+
     return (
         <main className={styles.page}>
             <CanvasLogo />
-            <h1 className={`${shelfStyles.title} ${styles.searchTitle}`}>Поиск по главной</h1>
-            <section className={styles.searchHero} aria-label="Поиск сайтов">
+            <motion.h1
+                className={`${shelfStyles.title} ${styles.searchTitle}`}
+                initial={SEARCH_REVEAL_INITIAL}
+                animate={SEARCH_REVEAL_VISIBLE}
+                transition={{ ...SEARCH_REVEAL_TRANSITION, delay: 0.12 }}
+            >
+                Поиск по <AccentText>библиотеке</AccentText>
+            </motion.h1>
+            <motion.section
+                className={styles.searchHero}
+                aria-label="Поиск сайтов"
+                initial={SEARCH_REVEAL_INITIAL}
+                animate={SEARCH_REVEAL_VISIBLE}
+                transition={{ ...SEARCH_REVEAL_TRANSITION, delay: 0.2 }}
+            >
                 <div className={styles.searchControls}>
                     <div className={styles.searchField}>
                         <Image src="/search.svg" alt="" width={22} height={22} unoptimized />
@@ -122,7 +154,7 @@ export default function SearchPageClient() {
                                 onChange={(event) => {
                                     setQuery(event.target.value);
                                     setAnimatedPlaceholder("");
-                                    setVisibleCount(PAGE_SIZE);
+                                    setVisibleCount(INITIAL_VISIBLE_COUNT);
                                 }}
                                 onFocus={() => setIsInputFocused(true)}
                                 onBlur={() => setIsInputFocused(false)}
@@ -139,7 +171,7 @@ export default function SearchPageClient() {
                         title="Закрыть поиск"
                     />
                 </div>
-            </section>
+            </motion.section>
 
             {!query.trim() ? (
                 <section className={`${shelfStyles.sitesGrid} ${styles.emptyShelves}`} aria-label="Пустые полки">
